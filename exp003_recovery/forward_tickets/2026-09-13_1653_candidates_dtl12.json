@@ -1,0 +1,62 @@
+{
+  "freeze_type": "FORWARD_CANDIDATE_PRE_EXECUTION",
+  "created_local": "2026-09-13T16:53:20-06:00",
+  "timezone": "America/Mexico_City",
+  "governance": "DTL-1.2",
+  "model": "Vn-2026-DC-ENSEMBLE",
+  "model_status": "SHADOW_MODEL_SIGNAL",
+  "parent": "V0.1R_RECOVERED",
+  "model_cutoff_local": "2026-09-13T16:10:00",
+  "training_count": 1416,
+  "training_snapshot_sha256": "8d99472a8cad8282688438ce9b1285d2e5278e07a69586f7d1fb34a75a1192d1",
+  "stake_policy": {
+    "shadow": "FLAT_1_UNIT_PER_TICKET",
+    "shadow_unit_mxn": 10,
+    "requested_real_stake_mxn_per_ticket": 100,
+    "real_execution_confirmed": false,
+    "real_if_executed_tag": "REAL_USER_OVERRIDE",
+    "real_user_override_counts_for_promotion": false
+  },
+  "context": {
+    "chivas_pumas": "Pumas injury cluster and short turnaround support lower Pumas attacking output but create medium contradiction to Chivas team unders because defensive absences can increase Chivas scoring; no CONTRADICT_HIGH veto assigned.",
+    "santos_juarez": "Both clubs in severe poor-form regime; Juarez managerial change introduces uncertainty. No CONTRADICT_HIGH veto to X2/ML, but aggressive Juarez ML is higher variance."
+  },
+  "rejected_notable": {
+    "Chivas_ML": {"p_model": 0.49077486520979, "caliente_odds": 1.52, "break_even": 0.6578947368421053, "verdict": "REJECT_NEGATIVE_MODEL_PRICE"},
+    "Pumas_side_markets": {"verdict": "CONTEXT_VETO_FOR_MAIN_TICKETS", "reason": "large nominal model-market discrepancy conflicts with verified injury/short-rest context; retain only as diagnostic signal"}
+  },
+  "tickets": [
+    {
+      "ticket": "PARLAY_A",
+      "profile": "SAFER_MODEL_DRIVEN",
+      "legs": [
+        {"fixture": "Chivas-Pumas", "market": "Chivas team goals Under 2.5", "caliente_reference_odds": 1.42, "p_model": 0.7882861042465759, "break_even": 0.7042253521126761, "atomic_model_ev": 0.11936626803013772},
+        {"fixture": "Chivas-Pumas", "market": "Match Under 3.5", "caliente_reference_odds": 1.48, "p_model": 0.7319592303622837, "break_even": 0.6756756756756757, "atomic_model_ev": 0.0832996609361798},
+        {"fixture": "Santos-Juarez", "market": "Juarez or Draw X2", "caliente_reference_odds": 1.80, "p_model": 0.5734159257147662, "break_even": 0.5555555555555556, "atomic_model_ev": 0.032148666286579086}
+      ],
+      "same_game_joint_p_chivas_legs": 0.6840348112,
+      "ticket_model_p": 0.3922364544853733,
+      "model_fair_odds": 2.549482559727988,
+      "minimum_final_builder_odds_5pct_buffer": 2.6769566877143873,
+      "minimum_final_builder_odds_10pct_buffer": 2.804430815700787,
+      "execution_gate": "PLACE_REAL_USER_OVERRIDE_ONLY_IF_FINAL_CALIENTE_QUOTE_GTE_2.81"
+    },
+    {
+      "ticket": "PARLAY_B",
+      "profile": "AGGRESSIVE_MODEL_DRIVEN",
+      "legs": [
+        {"fixture": "Chivas-Pumas", "market": "Chivas team goals Under 1.5", "caliente_reference_odds": 2.375, "p_model": 0.5314249246588244, "break_even": 0.42105263157894735, "atomic_model_ev": 0.2621341960647079},
+        {"fixture": "Chivas-Pumas", "market": "Match Under 2.5", "caliente_reference_odds": 2.20, "p_model": 0.5142223409715622, "break_even": 0.45454545454545453, "atomic_model_ev": 0.13128915013743692},
+        {"fixture": "Santos-Juarez", "market": "Juarez ML", "caliente_reference_odds_standard": 3.50, "caliente_reference_odds_improved": 3.65, "p_model": 0.3161597989526686, "break_even_standard": 0.2857142857142857, "atomic_model_ev_standard": 0.10655929633434003, "atomic_model_ev_improved": 0.15398326617724045}
+      ],
+      "same_game_joint_p_chivas_legs": 0.4231669756,
+      "ticket_model_p": 0.13378838592910483,
+      "model_fair_odds": 7.474490353220236,
+      "minimum_final_builder_odds_5pct_buffer": 7.848214870881248,
+      "minimum_final_builder_odds_10pct_buffer": 8.22193938854226,
+      "execution_gate": "PLACE_REAL_USER_OVERRIDE_ONLY_IF_FINAL_CALIENTE_QUOTE_GTE_8.23"
+    }
+  ],
+  "portfolio_warning": "Both tickets have directional exposure to Juarez avoiding loss/winning. This is concentration, not diversification. It is retained because no opposite Santos-side third leg passed the atomic model-price filter without hiding negative edge.",
+  "status": "FROZEN_CANDIDATES_NOT_EXECUTED"
+}
