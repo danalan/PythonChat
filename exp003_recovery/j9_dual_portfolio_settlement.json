@@ -1,0 +1,70 @@
+{
+  "settlement_type": "POST_FREEZE_HISTORICAL_J9",
+  "freeze_commit": "6fd736198597bbb673f7b7c15e90736ad5fd54c4",
+  "result_source_primary": "TUDN J9 results summary",
+  "corner_result_sources": ["ESPN Toluca-Queretaro match stats", "Telefootball Toluca-Queretaro stats"],
+  "results": {
+    "UANL Tigres vs FC Juárez": "0-1",
+    "Mazatlán FC vs CF Monterrey": "1-0",
+    "Club Tijuana vs Pumas UNAM": "4-2",
+    "CF Pachuca vs Puebla FC": "2-1",
+    "Atlético San Luis vs Deportivo Guadalajara": "3-1",
+    "Deportivo Toluca vs Gallos Blancos": "5-0"
+  },
+  "legacy_canonical_comparator": {
+    "legs": [
+      {"selection":"Tigres-Juarez DOUBLE_CHANCE_12","result":"WIN","score":"0-1"},
+      {"selection":"Pachuca-Puebla DOUBLE_CHANCE_12","result":"WIN","score":"2-1"},
+      {"selection":"Tijuana team Over 0.5 goals","result":"WIN","score":"4-2"}
+    ],
+    "legs_won": 3,
+    "legs_total": 3,
+    "parlay_result": "WIN",
+    "p_joint_frozen": 0.46567297530376645,
+    "profitability": "NOT_CALCULABLE_HISTORICAL_ODDS_UNAVAILABLE"
+  },
+  "expanded_shadow_portfolio": [
+    {
+      "ticket_id":"J9-SAFE-A",
+      "result":"LOSS",
+      "legs":[
+        {"selection":"Tigres 1X","p_model":0.887041034273074,"result":"LOSS","score":"0-1","error_tag":"HIGH_CONFIDENCE_SIDE_MISS_DESPITE_STRONG_CONTEXT_SUPPORT"},
+        {"selection":"Toluca 1X","p_model":0.9053766261022764,"result":"WIN","score":"5-0"}
+      ],
+      "legs_won":1,"legs_total":2
+    },
+    {
+      "ticket_id":"J9-SAFE-B",
+      "result":"WIN",
+      "legs":[
+        {"selection":"Pachuca team Over 0.5 goals","p_model":0.8889423067032857,"result":"WIN","score":"2-1"},
+        {"selection":"Queretaro team Under 2.5 goals","p_model":0.9556988335851317,"result":"WIN","score":"5-0 to Toluca"}
+      ],
+      "legs_won":2,"legs_total":2
+    },
+    {
+      "ticket_id":"J9-RISK-C",
+      "result":"LOSS",
+      "legs":[
+        {"selection":"Pumas ML","p_model_approx":0.3887526413,"result":"LOSS","score":"Tijuana 4-2 Pumas","error_tag":"AGGRESSIVE_SIDE_MISS; PRE-CUTOFF CONTEXT HAD BOTH SUPPORT AND SUSPENSION/TURNAROUND CONTRADICTIONS"},
+        {"selection":"Toluca home corners Over 3.5","p_model":0.8426562724846884,"result":"WIN","score":"Toluca 5-0 Queretaro","corner_count_note":"ESPN reports Toluca 10, Queretaro 4; Telefootball reports Toluca 8, Queretaro 4. Both independently settle Over 3.5 as WIN.","error_tag":"CORNER_SHADOW_HIT_WITH_SOURCE_COUNT_DISAGREEMENT"}
+      ],
+      "legs_won":1,"legs_total":2
+    }
+  ],
+  "expanded_summary": {
+    "atomic_legs_won":4,
+    "atomic_legs_total":6,
+    "parlays_won":1,
+    "parlays_total":3,
+    "stake_analogy_mxn":{"safe_a":80,"safe_b":80,"risk_c":40},
+    "simulated_pnl":"NOT_COMPUTED_BECAUSE_HISTORICAL_BOOK_ODDS_WERE_NOT_FROZEN",
+    "main_learning":[
+      "Strong context agreement does not protect a high-probability side market from upset risk: Tigres 1X failed at p=0.887.",
+      "The second conservative ticket succeeded with two high-probability goal/team-total events aligned with context.",
+      "The first selected experimental corner leg won, but 54.55% historical source coverage and exact-count provider disagreement remain major data-quality constraints.",
+      "Do not infer that corners are validated from one hit or that Pumas-side context is useless from one miss. Both create hypotheses only."
+    ]
+  },
+  "status":"SETTLED_APPEND_ONLY"
+}
