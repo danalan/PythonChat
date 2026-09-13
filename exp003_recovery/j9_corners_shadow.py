@@ -44,7 +44,6 @@ def local_dt(raw):
     return dt.astimezone(TZ).replace(tzinfo=None)
 
 def season_fixtures(year,tournament):
-    """Get historical schedule/ids/page slugs from FotMob page __NEXT_DATA__."""
     season=quote(f"{year} - {tournament}")
     urls=[
       f"https://www.fotmob.com/es/leagues/{LEAGUE_ID}/matches/{LEAGUE_SLUG}?season={season}",
@@ -76,7 +75,6 @@ def season_fixtures(year,tournament):
     return out
 
 def fetch_one(row):
-    """FotMob removed/guards matchDetails API; match-page __NEXT_DATA__ is primary."""
     mid,dt,home,away,season,page=row
     url=page if page.startswith("http") else "https://www.fotmob.com"+page
     data=fw.get_next(url)
@@ -101,6 +99,17 @@ def main():
         print("J9_CORNERS_FAILURE_SAMPLE",json.dumps(failures[:10],ensure_ascii=False),flush=True)
         raise SystemExit(f"insufficient pre-cutoff corner rows: {len(rows)}; failures={len(failures)}")
     models=cm.ensemble(rows,CUTOFF)
+    available=set(models[0].teams)
+    target_teams={t for _,h,a in FIXTURES for t in (h,a)}
+    missing=sorted(target_teams-available)
+    if missing:
+        print("J9_CORNERS_TEAM_DIAGNOSTIC",json.dumps({
+          "training_rows":len(rows),
+          "detail_failures":len(failures),
+          "missing":missing,
+          "available":sorted(available)
+        },ensure_ascii=False,sort_keys=True),flush=True)
+        raise SystemExit("corner target-team mapping incomplete")
     out=[]
     for fid,home,away in FIXTURES:
         M,meta=cm.avg_matrix(models,home,away)
