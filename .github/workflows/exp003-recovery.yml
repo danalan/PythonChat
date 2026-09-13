@@ -16,5 +16,5 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: python -m pip install --upgrade pip numpy scipy
-      - name: Run J6 reproduction gate and J8 signal
-        run: python exp003_recovery/parlay_replay_dc.py
+      - name: Diagnose decay convention against frozen J6
+        run: python exp003_recovery/diagnose_decay.py
