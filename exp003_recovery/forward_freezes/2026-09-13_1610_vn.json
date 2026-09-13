@@ -1,0 +1,66 @@
+{
+  "freeze_type": "FORWARD_PREMATCH",
+  "model": "Vn-2026-DC-ENSEMBLE",
+  "parent": "V0.1R_RECOVERED",
+  "cutoff_local": "2026-09-13T16:10:00",
+  "timezone": "America/Mexico_City",
+  "training_count": 1416,
+  "last_admitted_match_local": "2026-09-12T21:15:00",
+  "source_counts": {
+    "OpenFootball_through_2024_25": 1016,
+    "2025/2026 - Apertura": 167,
+    "2025/2026 - Clausura": 167,
+    "2026/2027 - Apertura": 66
+  },
+  "targets_excluded_from_training": true,
+  "fixtures": [
+    {
+      "home": "Santos Laguna",
+      "away": "FC Juárez",
+      "ensemble_lambda_home": [1.602572624903688,1.6004245736998124,1.6317491551943109,1.6615695803067079],
+      "ensemble_lambda_away": [1.3579253509391773,1.3966731394711878,1.3771879601391297,1.3579715828844392],
+      "ensemble_rho": [-0.08489317255465753,-0.06770275972078729,-0.06765190819483378,-0.07057072547998676],
+      "p": {
+        "HOME": 0.4265840742852338,
+        "DRAW": 0.2572561267620975,
+        "AWAY": 0.3161597989526686,
+        "DC_1X": 0.6838402010473313,
+        "DC_12": 0.7427438732379024,
+        "DC_X2": 0.5734159257147662,
+        "BTTS_YES": 0.6073988599571992,
+        "TOTAL_O1.5": 0.8084065437373109,
+        "TOTAL_O2.5": 0.5760110079759881,
+        "TOTAL_U3.5": 0.6480117390287431,
+        "TOTAL_U4.5": 0.8158339246027446,
+        "HOME_TG_O0.5": 0.8028458621046289,
+        "HOME_TG_U2.5": 0.7770990601631768,
+        "AWAY_TG_U2.5": 0.8401041232086717
+      }
+    },
+    {
+      "home": "Deportivo Guadalajara",
+      "away": "Pumas UNAM",
+      "ensemble_lambda_home": [1.666982703267671,1.584451445256779,1.542096882399288,1.5285171204531056],
+      "ensemble_lambda_away": [1.102413505638984,1.0470856565286473,1.0094971591950652,0.9905991408004262],
+      "ensemble_rho": [-0.08489317255465753,-0.06770275972078729,-0.06765190819483378,-0.07057072547998676],
+      "p": {
+        "HOME": 0.49077486520979,
+        "DRAW": 0.26903313846626475,
+        "AWAY": 0.24019199632394533,
+        "DC_1X": 0.7598080036760548,
+        "DC_12": 0.7309668615337354,
+        "DC_X2": 0.5092251347902101,
+        "BTTS_YES": 0.5210967455981658,
+        "TOTAL_O1.5": 0.7441791737880721,
+        "TOTAL_O2.5": 0.48577765902843784,
+        "TOTAL_U3.5": 0.7319592303622837,
+        "TOTAL_U4.5": 0.8745313001162609,
+        "HOME_TG_O0.5": 0.7938336939047572,
+        "HOME_TG_U2.5": 0.7882861042465759,
+        "AWAY_TG_U2.5": 0.9125324594634696
+      }
+    }
+  ],
+  "status": "FROZEN_MODEL_SIGNAL_ONLY",
+  "note": "No market edge or real-bet approval is implied by this freeze. Market de-vig, context veto and portfolio construction must occur after this model freeze and before ticket execution."
+}
