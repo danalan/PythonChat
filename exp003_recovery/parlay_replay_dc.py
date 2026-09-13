@@ -5,6 +5,8 @@ Purpose: reproduce the frozen V0.1 engine before it is allowed to generate J8.
 This is a reconstruction from the canonical model contract, NOT a claim that the
 lost transient source file was byte-identical. Acceptance is determined only by
 the preregistered J6 reproduction gate.
+
+Recovery validation trigger: 2026-09-13.
 """
 from __future__ import annotations
 import json, math, re, sys
@@ -41,7 +43,6 @@ def fetch_text(name: str) -> str:
 
 
 def parse_openfootball(text: str, source: str) -> list[Match]:
-    # season is encoded in filename, e.g. 2024-25
     mseason = re.search(r"(20\d{2})-(\d{2})", source)
     start_year = int(mseason.group(1))
     end_year = 2000 + int(mseason.group(2))
@@ -59,8 +60,6 @@ def parse_openfootball(text: str, source: str) -> list[Match]:
         if not mm or current_date is None:
             continue
         _time, home, away, hg, ag, tail = mm.groups()
-        # Shootout-decided matches are excluded from training. Openfootball marks
-        # them in the trailing annotation (penalties / pen.).
         tl = tail.lower()
         if "pen" in tl or "shoot" in tl:
             continue
@@ -72,7 +71,6 @@ def load_all() -> list[Match]:
     rows=[]
     for f in FILES:
         rows.extend(parse_openfootball(fetch_text(f), f))
-    # exact de-duplication by effective date + teams + regulation score
     seen=set(); ded=[]
     for r in sorted(rows, key=lambda x:(x.date,x.home,x.away,x.hg,x.ag)):
         k=(r.date.date().isoformat(),r.home,r.away,r.hg,r.ag)
@@ -135,8 +133,6 @@ class DCModel:
         res=minimize(self.objective,x0,method="L-BFGS-B",bounds=bounds,
                      options={"maxiter":3000,"ftol":1e-12,"gtol":1e-8,"maxls":50})
         if not res.success:
-            # one deterministic retry from the first optimum; this often resolves
-            # line-search termination without changing the target optimum.
             res2=minimize(self.objective,res.x,method="L-BFGS-B",bounds=bounds,
                           options={"maxiter":5000,"ftol":1e-13,"gtol":1e-9,"maxls":100})
             if res2.fun < res.fun: res=res2
@@ -161,10 +157,7 @@ class DCModel:
 
 
 def ensemble(matches, asof):
-    models=[]
-    for hl in HALF_LIVES:
-        models.append(DCModel(matches,asof,hl).fit())
-    return models
+    return [DCModel(matches,asof,hl).fit() for hl in HALF_LIVES]
 
 
 def avg_matrix(models,home,away):
@@ -179,12 +172,10 @@ def probs(M):
     home=float(np.tril(M,-1).sum())
     draw=float(np.trace(M))
     away=float(np.triu(M,1).sum())
-    home_o05=float(M[1:,:].sum())
-    home_u25=float(M[:3,:].sum())
     return {
         "DOUBLE_CHANCE|12": home+away,
-        "TEAM_TOTALS|HOME_OVER_0.5": home_o05,
-        "TEAM_TOTALS|HOME_UNDER_2.5": home_u25,
+        "TEAM_TOTALS|HOME_OVER_0.5": float(M[1:,:].sum()),
+        "TEAM_TOTALS|HOME_UNDER_2.5": float(M[:3,:].sum()),
         "1X2|HOME":home,"1X2|DRAW":draw,"1X2|AWAY":away,
     }
 
@@ -229,7 +220,6 @@ def training_for(all_matches, cutoff_date, reproduce_j6=False):
     cutoff=datetime.fromisoformat(cutoff_date)
     rows=[m for m in all_matches if m.date < cutoff]
     if reproduce_j6:
-        # Frozen J6 snapshot contained 891 rows and omitted this rescheduled game.
         rows=[m for m in rows if not (m.date.date().isoformat()=="2025-02-05" and
              m.home=="CF Pachuca" and m.away=="Club León" and m.hg==1 and m.ag==2)]
     return rows
@@ -266,8 +256,6 @@ def main():
     all_matches=load_all()
     base=[m for m in all_matches if m.date < datetime(2025,1,10)]
     print("COUNTS",json.dumps({"all":len(all_matches),"pre_2025_01_10":len(base)}),flush=True)
-
-    # J6 reproduction gate
     tr6=training_for(all_matches,"2025-02-07",True)
     print("J6_TRAINING_COUNT",len(tr6),flush=True)
     m6=ensemble(tr6,datetime(2025,2,7))
@@ -286,8 +274,6 @@ def main():
     if not gate_pass:
         print("STOP: J6 reproduction gate failed; J8 forbidden.",flush=True)
         sys.exit(2)
-
-    # J8 only after gate passes. Effective-date chronology, no nominal-round filter.
     tr8=training_for(all_matches,"2025-02-21")
     print("J8_TRAINING_COUNT",len(tr8),flush=True)
     if len(tr8)!=913:
