@@ -16,5 +16,5 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: python -m pip install --upgrade pip numpy scipy
-      - name: Run optimizer/rho diagnostics
-        run: python exp003_recovery/diagnose_optimizer.py
+      - name: Run fast fixed-rho diagnostic
+        run: python exp003_recovery/diagnose_fixed_rho_fast.py
