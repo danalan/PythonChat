@@ -9,7 +9,8 @@ status=finished. Historical replay artifacts are never rewritten by this script.
 Governance invariants:
 - no wall-clock time is consulted by fitting or eligibility logic;
 - cutoff is mandatory and threaded through every data/fitting function;
-- deduplication uses fixed source precedence, not incidental sort order;
+- a runtime cutoff assertion rejects any future row even if an upstream filter fails;
+- deduplication uses canonical America/Mexico_City fixture date + fixed source precedence;
 - the normalized training snapshot is SHA-256 hashed in every output.
 """
 from __future__ import annotations
@@ -50,6 +51,12 @@ def parse_cutoff(value: str) -> datetime:
         cutoff=cutoff.astimezone(TZ).replace(tzinfo=None)
     return cutoff
 
+def canonical_local_naive(dt: datetime) -> datetime:
+    """Normalize all datetimes to America/Mexico_City wall time before keying/hashing."""
+    if dt.tzinfo is None:
+        return dt
+    return dt.astimezone(TZ).replace(tzinfo=None)
+
 def canon(x):
     s=str(x).strip(); return TEAM_MAP.get(s,s)
 
@@ -85,8 +92,7 @@ def kickoff_local(raw):
         dt=datetime.fromisoformat(str(raw).replace("Z","+00:00"))
     except Exception:
         return None
-    if dt.tzinfo is None: return dt
-    return dt.astimezone(TZ).replace(tzinfo=None)
+    return canonical_local_naive(dt)
 
 def fetch_tournament(year,tournament,cutoff):
     season=quote(f"{year} - {tournament}")
@@ -116,19 +122,29 @@ def source_rank(source):
     prefix=str(source).split(":",1)[0]
     return SOURCE_PRECEDENCE.get(prefix,0)
 
+def fixture_key(m):
+    dt=canonical_local_naive(m.date)
+    return (dt.date().isoformat(),m.home,m.away)
+
 def dedupe_rows(rows):
-    """Deduplicate by fixture identity; highest fixed source precedence wins."""
+    """Deduplicate by canonical local-date fixture identity; fixed source precedence wins."""
     chosen={}
-    for m in sorted(rows,key=lambda z:(z.date,z.home,z.away,source_rank(z.source),z.source)):
-        key=(m.date.date().isoformat(),m.home,m.away)
+    for m in sorted(rows,key=lambda z:(canonical_local_naive(z.date),z.home,z.away,source_rank(z.source),z.source)):
+        key=fixture_key(m)
         prior=chosen.get(key)
         if prior is None or source_rank(m.source)>=source_rank(prior.source):
             chosen[key]=m
-    return sorted(chosen.values(),key=lambda z:(z.date,z.home,z.away,z.source))
+    return sorted(chosen.values(),key=lambda z:(canonical_local_naive(z.date),z.home,z.away,z.source))
+
+def assert_rows_before_cutoff(rows,cutoff):
+    offenders=[m for m in rows if canonical_local_naive(m.date)>=cutoff]
+    if offenders:
+        sample=[(canonical_local_naive(m.date).isoformat(),m.home,m.away,m.source) for m in offenders[:5]]
+        raise AssertionError(f"temporal leakage: {len(offenders)} row(s) at/after cutoff {cutoff.isoformat()}: {sample}")
 
 def training_snapshot_hash(rows):
     normalized=[{
-        "date":m.date.isoformat(),"home":m.home,"away":m.away,
+        "datetime_local":canonical_local_naive(m.date).isoformat(),"home":m.home,"away":m.away,
         "hg":int(m.hg),"ag":int(m.ag),"source":m.source
     } for m in rows]
     payload=json.dumps(normalized,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode("utf-8")
@@ -143,7 +159,9 @@ def load_training(cutoff):
         if label not in names: raise RuntimeError(f"FotMob season not advertised: {label}; available tail={sorted(names)[-8:]}")
         rr=fetch_tournament(year,t,cutoff); rows.extend(rr); counts[label]=len(rr)
     ded=dedupe_rows(rows)
-    return [m for m in ded if m.date<cutoff],counts
+    eligible=[m for m in ded if canonical_local_naive(m.date)<cutoff]
+    assert_rows_before_cutoff(eligible,cutoff)
+    return eligible,counts
 
 def market_probs(M):
     n=M.shape[0]; h=float(np.tril(M,-1).sum()); d=float(np.trace(M)); a=float(np.triu(M,1).sum())
@@ -158,6 +176,7 @@ def market_probs(M):
 
 def run_forward(cutoff,targets=TARGETS):
     rows,counts=load_training(cutoff)
+    assert_rows_before_cutoff(rows,cutoff)
     teams={m.home for m in rows}|{m.away for m in rows}; missing=sorted({x for f in targets for x in f if x not in teams})
     if missing: raise ValueError("Missing target teams: "+repr(missing))
     models=base.ensemble(rows,cutoff)
@@ -165,7 +184,8 @@ def run_forward(cutoff,targets=TARGETS):
       "model":"Vn-2026-DC-ENSEMBLE","parent":"V0.1R_RECOVERED",
       "cutoff":cutoff.isoformat(),"training_count":len(rows),
       "training_snapshot_sha256":training_snapshot_hash(rows),
-      "source_precedence":SOURCE_PRECEDENCE,"source_counts":counts,"fixtures":[]}
+      "source_precedence":SOURCE_PRECEDENCE,"dedupe_timezone":"America/Mexico_City",
+      "source_counts":counts,"fixtures":[]}
     for home,away in targets:
         M,meta=base.avg_matrix(models,home,away)
         mat=[[round(float(M[i,j]),10) for j in range(8)] for i in range(8)]
@@ -179,7 +199,7 @@ def main(argv=None):
     cutoff=parse_cutoff(argv[1])
     out,rows=run_forward(cutoff)
     print("VN_SOURCE_COUNTS",json.dumps(out["source_counts"],ensure_ascii=False),flush=True)
-    print("VN_CUTOFF",cutoff.isoformat(),"TRAINING",len(rows),"LAST_MATCH",max(m.date for m in rows).isoformat(),"SNAPSHOT",out["training_snapshot_sha256"],flush=True)
+    print("VN_CUTOFF",cutoff.isoformat(),"TRAINING",len(rows),"LAST_MATCH",max(canonical_local_naive(m.date) for m in rows).isoformat(),"SNAPSHOT",out["training_snapshot_sha256"],flush=True)
     print("VN_FORWARD_OUTPUT",json.dumps(out,ensure_ascii=False,sort_keys=True),flush=True)
 
 if __name__=="__main__": main()
