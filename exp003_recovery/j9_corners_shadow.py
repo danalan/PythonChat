@@ -27,7 +27,9 @@ LEAGUE_SLUG="liga-mx"
 CUTOFF=datetime(2025,2,25,0,0,0)
 SEASONS=(("2024/2025","Apertura"),("2024/2025","Clausura"))
 HEADERS={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36","Accept":"text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8","Accept-Language":"es-MX,es;q=0.9"}
-TEAM_MAP=fw.TEAM_MAP
+TEAM_MAP={**fw.TEAM_MAP,
+          "Atlético de San Luis":"Atlético San Luis",
+          "Atletico de San Luis":"Atlético San Luis"}
 FIXTURES=[
  ("J9R-01","UANL Tigres","FC Juárez"),
  ("J9R-02","Mazatlán FC","CF Monterrey"),
@@ -104,10 +106,8 @@ def main():
     missing=sorted(target_teams-available)
     if missing:
         print("J9_CORNERS_TEAM_DIAGNOSTIC",json.dumps({
-          "training_rows":len(rows),
-          "detail_failures":len(failures),
-          "missing":missing,
-          "available":sorted(available)
+          "training_rows":len(rows),"detail_failures":len(failures),
+          "missing":missing,"available":sorted(available)
         },ensure_ascii=False,sort_keys=True),flush=True)
         raise SystemExit("corner target-team mapping incomplete")
     out=[]
@@ -119,9 +119,11 @@ def main():
     out=sorted(out,key=lambda x:(-x["p_model"],x["fixture_id"],x["market"]))
     payload={
       "model":"C0.1-CORNERS-NB-ENSEMBLE","status":"SHADOW_ONLY",
-      "cutoff":CUTOFF.isoformat(),"training_rows":len(rows),"detail_failures":len(failures),
+      "cutoff":CUTOFF.isoformat(),"eligible_schedule_rows":len(fixtures),
+      "training_rows":len(rows),"detail_failures":len(failures),
+      "coverage":len(rows)/max(1,len(fixtures)),
       "seasons":[f"{a} - {b}" for a,b in SEASONS],"top30":out[:30],
-      "warning":"No historical odds/EV claim; conditional home-away corner independence is an explicit C0.1 limitation."
+      "warning":"No historical odds/EV claim; conditional home-away corner independence and incomplete source coverage are explicit C0.1 limitations."
     }
     print("J9_CORNERS_OUTPUT",json.dumps(payload,ensure_ascii=False,sort_keys=True),flush=True)
     if failures: print("J9_CORNERS_FAILURE_SAMPLE",json.dumps(failures[:10],ensure_ascii=False),flush=True)
