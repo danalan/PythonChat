@@ -13,19 +13,23 @@
   },
   "legacy_canonical_comparator": {
     "legs": [
-      {"selection":"Tigres-Juarez DOUBLE_CHANCE_12","result":"WIN","score":"0-1"},
-      {"selection":"Pachuca-Puebla DOUBLE_CHANCE_12","result":"WIN","score":"2-1"},
-      {"selection":"Tijuana team Over 0.5 goals","result":"WIN","score":"4-2"}
+      {"selection":"Tigres-Juarez DOUBLE_CHANCE_12","p_model":0.7952766627885928,"result":"WIN","score":"0-1"},
+      {"selection":"Pachuca-Puebla DOUBLE_CHANCE_12","p_model":0.7898178091162174,"result":"WIN","score":"2-1"},
+      {"selection":"Tijuana team Over 0.5 goals","p_model":0.741371479015473,"result":"WIN","score":"4-2"}
     ],
     "legs_won": 3,
     "legs_total": 3,
+    "mean_leg_brier": 0.05099230334344212,
     "parlay_result": "WIN",
     "p_joint_frozen": 0.46567297530376645,
+    "parlay_brier": 0.28550536932072934,
+    "cumulative_j1_j9_legacy": {"legs_won":23,"legs_total":27,"parlays_won":6,"parlays_total":9},
     "profitability": "NOT_CALCULABLE_HISTORICAL_ODDS_UNAVAILABLE"
   },
   "expanded_shadow_portfolio": [
     {
       "ticket_id":"J9-SAFE-A",
+      "p_joint_frozen":0.8031062188244295,
       "result":"LOSS",
       "legs":[
         {"selection":"Tigres 1X","p_model":0.887041034273074,"result":"LOSS","score":"0-1","error_tag":"HIGH_CONFIDENCE_SIDE_MISS_DESPITE_STRONG_CONTEXT_SUPPORT"},
@@ -35,6 +39,7 @@
     },
     {
       "ticket_id":"J9-SAFE-B",
+      "p_joint_frozen":0.8495611256408065,
       "result":"WIN",
       "legs":[
         {"selection":"Pachuca team Over 0.5 goals","p_model":0.8889423067032857,"result":"WIN","score":"2-1"},
@@ -44,6 +49,7 @@
     },
     {
       "ticket_id":"J9-RISK-C",
+      "p_joint_frozen_approx":0.32758485163643514,
       "result":"LOSS",
       "legs":[
         {"selection":"Pumas ML","p_model_approx":0.3887526413,"result":"LOSS","score":"Tijuana 4-2 Pumas","error_tag":"AGGRESSIVE_SIDE_MISS; PRE-CUTOFF CONTEXT HAD BOTH SUPPORT AND SUSPENSION/TURNAROUND CONTRADICTIONS"},
@@ -55,15 +61,18 @@
   "expanded_summary": {
     "atomic_legs_won":4,
     "atomic_legs_total":6,
+    "mean_atomic_brier":0.16432957477737953,
     "parlays_won":1,
     "parlays_total":3,
+    "mean_parlay_brier":0.2583077628848663,
     "stake_analogy_mxn":{"safe_a":80,"safe_b":80,"risk_c":40},
     "simulated_pnl":"NOT_COMPUTED_BECAUSE_HISTORICAL_BOOK_ODDS_WERE_NOT_FROZEN",
     "main_learning":[
       "Strong context agreement does not protect a high-probability side market from upset risk: Tigres 1X failed at p=0.887.",
       "The second conservative ticket succeeded with two high-probability goal/team-total events aligned with context.",
       "The first selected experimental corner leg won, but 54.55% historical source coverage and exact-count provider disagreement remain major data-quality constraints.",
-      "Do not infer that corners are validated from one hit or that Pumas-side context is useless from one miss. Both create hypotheses only."
+      "Do not infer that corners are validated from one hit or that Pumas-side context is useless from one miss. Both create hypotheses only.",
+      "Expanded branch metrics are not comparable one-for-one with the legacy branch because market universe and ticket construction changed at J9. Keep ledgers separate."
     ]
   },
   "status":"SETTLED_APPEND_ONLY"
