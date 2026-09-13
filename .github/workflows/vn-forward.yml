@@ -6,6 +6,8 @@ on:
       - 'exp003_recovery/vn2026_forward.py'
       - 'exp003_recovery/dual_track_governance.py'
       - 'exp003_recovery/test_dual_track_integrity.py'
+      - 'exp003_recovery/corner_shadow_v0_1.py'
+      - 'exp003_recovery/test_corner_shadow.py'
       - '.github/workflows/vn-forward.yml'
 jobs:
   run-forward:
@@ -20,5 +22,8 @@ jobs:
       - name: Run dual-track integrity regression tests
         working-directory: exp003_recovery
         run: python test_dual_track_integrity.py
+      - name: Run C0.1 corners shadow tests
+        working-directory: exp003_recovery
+        run: python test_corner_shadow.py
       - name: Run cutoff-safe forward model
         run: python exp003_recovery/vn2026_forward.py 2026-09-13T16:10:00
