@@ -1,6 +1,5 @@
 import math, json
 from datetime import datetime
-import numpy as np
 from scipy.special import gammaln
 import parlay_replay_dc as p
 
@@ -24,4 +23,11 @@ by={(r['fixture_id'],r['contract']):r for r in cand}
 legs=[]
 for fid,c,t in p.J6_TARGET:
     got=by[(fid,c)]['probability']; legs.append({'fixture_id':fid,'contract':c,'target':t,'got':got,'abs_error':abs(got-t)})
-print('EXP_DECAY_DIAGNOSTIC',json.dumps({'legs':legs,'selected':[(r['fixture_id'],r['contract'],r['probability']) for r in sel]},ensure_ascii=False),flush=True)
+all_focus=[]
+for fid,date,home,away in p.J6_FIXTURES:
+    row={'fixture_id':fid,'home':home,'away':away}
+    for c in ['DOUBLE_CHANCE|12','TEAM_TOTALS|HOME_OVER_0.5','TEAM_TOTALS|HOME_UNDER_2.5']:
+        r=by[(fid,c)]
+        row[c]={'p':r['probability'],'gate':r['primary_gate'],'score':r['research_score']}
+    all_focus.append(row)
+print('EXP_DECAY_DIAGNOSTIC',json.dumps({'legs':legs,'selected':[(r['fixture_id'],r['contract'],r['probability']) for r in sel],'focus':all_focus},ensure_ascii=False),flush=True)
