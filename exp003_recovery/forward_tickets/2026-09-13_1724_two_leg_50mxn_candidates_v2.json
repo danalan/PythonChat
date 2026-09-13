@@ -1,0 +1,78 @@
+{
+  "freeze_type": "FORWARD_CANDIDATE_PRE_EXECUTION",
+  "supersedes": "2026-09-13_1724_two_leg_50mxn_candidates.json",
+  "created_local": "2026-09-13T17:24:03-06:00",
+  "timezone": "America/Mexico_City",
+  "governance": "DTL-1.2",
+  "model": "Vn-2026-DC-ENSEMBLE",
+  "model_status": "SHADOW_MODEL_SIGNAL",
+  "parent": "V0.1R_RECOVERED",
+  "model_cutoff_local": "2026-09-13T16:10:00",
+  "training_count": 1416,
+  "training_snapshot_sha256": "8d99472a8cad8282688438ce9b1285d2e5278e07a69586f7d1fb34a75a1192d1",
+  "real_execution_confirmed": false,
+  "real_if_executed_tag": "REAL_USER_OVERRIDE",
+  "requested_total_real_stake_mxn": 100,
+  "tickets": [
+    {
+      "ticket": "PARLAY_CONSERVADOR",
+      "stake_mxn": 50,
+      "legs": [
+        {
+          "fixture": "Chivas Guadalajara vs Pumas UNAM",
+          "market": "Match total Under 4.5 goals",
+          "caliente_odds": 1.181,
+          "p_model": 0.8745313001162609,
+          "context": "PASS: broad total cap; contextual H2H/form does not create CONTRADICT_HIGH at 4.5"
+        },
+        {
+          "fixture": "Santos Laguna vs FC Juarez",
+          "market": "FC Juarez or Draw (X2)",
+          "caliente_odds": 1.80,
+          "p_model": 0.5734159257147662,
+          "context": "PASS with uncertainty: Juarez poor-form/manager-change regime increases variance but does not veto X2"
+        }
+      ],
+      "combined_odds_reference": 2.1258,
+      "ticket_model_p_independence_approx": 0.5014701750227037,
+      "model_fair_odds": 1.9941365405324964,
+      "model_ev_reference": 0.06602529806326385,
+      "potential_return_mxn": 106.29,
+      "potential_profit_mxn": 56.29,
+      "status": "FROZEN_CANDIDATE_NOT_EXECUTED"
+    },
+    {
+      "ticket": "PARLAY_ARRIESGADO",
+      "stake_mxn": 50,
+      "legs": [
+        {
+          "fixture": "Chivas Guadalajara vs Pumas UNAM",
+          "market": "Chivas Guadalajara team goals Under 2.5",
+          "caliente_odds": 1.42,
+          "p_model": 0.7882861042465759,
+          "context": "PASS: model-supported and no CONTRADICT_HIGH veto after contextual review"
+        },
+        {
+          "fixture": "Santos Laguna vs FC Juarez",
+          "market": "FC Juarez moneyline",
+          "caliente_odds_standard": 3.50,
+          "caliente_odds_improved": 3.65,
+          "p_model": 0.3161597989526686,
+          "context": "HIGH VARIANCE but not vetoed; aggressive risk intentionally concentrated in match result"
+        }
+      ],
+      "combined_odds_reference_improved": 5.183,
+      "combined_odds_reference_standard": 4.97,
+      "ticket_model_p_independence_approx": 0.24922437623577978,
+      "model_fair_odds": 4.012448601953549,
+      "model_ev_reference_improved": 0.29172994203004654,
+      "model_ev_reference_standard": 0.2386451498918254,
+      "potential_return_mxn_improved": 259.15,
+      "potential_profit_mxn_improved": 209.15,
+      "potential_return_mxn_standard": 248.50,
+      "potential_profit_mxn_standard": 198.50,
+      "status": "FROZEN_CANDIDATE_NOT_EXECUTED"
+    }
+  ],
+  "portfolio_warning": "Both tickets retain directional exposure to Juarez. Conservative uses X2; aggressive uses ML. Chivas exposures differ: broad match U4.5 vs team U2.5."
+}
