@@ -13,30 +13,22 @@ Temporal rules:
 - no current/future season aggregate statistics are used
 """
 from __future__ import annotations
-import json, re, time
+import json, time
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import quote
 from zoneinfo import ZoneInfo
 import requests
 import corner_shadow_v0_1 as cm
+import vn2026_forward as fw
 
 TZ=ZoneInfo("America/Mexico_City")
 LEAGUE_ID=230
+LEAGUE_SLUG="liga-mx"
 CUTOFF=datetime(2025,2,25,0,0,0)
-SEASONS=("2024/2025 - Apertura","2024/2025 - Clausura")
-HEADERS={"User-Agent":"Mozilla/5.0","Accept":"application/json,text/plain,*/*","Accept-Language":"es-MX,es;q=0.9"}
-TEAM_MAP={
- "CF America":"CF América","América":"CF América","America":"CF América",
- "Atlas":"Atlas Guadalajara","Atlas FC":"Atlas Guadalajara",
- "Atletico de San Luis":"Atlético San Luis","Atlético San Luis":"Atlético San Luis","San Luis":"Atlético San Luis",
- "Cruz Azul":"Cruz Azul","FC Juarez":"FC Juárez","FC Juárez":"FC Juárez","Juarez":"FC Juárez","Juárez":"FC Juárez",
- "Chivas":"Deportivo Guadalajara","Guadalajara":"Deportivo Guadalajara","CD Guadalajara":"Deportivo Guadalajara",
- "Leon":"Club León","León":"Club León","Monterrey":"CF Monterrey","Necaxa":"Club Necaxa",
- "Pachuca":"CF Pachuca","Puebla":"Puebla FC","Pumas":"Pumas UNAM","Pumas UNAM":"Pumas UNAM","UNAM":"Pumas UNAM",
- "Queretaro FC":"Gallos Blancos","Querétaro FC":"Gallos Blancos","Queretaro":"Gallos Blancos","Querétaro":"Gallos Blancos",
- "Santos Laguna":"Santos Laguna","Tigres":"UANL Tigres","Tigres UANL":"UANL Tigres","UANL":"UANL Tigres",
- "Tijuana":"Club Tijuana","Toluca":"Deportivo Toluca","Mazatlan FC":"Mazatlán FC","Mazatlán FC":"Mazatlán FC",
-}
+SEASONS=(("2024/2025","Apertura"),("2024/2025","Clausura"))
+HEADERS={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122 Safari/537.36","Accept":"application/json,text/plain,*/*","Accept-Language":"es-MX,es;q=0.9"}
+TEAM_MAP=fw.TEAM_MAP
 FIXTURES=[
  ("J9R-01","UANL Tigres","FC Juárez"),
  ("J9R-02","Mazatlán FC","CF Monterrey"),
@@ -62,12 +54,33 @@ def get_json(url,params=None,tries=3):
             last=e; time.sleep(0.5*(attempt+1))
     raise RuntimeError(f"request failed {url} {params}: {last}")
 
-def season_fixtures(season):
-    data=get_json("https://www.fotmob.com/api/leagues",{"id":LEAGUE_ID,"season":season})
-    raw=((data.get("fixtures") or {}).get("allMatches") or [])
+def season_fixtures(year,tournament):
+    """Get historical schedule from the same public page-data route used by Vn.
+
+    The old /api/leagues route currently returns 404. We deliberately use page
+    __NEXT_DATA__ only to identify match IDs and pre-cutoff kickoffs; no season
+    aggregate statistics enter the corner fit.
+    """
+    season=quote(f"{year} - {tournament}")
+    urls=[
+      f"https://www.fotmob.com/es/leagues/{LEAGUE_ID}/matches/{LEAGUE_SLUG}?season={season}",
+      f"https://www.fotmob.com/es/leagues/{LEAGUE_ID}/fixtures/{LEAGUE_SLUG}?season={season}",
+    ]
+    raw=[]; last=None
+    for url in urls:
+        try:
+            data=fw.get_next(url)
+            props=data.get("props",{}).get("pageProps",{})
+            raw=fw.extract_matches(props)
+            if raw: break
+        except Exception as e:
+            last=e; raw=[]
+    if not raw:
+        raise RuntimeError(f"No FotMob page fixtures for {year} {tournament}: {last}")
     out=[]
+    label=f"{year} - {tournament}"
     for m in raw:
-        st=m.get("status") or {}; utc=st.get("utcTime") or m.get("utcTime")
+        st=m.get("status") or {}; utc=st.get("utcTime") or m.get("utcTime") or m.get("date")
         if not utc: continue
         try: dt=local_dt(utc)
         except Exception: continue
@@ -75,7 +88,7 @@ def season_fixtures(season):
         if not finished or dt>=CUTOFF: continue
         mid=m.get("id"); home=(m.get("home") or {}).get("name"); away=(m.get("away") or {}).get("name")
         if mid and home and away:
-            out.append((int(mid),dt,canon(home),canon(away),season))
+            out.append((int(mid),dt,canon(home),canon(away),label))
     return out
 
 def fetch_one(row):
@@ -86,8 +99,7 @@ def fetch_one(row):
 
 def main():
     fixtures=[]
-    for s in SEASONS: fixtures.extend(season_fixtures(s))
-    # Deduplicate by match id before detail calls.
+    for year,t in SEASONS: fixtures.extend(season_fixtures(year,t))
     fixtures=list({r[0]:r for r in fixtures}.values())
     rows=[]; failures=[]
     with ThreadPoolExecutor(max_workers=6) as ex:
@@ -110,7 +122,7 @@ def main():
     payload={
       "model":"C0.1-CORNERS-NB-ENSEMBLE","status":"SHADOW_ONLY",
       "cutoff":CUTOFF.isoformat(),"training_rows":len(rows),"detail_failures":len(failures),
-      "seasons":SEASONS,"top30":out[:30],
+      "seasons":[f"{a} - {b}" for a,b in SEASONS],"top30":out[:30],
       "warning":"No historical odds/EV claim; conditional home-away corner independence is an explicit C0.1 limitation."
     }
     print("J9_CORNERS_OUTPUT",json.dumps(payload,ensure_ascii=False,sort_keys=True),flush=True)
