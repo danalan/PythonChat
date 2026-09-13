@@ -1,0 +1,10 @@
+{
+  "proposal_type": "GOVERNANCE_ARCHITECTURE_PATCH",
+  "parent_version": "DTL-1.1",
+  "proposed_version": "DTL-1.2",
+  "timestamp": "2026-09-13T16:53:20-06:00",
+  "rationale": "Implement DTL-1.2 after Fiscal re-audit: replace flat calibration residual with Wilson size-aware gate; count distinct matches rather than correlated legs; define flat-unit shadow staking and require drawdown backtest before promotion; keep drift thresholds logging-only until historical calibration with winsorized log-loss plus Brier cross-check; structurally exclude REAL_USER_OVERRIDE from promotion evidence; add runtime cutoff assertion and canonical America/Mexico_City dedup/hash normalization; explicitly separate signal-computable markets from real-stake eligibility.",
+  "rationale_sha256": "8b9ddfe3f11fc5087845f4b6355e9b27b4cfe86b5c2412e2d70ee7fa9dec08c9",
+  "storage_policy": "APPEND_ONLY_CREATE_ONCE_NO_UPDATE",
+  "validation_outcomes_known_at_registration": false
+}
