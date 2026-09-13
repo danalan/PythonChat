@@ -1,0 +1,53 @@
+{
+  "experiment": "EXP-003",
+  "round": "J8",
+  "engine_version": "V0.1R_RECOVERED",
+  "freeze_manifest_commit": "bb94427c08bc6ba29167a729bc424a01bff30f53",
+  "settled_legs": [
+    {
+      "fixture_id": "J8-02",
+      "match": "Puebla FC vs Club Tijuana",
+      "contract": "TEAM_TOTALS|HOME_OVER_0.5",
+      "model_probability": 0.8099001228635929,
+      "final_score": "2-0",
+      "outcome": 1,
+      "leg_result": "HIT",
+      "brier": 0.036137963287277065
+    },
+    {
+      "fixture_id": "J8-06",
+      "match": "Deportivo Guadalajara vs CF Pachuca",
+      "contract": "TEAM_TOTALS|HOME_UNDER_2.5",
+      "model_probability": 0.8186225404758873,
+      "final_score": "2-1",
+      "outcome": 1,
+      "leg_result": "HIT",
+      "brier": 0.03289778282342112,
+      "recovery_flag": "closest selected leg to upper probability gate"
+    },
+    {
+      "fixture_id": "J8-05",
+      "match": "CF Monterrey vs Atletico San Luis",
+      "contract": "DOUBLE_CHANCE|12",
+      "model_probability": 0.7854572393334451,
+      "final_score": "3-1",
+      "outcome": 1,
+      "leg_result": "HIT",
+      "brier": 0.04602859615442664
+    }
+  ],
+  "legs_hit": 3,
+  "legs_total": 3,
+  "mean_leg_brier": 0.03835478075504161,
+  "joint_probability_independence": 0.5207601102660012,
+  "parlay_result": "HIT",
+  "parlay_brier": 0.2296708719122553,
+  "cumulative_after_j8": {
+    "descriptive_legs_hit": 20,
+    "descriptive_legs_total": 24,
+    "descriptive_parlays_hit": 5,
+    "descriptive_parlays_total": 8
+  },
+  "interpretation": "J8 outcome supports continuation of the recovered bridge but does not validate positive EV, ROI, or calibration by itself. No parameter changes are authorized from this single round.",
+  "next_round": "J9"
+}
