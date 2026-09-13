@@ -16,5 +16,5 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: python -m pip install --upgrade pip numpy scipy
-      - name: Diagnose decay convention against frozen J6
-        run: python exp003_recovery/diagnose_decay.py
+      - name: Compare Dixon-Coles formulations against frozen J6
+        run: python exp003_recovery/diagnose_formulations.py
