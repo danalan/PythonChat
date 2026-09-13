@@ -16,5 +16,5 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: python -m pip install --upgrade pip numpy scipy
-      - name: Run quick rho gate
-        run: python exp003_recovery/quick_rho_gate.py
+      - name: Run fold rho fingerprint diagnostic
+        run: python exp003_recovery/diagnose_fold_rhos.py
