@@ -1,0 +1,74 @@
+{
+  "freeze_type": "PRE_OUTCOME_HISTORICAL_J9",
+  "freeze_version": "J9_DUAL_PORTFOLIO_V1",
+  "model_cutoff": "2025-02-25T00:00:00",
+  "context_cutoff": "2025-02-25T18:59:00-06:00",
+  "goal_model": "V0.1R_RECOVERED",
+  "corner_model": "C0.1-CORNERS-NB-ENSEMBLE_SHADOW",
+  "goal_training_rows": 922,
+  "corner_training_rows": 132,
+  "corner_eligible_schedule_rows": 242,
+  "corner_source_coverage": 0.5454545454545454,
+  "historical_odds_status": "UNAVAILABLE_INCOMPLETE",
+  "profitability_claim_allowed": false,
+  "researcher_outcome_exposure_label": "RETROSPECTIVE_OUTCOME_EXPOSED_RESEARCHER_BUT_PIPELINE_CUTOFF_CLEAN",
+  "legacy_canonical_comparator": {
+    "purpose": "Preserve J1-J8 comparability under old three-leg selection rule; not the new user portfolio format.",
+    "legs": [
+      {"fixture":"UANL Tigres vs FC Juárez","market":"DOUBLE_CHANCE_12","p_model":0.7952766627885928,"context":"SUPPORT / no veto"},
+      {"fixture":"CF Pachuca vs Puebla FC","market":"DOUBLE_CHANCE_12","p_model":0.7898178091162174,"context":"SUPPORT Pachuca side / no veto"},
+      {"fixture":"Club Tijuana vs Pumas UNAM","market":"TIJUANA_TEAM_OVER_0.5_GOALS","p_model":0.741371479015473,"context":"MIXED; Tijuana poor form but no direct scoring veto"}
+    ],
+    "p_joint_independence_across_matches": 0.46567297530376645,
+    "fair_odds_model_only": 2.1474297479850164
+  },
+  "expanded_shadow_portfolio": [
+    {
+      "ticket_id":"J9-SAFE-A",
+      "class":"CONSERVATIVE_SHADOW",
+      "stake_analogy_mxn":80,
+      "legs":[
+        {"fixture":"UANL Tigres vs FC Juárez","market":"TIGRES_1X","p_model":0.887041034273074,"model_status":"EXPANDED_GOAL_SIGNAL","context":"SUPPORT_STRONG: 11 straight H2H without loss, 4/4 Clausura home wins, 13 straight Liga/Liguilla home matches unbeaten; Ibáñez absence is low contradiction only for scoring/ML."},
+        {"fixture":"Deportivo Toluca vs Gallos Blancos","market":"TOLUCA_1X","p_model":0.9053766261022764,"model_status":"EXPANDED_GOAL_SIGNAL","context":"SUPPORT_STRONG: Toluca entered with one loss through eight and after 4-0 away win; Querétaro arrived after 1-0 loss."}
+      ],
+      "p_joint_independence_across_matches":0.8031062188244295,
+      "fair_odds_model_only":1.2451653051121676,
+      "verdict":"FREEZE_SHADOW"
+    },
+    {
+      "ticket_id":"J9-SAFE-B",
+      "class":"CONSERVATIVE_SHADOW",
+      "stake_analogy_mxn":80,
+      "legs":[
+        {"fixture":"CF Pachuca vs Puebla FC","market":"PACHUCA_TEAM_OVER_0.5_GOALS","p_model":0.8889423067032857,"model_status":"GOAL_SCORE_MATRIX_READOUT","context":"SUPPORT: Puebla missing Emanuel Gularte and Luis Quiñones according to pre-cutoff reporting."},
+        {"fixture":"Deportivo Toluca vs Gallos Blancos","market":"QUERETARO_TEAM_UNDER_2.5_GOALS","p_model":0.9556988335851317,"model_status":"EXPANDED_GOAL_SIGNAL","context":"SUPPORT: Toluca form/side advantage; no accepted pre-cutoff contradiction."}
+      ],
+      "p_joint_independence_across_matches":0.8495611256408065,
+      "fair_odds_model_only":1.1770783405911147,
+      "verdict":"FREEZE_SHADOW"
+    },
+    {
+      "ticket_id":"J9-RISK-C",
+      "class":"AGGRESSIVE_EXPERIMENTAL_SHADOW",
+      "stake_analogy_mxn":40,
+      "legs":[
+        {"fixture":"Club Tijuana vs Pumas UNAM","market":"PUMAS_ML","p_model_approx_from_score_matrix_0_7":0.3887526413,"truncation_mass":0.0002251763,"model_status":"EXPANDED_GOAL_SIGNAL","context":"SUPPORT_MODERATE: Pumas unbeaten in five recent league H2Hs; Tijuana five straight league losses and poor home return; Quispe suspension/short turnaround are contradictions."},
+        {"fixture":"Deportivo Toluca vs Gallos Blancos","market":"TOLUCA_HOME_CORNERS_OVER_3.5","p_model":0.8426562724846884,"model_status":"C0.1_CORNERS_SHADOW_ONLY","context":"NEUTRAL_TO_SUPPORT: strong Toluca match-state/attacking context may create pressure, but no validated context-to-corners adjustment is applied."}
+      ],
+      "p_joint_approx_independence_across_matches":0.32758485163643514,
+      "fair_odds_model_only_approx":3.0526442080717278,
+      "verdict":"FREEZE_EXPERIMENTAL_SHADOW",
+      "corner_warning":"C0.1 source coverage is only 54.55%; this leg is deliberately exploratory and must not be labeled conservative or production-ready."
+    }
+  ],
+  "portfolio_policy": {
+    "target_weekly_real_cap_mxn":200,
+    "default_future_stake_split_mxn":[80,80,40],
+    "two_legs_per_parlay":true,
+    "different_match_per_leg":true,
+    "cap_not_quota":true,
+    "context_required":true,
+    "corners_compete_not_forced":true
+  },
+  "notes": "Historical fair odds are model-only reference numbers. Without contemporaneous Caliente prices, no historical edge, EV, ROI or profit claim is permitted. Settlement may begin only after this freeze commit exists."
+}
