@@ -1,0 +1,76 @@
+{
+  "track": "HISTORICAL_J9_SECOND_SLATE",
+  "context_cutoff": "2025-02-25T18:59:00-06:00",
+  "rule": "Only evidence public before context_cutoff is used. Referee/stadium/kickoff are metadata unless a validated historical effect model exists.",
+  "fixtures": [
+    {
+      "fixture_id": "J9R-01",
+      "match": "UANL Tigres vs FC Juárez",
+      "venue": "Estadio Universitario",
+      "referee": "Daniel Quintero Huitrón",
+      "context": [
+        {"signal":"SUPPORT","targets":["TIGRES_1X","JUAREZ_TEAM_LOW","TIGRES_SIDE"],"evidence":"Tigres was 8W-3D and unbeaten in 11 league meetings vs Juárez; won all four Clausura 2025 home matches; 13 straight Liga/Liguilla home matches unbeaten; seven goals conceded in eight and never more than one conceded in a match."},
+        {"signal":"CONTRADICT_LOW","targets":["TIGRES_TEAM_GOALS_OVER","TIGRES_ML"],"evidence":"Nicolás Ibáñez was ruled out with a muscular issue hours before kickoff, removing the nominal number nine."}
+      ],
+      "verdict":"SUPPORT_STRONG_SIDE_MARKETS; MIXED_TEAM_GOALS"
+    },
+    {
+      "fixture_id": "J9R-02",
+      "match": "Mazatlán FC vs CF Monterrey",
+      "venue": "Estadio El Encanto",
+      "referee": "Abraham de Jesús Quirarte Contreras",
+      "context": [
+        {"signal":"SUPPORT","targets":["MONTERREY_FORM"],"evidence":"Monterrey entered after a 3-1 win over Atlético San Luis and was seeking a third consecutive league win."},
+        {"signal":"CONTRADICT_HIGH","targets":["MONTERREY_ML","MONTERREY_TEAM_GOALS_OVER"],"evidence":"Sergio Ramos and Óliver Torres did not travel, officially reported as load management in the congested schedule."}
+      ],
+      "verdict":"MIXED; AVOID USING MONTERREY FAVORITISM AS A STANDALONE CONTEXT CONFIRMATION"
+    },
+    {
+      "fixture_id": "J9R-03",
+      "match": "Club Tijuana vs Pumas UNAM",
+      "venue": "Estadio Caliente",
+      "referee": "Salvador Pérez Villalobos",
+      "context": [
+        {"signal":"SUPPORT","targets":["PUMAS_SIDE","TIJUANA_TEAM_LOW"],"evidence":"Pumas was unbeaten in the five most recent league meetings vs Tijuana (2W-3D); Tijuana had lost five straight Liga MX matches and was the third-worst home team with 3 of 12 available home points."},
+        {"signal":"CONTRADICT_LOW","targets":["PUMAS_SIDE"],"evidence":"Pumas came from the capital derby in the prior round on a shorter turnaround; Piero Quispe had been sent off in that match, creating an availability concern."}
+      ],
+      "verdict":"SUPPORT_MODERATE_PUMAS_OR_TIJUANA_LOW; NOT A BLIND ML CONFIRMATION"
+    },
+    {
+      "fixture_id": "J9R-04",
+      "match": "CF Pachuca vs Puebla FC",
+      "venue": "Estadio Hidalgo",
+      "referee": "Mario Terrazas Chávez",
+      "context": [
+        {"signal":"SUPPORT","targets":["PACHUCA_TEAM_GOAL","PACHUCA_SIDE"],"evidence":"Puebla coach Pablo Guede had disclosed that Emanuel Gularte and Luis Quiñones, important pieces in defense and attack, would remain unavailable longer than expected with no return date."}
+      ],
+      "verdict":"SUPPORT_MODERATE_PACHUCA_SCORING; DO_NOT NUMERICALLY ALTER P_MODEL"
+    },
+    {
+      "fixture_id": "J9R-05",
+      "match": "Deportivo Toluca vs Gallos Blancos",
+      "venue": "Estadio Nemesio Diez",
+      "referee": "Martín Molina Astorga",
+      "context": [
+        {"signal":"SUPPORT","targets":["TOLUCA_1X","TOLUCA_ML","QUERETARO_TEAM_LOW"],"evidence":"All underlying match results were already known before cutoff: Toluca entered after a 4-0 away win and had only one league loss through eight matches; Querétaro entered after a 1-0 loss. Recent H2H also leaned Toluca, but H2H is secondary."}
+      ],
+      "verdict":"SUPPORT_STRONG_TOLUCA_SIDE"
+    },
+    {
+      "fixture_id": "J9R-06",
+      "match": "Atlético San Luis vs Deportivo Guadalajara",
+      "venue": "Estadio Alfonso Lastras Ramírez",
+      "referee": "Ismael Rosario López Peñuelas",
+      "context": [
+        {"signal":"NEUTRAL","targets":["ALL"],"evidence":"No sufficiently strong roster/tactical item with verified publication before the global context cutoff was accepted. Known prior results are already represented in model state."}
+      ],
+      "verdict":"NEUTRAL_CONTEXT"
+    }
+  ],
+  "unmodeled_metadata_policy": {
+    "referee": "Record now; no p adjustment until referee tendencies are validated pre-cutoff on historical data.",
+    "stadium": "Global home advantage is already in Dixon-Coles; venue-specific surface/altitude remains a candidate future feature, not an ad-hoc adjustment.",
+    "kickoff_time": "Record now; no p adjustment until empirical evidence establishes a stable effect.",
+    "h2h": "Secondary context only; downweight when managers/personnel/system differ materially."
+  }
+}
