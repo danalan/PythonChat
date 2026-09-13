@@ -1,0 +1,66 @@
+{
+  "experiment": "EXP-003",
+  "competition": "Liga MX Clausura 2025",
+  "round": "J8",
+  "engine_version": "V0.1R_RECOVERED",
+  "legacy_boundary": "V0.1_LEGACY through J7; V0.1R_RECOVERED begins J8",
+  "historical_cutoff": "2025-02-21T18:59:00-06:00",
+  "training_rows": 913,
+  "recovery_uncertainty_envelope": 0.003,
+  "recovery_basis": {
+    "j6_max_observed_probability_discrepancy": 0.0028828646348277864,
+    "fold_rho_fingerprint": "reconstructed core fitting closely matches archived fold rho values",
+    "rule": "Any candidate within 0.003 of a probability gate is quarantined; no gate ambiguity was found among the J8 top screen."
+  },
+  "legacy_primary_contract_universe": [
+    "DOUBLE_CHANCE|12",
+    "TEAM_TOTALS|HOME_OVER_0.5",
+    "TEAM_TOTALS|HOME_UNDER_2.5"
+  ],
+  "selection_rules": {
+    "minimum_probability": 0.60,
+    "support_lower": 0.1775147928994082,
+    "support_upper": 0.8224852071005917,
+    "distinct_matches": true,
+    "max_same_family": 2,
+    "ranking": "probability - abs(archived aggregate_error)"
+  },
+  "frozen_legs": [
+    {
+      "fixture_id": "J8-02",
+      "match": "Puebla FC vs Club Tijuana",
+      "contract": "TEAM_TOTALS|HOME_OVER_0.5",
+      "probability": 0.8099001228635929,
+      "aggregate_error_abs": 0.0046173990890806,
+      "research_score": 0.8052827237745123,
+      "nearest_gate_distance": 0.012585084236998778,
+      "context_verdict": "MAINTAIN",
+      "context_basis": "Pre-match reporting showed Tijuana on four straight losses and 17 goals conceded in seven; Puebla had scored 11 goals across its prior three home wins over Tijuana."
+    },
+    {
+      "fixture_id": "J8-06",
+      "match": "Deportivo Guadalajara vs CF Pachuca",
+      "contract": "TEAM_TOTALS|HOME_UNDER_2.5",
+      "probability": 0.8186225404758873,
+      "aggregate_error_abs": 0.013866299032083,
+      "research_score": 0.8047562414438043,
+      "nearest_gate_distance": 0.0038626666247043584,
+      "context_verdict": "MAINTAIN_WITH_RECOVERY_FLAG",
+      "context_basis": "Chivas entered with only two wins in seven while Pachuca was higher in the table; no pre-kickoff evidence justified a veto. Candidate remains above the 0.003 recovery uncertainty envelope but is the closest leg to the upper gate."
+    },
+    {
+      "fixture_id": "J8-05",
+      "match": "CF Monterrey vs Atletico San Luis",
+      "contract": "DOUBLE_CHANCE|12",
+      "probability": 0.7854572393334451,
+      "aggregate_error_abs": 0.0011004523947688,
+      "research_score": 0.7843567869386764,
+      "nearest_gate_distance": 0.03702796776714656,
+      "context_verdict": "MAINTAIN",
+      "context_basis": "Monterrey arrived from a 4-2 win, Sergio Ramos was confirmed to debut, and San Luis entered near the bottom after another loss."
+    }
+  ],
+  "joint_probability_independence": 0.5207601102660012,
+  "status": "FROZEN_BEFORE_SETTLEMENT",
+  "prohibitions": ["do not call V0.1R byte-identical to V0.1", "no ROI claim without historical odds", "no post-kickoff information in selection"]
+}
