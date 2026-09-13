@@ -16,5 +16,5 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: python -m pip install --upgrade pip numpy scipy
-      - name: Run J1 baseline reproduction diagnostic
-        run: python exp003_recovery/diagnose_j1_gate.py
+      - name: Test kickoff-time preservation
+        run: python exp003_recovery/diagnose_times.py
