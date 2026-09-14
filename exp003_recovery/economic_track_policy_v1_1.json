@@ -1,0 +1,26 @@
+{
+  "policy_version": "ECONOMIC_TRACK_POLICY_V1_1",
+  "date": "2026-09-14",
+  "scope": "EXP-003 historical simulated economic track and forward decision governance",
+  "supersedes": "economic_track_policy_v1 forced-200 participation rule only",
+  "rules": {
+    "mandatory_participation_each_jornada": true,
+    "zero_stake_jornada_allowed_when_bankroll_positive": false,
+    "max_total_stake_mxn_per_jornada": 200.0,
+    "default_total_stake_fraction_of_bankroll": 0.10,
+    "stake_rule": "total stake should normally be min(200 MXN, 10% of available bankroll), with positive exposure every jornada while bankroll > 0",
+    "ticket_count": "flexible",
+    "three_parlays_required": false,
+    "forced_full_200_required": false,
+    "selection_priority": "rank best available opportunities using frozen model probability, pre-cutoff price and preregistered context diagnostics; do not manufacture weak tickets solely to spend the cap",
+    "historical_money_class": "SIMULATED_PAPER",
+    "forward_money_class": "REAL only after user confirms manual execution"
+  },
+  "rationale": [
+    "The user requires every jornada to generate at least one wager so the learning process does not skip market opportunities.",
+    "The prior forced 200 MXN rule created unnecessary exposure when weak tickets were included only to fill a quota.",
+    "Dynamic sizing preserves continuous participation while reducing bankroll ruin risk.",
+    "Participation obligation and stake-size discipline are separate decisions."
+  ],
+  "governance_note": "This changes staking/portfolio construction only. It does not retune V0.1R probabilities, Dixon-Coles parameters, decay, rho, market support interval or Economic Selector V1 scoring logic."
+}
