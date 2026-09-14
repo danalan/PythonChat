@@ -1,0 +1,34 @@
+{
+  "jornada":"Clausura 2025 J17",
+  "status":"FROZEN_PRE_SETTLEMENT",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "bankroll_before_mxn":281.6632934966258,
+  "selector":"ECONOMIC_SELECTOR_V1",
+  "model_cutoff":"2025-04-18T00:00:00",
+  "price_cutoff":"2025-04-18T18:59:00-06:00",
+  "researcher_outcome_exposed":false,
+  "selection_mode":"MECHANICAL_MODEL_PLUS_PRE_CUTOFF_PRICE",
+  "fixture_discovery":"SCORE_SUPPRESSED_CANONICAL_DATA",
+  "shadow_diagnostic_tags_do_not_affect_selection":[
+    {"ticket":"P1","fixture":"Puebla vs Necaxa","selection":"Puebla scores >=1","tag":"PUEBLA_LOW_ATTACK_RISK","reason":"J12-J16 diagnostic recorded five consecutive Puebla-related scoring/total misses. Prospective shadow tag only; no p_model or selection change."},
+    {"ticket":"P3","fixture":"Tigres vs Pumas","selection":"Tigres or Draw","tag":"DOUBLE_CHANCE_CALIBRATION_RISK","reason":"J11-J15 diagnostic found double-chance 6/10 versus mean p about 76.4%. Prospective shadow tag only; no p_model or selection change."}
+  ],
+  "tickets":{
+    "P1":{"stake_mxn":80.0,"proxy_decimal":3.1938328262597113,"model_ev_at_proxy":0.3700478230090136,"ev_disciplined_eligible":true,"legs":[
+      {"fixture":"Atletico San Luis vs Pachuca","market":"ATLETICO_SAN_LUIS_SCORE_1PLUS","p_model":0.8035493237343055,"proxy_decimal":1.4878074790608597},
+      {"fixture":"Puebla vs Necaxa","market":"PUEBLA_SCORE_1PLUS","p_model":0.7696635654578814,"proxy_decimal":1.4217113828534635},
+      {"fixture":"America vs Mazatlan","market":"TOTAL_U3.5","p_model":0.6936015874702037,"proxy_decimal":1.5099202240359637}
+    ]},
+    "P2":{"stake_mxn":80.0,"proxy_decimal":3.3810569361456557,"model_ev_at_proxy":0.25553229489327234,"ev_disciplined_eligible":true,"legs":[
+      {"fixture":"Toluca vs Cruz Azul","market":"TOTAL_O1.5","p_model":0.8043676403100606,"proxy_decimal":1.4201074022375262},
+      {"fixture":"Juarez vs Queretaro","market":"QUERETARO_SCORE_1PLUS","p_model":0.6070270795580277,"proxy_decimal":1.7576454556351162},
+      {"fixture":"Leon vs Monterrey","market":"TOTAL_O1.5","p_model":0.760523692021648,"proxy_decimal":1.3545655226163467}
+    ]},
+    "P3":{"stake_mxn":40.0,"proxy_decimal":2.2820091883217217,"model_ev_at_proxy":-0.014614644358803996,"ev_disciplined_eligible":false,"legs":[
+      {"fixture":"Tigres vs Pumas","market":"DOUBLE_CHANCE_1X_TIGRES_OR_DRAW","p_model":0.8074355670710658,"proxy_decimal":1.2522935779816513},
+      {"fixture":"Atlas vs Guadalajara","market":"TOTAL_O1.5","p_model":0.671072298074306,"proxy_decimal":1.4971727236368315},
+      {"fixture":"Santos Laguna vs Tijuana","market":"TIJUANA_SCORE_1PLUS","p_model":0.7969141304556111,"proxy_decimal":1.217136619363813}
+    ]}
+  },
+  "integrity_note":"J17 fixture discovery used score-suppressed canonical data and odds pages were opened directly from contemporaneous pregame sources. No J17 result was consumed before this freeze. Shadow diagnostic tags were preregistered before settlement and do not alter selection or probabilities."
+}
