@@ -1,0 +1,64 @@
+{
+  "experiment": "EXP-003",
+  "track": "ECONOMIC_TRACK_V1",
+  "jornada": "Clausura 2025 J12",
+  "status": "FROZEN_PRE_SETTLEMENT",
+  "integrity_class": "MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "integrity_note": "The human researcher was accidentally exposed to J12 result snippets while locating the schedule. Selection itself is deterministic and was produced only by j12_model_only_replay + frozen pre-cutoff price snapshot + ECONOMIC_SELECTOR_V1. No context, remembered outcome or discretionary veto/replacement is permitted. This jornada can update the bankroll simulation but cannot serve as blind evidence for feature/model promotion.",
+  "model_cutoff": "2025-03-14T00:00:00",
+  "context_price_cutoff": "2025-03-14T18:59:00-06:00",
+  "training_count": 946,
+  "model_script_commit": "fd9123932b85e22f67fa709dff75c6c3dbcb9cb5",
+  "model_workflow_commit": "c24eff58e2d4ff3376e2b4e317bc7f64545d5f83",
+  "model_workflow_run": 34811139065,
+  "economic_proxy_extension_commit": "5d3bb0f239d07f1ed5694041ae16a1a3ecc5bd91",
+  "price_snapshot_commit": "8e41e1aa7f25d207146ff3cb3280bb42017af729",
+  "selector_commit": "4c1aa20a228e1ca16457bd1e7461f836168ef15d",
+  "selector_workflow_commit": "204d0d8d056ef9b7d59c385be0c595eb8275d891",
+  "selector_workflow_run": 34811468971,
+  "selector_rule": "One leg per fixture. Supported MARKET_PROXY_V1 markets only. p_model in [0.60,0.8224852071]. For each fixture choose max model EV at proxy price. Rank nine fixture winners by EV; P1 receives ranks 1/3/5, P2 ranks 2/4/6, P3 ranks 7/8/9. No fixture repeats and no replacements after freeze.",
+  "opening_bankroll_mxn": 936.1049945028351,
+  "forced_stakes_mxn": {"P1": 80.0, "P2": 80.0, "P3": 40.0},
+  "tickets": {
+    "P1": {
+      "stake_mxn": 80.0,
+      "p_model_joint_independence_approx": 0.3355719331314431,
+      "proxy_decimal": 4.102641852517127,
+      "break_even_proxy": 0.2437453806469755,
+      "model_ev_at_proxy": 0.37673145739513747,
+      "ev_disciplined_eligible": true,
+      "legs": [
+        {"fixture_id":"J12-05","fixture":"Cruz Azul vs Atletico San Luis","market":"AWAY_TEAM_OVER_0.5","meaning":"Atletico San Luis scores at least 1","p_model":0.6285725991075737,"market_fair_probability":0.4838258923936183,"proxy_decimal":1.9664728311285098,"model_ev_at_proxy":0.23607093853687622},
+        {"fixture_id":"J12-03","fixture":"Puebla vs Toluca","market":"HOME_TEAM_OVER_0.5","meaning":"Puebla scores at least 1","p_model":0.7034661941163165,"market_fair_probability":0.6277613518043339,"proxy_decimal":1.520837895331085,"model_ev_at_proxy":0.06985804609642732},
+        {"fixture_id":"J12-08","fixture":"Pumas vs Monterrey","market":"TOTAL_OVER_1.5","meaning":"Match has at least 2 goals","p_model":0.7589041937886087,"market_fair_probability":0.6990084887232239,"proxy_decimal":1.3718061011541227,"model_ev_at_proxy":0.041069403230664214}
+      ]
+    },
+    "P2": {
+      "stake_mxn": 80.0,
+      "p_model_joint_independence_approx": 0.40939966886416057,
+      "proxy_decimal": 2.986854183746959,
+      "break_even_proxy": 0.33480040821595,
+      "model_ev_at_proxy": 0.22281711377153757,
+      "ev_disciplined_eligible": true,
+      "legs": [
+        {"fixture_id":"J12-09","fixture":"Pachuca vs Tijuana","market":"AWAY_TEAM_OVER_0.5","meaning":"Tijuana scores at least 1","p_model":0.7155698890439415,"market_fair_probability":0.5989568878175356,"proxy_decimal":1.596095261031232,"model_ev_at_proxy":0.14211770883967945},
+        {"fixture_id":"J12-02","fixture":"Necaxa vs Leon","market":"AWAY_TEAM_OVER_0.5","meaning":"Leon scores at least 1","p_model":0.7624091614081004,"market_fair_probability":0.6886342236725764,"proxy_decimal":1.369704365818216,"model_ev_at_proxy":0.04427515692048001,"price_temporal_confidence":"MEDIUM_DATE_CLEAN_TIME_UNKNOWN"},
+        {"fixture_id":"J12-07","fixture":"Atlas vs America","market":"TOTAL_OVER_1.5","meaning":"Match has at least 2 goals","p_model":0.7504250510421634,"market_fair_probability":0.7060382799077938,"proxy_decimal":1.3662443311487609,"model_ev_at_proxy":0.025263971938375374}
+      ]
+    },
+    "P3": {
+      "stake_mxn": 40.0,
+      "p_model_joint_independence_approx": 0.3677997780525344,
+      "proxy_decimal": 2.6924710039229742,
+      "break_even_proxy": 0.37140604245801856,
+      "model_ev_at_proxy": -0.009709762344245587,
+      "ev_disciplined_eligible": false,
+      "legs": [
+        {"fixture_id":"J12-04","fixture":"Tigres vs Santos","market":"HOME_TEAM_UNDER_2.5","meaning":"Tigres scores at most 2","p_model":0.6328893221724802,"market_fair_probability":0.6005650162673521,"proxy_decimal":1.6033431929813466,"model_ev_at_proxy":0.014738786615824617},
+        {"fixture_id":"J12-06","fixture":"Juarez vs Guadalajara","market":"TOTAL_UNDER_3.5","meaning":"Match has at most 3 goals","p_model":0.8204625281685622,"market_fair_probability":0.7841338495494563,"proxy_decimal":1.2204360593664907,"model_ev_at_proxy":0.0013220547359085177},
+        {"fixture_id":"J12-01","fixture":"Queretaro vs Mazatlan","market":"DOUBLE_CHANCE_1X","meaning":"Queretaro wins or draws","p_model":0.708312560807347,"market_fair_probability":0.6728528341832662,"proxy_decimal":1.3759717314487634,"model_ev_at_proxy":-0.02538193929900734}
+      ]
+    }
+  },
+  "selection_summary": "P1 and P2 are positive-EV under the frozen standardized proxy; P3 is slightly negative-EV but remains in the FORCED_200_TRACK. The EV-disciplined counterfactual would stake P1/P2 and hold the P3 40 MXN."
+}
