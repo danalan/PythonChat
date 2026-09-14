@@ -1,0 +1,67 @@
+{
+  "experiment": "EXP-003",
+  "policy_id": "V2.2_FRACTIONAL_KELLY_SHADOW",
+  "status": "SHADOW_ONLY_NO_SELECTION_AUTHORITY",
+  "effective_from": "Apertura 2025 J4 replay",
+  "canonical_track": "V2.1_WINDOWED_100 remains unchanged",
+  "decision": {
+    "accepted_audit_verdict": "REVISE_WITH_MODIFICATIONS",
+    "removed_rules": [
+      "No p_model >= 0.65 admission gate",
+      "No minimum odds 1.40-1.45 admission gate",
+      "No mandatory 60/30/10 capital allocation",
+      "No automatic longshot stake penalty based only on price"
+    ],
+    "reporting_taxonomy_only": ["CORE", "VALUE", "LONGSHOT"],
+    "bucket_capital_minimums": false
+  },
+  "canonical_v2_1_frozen": {
+    "raw_model_selection_authority": true,
+    "kelly_gate_min": 0.05,
+    "fixed_stake_map_mxn": {
+      "kelly_gte_0.15": 20,
+      "kelly_gte_0.08": 15,
+      "kelly_gte_0.05": 10
+    },
+    "weekly_or_jornada_risk_ceiling_mxn": 100,
+    "secondary_two_leg_parlay_stake_mxn": 5
+  },
+  "shadow_variants": [
+    {"id": "FK15", "fraction_of_full_kelly": 0.15},
+    {"id": "FK20", "fraction_of_full_kelly": 0.20},
+    {"id": "FK25", "fraction_of_full_kelly": 0.25}
+  ],
+  "shadow_sizing_formula": "stake = bankroll_open * full_kelly_fraction * fractional_kelly_multiplier",
+  "full_kelly_formula_decimal_odds": "f_star = (p_model * decimal_odds - 1) / (decimal_odds - 1)",
+  "admission_rule": "Shadow variants inherit the canonical candidate set and Kelly>=0.05 gate; they change sizing only unless a future preregistered test explicitly changes admission.",
+  "tail_uncertainty_discount": {
+    "status": "NOT_ACTIVE_HYPOTHESIS_ONLY",
+    "reason": "Insufficient evidence that calibration error is concentrated in probability tails. Must be demonstrated before use."
+  },
+  "metrics": [
+    "P&L",
+    "ROI",
+    "log bankroll growth",
+    "green_jornada_rate",
+    "maximum_drawdown",
+    "P&L volatility",
+    "Sharpe-like ratio",
+    "Sortino-like ratio",
+    "risk_of_ruin_estimate",
+    "calibration_by_probability_bucket",
+    "hit_rate_conditioned_on_odds",
+    "turnover",
+    "CLV_when_archived_closing_price_is_available"
+  ],
+  "promotion_rule": {
+    "early_checkpoint": "15-20 jornadas is diagnostic only",
+    "preferred_evidence_horizon": "approximately 40-50 jornadas or an equivalently credible sample of qualifying bets",
+    "no_single_metric_promotion": true,
+    "green_rate_cannot_override_growth": true
+  },
+  "notes": [
+    "Probability, nominal odds and favorite/underdog labels never determine stake in isolation.",
+    "No bucket is required to receive capital in any jornada.",
+    "The objective is to test whether dynamic fractional Kelly reduces drawdown/volatility without unacceptable loss of bankroll growth."
+  ]
+}
