@@ -1,0 +1,72 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J7",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED_BEFORE_SELECTION_FREEZE",
+  "promotion_eligibility":false,
+  "selection_freeze_commit":"ff192078bb536669beaa7da38b069b1ac13a72dd",
+  "results":[
+    {"fixture_id":"AP25J7-01","home":"FC Juárez","away":"Mazatlán FC","home_goals":1,"away_goals":0},
+    {"fixture_id":"AP25J7-02","home":"Atlético San Luis","away":"Deportivo Toluca","home_goals":1,"away_goals":3},
+    {"fixture_id":"AP25J7-03","home":"Puebla FC","away":"CF Monterrey","home_goals":2,"away_goals":4},
+    {"fixture_id":"AP25J7-04","home":"Club León","away":"Gallos Blancos","home_goals":3,"away_goals":0},
+    {"fixture_id":"AP25J7-05","home":"Deportivo Guadalajara","away":"Cruz Azul","home_goals":1,"away_goals":2},
+    {"fixture_id":"AP25J7-06","home":"Santos Laguna","away":"UANL Tigres","home_goals":0,"away_goals":1},
+    {"fixture_id":"AP25J7-07","home":"CF América","away":"CF Pachuca","home_goals":2,"away_goals":0},
+    {"fixture_id":"AP25J7-08","home":"Pumas UNAM","away":"Atlas Guadalajara","home_goals":1,"away_goals":0},
+    {"fixture_id":"AP25J7-09","home":"Club Tijuana","away":"Club Necaxa","home_goals":3,"away_goals":0}
+  ],
+  "canonical_v2_1":{
+    "opening_bankroll_mxn":510.3012159211471,
+    "tickets":[
+      {"fixture_id":"AP25J7-03","selection":"CF Monterrey ML","stake":20.0,"decimal":1.86,"result":"WIN","return":37.2,"pnl":17.2},
+      {"fixture_id":"AP25J7-01","selection":"Mazatlán FC ML","stake":15.0,"decimal":5.50,"result":"LOSS","return":0.0,"pnl":-15.0},
+      {"fixture_id":"AP25J7-02","selection":"Atlético San Luis ML","stake":10.0,"decimal":5.00,"result":"LOSS","return":0.0,"pnl":-10.0},
+      {"fixture_id":"AP25J7-07","selection":"CF América ML","stake":20.0,"decimal":1.83,"result":"WIN","return":36.6,"pnl":16.6},
+      {"selection":"Parlay CF Monterrey ML + Mazatlán FC ML","stake":5.0,"decimal":10.23,"result":"LOSS","return":0.0,"pnl":-5.0}
+    ],
+    "single_record":{"wins":2,"losses":2},
+    "parlay_record":{"wins":0,"losses":1},
+    "single_only_pnl":8.8,
+    "total_stake":70.0,
+    "total_return":73.8,
+    "pnl":3.8,
+    "roi_on_stake":0.05428571428571428,
+    "log_bankroll_growth":0.007418698664031342,
+    "closing_bankroll_mxn":514.1012159211471
+  },
+  "fractional_kelly_v2_2_shadow":{
+    "FK15":{"opening_bankroll":511.20159944558327,"total_stake":47.0479722130029,"total_return":53.42965467268685,"pnl":6.381682459683951,"roi_on_stake":0.1356420300282402,"log_bankroll_growth":0.012406411545048146,"closing_bankroll":517.5832819052672},
+    "FK20":{"opening_bankroll":513.9092776017159,"total_stake":61.36091657521396,"total_return":71.61687356515534,"pnl":10.255956989941389,"roi_on_stake":0.16714152203658844,"log_bankroll_growth":0.01976022064783693,"closing_bankroll":524.1652345916573},
+    "FK25":{"opening_bankroll":516.6124019445112,"total_stake":75.8217134734266,"total_return":89.9919662010003,"pnl":14.170252727573697,"roi_on_stake":0.18688911234563402,"log_bankroll_growth":0.02705973698035656,"closing_bankroll":530.782654672085}
+  },
+  "selected_single_calibration":{
+    "n":4,
+    "raw_brier":0.10282880161571913,
+    "shadow_brier":0.15816067962979008,
+    "raw_log_loss":0.38281842081490175,
+    "shadow_log_loss":0.5062894727104488,
+    "winner":"RAW_V0_1R_ON_J7"
+  },
+  "cumulative_selected_single_calibration_j1_to_j7":{
+    "n":28,
+    "raw_brier":0.21243139616983409,
+    "shadow_brier":0.22208623639310393,
+    "raw_log_loss":0.6152634228848337,
+    "shadow_log_loss":0.6364718317047132,
+    "winner":"RAW_V0_1R_CUMULATIVE"
+  },
+  "diagnostic_lessons":[
+    "Canonical J7 finished positive at +MXN3.80 with two of four singles winning.",
+    "The primary singles alone produced +MXN8.80; the fixed MXN5 secondary parlay reduced the green jornada to +MXN3.80.",
+    "All three fractional-Kelly shadows outperformed canonical on J7, with FK25 gaining +MXN14.17, but this is a single contaminated jornada and cannot promote V2.2.",
+    "Monterrey and América were higher-probability positive-EV selections and both won; Mazatlán and San Luis were lower-probability positive-EV selections and both lost. This illustrates variance, not a basis for a favorite-only rule.",
+    "Tigres, León and Pumas had relatively high nominal model probabilities but were rejected because the frozen quoted prices produced negative EV or failed the Kelly gate. Their outcomes cannot retroactively change the admission rule.",
+    "Raw calibration materially beat the shrinkage shadow on the four selected J7 singles and extends its cumulative J1-J7 lead, but no calibration promotion is allowed because J7 was outcome-exposed before selection freeze.",
+    "J7 remains permanently NO-PROMOTION; no threshold, staking, calibration, price-policy or context rule may be promoted from this jornada."
+  ],
+  "result_source_notes":[
+    "EL PAÍS and TUDN agree on the complete J7 score grid used here, including Tijuana 3-0 Necaxa.",
+    "A Mediotiempo article listed Tijuana 2-0 Necaxa while its resulting table and two independent detailed sources support 3-0; 3-0 is canonical."
+  ]
+}
