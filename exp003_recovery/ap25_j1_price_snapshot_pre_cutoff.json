@@ -1,0 +1,69 @@
+{
+  "experiment": "EXP-003",
+  "tournament": "Apertura 2025",
+  "jornada": "J1",
+  "status": "FROZEN_PRE_SETTLEMENT_PRICE_SNAPSHOT",
+  "money_type": "SIMULATED_PAPER_ONLY",
+  "integrity_note": "Researcher was accidentally outcome-exposed during schedule search; this snapshot uses only sources published before the relevant betting window and cannot be used for feature promotion.",
+  "price_policy": "Prefer exact archived target-market prices. OddsChecker/Progol historical quoted prices are Class B clean archived quotes unless a named sportsbook is identified.",
+  "sources": {
+    "oddschecker_progol_2289": {
+      "published": "2025-07-11T07:43:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2289",
+      "price_class": "B"
+    },
+    "oddschecker_puebla_atlas": {
+      "published": "2025-07-10T18:03:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-puebla-vs-atlas-11-07-25",
+      "price_class": "B"
+    },
+    "oddschecker_juarez_america": {
+      "published": "2025-07-10T18:02:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-juarez-fc-vs-america-11-07-25",
+      "price_class": "B",
+      "note": "Dedicated article quoted America 2.01, but primary snapshot uses the later universal Progol 2289 quote 1.95 for consistency across the Friday/Saturday slate."
+    },
+    "oddschecker_pachuca_monterrey": {
+      "published": "2025-07-12T18:03:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-pachuca-vs-monterrey-13-07-25",
+      "price_class": "B"
+    }
+  },
+  "markets": [
+    {"fixture_id":"AP25J1-01","fixture":"Puebla FC vs Atlas Guadalajara","window":"FRIDAY","market":"1X2_HOME","decimal":2.63,"source":"oddschecker_puebla_atlas"},
+    {"fixture_id":"AP25J1-01","fixture":"Puebla FC vs Atlas Guadalajara","window":"FRIDAY","market":"1X2_DRAW","decimal":3.30,"source":"oddschecker_puebla_atlas"},
+    {"fixture_id":"AP25J1-01","fixture":"Puebla FC vs Atlas Guadalajara","window":"FRIDAY","market":"1X2_AWAY","decimal":2.75,"source":"oddschecker_puebla_atlas"},
+    {"fixture_id":"AP25J1-01","fixture":"Puebla FC vs Atlas Guadalajara","window":"FRIDAY","market":"TOTAL_O2.5","decimal":2.10,"source":"oddschecker_puebla_atlas"},
+    {"fixture_id":"AP25J1-01","fixture":"Puebla FC vs Atlas Guadalajara","window":"FRIDAY","market":"DC_X2","decimal":1.61,"source":"oddschecker_puebla_atlas"},
+
+    {"fixture_id":"AP25J1-02","fixture":"FC Juárez vs CF América","window":"FRIDAY","market":"1X2_HOME","decimal":4.45,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-02","fixture":"FC Juárez vs CF América","window":"FRIDAY","market":"1X2_DRAW","decimal":3.50,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-02","fixture":"FC Juárez vs CF América","window":"FRIDAY","market":"1X2_AWAY","decimal":1.95,"source":"oddschecker_progol_2289"},
+
+    {"fixture_id":"AP25J1-03","fixture":"Club Tijuana vs Gallos Blancos","window":"FRIDAY","market":"1X2_HOME","decimal":1.62,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-03","fixture":"Club Tijuana vs Gallos Blancos","window":"FRIDAY","market":"1X2_DRAW","decimal":4.33,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-03","fixture":"Club Tijuana vs Gallos Blancos","window":"FRIDAY","market":"1X2_AWAY","decimal":5.60,"source":"oddschecker_progol_2289"},
+
+    {"fixture_id":"AP25J1-04","fixture":"Deportivo Toluca vs Club Necaxa","window":"SATURDAY","market":"1X2_HOME","decimal":1.62,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-04","fixture":"Deportivo Toluca vs Club Necaxa","window":"SATURDAY","market":"1X2_DRAW","decimal":4.20,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-04","fixture":"Deportivo Toluca vs Club Necaxa","window":"SATURDAY","market":"1X2_AWAY","decimal":5.25,"source":"oddschecker_progol_2289"},
+
+    {"fixture_id":"AP25J1-05","fixture":"Santos Laguna vs Pumas UNAM","window":"SATURDAY","market":"1X2_HOME","decimal":4.33,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-05","fixture":"Santos Laguna vs Pumas UNAM","window":"SATURDAY","market":"1X2_DRAW","decimal":3.58,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-05","fixture":"Santos Laguna vs Pumas UNAM","window":"SATURDAY","market":"1X2_AWAY","decimal":1.93,"source":"oddschecker_progol_2289"},
+
+    {"fixture_id":"AP25J1-06","fixture":"Cruz Azul vs Mazatlán FC","window":"SATURDAY","market":"1X2_HOME","decimal":1.33,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-06","fixture":"Cruz Azul vs Mazatlán FC","window":"SATURDAY","market":"1X2_DRAW","decimal":5.30,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-06","fixture":"Cruz Azul vs Mazatlán FC","window":"SATURDAY","market":"1X2_AWAY","decimal":10.00,"source":"oddschecker_progol_2289"},
+
+    {"fixture_id":"AP25J1-07","fixture":"CF Pachuca vs CF Monterrey","window":"SUNDAY","market":"1X2_HOME","decimal":2.25,"source":"oddschecker_pachuca_monterrey"},
+    {"fixture_id":"AP25J1-07","fixture":"CF Pachuca vs CF Monterrey","window":"SUNDAY","market":"1X2_DRAW","decimal":3.60,"source":"oddschecker_pachuca_monterrey"},
+    {"fixture_id":"AP25J1-07","fixture":"CF Pachuca vs CF Monterrey","window":"SUNDAY","market":"1X2_AWAY","decimal":3.10,"source":"oddschecker_pachuca_monterrey"},
+    {"fixture_id":"AP25J1-07","fixture":"CF Pachuca vs CF Monterrey","window":"SUNDAY","market":"BTTS_YES","decimal":1.72,"source":"oddschecker_pachuca_monterrey"},
+    {"fixture_id":"AP25J1-07","fixture":"CF Pachuca vs CF Monterrey","window":"SUNDAY","market":"DC_X2","decimal":1.67,"source":"oddschecker_pachuca_monterrey"},
+
+    {"fixture_id":"AP25J1-08","fixture":"Club León vs Atlético San Luis","window":"SUNDAY","market":"1X2_HOME","decimal":1.62,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-08","fixture":"Club León vs Atlético San Luis","window":"SUNDAY","market":"1X2_DRAW","decimal":4.20,"source":"oddschecker_progol_2289"},
+    {"fixture_id":"AP25J1-08","fixture":"Club León vs Atlético San Luis","window":"SUNDAY","market":"1X2_AWAY","decimal":5.30,"source":"oddschecker_progol_2289"}
+  ]
+}
