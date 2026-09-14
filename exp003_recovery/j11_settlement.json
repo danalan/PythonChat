@@ -1,0 +1,103 @@
+{
+  "experiment": "EXP-003",
+  "track": "HISTORICAL_J11_SETTLEMENT",
+  "status": "SETTLED",
+  "settled_at": "2026-09-13 America/Mexico_City",
+  "target_matchday": "Liga MX Clausura 2025 J11",
+  "result_sources": {
+    "2025-03-07": "https://espndeportes.espn.com/futbol/resultados/_/liga/mex.1/fecha/20250307",
+    "2025-03-08": "https://espndeportes.espn.com/futbol/resultados/_/liga/mex.1/fecha/20250308",
+    "tijuana_atlas": "https://www.espn.com/soccer/match/_/gameId/725141/atlas-tijuana",
+    "santos_leon": "https://www.espn.com/soccer/match/_/gameId/725140/leon-santos"
+  },
+  "results": [
+    {"fixture": "Atletico San Luis vs FC Juarez", "score": "1-0"},
+    {"fixture": "Tigres vs Queretaro", "score": "1-0"},
+    {"fixture": "Puebla vs Pumas", "score": "1-3"},
+    {"fixture": "Toluca vs Necaxa", "score": "5-2"},
+    {"fixture": "Pachuca vs Mazatlan", "score": "1-1"},
+    {"fixture": "Cruz Azul vs Monterrey", "score": "1-1"},
+    {"fixture": "Chivas vs America", "score": "0-0"},
+    {"fixture": "Santos vs Leon", "score": "2-1"},
+    {"fixture": "Tijuana vs Atlas", "score": "3-4"}
+  ],
+  "clean_model_only_freeze": {
+    "source": "exp003_recovery/j11_model_only_pre_context_freeze.json",
+    "eligibility": "CLEAN_COMPARATOR",
+    "tickets": [
+      {
+        "label": "P1_LEGACY_COMPARATOR",
+        "result": "WIN",
+        "legs_hit": 3,
+        "legs_total": 3,
+        "joint_probability_independence_approx": 0.5262130906982543,
+        "parlay_brier": 0.22447403542570063,
+        "parlay_log_loss": 0.6420490328855929,
+        "legs": [
+          {"fixture": "Toluca vs Necaxa", "selection": "DOUBLE_CHANCE_12", "p": 0.8206736115015422, "y": 1, "result": "HIT", "brier": 0.032158},
+          {"fixture": "Tijuana vs Atlas", "selection": "TIJUANA_TEAM_OVER_0.5", "p": 0.8149211105473204, "y": 1, "result": "HIT", "brier": 0.034254},
+          {"fixture": "Tigres vs Queretaro", "selection": "DOUBLE_CHANCE_12", "p": 0.786820398363899, "y": 1, "result": "HIT", "brier": 0.045446}
+        ]
+      },
+      {
+        "label": "P2_SHADOW_DIVERSIFIED",
+        "result": "LOSS",
+        "legs_hit": 1,
+        "legs_total": 3,
+        "joint_probability_independence_approx": 0.542821009728224,
+        "parlay_brier": 0.2946546486023687,
+        "parlay_log_loss": 0.782680301153715,
+        "legs": [
+          {"fixture": "Atletico San Luis vs FC Juarez", "selection": "TOTAL_OVER_1.5", "p": 0.8154226125172503, "y": 0, "result": "MISS", "brier": 0.664914},
+          {"fixture": "Puebla vs Pumas", "selection": "PUMAS_TEAM_UNDER_2.5", "p": 0.8097566706884642, "y": 0, "result": "MISS", "brier": 0.655706},
+          {"fixture": "Chivas vs America", "selection": "TOTAL_UNDER_3.5", "p": 0.822089996283824, "y": 1, "result": "HIT", "brier": 0.031652}
+        ]
+      },
+      {
+        "label": "P3_SHADOW_DIVERSIFIED",
+        "result": "LOSS",
+        "legs_hit": 2,
+        "legs_total": 3,
+        "joint_probability_independence_approx": 0.45990151345558217,
+        "parlay_brier": 0.21150940207873503,
+        "parlay_log_loss": 0.6160037735638186,
+        "legs": [
+          {"fixture": "Pachuca vs Mazatlan", "selection": "DOUBLE_CHANCE_12", "p": 0.7630248775544741, "y": 0, "result": "MISS", "brier": 0.582207},
+          {"fixture": "Cruz Azul vs Monterrey", "selection": "CRUZ_AZUL_TEAM_OVER_0.5", "p": 0.7585129665370646, "y": 1, "result": "HIT", "brier": 0.058316},
+          {"fixture": "Santos vs Leon", "selection": "LEON_TEAM_OVER_0.5", "p": 0.7946266598106709, "y": 1, "result": "HIT", "brier": 0.042178}
+        ]
+      }
+    ],
+    "atomic_summary": {"hits": 6, "total": 9, "hit_rate": 0.6666666666666666, "mean_brier": 0.2385367470662387, "mean_log_loss": 0.6814634028012705},
+    "ticket_summary": {"wins": 1, "total": 3, "hit_rate": 0.3333333333333333, "mean_brier": 0.24354602870226813}
+  },
+  "legacy_series_update": {
+    "through_j10": {"legs_hit": 26, "legs_total": 30, "parlays_hit": 7, "parlays_total": 10},
+    "j11_legacy_only": {"legs_hit": 3, "legs_total": 3, "parlays_hit": 1, "parlays_total": 1},
+    "through_j11": {"legs_hit": 29, "legs_total": 33, "parlays_hit": 8, "parlays_total": 11},
+    "note": "Legacy series counts predictive outcomes only; no ROI/CLV/edge claim without verified contemporaneous odds."
+  },
+  "context_enriched_five_parlays": {
+    "source": "exp003_recovery/j11_context_enriched_five_parlays_freeze.json",
+    "eligibility": "DESCRIPTIVE_ONLY_OUTCOME_EXPOSURE_CAVEAT",
+    "summary": {"legs_hit": 13, "legs_total": 15, "tickets_hit": 4, "tickets_total": 5, "mean_leg_brier_descriptive_only": 0.11321882128880854, "mean_leg_log_loss_descriptive_only": 0.37860988229268716},
+    "tickets": [
+      {"label": "CE_P1_PRIMARY", "result": "WIN", "legs_hit": 3, "legs_total": 3},
+      {"label": "CE_P2_PRIMARY", "result": "LOSS", "legs_hit": 1, "legs_total": 3},
+      {"label": "CE_P3_AGGRESSIVE", "result": "WIN", "legs_hit": 3, "legs_total": 3},
+      {"label": "CE_P4_HIGH_P_SHADOW", "result": "WIN", "legs_hit": 3, "legs_total": 3},
+      {"label": "CE_P5_HIGH_P_SHADOW", "result": "WIN", "legs_hit": 3, "legs_total": 3}
+    ],
+    "hard_rule": "Do not use the 13/15 or 4/5 performance to promote context, high-p out-of-envelope legs, change gates, or retune V0.1R. These tickets were created after accidental outcome exposure during research."
+  },
+  "diagnostic": {
+    "clean_model_misses": [
+      "ASL-Juarez Over 1.5 missed on 1-0 despite p=0.8154.",
+      "Pumas team Under 2.5 missed on exactly 3 goals despite p=0.8098.",
+      "Pachuca-Mazatlan no-draw missed on 1-1 despite p=0.7630."
+    ],
+    "interpretation": "J11 is mixed evidence: the legacy comparator won 3/3, but the diversified clean shadow set produced three high-confidence misses. Do not retune from one jornada; preserve these residuals for cross-jornada feature testing.",
+    "claude_gate": "NOT_TRIGGERED",
+    "claude_reason": "No architecture or integrity blocker requiring scarce external fiscalization; settlement follows already-frozen rules."
+  }
+}
