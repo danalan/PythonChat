@@ -1,0 +1,94 @@
+{
+  "jornada": "Clausura 2025 J12",
+  "status": "FROZEN_PRICE_INPUT_PRE_SETTLEMENT",
+  "global_cutoff": "2025-03-14T18:59:00-06:00",
+  "purpose": "Inputs for MARKET_PROXY_V1 only. These are 1X2 historical market observations available before the ticket cutoff; they are not p_model inputs.",
+  "fixtures": {
+    "J12-01": {
+      "fixture": "Queretaro vs Mazatlan",
+      "decimal_1x2": [2.36, 3.30, 2.83],
+      "source": "Betimate / Betfair opening-odds timeline",
+      "source_url": "https://betimate.com/en/football-predictions/queretaro-vs-mazatlan-fc-2633771/game",
+      "source_timestamp": "2025-03-10T01:31:00",
+      "timestamp_timezone": "SOURCE_UNSPECIFIED",
+      "temporal_confidence": "HIGH_OPENING_DATE_BEFORE_CUTOFF",
+      "note": "Uses explicitly displayed opening prices, not later closing prices."
+    },
+    "J12-02": {
+      "fixture": "Necaxa vs Leon",
+      "decimal_1x2": [2.20, 3.60, 3.05],
+      "source": "FootballWhispers pre-game odds",
+      "source_url": "https://footballwhispers.com/us/blog/necaxa-vs-leon-prediction/",
+      "source_timestamp": "2025-03-14",
+      "timestamp_timezone": "TIME_NOT_DISPLAYED",
+      "temporal_confidence": "MEDIUM_DATE_CLEAN_TIME_UNKNOWN",
+      "note": "Published/updated as a pre-game prediction on March 14. Exact time is not displayed; retain medium temporal confidence and audit separately."
+    },
+    "J12-03": {
+      "fixture": "Puebla vs Toluca",
+      "decimal_1x2": [4.75, 4.20, 1.67],
+      "source": "OddsChecker Progol/Revancha 2272",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2272",
+      "source_timestamp": "2025-03-14T09:54:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH",
+      "note": "Article timestamp precedes global cutoff."
+    },
+    "J12-04": {
+      "fixture": "Tigres vs Santos",
+      "decimal_1x2": [1.29, 5.80, 11.00],
+      "source": "OddsChecker Tigres-Santos pre-game preview",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/2025/marzo/pronostico-tigres-vs-santos-15-03-25",
+      "source_timestamp": "2025-03-14T17:03:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH",
+      "note": "Published before 18:59 CDMX cutoff."
+    },
+    "J12-05": {
+      "fixture": "Cruz Azul vs Atletico San Luis",
+      "decimal_1x2": [1.30, 5.50, 10.00],
+      "source": "OddsChecker Progol/Revancha 2272",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2272",
+      "source_timestamp": "2025-03-14T09:54:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J12-06": {
+      "fixture": "Juarez vs Guadalajara",
+      "decimal_1x2": [3.40, 3.50, 2.15],
+      "source": "OddsChecker Progol/Revancha 2272",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2272",
+      "source_timestamp": "2025-03-14T09:54:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J12-07": {
+      "fixture": "Atlas vs America",
+      "decimal_1x2": [4.20, 3.75, 1.88],
+      "source": "OddsChecker Progol/Revancha 2272",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2272",
+      "source_timestamp": "2025-03-14T09:54:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J12-08": {
+      "fixture": "Pumas vs Monterrey",
+      "decimal_1x2": [2.80, 3.50, 2.50],
+      "source": "OddsChecker Progol/Revancha 2272",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2272",
+      "source_timestamp": "2025-03-14T09:54:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J12-09": {
+      "fixture": "Pachuca vs Tijuana",
+      "decimal_1x2": [1.57, 4.40, 5.50],
+      "source": "OddsChecker Progol/Revancha 2272",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2272",
+      "source_timestamp": "2025-03-14T09:54:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    }
+  },
+  "integrity_note": "Researcher was accidentally exposed to J12 result snippets while locating the schedule. This price snapshot is used only by a deterministic selector. No discretionary context or outcome-derived changes are permitted for J12."
+}
