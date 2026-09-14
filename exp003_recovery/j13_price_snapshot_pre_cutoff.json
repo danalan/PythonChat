@@ -1,0 +1,95 @@
+{
+  "jornada": "Clausura 2025 J13",
+  "status": "FROZEN_PRICE_INPUT_PRE_SETTLEMENT",
+  "global_cutoff": "2025-03-28T18:59:00-06:00",
+  "purpose": "Inputs for MARKET_PROXY_V1 only. These are historical 1X2 market observations available before the global cutoff; they are not p_model inputs.",
+  "fixtures": {
+    "J13-01": {
+      "fixture": "Necaxa vs Queretaro",
+      "decimal_1x2": [1.571, 4.333, 5.250],
+      "source": "TotalCorner historical 1X2 timeline",
+      "source_url": "https://www.totalcorner.com/odds/Necaxa-vs-Queretaro/170799756",
+      "source_timestamp": "2025-03-28T14:00:00",
+      "timestamp_timezone": "SOURCE_UNSPECIFIED",
+      "temporal_confidence": "HIGH_BEFORE_GLOBAL_CUTOFF",
+      "note": "Latest displayed 1X2 observation found before the global cutoff."
+    },
+    "J13-02": {
+      "fixture": "Mazatlan vs Atlas",
+      "decimal_1x2": [2.50, 3.15, 3.00],
+      "source": "OddsChecker Progol/Revancha 2274",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2274",
+      "source_timestamp": "2025-03-28T03:22:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J13-03": {
+      "fixture": "Juarez vs Puebla",
+      "decimal_1x2": [1.82, 3.60, 4.29],
+      "source": "TotalCorner historical 1X2 timeline",
+      "source_url": "https://www.totalcorner.com/odds/Juarez-FC-vs-Puebla/170799762",
+      "source_timestamp": "2025-03-27T23:03:00",
+      "timestamp_timezone": "SOURCE_UNSPECIFIED",
+      "temporal_confidence": "HIGH_BEFORE_GLOBAL_CUTOFF",
+      "note": "Later observations shown by source are after global cutoff and are excluded."
+    },
+    "J13-04": {
+      "fixture": "Toluca vs Pachuca",
+      "decimal_1x2": [1.8333333333, 4.00, 4.20],
+      "source": "Dimers pregame odds",
+      "source_url": "https://www.dimers.com/liga-mx/news/toluca-vs-pachuca-prediction-liga-mx-ac-3-29-25",
+      "source_timestamp": "2025-03-27T00:05:00-04:00",
+      "timestamp_timezone": "ET",
+      "temporal_confidence": "HIGH",
+      "note": "Converted from American odds Toluca -120, Draw +300, Pachuca +320."
+    },
+    "J13-05": {
+      "fixture": "America vs Tigres",
+      "decimal_1x2": [1.83, 3.75, 4.33],
+      "source": "OddsChecker Progol/Revancha 2274",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2274",
+      "source_timestamp": "2025-03-28T03:22:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J13-06": {
+      "fixture": "Guadalajara vs Cruz Azul",
+      "decimal_1x2": [3.00, 3.40, 2.40],
+      "source": "OddsChecker Progol/Revancha 2274",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2274",
+      "source_timestamp": "2025-03-28T03:22:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J13-07": {
+      "fixture": "Monterrey vs Tijuana",
+      "decimal_1x2": [1.38, 5.40, 7.05],
+      "source": "OddsChecker Monterrey-Tijuana pregame preview",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/2025/marzo/pronostico-monterrey-vs-tijuana-29-03-25",
+      "source_timestamp": "2025-03-28T17:02:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH",
+      "note": "Published before 18:59 CDMX global cutoff."
+    },
+    "J13-08": {
+      "fixture": "Santos Laguna vs Atletico San Luis",
+      "decimal_1x2": [2.35, 3.60, 2.88],
+      "source": "OddsChecker Progol/Revancha 2274",
+      "source_url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2274",
+      "source_timestamp": "2025-03-28T03:22:00",
+      "timestamp_timezone": "SITE_LOCAL_TIME",
+      "temporal_confidence": "HIGH"
+    },
+    "J13-09": {
+      "fixture": "Leon vs Pumas UNAM",
+      "decimal_1x2": [2.20, 3.40, 3.50],
+      "source": "Dimers pregame odds",
+      "source_url": "https://www.dimers.com/liga-mx/news/club-leon-vs-pumas-unam-prediction-liga-mx-ac-3-30-25",
+      "source_timestamp": "2025-03-28T00:03:00-04:00",
+      "timestamp_timezone": "ET",
+      "temporal_confidence": "HIGH",
+      "note": "Converted from American odds Leon +120, Draw +240, Pumas +250."
+    }
+  },
+  "integrity_note": "Researcher was already outcome-exposed for J13 during schedule discovery. This snapshot is therefore consumed only by the deterministic ECONOMIC_SELECTOR_V1. No discretionary context, human veto, or outcome-derived alteration is permitted before freeze."
+}
