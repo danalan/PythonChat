@@ -1,0 +1,46 @@
+{
+  "experiment":"EXP-003",
+  "track":"ECONOMIC_TRACK_V1",
+  "jornada":"Clausura 2025 J14",
+  "status":"SETTLED",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "selection_freeze_commit":"7eb4150a5909130fbac7b2e15d4293c9ad1eeb7d",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "verified_results":{
+    "J14-01":{"fixture":"Queretaro vs Leon","score":"1-1"},
+    "J14-02":{"fixture":"Tijuana vs Necaxa","score":"1-2"},
+    "J14-03":{"fixture":"Puebla vs Tigres","score":"0-0"},
+    "J14-04":{"fixture":"Atlas vs Juarez","score":"1-1"},
+    "J14-05":{"fixture":"Pachuca vs America","score":"1-0"},
+    "J14-06":{"fixture":"Atletico San Luis vs Mazatlan","score":"2-1"},
+    "J14-07":{"fixture":"Monterrey vs Guadalajara","score":"3-1"},
+    "J14-08":{"fixture":"Cruz Azul vs Pumas","score":"3-2"},
+    "J14-09":{"fixture":"Toluca vs Santos","score":"2-1"}
+  },
+  "tickets":{
+    "P1":{"stake_mxn_simulated":80.0,"proxy_decimal":3.8176247662916634,"model_ev_at_proxy":0.31542805329700574,"legs":[
+      {"selection":"Atletico San Luis-Mazatlan Over 1.5","p_model":0.7626147689128868,"result":1,"verdict":"HIT"},
+      {"selection":"Pumas scores >=1 vs Cruz Azul","p_model":0.6050809860441817,"result":1,"verdict":"HIT"},
+      {"selection":"Puebla-Tigres Over 1.5","p_model":0.7467154591034169,"result":0,"verdict":"FAIL"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-80.0,"learning":"Two legs hit but Puebla-Tigres finished 0-0. This is a high-confidence total-goals miss: the model expected at least two goals roughly three quarters of the time. Track whether low-output Puebla plus a stronger opponent creates overestimated total-goal expectations, especially when the favorite can win/control without an open game."},
+    "P2":{"stake_mxn_simulated":80.0,"proxy_decimal":2.6984083196129585,"model_ev_at_proxy":0.2434887394310794,"legs":[
+      {"selection":"Atlas-Juarez Over 1.5","p_model":0.7532421519431246,"result":1,"verdict":"HIT"},
+      {"selection":"America or Draw vs Pachuca","p_model":0.7597203289674777,"result":0,"verdict":"FAIL"},
+      {"selection":"Necaxa scores >=1 vs Tijuana","p_model":0.8052779854211204,"result":1,"verdict":"HIT"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-80.0,"learning":"America X2 failed despite a large model-market disagreement. This adds to the J13 Guadalajara 1X miss: double-chance selections with strong model confidence can still be wrong when recent opponent form or matchup context is moving faster than the goal-history model."},
+    "P3":{"stake_mxn_simulated":40.0,"proxy_decimal":2.6652491073508497,"model_ev_at_proxy":-0.1474190484027893,"legs":[
+      {"selection":"Monterrey or Draw vs Guadalajara","p_model":0.7816975261225602,"result":1,"verdict":"HIT"},
+      {"selection":"Queretaro scores >=1 vs Leon","p_model":0.6406205503542535,"result":1,"verdict":"HIT"},
+      {"selection":"Toluca-Santos Under 4.5","p_model":0.6387901563185499,"result":1,"verdict":"HIT"}],"ticket_result":"WIN","return_mxn_simulated":106.609964294034,"net_pnl_mxn_simulated":66.609964294034,"learning":"The only winning ticket was the one the EV filter considered unattractive. This is a clean reminder that EV is an expectation across many repetitions, not a promise about one ticket. Do not validate or reject the EV filter from single-jornada outcomes."}
+  },
+  "selected_leg_metrics":{"hits":7,"legs":9,"hit_rate":0.7777777777777778,"mean_brier":0.19479554880810912,"mean_log_loss":0.5791455141825081},
+  "forced_200_simulated_track":{"opening_bankroll_mxn_simulated":775.0533292025918,"staked_mxn_simulated":200.0,"returned_mxn_simulated":106.609964294034,"jornada_pnl_mxn_simulated":-93.39003570596601,"closing_bankroll_mxn_simulated":681.6632934966258,"cumulative_pnl_from_1000_mxn_simulated":-318.3367065033742},
+  "ev_disciplined_counterfactual":{"opening_bankroll_mxn_simulated":918.9483346997567,"eligible_tickets":["P1","P2"],"held_cash_mxn_simulated":40.0,"staked_mxn_simulated":160.0,"returned_mxn_simulated":0.0,"jornada_pnl_mxn_simulated":-160.0,"closing_bankroll_mxn_simulated":758.9483346997567},
+  "learning":[
+    "J14 improved leg accuracy to 7/9, yet only 1/3 parlays won. Parlay structure still converts a small number of leg errors into large bankroll drawdowns.",
+    "Puebla-Tigres Over 1.5 failed at 0-0 despite p_model about 74.7%; total-goal calibration around weak attacking teams deserves segmented residual review.",
+    "America X2 failed after Guadalajara 1X failed in J13. Track whether double-chance model-market disagreements are slow to absorb recent form, opponent strength, rotation or schedule context.",
+    "P3 had negative proxy EV and won 3/3, while positive-EV P1/P2 both lost. This does not invalidate EV; it shows short-run outcome and long-run decision quality are different objects.",
+    "Forced track remains below EV-disciplined control, 681.66 vs 758.95 simulated, but both are below their initial 1,000 after four/three tracked jornadas. No selector promotion or model retune authorized yet.",
+    "No V0.1R parameter changes from J14 alone. Continue accumulating residuals and exact-market audits."
+  ]
+}
