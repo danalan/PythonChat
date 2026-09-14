@@ -1,0 +1,50 @@
+{
+  "experiment":"EXP-003",
+  "track":"ECONOMIC_TRACK_V1",
+  "jornada":"Clausura 2025 J17",
+  "status":"SETTLED",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "selection_freeze_commit":"32ea59116d43a2b3b4952c50cc5608c3746593d1",
+  "integrity_class":"BLIND_RESEARCHER_SCORE_SUPPRESSED_FIXTURE_DISCOVERY",
+  "promotion_eligibility":true,
+  "verified_results":{
+    "J17-01":{"fixture":"Puebla vs Necaxa","score":"0-1"},
+    "J17-02":{"fixture":"Atlas vs Guadalajara","score":"1-1"},
+    "J17-03":{"fixture":"America vs Mazatlan","score":"5-0"},
+    "J17-04":{"fixture":"Toluca vs Cruz Azul","score":"2-2"},
+    "J17-05":{"fixture":"Tigres vs Pumas","score":"2-1"},
+    "J17-06":{"fixture":"Atletico San Luis vs Pachuca","score":"2-1"},
+    "J17-07":{"fixture":"Leon vs Monterrey","score":"0-2"},
+    "J17-08":{"fixture":"Juarez vs Queretaro","score":"0-2"},
+    "J17-09":{"fixture":"Santos vs Tijuana","score":"0-4"}
+  },
+  "tickets":{
+    "P1":{"stake_mxn_simulated":80.0,"proxy_decimal":3.1938328262597113,"model_ev_at_proxy":0.3700478230090136,"legs":[
+      {"selection":"Atletico San Luis scores >=1 vs Pachuca","p_model":0.8035493237343055,"result":1,"verdict":"HIT"},
+      {"selection":"Puebla scores >=1 vs Necaxa","p_model":0.7696635654578814,"result":0,"verdict":"FAIL"},
+      {"selection":"America-Mazatlan Under 3.5","p_model":0.6936015874702037,"result":0,"verdict":"FAIL"}],
+      "ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-80.0,
+      "learning":"Puebla failed to score again, prospectively confirming the LOW_ATTACK warning in the first restored-blindness jornada. America-Mazatlan U3.5 also failed badly in a 5-0, showing that broad under markets can be vulnerable when a strong favorite has blowout potential."},
+    "P2":{"stake_mxn_simulated":80.0,"proxy_decimal":3.3810569361456557,"model_ev_at_proxy":0.25553229489327234,"legs":[
+      {"selection":"Toluca-Cruz Azul Over 1.5","p_model":0.8043676403100606,"result":1,"verdict":"HIT"},
+      {"selection":"Queretaro scores >=1 vs Juarez","p_model":0.6070270795580277,"result":1,"verdict":"HIT"},
+      {"selection":"Leon-Monterrey Over 1.5","p_model":0.760523692021648,"result":1,"verdict":"HIT"}],
+      "ticket_result":"WIN","return_mxn_simulated":270.48455489165246,"net_pnl_mxn_simulated":190.48455489165246,
+      "learning":"Three moderate-to-high probability goal-based legs all hit. The selector can find useful price disagreement, but one winning ticket is not enough to validate MARKET_PROXY_V1 as true edge."},
+    "P3":{"stake_mxn_simulated":40.0,"proxy_decimal":2.2820091883217217,"model_ev_at_proxy":-0.014614644358803996,"legs":[
+      {"selection":"Tigres 1X vs Pumas","p_model":0.8074355670710658,"result":1,"verdict":"HIT"},
+      {"selection":"Atlas-Guadalajara Over 1.5","p_model":0.671072298074306,"result":1,"verdict":"HIT"},
+      {"selection":"Tijuana scores >=1 vs Santos","p_model":0.7969141304556111,"result":1,"verdict":"HIT"}],
+      "ticket_result":"WIN","return_mxn_simulated":91.28036753286887,"net_pnl_mxn_simulated":51.28036753286887,
+      "learning":"The only negative-proxy-EV ticket won 3/3. This reinforces that one-jornada realized outcome must not be confused with ex-ante decision quality; retain the EV counterfactual rather than rewriting the selector."}
+  },
+  "selected_leg_metrics":{"hits":6,"legs":9,"hit_rate":0.6666666666666666,"mean_brier":0.23952485384242608,"mean_log_loss":0.6787594113853145},
+  "forced_200_simulated_track":{"opening_bankroll_mxn_simulated":281.6632934966258,"staked_mxn_simulated":200.0,"returned_mxn_simulated":361.76492242452133,"jornada_pnl_mxn_simulated":161.76492242452133,"closing_bankroll_mxn_simulated":443.4282159211471,"cumulative_pnl_from_1000_mxn_simulated":-556.5717840788529},
+  "learning":[
+    "J17 restored researcher blindness using score-suppressed fixture discovery before selection and settlement.",
+    "Puebla LOW_ATTACK_RISK received clean prospective support: Puebla failed to score again despite p_model 76.97%.",
+    "Double-chance risk did not fail in J17: Tigres 1X hit. Keep the family-level concern open rather than converting it into a blanket penalty.",
+    "The forced bankroll recovered from 281.66 to 443.43 but still ends the J11-J17 economic replay down 55.66% from the 1,000 starting bankroll.",
+    "Do not promote MARKET_PROXY_V1 or context features solely from J17. Use the full tournament audit and external fiscal review before changing architecture."
+  ]
+}
