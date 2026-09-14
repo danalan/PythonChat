@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 from datetime import datetime
 import ap25_j10_model_only_replay as prev
+import ap25_j6_model_only_replay as j6
 
 base=prev.base
 MODEL_CUTOFF=datetime(2025,9,26,0,0,0)
@@ -38,18 +39,18 @@ FIXTURES=[
 def main():
     hist=[m for m in base.load_all() if m.date<datetime(2025,7,11)]
     if len(hist)!=1016: raise SystemExit(f"chronology drift pre-J1: {len(hist)}")
-    p=prev.prev
-    tr=sorted(hist+p.prev.prev.prev.prev.J1_FROZEN+p.prev.prev.prev.prev.J2_FROZEN+p.prev.prev.prev.prev.J3_FROZEN+p.prev.prev.prev.prev.J4_FROZEN+p.prev.prev.prev.prev.J5_FROZEN+p.prev.prev.prev.J6_FROZEN+p.prev.prev.J7_FROZEN+p.prev.J8_FROZEN+p.J1_BACKFILL+prev.J9_FROZEN+J10_FROZEN,
-              key=lambda m:(m.date,m.home,m.away,m.hg,m.ag))
+    tr=sorted(
+        hist+j6.J1_FROZEN+j6.J2_FROZEN+j6.J3_FROZEN+j6.J4_FROZEN+j6.J5_FROZEN+
+        prev.prev.prev.prev.J6_FROZEN+prev.prev.prev.J7_FROZEN+prev.prev.J8_FROZEN+
+        prev.prev.J1_BACKFILL+prev.J9_FROZEN+J10_FROZEN,
+        key=lambda m:(m.date,m.home,m.away,m.hg,m.ag))
     if len(tr)!=1106: raise SystemExit(f"J11 training count drift: expected 1106, got {len(tr)}")
     if any(m.date>=MODEL_CUTOFF for m in tr): raise SystemExit("J11 leakage detected")
     mods=base.ensemble(tr,MODEL_CUTOFF); rows=[]
-    market_probs=p.prev.prev.prev.prev.market_probs
-    cal=p.prev.prev.prev.prev.cal
     for fid,date,home,away in FIXTURES:
-        M,meta=base.avg_matrix(mods,home,away); pp=market_probs(M)
+        M,meta=base.avg_matrix(mods,home,away); pp=j6.market_probs(M)
         rows.append({"fixture_id":fid,"date":date,"home":home,"away":away,
-                     "markets":{k:{"p_raw":float(v),"p_cal_shadow":float(cal(v))} for k,v in pp.items()},
+                     "markets":{k:{"p_raw":float(v),"p_cal_shadow":float(j6.cal(v))} for k,v in pp.items()},
                      "model_meta":meta})
     out={"experiment":"EXP-003","tournament":"Apertura 2025","jornada":"J11","model":"V0.1R_DC_ENSEMBLE",
          "calibration_shadow":"CAL_SHRINK_GLOBAL_V0_1","model_cutoff":"2025-09-26T00:00:00-06:00",
