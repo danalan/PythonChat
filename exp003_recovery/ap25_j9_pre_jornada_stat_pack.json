@@ -1,0 +1,40 @@
+{
+  "experiment":"EXP-003","tournament":"Apertura 2025","jornada":"J9","as_of":"2025-09-19T00:00:00-06:00",
+  "integrity_class":"PRE_SELECTION_STAT_FREEZE_RESEARCHER_J9_OUTCOME_EXPOSED","promotion_eligibility":false,
+  "fixture_source":{"publisher":"The Sporting News","published":"2025-06-06","type":"PRESEASON_FULL_SCHEDULE_NO_RESULTS","url":"https://www.sportingnews.com/mx/futbol/news/calendario-apertura-2025-liga-mx-partidos-jornadas-destacadas-clasicos/754a267be61bd2d9b43002fb"},
+  "researcher_exposure":{"occurred":true,"exposed_result":"Deportivo Guadalajara 0-3 Deportivo Toluca (J9)","when":"A Chivas official calendar page used to verify the legitimate Sep. 17 postponed J1 result also displayed the following J9 result.","governance":"J9 permanently NO-PROMOTION. No J9 outcome may enter model/stat/price/selection calculations."},
+  "pre_j9_backfill":{"date":"2025-09-17","fixture":"Deportivo Guadalajara 0-0 UANL Tigres","original_round":"J1 postponed","eligibility":"LEGITIMATE_PRE_J9_INPUT"},
+  "fixtures":[
+    {"date":"2025-09-19","home":"Club Necaxa","away":"Puebla FC"},
+    {"date":"2025-09-19","home":"Cruz Azul","away":"FC Juárez"},
+    {"date":"2025-09-19","home":"Club Tijuana","away":"Club León"},
+    {"date":"2025-09-19","home":"Mazatlán FC","away":"Atlas Guadalajara"},
+    {"date":"2025-09-20","home":"CF Pachuca","away":"Gallos Blancos"},
+    {"date":"2025-09-20","home":"Deportivo Guadalajara","away":"Deportivo Toluca"},
+    {"date":"2025-09-20","home":"Pumas UNAM","away":"UANL Tigres"},
+    {"date":"2025-09-20","home":"CF Monterrey","away":"CF América"},
+    {"date":"2025-09-21","home":"Santos Laguna","away":"Atlético San Luis"}
+  ],
+  "league_snapshot_pre_j9":{"completed_matches":72,"goals":210,"goals_per_match":2.9166666666666665,"standings":[
+    {"team":"CF Monterrey","P":8,"PTS":21,"GF":18,"GA":9},
+    {"team":"Cruz Azul","P":8,"PTS":20,"GF":16,"GA":8},
+    {"team":"CF América","P":8,"PTS":17,"GF":16,"GA":8},
+    {"team":"Deportivo Toluca","P":8,"PTS":16,"GF":19,"GA":11},
+    {"team":"UANL Tigres","P":8,"PTS":15,"GF":16,"GA":8},
+    {"team":"Club Tijuana","P":8,"PTS":13,"GF":14,"GA":10},
+    {"team":"CF Pachuca","P":8,"PTS":13,"GF":11,"GA":8},
+    {"team":"Pumas UNAM","P":8,"PTS":12,"GF":11,"GA":9},
+    {"team":"FC Juárez","P":8,"PTS":12,"GF":8,"GA":8},
+    {"team":"Club León","P":8,"PTS":11,"GF":8,"GA":9},
+    {"team":"Deportivo Guadalajara","P":8,"PTS":8,"GF":11,"GA":13},
+    {"team":"Santos Laguna","P":8,"PTS":7,"GF":11,"GA":13},
+    {"team":"Atlético San Luis","P":8,"PTS":7,"GF":11,"GA":14},
+    {"team":"Mazatlán FC","P":8,"PTS":6,"GF":9,"GA":14},
+    {"team":"Atlas Guadalajara","P":8,"PTS":6,"GF":14,"GA":21},
+    {"team":"Club Necaxa","P":8,"PTS":6,"GF":7,"GA":14},
+    {"team":"Gallos Blancos","P":8,"PTS":4,"GF":7,"GA":16},
+    {"team":"Puebla FC","P":8,"PTS":4,"GF":7,"GA":21}
+  ]},
+  "pre_j9_descriptive_signals":["Monterrey leads on 21 points; Cruz Azul is unbeaten on 20.","Toluca has scored 19 league goals through eight matches.","Tigres now has eight completed matches after the Sep. 17 0-0 backfill against Guadalajara.","Puebla has conceded 21 goals, Atlas 21 and Querétaro 16; descriptive only.","The Sep. 17 backfill occurred two days before J9 and may matter for rest/fatigue context for Guadalajara and Tigres, but it is not an automatic numerical adjustment.","MODEL_SIGNAL, STAT_CONTEXT_SIGNAL and PRICE_EV remain separate."],
+  "governance":["INCLUDE_ALL_COMPLETED_MATCHES_BEFORE_J9_CUTOFF","NO_J9_OUTCOME_INPUTS","J9_NO_PROMOTION_DUE_RESEARCHER_OUTCOME_EXPOSURE","DESCRIPTIVE_CURRENT_SEASON_STATS_ONLY"]
+}
