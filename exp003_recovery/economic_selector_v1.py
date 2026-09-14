@@ -147,8 +147,8 @@ def main():
         "tickets": tickets,
         "integrity": {
             "selection_mode": "MECHANICAL_MODEL_PLUS_PRE_CUTOFF_PRICE",
-            "context_used": false,
-            "outcomes_used": false,
+            "context_used": False,
+            "outcomes_used": False,
             "no_fixture_repeat": len({x["fixture_id"] for t in tickets.values() for x in t["legs"]}) == 9,
             "note": "If the human researcher was outcome-exposed, this mechanical selector prevents discretionary leakage into selection."
         }
