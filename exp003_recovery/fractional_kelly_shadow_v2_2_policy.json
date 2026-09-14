@@ -31,11 +31,15 @@
     {"id": "FK20", "fraction_of_full_kelly": 0.20},
     {"id": "FK25", "fraction_of_full_kelly": 0.25}
   ],
-  "shadow_sizing_formula": "stake = bankroll_open * full_kelly_fraction * fractional_kelly_multiplier",
+  "shadow_sizing_formula": "stake = shadow_bankroll_open * full_kelly_fraction * fractional_kelly_multiplier",
   "full_kelly_formula_decimal_odds": "f_star = (p_model * decimal_odds - 1) / (decimal_odds - 1)",
   "admission_rule": "Shadow variants inherit the canonical candidate set and Kelly>=0.05 gate; they change sizing only unless a future preregistered test explicitly changes admission.",
+  "shadow_bankroll_tracking": {
+    "initialization_at_j4": "Each FK15/FK20/FK25 track starts J4 at the same MXN 523.0512159211471 opening bankroll as canonical V2.1.",
+    "prospective_rule_from_j5": "Each shadow variant compounds independently. Its closing bankroll from the previous jornada becomes its own next opening bankroll; it is never reset to the canonical bankroll.",
+    "reason": "Independent compounding is required to compare realized log growth, drawdown and risk of ruin honestly."
+  },
   "shadow_portfolio_rules": {
-    "opening_bankroll_basis": "same opening bankroll as canonical track for each jornada",
     "stake_precision": "retain unrounded decimal MXN internally for research; display may round to 2 decimals",
     "jornada_risk_ceiling_mxn": 100,
     "secondary_parlay": "same canonical qualifying 2-leg parlay, fixed 5 MXN, so staking comparison changes singles only",
@@ -72,6 +76,7 @@
     "Probability, nominal odds and favorite/underdog labels never determine stake in isolation.",
     "No bucket is required to receive capital in any jornada.",
     "The objective is to test whether dynamic fractional Kelly reduces drawdown/volatility without unacceptable loss of bankroll growth.",
-    "The parlay is held constant across canonical and shadow portfolios so that the shadow comparison isolates the effect of single-bet sizing."
+    "The parlay is held constant across canonical and shadow portfolios so that the shadow comparison isolates the effect of single-bet sizing.",
+    "The independent-compounding rule was clarified after J4 settlement and is prospective from J5; it does not change any J4 stake or result."
   ]
 }
