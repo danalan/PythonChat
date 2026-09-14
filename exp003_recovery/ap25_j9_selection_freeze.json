@@ -1,0 +1,23 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J9",
+  "promotion_eligibility":false,
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_J9_OUTCOME_EXPOSED_BEFORE_SELECTION_FREEZE",
+  "training_count":1088,
+  "canonical_opening_bankroll_mxn":520.5012159211471,
+  "canonical_primary_singles":[
+    {"fixture_id":"AP25J9-03","selection":"Club León ML","stake":15.0,"decimal":3.8,"p_raw":0.32264147924836384,"kelly":0.08072772183706517},
+    {"fixture_id":"AP25J9-01","selection":"Club Necaxa ML","stake":10.0,"decimal":1.68,"p_raw":0.6198020809526853,"kelly":0.06068749411839894},
+    {"fixture_id":"AP25J9-07","selection":"UANL Tigres ML","stake":20.0,"decimal":3.9,"p_raw":0.384964604943079,"kelly":0.1728834342337959},
+    {"fixture_id":"AP25J9-08","selection":"CF América ML","stake":15.0,"decimal":3.5,"p_raw":0.3709648589109114,"kelly":0.11935080247527594},
+    {"fixture_id":"AP25J9-05","selection":"Pachuca-Querétaro DRAW","stake":10.0,"decimal":5.75,"p_raw":0.2229376761524773,"kelly":0.05934560797405146}
+  ],
+  "canonical_secondary_parlays":[
+    {"execution_date":"2025-09-19","stake":5.0,"decimal":6.384,"legs":["Club León ML","Club Necaxa ML"]},
+    {"execution_date":"2025-09-20","stake":5.0,"decimal":13.65,"legs":["UANL Tigres ML","CF América ML"]}
+  ],
+  "canonical_total_stake_mxn":80.0,
+  "canonical_held_cash_mxn":20.0,
+  "source_output":"exp003_recovery/ap25_j9_selection_output.txt"
+}
