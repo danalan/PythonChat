@@ -1,0 +1,60 @@
+{
+  "experiment": "EXP-003",
+  "track": "ECONOMIC_TRACK_V1",
+  "jornada": "Clausura 2025 J13",
+  "status": "FROZEN_PRE_SETTLEMENT",
+  "integrity_class": "MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility": false,
+  "model_cutoff": "2025-03-28T00:00:00",
+  "price_context_cutoff": "2025-03-28T18:59:00-06:00",
+  "training_count": 955,
+  "selector": "ECONOMIC_SELECTOR_V1",
+  "price_snapshot_commit": "7a704d3a8b3cc6daa8bef5be70766f00b07f619d",
+  "workflow_commit": "564cf6156833bec0a5ca875d6698dfec8059c6d4",
+  "workflow_run": 34854368822,
+  "opening_simulated_bankroll_mxn": 975.0533292025918,
+  "forced_stake_total_mxn": 200.0,
+  "tickets": {
+    "P1": {
+      "stake_mxn": 80.0,
+      "proxy_decimal": 3.7465342155833574,
+      "p_model_joint_independence_approx": 0.34929970478488326,
+      "model_ev_at_proxy": 0.3086632954697308,
+      "legs": [
+        {"fixture_id":"J13-09","fixture":"Leon vs Pumas","selection":"Total Over 1.5","p_model":0.7508125787814273,"proxy_decimal":1.4844784413072372,"model_ev_at_proxy":0.11456508666332033},
+        {"fixture_id":"J13-03","fixture":"Juarez vs Puebla","selection":"Puebla scores >=1","p_model":0.6828859100975555,"proxy_decimal":1.6189105032982756,"model_ev_at_proxy":0.10553117241133458},
+        {"fixture_id":"J13-02","fixture":"Mazatlan vs Atlas","selection":"Total Over 1.5","p_model":0.6812688415417797,"proxy_decimal":1.5589528045288599,"model_ev_at_proxy":0.06206597115968493}
+      ]
+    },
+    "P2": {
+      "stake_mxn": 80.0,
+      "proxy_decimal": 3.264084545665989,
+      "p_model_joint_independence_approx": 0.38099075750720535,
+      "model_ev_at_proxy": 0.24358604362084724,
+      "legs": [
+        {"fixture_id":"J13-06","fixture":"Guadalajara vs Cruz Azul","selection":"Guadalajara or Draw (1X)","p_model":0.6976735557347441,"proxy_decimal":1.5937499999999998,"model_ev_at_proxy":0.11191722945224836},
+        {"fixture_id":"J13-08","fixture":"Santos Laguna vs Atletico San Luis","selection":"Atletico San Luis scores >=1","p_model":0.7890750151009881,"proxy_decimal":1.3574698792559345,"model_ev_at_proxy":0.0711455654730131},
+        {"fixture_id":"J13-04","fixture":"Toluca vs Pachuca","selection":"Pachuca scores >=1","p_model":0.6920602190746374,"proxy_decimal":1.508728171105797,"model_ev_at_proxy":0.044130748619555016}
+      ]
+    },
+    "P3": {
+      "stake_mxn": 40.0,
+      "proxy_decimal": 2.937962872031681,
+      "p_model_joint_independence_approx": 0.31414325668597537,
+      "model_ev_at_proxy": -0.07705877535748629,
+      "legs": [
+        {"fixture_id":"J13-05","fixture":"America vs Tigres","selection":"America or Draw (1X)","p_model":0.8042311175883219,"proxy_decimal":1.2298387096774195,"model_ev_at_proxy":-0.010925440062749203},
+        {"fixture_id":"J13-01","fixture":"Necaxa vs Queretaro","selection":"Queretaro scores >=1","p_model":0.6262523701567924,"proxy_decimal":1.5497719259167124,"model_ev_at_proxy":-0.02945165819220208},
+        {"fixture_id":"J13-07","fixture":"Monterrey vs Tijuana","selection":"Tijuana scores >=1","p_model":0.623731225169372,"proxy_decimal":1.5414532411464894,"model_ev_at_proxy":-0.038547481358400804}
+      ]
+    }
+  },
+  "integrity": {
+    "researcher_outcome_exposed": true,
+    "selection_mode": "MECHANICAL_MODEL_PLUS_PRE_CUTOFF_PRICE",
+    "context_used": false,
+    "outcomes_used_by_selector": false,
+    "no_fixture_repeat": true,
+    "note": "Freeze precedes settlement. Human/contextual discretion is prohibited for J13."
+  }
+}
