@@ -1,0 +1,32 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J11",
+  "promotion_eligibility":false,
+  "integrity_class":"EXTERNAL_PACKET_VISIBLE_J11_OUTCOME_EXPOSURE",
+  "fixtures":[
+    {
+      "fixture_id":"AP25J11-01",
+      "source":"ThePicks pre-match preview identifying Bet365 row",
+      "source_url":"https://thepicks.com/soccer/juarez-vs-leon-picks-odds-liga-mx-predictions/",
+      "temporal_classification":"PRE_KICKOFF_DATE_VERIFIED_TIME_UNAVAILABLE",
+      "original_prices":{"HOME":"-108","DRAW":"+232","AWAY":"+238"},
+      "prices":{"1X2_HOME":1.925925925925926,"1X2_DRAW":3.32,"1X2_AWAY":3.38}
+    }
+  ],
+  "excluded_price_rows":[
+    {"fixture_id":"AP25J11-02","reason":"NO VERIFIED PRICE in supplied packet."},
+    {"fixture_id":"AP25J11-03","reason":"NO VERIFIED PRICE in supplied packet."},
+    {"fixture_id":"AP25J11-04","reason":"NO VERIFIED PRICE in supplied packet."},
+    {"fixture_id":"AP25J11-05","reason":"NO VERIFIED PRICE in supplied packet."},
+    {"fixture_id":"AP25J11-06","reason":"NO VERIFIED PRICE in supplied packet."},
+    {"fixture_id":"AP25J11-07","reason":"Complete Caliente row was exposed with ambiguous timestamp; rejected under firewall policy."},
+    {"fixture_id":"AP25J11-08","reason":"NO VERIFIED PRICE in supplied packet."},
+    {"fixture_id":"AP25J11-09","reason":"NO VERIFIED PRICE in supplied packet."}
+  ],
+  "notes":[
+    "No missing odds are inferred or backsolved.",
+    "Only complete same-book 1X2 rows with defensible pre-kickoff provenance are eligible.",
+    "J11 is permanently NO-PROMOTION because the external packet visibly exposed J11 outcomes before selection freeze."
+  ]
+}
