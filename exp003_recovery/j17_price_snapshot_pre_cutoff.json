@@ -1,0 +1,18 @@
+{
+  "jornada":"Clausura 2025 J17",
+  "status":"FROZEN_PRICE_INPUT_PRE_SETTLEMENT",
+  "global_cutoff":"2025-04-18T18:59:00-06:00",
+  "purpose":"Inputs for MARKET_PROXY_V1 only. Pregame prices opened directly from contemporaneous preview pages, avoiding result-search discovery.",
+  "fixtures":{
+    "J17-01":{"fixture":"Puebla vs Necaxa","decimal_1x2":[3.30,3.60,2.10],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J17-02":{"fixture":"Atlas vs Guadalajara","decimal_1x2":[3.10,3.20,2.35],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J17-03":{"fixture":"America vs Mazatlan","decimal_1x2":[1.2352941176,6.25,12.00],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/liga-mx/news/club-america-vs-mazatlan-prediction-liga-mx-ac-4-19-25","source_timestamp":"2025-04-17T00:06:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J17-04":{"fixture":"Toluca vs Cruz Azul","decimal_1x2":[2.20,3.40,3.30],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J17-05":{"fixture":"Tigres vs Pumas","decimal_1x2":[1.95,3.50,3.90],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J17-06":{"fixture":"Atletico San Luis vs Pachuca","decimal_1x2":[3.70,3.75,2.00],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J17-07":{"fixture":"Leon vs Monterrey","decimal_1x2":[2.70,3.50,2.55],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J17-08":{"fixture":"Juarez vs Queretaro","decimal_1x2":[1.90,3.40,4.40],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J17-09":{"fixture":"Santos Laguna vs Tijuana","decimal_1x2":[2.40,4.00,2.60],"source":"OddsChecker Progol/Revancha 2277","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2277","source_timestamp":"2025-04-18T00:00:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"}
+  },
+  "integrity_note":"J17 target fixtures were discovered by score-suppressed code. Price pages were opened directly rather than found through broad result-search queries. Preserve target-result blindness until ticket freeze."
+}
