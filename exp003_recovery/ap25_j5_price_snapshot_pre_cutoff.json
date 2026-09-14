@@ -1,0 +1,32 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J5",
+  "integrity_class":"RESEARCHER_OUTCOME_EXPOSED_BEFORE_SELECTION_FREEZE",
+  "promotion_eligibility":false,
+  "price_policy":{
+    "priority_1":"Use contemporaneous Caliente newspaper-ad 1X2 quotes when available for the fixture.",
+    "priority_2":"Otherwise use exact OddsChecker pre-kickoff 1X2 quote published before the match.",
+    "priority_3":"If neither is available, use an explicitly identified bookmaker's archived/pre-match 1X2 quote from a dated odds-comparison or preview page.",
+    "market_scope":"1X2 only",
+    "no_best_price_cherry_pick":true,
+    "no_inferred_or_backsolved_prices":true
+  },
+  "fixtures":[
+    {"fixture_id":"AP25J5-01","date":"2025-08-15","home":"Puebla FC","away":"Atlético San Luis","source":"OddsChecker","published":"2025-08-14T18:01:00","prices":{"1X2_HOME":2.55,"1X2_DRAW":3.45,"1X2_AWAY":2.80}},
+    {"fixture_id":"AP25J5-02","date":"2025-08-15","home":"Club Necaxa","away":"Club León","source":"Camajan / ESPNBet pre-match quote","published":"2025-08-15 before kickoff","american_prices":{"1X2_HOME":-118,"1X2_DRAW":270,"1X2_AWAY":290},"prices":{"1X2_HOME":1.847457627118644,"1X2_DRAW":3.70,"1X2_AWAY":3.90}},
+    {"fixture_id":"AP25J5-03","date":"2025-08-16","home":"Deportivo Guadalajara","away":"FC Juárez","source":"Caliente.mx newspaper ad / El Heraldo de México","published":"2025-08-15","american_prices":{"1X2_HOME":-175,"1X2_DRAW":285,"1X2_AWAY":460},"prices":{"1X2_HOME":1.5714285714285714,"1X2_DRAW":3.85,"1X2_AWAY":5.60}},
+    {"fixture_id":"AP25J5-04","date":"2025-08-16","home":"Deportivo Toluca","away":"Pumas UNAM","source":"OddsChecker","published":"2025-08-15T18:03:00","prices":{"1X2_HOME":1.73,"1X2_DRAW":3.85,"1X2_AWAY":4.85}},
+    {"fixture_id":"AP25J5-05","date":"2025-08-16","home":"CF Pachuca","away":"Club Tijuana","source":"SportyTrader / Bet365 archived pre-match quote","published":"2025-08-16 before kickoff","prices":{"1X2_HOME":1.38,"1X2_DRAW":4.75,"1X2_AWAY":7.50}},
+    {"fixture_id":"AP25J5-06","date":"2025-08-16","home":"UANL Tigres","away":"CF América","source":"Caliente.mx newspaper ad / El Heraldo de México","published":"2025-08-15","american_prices":{"1X2_HOME":144,"1X2_DRAW":210,"1X2_AWAY":194},"prices":{"1X2_HOME":2.44,"1X2_DRAW":3.10,"1X2_AWAY":2.94}},
+    {"fixture_id":"AP25J5-07","date":"2025-08-16","home":"Cruz Azul","away":"Santos Laguna","source":"Caliente.mx newspaper ad / El Heraldo de México","published":"2025-08-15","american_prices":{"1X2_HOME":-358,"1X2_DRAW":460,"1X2_AWAY":825},"prices":{"1X2_HOME":1.2793296089385475,"1X2_DRAW":5.60,"1X2_AWAY":9.25}},
+    {"fixture_id":"AP25J5-08","date":"2025-08-17","home":"Gallos Blancos","away":"Atlas Guadalajara","source":"SportyTrader / Bet365 archived match odds","published":"2025-08-17","prices":{"1X2_HOME":3.10,"1X2_DRAW":3.25,"1X2_AWAY":2.35}},
+    {"fixture_id":"AP25J5-09","date":"2025-08-17","home":"CF Monterrey","away":"Mazatlán FC","source":"OddsChecker","published":"2025-08-16T18:03:00","prices":{"1X2_HOME":1.50,"1X2_DRAW":5.33,"1X2_AWAY":9.50}}
+  ],
+  "source_notes":[
+    "The Caliente ad published 2025-08-15 listed Guadalajara-Juarez -175/+285/+460, Tigres-America +144/+210/+194, and Cruz Azul-Santos -358/+460/+825.",
+    "Querétaro-Atlas uses the Bet365 row from an archived odds-comparison page rather than the maximum price across bookmakers, avoiding best-price cherry-picking.",
+    "Pachuca-Tijuana likewise uses the named Bet365 row rather than an after-the-fact maximum across books.",
+    "Researcher outcome exposure does not alter any frozen price or selection rule; it only makes J5 ineligible for promotion."
+  ]
+}
