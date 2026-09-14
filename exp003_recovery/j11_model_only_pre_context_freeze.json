@@ -1,0 +1,46 @@
+{
+  "experiment": "EXP-003",
+  "track": "HISTORICAL_J11_MODEL_ONLY_PRE_CONTEXT",
+  "status": "FROZEN_PRE_CONTEXT_NOT_SETTLED",
+  "created_at": "2026-09-13 America/Mexico_City",
+  "model": "V0.1R_RECOVERED",
+  "model_cutoff": "2025-03-07T00:00:00",
+  "context_cutoff_max": "2025-03-07T18:59:00-06:00",
+  "training_count": 937,
+  "temporal_rule": "No J11 result, postmatch report, later standings, or source published/updated after context_cutoff_max may influence selection or context audit.",
+  "workflow_run_id": 34805143118,
+  "workflow_head_sha": "0a74a7b1cd7a5c6c21860fa4660d95448a7d20f5",
+  "model_script_commit": "3fa7aa4509e8188886dfd0c07959eae89db00c92",
+  "legacy_parlay": {
+    "label": "P1_LEGACY_COMPARATOR",
+    "legs": [
+      {"fixture": "Toluca vs Necaxa", "market": "DOUBLE_CHANCE_12", "meaning": "no draw", "p_model": 0.8206736115015422},
+      {"fixture": "Tijuana vs Atlas", "market": "HOME_TEAM_OVER_0.5", "meaning": "Tijuana scores at least 1", "p_model": 0.8149211105473204},
+      {"fixture": "Tigres vs Queretaro", "market": "DOUBLE_CHANCE_12", "meaning": "no draw", "p_model": 0.786820398363899}
+    ],
+    "joint_probability_independence_approx": 0.5262130906982543
+  },
+  "three_leg_shadow_portfolio": [
+    {
+      "label": "P2_SHADOW_DIVERSIFIED",
+      "legs": [
+        {"fixture": "Atletico San Luis vs FC Juarez", "market": "TOTAL_OVER_1.5", "p_model": 0.8154226125172503},
+        {"fixture": "Puebla vs Pumas", "market": "PUMAS_TEAM_UNDER_2.5", "p_model": 0.8097566706884642},
+        {"fixture": "Chivas vs America", "market": "TOTAL_UNDER_3.5", "p_model": 0.822089996283824}
+      ],
+      "joint_probability_independence_approx": 0.542821009728224
+    },
+    {
+      "label": "P3_SHADOW_DIVERSIFIED",
+      "legs": [
+        {"fixture": "Pachuca vs Mazatlan", "market": "DOUBLE_CHANCE_12", "meaning": "no draw", "p_model": 0.7630248775544741},
+        {"fixture": "Cruz Azul vs Monterrey", "market": "CRUZ_AZUL_TEAM_OVER_0.5", "p_model": 0.7585129665370646},
+        {"fixture": "Santos vs Leon", "market": "LEON_TEAM_OVER_0.5", "p_model": 0.7946266598106709}
+      ],
+      "joint_probability_independence_approx": 0.45990151345558217
+    }
+  ],
+  "portfolio_guardrail": "Across P1-P3, each of the nine J11 fixtures appears exactly once. This prevents the 2026-09-13 failure mode where multiple tickets were exposed to one repeated match thesis.",
+  "selection_note": "P1 is the exact legacy V0.1R comparator. P2/P3 are a new three-leg shadow experiment and must not be pooled with the prior J9-J10 two-leg expanded sample. P2/P3 use model-only candidates inside the legacy support ceiling where possible, avoid same-match correlation, and favor market-family diversity. They are not economic bets because contemporaneous historical prices are not yet verified.",
+  "next_gate": "Perplexity pre-cutoff context/source packet, then SUPPORT/NEUTRAL/CONTRADICT/VETO audit and final pre-result freeze."
+}
