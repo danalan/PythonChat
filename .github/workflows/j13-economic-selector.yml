@@ -1,0 +1,36 @@
+name: EXP003 J13 Economic Selector
+on:
+  push:
+    paths:
+      - 'exp003_recovery/economic_selector_v1.py'
+      - 'exp003_recovery/economic_proxy_v1.py'
+      - 'exp003_recovery/j13_model_only_replay.py'
+      - 'exp003_recovery/j13_price_snapshot_pre_cutoff.json'
+      - '.github/workflows/j13-economic-selector.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  j13-economic-selector:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy scipy
+      - name: Run J13 deterministic economic selector
+        working-directory: exp003_recovery
+        shell: bash
+        run: |
+          set -o pipefail
+          python economic_selector_v1.py --replay-module j13_model_only_replay --price-snapshot j13_price_snapshot_pre_cutoff.json | tee j13_economic_selector_output.txt
+      - name: Upload selector output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: j13-economic-selector-output
+          path: exp003_recovery/j13_economic_selector_output.txt
