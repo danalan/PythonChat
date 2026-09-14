@@ -1,0 +1,61 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J3",
+  "status":"SETTLED",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "opening_bankroll_mxn_simulated":549.8012159211471,
+  "total_stake_mxn_simulated":50.0,
+  "total_return_mxn_simulated":23.25,
+  "pnl_mxn_simulated":-26.75,
+  "roi_on_staked_capital":-0.535,
+  "closing_bankroll_mxn_simulated":523.0512159211471,
+  "primary_singles_record":{"wins":1,"losses":3,"stake":45.0,"return":23.25,"pnl":-21.75},
+  "secondary_parlays_record":{"wins":0,"losses":1,"stake":5.0,"return":0.0,"pnl":-5.0},
+  "tickets":[
+    {"fixture_id":"AP25J3-03","fixture":"Club Tijuana vs FC Juárez","market":"1X2_HOME","stake":10.0,"decimal":2.08,"final_score":"1-1","result":"LOSS","return":0.0,"pnl":-10.0},
+    {"fixture_id":"AP25J3-08","fixture":"CF Monterrey vs Atlas Guadalajara","market":"1X2_HOME","stake":15.0,"decimal":1.55,"final_score":"3-1","result":"WIN","return":23.25,"pnl":8.25},
+    {"fixture_id":"AP25J3-09","fixture":"Club Necaxa vs CF América","market":"1X2_AWAY","stake":10.0,"decimal":1.9803921568627452,"final_score":"1-1","result":"LOSS","return":0.0,"pnl":-10.0},
+    {"fixture_id":"AP25J3-05","fixture":"Deportivo Guadalajara vs Atlético San Luis","market":"1X2_AWAY","stake":10.0,"decimal":5.7,"final_score":"4-3","result":"LOSS","return":0.0,"pnl":-10.0},
+    {"vehicle":"PARLAY_2_SECONDARY","legs":["CF Monterrey 1X2_HOME","CF América 1X2_AWAY"],"stake":5.0,"decimal":3.069607843137255,"result":"LOSS","return":0.0,"pnl":-5.0}
+  ],
+  "all_j3_results_for_next_cutoff":[
+    {"home":"Gallos Blancos","away":"Pumas UNAM","hg":0,"ag":2},
+    {"home":"Puebla FC","away":"Santos Laguna","hg":1,"ag":0},
+    {"home":"Club Tijuana","away":"FC Juárez","hg":1,"ag":1},
+    {"home":"CF Pachuca","away":"Mazatlán FC","hg":1,"ag":0},
+    {"home":"Deportivo Guadalajara","away":"Atlético San Luis","hg":4,"ag":3},
+    {"home":"Cruz Azul","away":"Club León","hg":4,"ag":1},
+    {"home":"Deportivo Toluca","away":"UANL Tigres","hg":3,"ag":4},
+    {"home":"CF Monterrey","away":"Atlas Guadalajara","hg":3,"ag":1},
+    {"home":"Club Necaxa","away":"CF América","hg":1,"ag":1}
+  ],
+  "calibration_selected_singles_j3":{
+    "n":4,
+    "raw_brier":0.17657075559384677,
+    "shadow_brier":0.20155433557300625,
+    "raw_log_loss":0.5323244352929459,
+    "shadow_log_loss":0.5934391753180955,
+    "winner":"RAW_V0_1R"
+  },
+  "calibration_selected_singles_cumulative_j1_j3":{
+    "n":12,
+    "raw_brier":0.26931705473128226,
+    "shadow_brier":0.2543535389910021,
+    "raw_log_loss":0.7354953404976486,
+    "shadow_log_loss":0.7020136975726986,
+    "winner":"CAL_SHRINK_GLOBAL_V0_1_SHADOW",
+    "promotion_allowed":false
+  },
+  "lessons":[
+    "A positive expected-value estimate is not a forecast of certainty: three of four qualified singles lost in this realized jornada.",
+    "The high-price San Luis ticket had the largest model EV but only about 21.8% raw win probability; high EV and high hit rate are different concepts.",
+    "Monterrey converted the strongest Kelly-ranked edge and was the only winning primary single.",
+    "The secondary parlay again inherited the failure of one otherwise qualified leg; it remains diagnostic, not the portfolio engine.",
+    "Only MXN50 of the MXN100 cap was staked; the loss therefore did not trigger budget-chasing or reloading.",
+    "J3 cannot be used to promote model, calibration or context rules because researcher outcome exposure occurred before final freeze."
+  ],
+  "result_source":"https://elpais.com/deportes/resultados/futbol/mexico_apertura/2025/jornada/regular-a-3/"
+}
