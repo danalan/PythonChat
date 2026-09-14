@@ -1,0 +1,96 @@
+{
+  "experiment": "EXP-003",
+  "track": "ECONOMIC_TRACK_V1",
+  "jornada": "Clausura 2025 J13",
+  "status": "SETTLED",
+  "selection_freeze_commit": "540412db2f521c309d38d8c41765599e1c2021c1",
+  "integrity_class": "MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility": false,
+  "verified_results": {
+    "J13-01": {"fixture":"Necaxa vs Queretaro","score":"2-0","source":"ESPN Liga MX results"},
+    "J13-02": {"fixture":"Mazatlan vs Atlas","score":"3-2","source":"ESPN Liga MX results"},
+    "J13-03": {"fixture":"Juarez vs Puebla","score":"2-0","source":"ESPN Liga MX results"},
+    "J13-04": {"fixture":"Toluca vs Pachuca","score":"3-2","source":"ESPN Liga MX results"},
+    "J13-05": {"fixture":"America vs Tigres","score":"3-0","source":"ESPN Liga MX results"},
+    "J13-06": {"fixture":"Guadalajara vs Cruz Azul","score":"0-1","source":"ESPN Liga MX results"},
+    "J13-07": {"fixture":"Monterrey vs Tijuana","score":"1-2","source":"ESPN Liga MX results"},
+    "J13-08": {"fixture":"Santos vs Atletico San Luis","score":"2-3","source":"ESPN Liga MX results"},
+    "J13-09": {"fixture":"Leon vs Pumas","score":"1-2","source":"ESPN Liga MX results"}
+  },
+  "tickets": {
+    "P1": {
+      "stake_mxn_simulated": 80.0,
+      "proxy_decimal": 3.7465342155833574,
+      "model_ev_at_proxy": 0.3086632954697308,
+      "legs": [
+        {"selection":"Leon-Pumas Over 1.5","p_model":0.7508125787814273,"result":1,"verdict":"HIT"},
+        {"selection":"Puebla scores >=1 vs Juarez","p_model":0.6828859100975555,"result":0,"verdict":"FAIL"},
+        {"selection":"Mazatlan-Atlas Over 1.5","p_model":0.6812688415417797,"result":1,"verdict":"HIT"}
+      ],
+      "ticket_result":"LOSS",
+      "return_mxn_simulated":0.0,
+      "net_pnl_mxn_simulated":-80.0,
+      "learning":"Both broad total-over-1.5 legs hit, but Puebla-to-score failed. This adds another failure to the weak-team team-to-score residual and strengthens the need to audit whether model/proxy is too optimistic when a low-output underdog only needs one goal."
+    },
+    "P2": {
+      "stake_mxn_simulated": 80.0,
+      "proxy_decimal": 3.264084545665989,
+      "model_ev_at_proxy": 0.24358604362084724,
+      "legs": [
+        {"selection":"Guadalajara or Draw (1X) vs Cruz Azul","p_model":0.6976735557347441,"result":0,"verdict":"FAIL"},
+        {"selection":"Atletico San Luis scores >=1 vs Santos","p_model":0.7890750151009881,"result":1,"verdict":"HIT"},
+        {"selection":"Pachuca scores >=1 vs Toluca","p_model":0.6920602190746374,"result":1,"verdict":"HIT"}
+      ],
+      "ticket_result":"LOSS",
+      "return_mxn_simulated":0.0,
+      "net_pnl_mxn_simulated":-80.0,
+      "learning":"The goal-floor selections hit, while Guadalajara 1X failed. This is evidence against a blanket penalty on team-to-score markets and instead points to fixture-specific disagreement: the model gave Guadalajara/home-draw materially more protection than the market while Cruz Azul's stronger pre-match form was a warning signal."
+    },
+    "P3": {
+      "stake_mxn_simulated": 40.0,
+      "proxy_decimal": 2.937962872031681,
+      "model_ev_at_proxy": -0.07705877535748629,
+      "legs": [
+        {"selection":"America or Draw (1X) vs Tigres","p_model":0.8042311175883219,"result":1,"verdict":"HIT"},
+        {"selection":"Queretaro scores >=1 vs Necaxa","p_model":0.6262523701567924,"result":0,"verdict":"FAIL"},
+        {"selection":"Tijuana scores >=1 vs Monterrey","p_model":0.623731225169372,"result":1,"verdict":"HIT"}
+      ],
+      "ticket_result":"LOSS",
+      "return_mxn_simulated":0.0,
+      "net_pnl_mxn_simulated":-40.0,
+      "learning":"P3 was negative EV before kickoff and lost despite two of three legs hitting. Forced inclusion again demonstrates how a single weak leg destroys a parlay; however the EV-disciplined control also lost on J13 because P1 and P2 failed, so two prior jornadas were not enough to validate the control."
+    }
+  },
+  "selected_leg_metrics": {
+    "hits": 6,
+    "legs": 9,
+    "hit_rate": 0.6666666666666666,
+    "mean_brier": 0.20313082379314193,
+    "mean_log_loss": 0.5882437863337946
+  },
+  "forced_200_simulated_track": {
+    "opening_bankroll_mxn_simulated": 975.0533292025918,
+    "staked_mxn_simulated": 200.0,
+    "returned_mxn_simulated": 0.0,
+    "jornada_pnl_mxn_simulated": -200.0,
+    "closing_bankroll_mxn_simulated": 775.0533292025918,
+    "cumulative_pnl_from_1000_mxn_simulated": -224.9466707974082
+  },
+  "ev_disciplined_counterfactual": {
+    "opening_bankroll_mxn_simulated": 1078.9483346997567,
+    "eligible_tickets": ["P1","P2"],
+    "held_cash_mxn_simulated": 40.0,
+    "staked_mxn_simulated": 160.0,
+    "returned_mxn_simulated": 0.0,
+    "jornada_pnl_mxn_simulated": -160.0,
+    "closing_bankroll_mxn_simulated": 918.9483346997567
+  },
+  "learning": [
+    "J13 again produced 6/9 leg accuracy but 0/3 parlays, illustrating that leg hit rate alone can look acceptable while parlay economics deteriorate sharply because one miss kills the entire ticket.",
+    "Positive proxy EV did not protect P1 or P2 from losing. Do not promote proxy EV as validated edge; exact-market audit remains required.",
+    "Weak-team team-to-score misses now include Puebla vs Juarez and Queretaro vs Necaxa in J13, joining prior concerns from J12. Investigate whether the model or 1X2-to-Poisson proxy is too generous to low-output underdogs scoring at least once.",
+    "Atletico San Luis, Pachuca and Tijuana team-to-score selections all hit, so the signal is not a universal team-goal failure. Segment future residuals by team strength, market-implied underdog severity, home/away status and attacking process rather than applying a blanket market penalty.",
+    "Guadalajara 1X failed despite a sizable model-market disagreement. Before any model change, inspect whether recent form, managerial state and opponent strength systematically explain large 1X/ X2 disagreement residuals.",
+    "No V0.1R retune or selector change is authorized from J13 alone. Accumulate cross-jornada evidence first."
+  ]
+}
