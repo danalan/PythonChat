@@ -1,0 +1,51 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J10",
+  "promotion_eligibility":false,
+  "integrity_class":"MECHANICAL_REPLAY_EXTERNAL_PACKET_OUTCOME_EXPOSURE_BEFORE_SELECTION_FREEZE",
+  "selection_freeze_commit":"e17cf29c60a2a241b2a922df9276ea6c10366ffe",
+  "results":[
+    {"fixture_id":"AP25J10-01","home":"Deportivo Guadalajara","away":"Club Necaxa","home_goals":3,"away_goals":1},
+    {"fixture_id":"AP25J10-02","home":"Puebla FC","away":"CF Pachuca","home_goals":2,"away_goals":2},
+    {"fixture_id":"AP25J10-03","home":"Club León","away":"Mazatlán FC","home_goals":2,"away_goals":2},
+    {"fixture_id":"AP25J10-04","home":"FC Juárez","away":"Pumas UNAM","home_goals":3,"away_goals":1},
+    {"fixture_id":"AP25J10-05","home":"Cruz Azul","away":"Gallos Blancos","home_goals":2,"away_goals":2},
+    {"fixture_id":"AP25J10-06","home":"UANL Tigres","away":"Atlas Guadalajara","home_goals":2,"away_goals":0},
+    {"fixture_id":"AP25J10-07","home":"Deportivo Toluca","away":"CF Monterrey","home_goals":6,"away_goals":2},
+    {"fixture_id":"AP25J10-08","home":"Atlético San Luis","away":"CF América","home_goals":0,"away_goals":1},
+    {"fixture_id":"AP25J10-09","home":"Santos Laguna","away":"Club Tijuana","home_goals":1,"away_goals":0}
+  ],
+  "canonical_v2_1":{
+    "opening_bankroll_mxn":457.3012159211471,
+    "tickets":[
+      {"fixture_id":"AP25J10-07","selection":"CF Monterrey ML","stake":10.0,"decimal":4.75,"result":"LOSS","return":0.0,"pnl":-10.0}
+    ],
+    "single_record":{"wins":0,"losses":1},
+    "parlay_record":{"wins":0,"losses":0},
+    "total_stake":10.0,
+    "total_return":0.0,
+    "pnl":-10.0,
+    "roi_on_stake":-1.0,
+    "closing_bankroll_mxn":447.3012159211471
+  },
+  "fractional_kelly_v2_2_shadow":{
+    "FK15":{"opening_bankroll":484.17507281219184,"total_stake":5.318107243617234,"total_return":0.0,"pnl":-5.318107243617234,"roi_on_stake":-1.0,"closing_bankroll":478.8569655685746},
+    "FK20":{"opening_bankroll":482.3624371369899,"total_stake":7.064263362664917,"total_return":0.0,"pnl":-7.064263362664917,"roi_on_stake":-1.0,"closing_bankroll":475.298173774325},
+    "FK25":{"opening_bankroll":480.28051643649303,"total_stake":8.792216689285206,"total_return":0.0,"pnl":-8.792216689285206,"roi_on_stake":-1.0,"closing_bankroll":471.4882997472078}
+  },
+  "selected_single_calibration":{"n":1,"raw_brier":0.07200424221795677,"shadow_brier":0.13674136154869532,"raw_log_loss":0.3124339716558728,"shadow_log_loss":0.46169513905840215,"winner":"RAW_V0_1R_ON_J10"},
+  "cumulative_selected_single_calibration_j1_to_j10":{"n":35,"raw_brier":0.18952202591121448,"shadow_brier":0.20835491379332788,"raw_log_loss":0.5656106415268018,"shadow_log_loss":0.6082915179989467,"winner":"RAW_V0_1R_CUMULATIVE"},
+  "diagnostic_lessons":[
+    "The conservative price firewall left only one qualifying canonical wager: Monterrey ML at 4.75, which lost 2-6 at Toluca.",
+    "Pachuca ML at 1.95 had positive EV but failed the Kelly >=0.05 gate; Leon-Mazatlan draw also had slight positive EV but was far below gate.",
+    "Holding MXN90 rather than forcing action limited the J10 loss to MXN10 despite the selected longshot failing.",
+    "Raw calibration again beat the shrinkage shadow on the selected wager and cumulatively through J10.",
+    "J10 remains permanently NO-PROMOTION because the supplied Perplexity packet itself exposed post-J10 outcomes in source titles before selection freeze.",
+    "The firewall protocol must prohibit rejected-source titles/URLs and any post-cutoff source wording from being returned at all."
+  ],
+  "result_sources":[
+    "EL PAIS Jornada 10 result grid used after selection freeze.",
+    "TUDN independently confirms Toluca 6-2 Monterrey."
+  ]
+}
