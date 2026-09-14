@@ -1,0 +1,18 @@
+{
+  "jornada": "Clausura 2025 J15",
+  "status": "FROZEN_PRICE_INPUT_PRE_SETTLEMENT",
+  "global_cutoff": "2025-04-10T20:04:00-06:00",
+  "purpose": "Inputs for MARKET_PROXY_V1 only. Historical/pregame 1X2 observations available before the first J15 kickoff; not p_model inputs.",
+  "fixtures": {
+    "J15-01": {"fixture":"Tijuana vs Atletico San Luis","decimal_1x2":[1.8333333333,4.30,3.90],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/liga-mx/news/club-tijuana-vs-san-luis-prediction-liga-mx-ac-4-10-25","source_timestamp":"2025-04-08T00:04:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-02": {"fixture":"Necaxa vs Pachuca","decimal_1x2":[2.50,3.50,2.90],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/liga-mx/news/necaxa-vs-pachuca-prediction-liga-mx-ac-4-11-25","source_timestamp":"2025-04-09T00:02:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-03": {"fixture":"Mazatlan vs Guadalajara","decimal_1x2":[3.30,3.10,2.35],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/news/mazatlan-vs-guadalajara-prediction-liga-mx-ac-4-11-25","source_timestamp":"2025-04-09T00:03:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-04": {"fixture":"Pumas UNAM vs Juarez","decimal_1x2":[1.8695652174,3.50,4.80],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/news/pumas-unam-vs-juarez-prediction-liga-mx-ac-4-12-25","source_timestamp":"2025-04-10T00:02:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-05": {"fixture":"Leon vs Puebla","decimal_1x2":[1.5405405405,4.20,5.75],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/news/club-leon-vs-puebla-prediction-liga-mx-ac-4-12-25","source_timestamp":"2025-04-10T00:02:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-06": {"fixture":"Atlas vs Toluca","decimal_1x2":[3.50,3.75,2.00],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/news/atlas-vs-toluca-prediction-liga-mx-ac-4-12-25","source_timestamp":"2025-04-10T00:04:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-07": {"fixture":"Tigres vs Monterrey","decimal_1x2":[2.45,3.30,2.95],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/news/tigres-uanl-vs-monterrey-prediction-liga-mx-ac-4-12-25","source_timestamp":"2025-04-10T00:05:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-08": {"fixture":"America vs Cruz Azul","decimal_1x2":[2.45,3.30,2.85],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/liga-mx/news/club-america-vs-cruz-azul-prediction-liga-mx-ac-4-12-25","source_timestamp":"2025-04-10T00:05:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"},
+    "J15-09": {"fixture":"Santos Laguna vs Queretaro","decimal_1x2":[2.16,3.50,3.195],"source":"TotalCorner historical 1X2 timeline","source_url":"https://www.totalcorner.com/odds/Santos-Laguna-vs-Queretaro/171937842","source_timestamp":"2025-04-09T18:09:00","timestamp_timezone":"SOURCE_UNSPECIFIED","temporal_confidence":"HIGH_BEFORE_GLOBAL_CUTOFF"}
+  },
+  "integrity_note": "Researcher was exposed to J15 result snippets during schedule discovery. All selection is deterministic MODEL_ONLY + this price snapshot. Every price observation predates the first J15 kickoff; no discretionary context or outcome-derived changes are permitted."
+}
