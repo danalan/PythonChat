@@ -1,0 +1,31 @@
+name: EXP003 J17 Safe Fixture Discovery
+on:
+  push:
+    paths:
+      - 'exp003_recovery/safe_fixture_discovery.py'
+      - '.github/workflows/j17-safe-fixtures.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover-j17-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy scipy
+      - name: Discover J17 fixtures with score fields suppressed
+        working-directory: exp003_recovery
+        shell: bash
+        run: |
+          set -o pipefail
+          python safe_fixture_discovery.py --start 2025-04-18 --end 2025-04-21 --expected 9 | tee j17_safe_fixtures.txt
+      - name: Upload safe fixture list
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: j17-safe-fixtures
+          path: exp003_recovery/j17_safe_fixtures.txt
