@@ -1,0 +1,86 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J4",
+  "freeze_status":"FROZEN_SELECTION_BEFORE_SETTLEMENT",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "opening_bankroll_mxn_simulated":523.0512159211471,
+  "canonical_policy":"V2.1_WINDOWED_100",
+  "shadow_policy":"V2.2_FRACTIONAL_KELLY_SHADOW",
+  "canonical_primary_singles":[
+    {
+      "fixture_id":"AP25J4-04","date":"2025-08-09","home":"Atlas Guadalajara","away":"CF Pachuca","market":"1X2_HOME",
+      "decimal":3.50,"p_raw":0.32272567257419194,"break_even":0.2857142857142857,
+      "model_ev":0.12953985400967172,"kelly_score":0.05181594160386869,"stake_mxn_simulated":10.0
+    },
+    {
+      "fixture_id":"AP25J4-08","date":"2025-08-11","home":"FC Juárez","away":"Deportivo Toluca","market":"1X2_AWAY",
+      "decimal":2.05,"p_raw":0.5626864934215227,"break_even":0.48780487804878053,
+      "model_ev":0.15350731151412145,"kelly_score":0.14619743953725856,"stake_mxn_simulated":15.0
+    },
+    {
+      "fixture_id":"AP25J4-09","date":"2025-08-11","home":"Atlético San Luis","away":"Cruz Azul","market":"1X2_HOME",
+      "decimal":4.50,"p_raw":0.3064940159097631,"break_even":0.2222222222222222,
+      "model_ev":0.379223071593934,"kelly_score":0.10834944902683828,"stake_mxn_simulated":15.0
+    }
+  ],
+  "canonical_secondary_parlays":[
+    {
+      "window":"2025-08-11","stake_mxn_simulated":5.0,"decimal":9.225,
+      "legs":["AP25J4-08|1X2_AWAY","AP25J4-09|1X2_HOME"],
+      "p_joint_independence":0.17246004306694498,"model_ev":0.5909438972925674
+    }
+  ],
+  "canonical_total_stake_mxn_simulated":45.0,
+  "canonical_held_cash_from_budget":55.0,
+  "fractional_kelly_shadows":{
+    "FK15":{
+      "fraction_of_full_kelly":0.15,
+      "single_stakes":[
+        {"fixture_id":"AP25J4-04","stake_mxn_simulated":4.0653586890004005},
+        {"fixture_id":"AP25J4-08","stake_mxn_simulated":11.470312277178222},
+        {"fixture_id":"AP25J4-09","stake_mxn_simulated":8.500846658681116}
+      ],
+      "same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":29.036517624859737,"risk_ceiling_scale_factor":1.0
+    },
+    "FK20":{
+      "fraction_of_full_kelly":0.20,
+      "single_stakes":[
+        {"fixture_id":"AP25J4-04","stake_mxn_simulated":5.420478252000534},
+        {"fixture_id":"AP25J4-08","stake_mxn_simulated":15.293749702904297},
+        {"fixture_id":"AP25J4-09","stake_mxn_simulated":11.334462211574824}
+      ],
+      "same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":37.04869016647965,"risk_ceiling_scale_factor":1.0
+    },
+    "FK25":{
+      "fraction_of_full_kelly":0.25,
+      "single_stakes":[
+        {"fixture_id":"AP25J4-04","stake_mxn_simulated":6.775597815000667},
+        {"fixture_id":"AP25J4-08","stake_mxn_simulated":19.11718712863037},
+        {"fixture_id":"AP25J4-09","stake_mxn_simulated":14.168077764468528}
+      ],
+      "same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":45.06086270809956,"risk_ceiling_scale_factor":1.0
+    }
+  },
+  "high_probability_rejections_of_interest":[
+    {
+      "fixture_id":"AP25J4-01","selection":"Tigres ML","p_raw":0.7031376612905674,"decimal":1.34,
+      "model_ev":-0.057795533870639626,"reason":"HIGH_PROBABILITY_BUT_NEGATIVE_EV"
+    },
+    {
+      "fixture_id":"AP25J4-02","selection":"América ML","p_raw":0.7663825596190558,"decimal":1.27,
+      "model_ev":-0.026694149283799207,"reason":"HIGH_PROBABILITY_BUT_NEGATIVE_EV"
+    }
+  ],
+  "near_miss_rejections":[
+    {"fixture_id":"AP25J4-06","selection":"Santos ML","p_raw":0.26465723684900827,"decimal":4.30,"model_ev":0.13802611845073542,"kelly_score":0.041826096500222856,"reason":"KELLY_BELOW_0.05"},
+    {"fixture_id":"AP25J4-06","selection":"Draw","p_raw":0.2862207703970006,"decimal":3.90,"model_ev":0.11626100454830235,"kelly_score":0.04009000156838012,"reason":"KELLY_BELOW_0.05"}
+  ],
+  "notes":[
+    "No J4 settlement result is an input to this freeze artifact.",
+    "Human outcome exposure makes J4 NO-PROMOTION but does not alter this mechanical selection.",
+    "The canonical selection demonstrates why high win probability alone is not an admission rule: Tigres and America were rejected at the frozen prices because model EV was negative.",
+    "The V2.2 shadow variants use the exact same qualifying singles and only change bankroll-scaled stake sizes."
+  ]
+}
