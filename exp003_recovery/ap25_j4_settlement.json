@@ -1,0 +1,75 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J4",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "selection_freeze_commit":"aadceefeb836121a50369c62dd136f8986f888e1",
+  "results":[
+    {"fixture_id":"AP25J4-01","home":"UANL Tigres","away":"Puebla FC","home_goals":7,"away_goals":0},
+    {"fixture_id":"AP25J4-02","home":"CF América","away":"Gallos Blancos","home_goals":1,"away_goals":0},
+    {"fixture_id":"AP25J4-03","home":"Mazatlán FC","away":"Club Tijuana","home_goals":2,"away_goals":2},
+    {"fixture_id":"AP25J4-04","home":"Atlas Guadalajara","away":"CF Pachuca","home_goals":0,"away_goals":3},
+    {"fixture_id":"AP25J4-05","home":"Pumas UNAM","away":"Club Necaxa","home_goals":1,"away_goals":1},
+    {"fixture_id":"AP25J4-06","home":"Santos Laguna","away":"Deportivo Guadalajara","home_goals":1,"away_goals":0},
+    {"fixture_id":"AP25J4-07","home":"Club León","away":"CF Monterrey","home_goals":1,"away_goals":3},
+    {"fixture_id":"AP25J4-08","home":"FC Juárez","away":"Deportivo Toluca","home_goals":0,"away_goals":2},
+    {"fixture_id":"AP25J4-09","home":"Atlético San Luis","away":"Cruz Azul","home_goals":1,"away_goals":2}
+  ],
+  "canonical_v2_1":{
+    "opening_bankroll_mxn":523.0512159211471,
+    "tickets":[
+      {"fixture_id":"AP25J4-04","selection":"Atlas ML","stake":10.0,"decimal":3.50,"result":"LOSS","return":0.0,"pnl":-10.0},
+      {"fixture_id":"AP25J4-08","selection":"Toluca ML","stake":15.0,"decimal":2.05,"result":"WIN","return":30.75,"pnl":15.75},
+      {"fixture_id":"AP25J4-09","selection":"Atlético San Luis ML","stake":15.0,"decimal":4.50,"result":"LOSS","return":0.0,"pnl":-15.0},
+      {"selection":"Parlay Toluca ML + Atlético San Luis ML","stake":5.0,"decimal":9.225,"result":"LOSS","return":0.0,"pnl":-5.0}
+    ],
+    "single_record":{"wins":1,"losses":2},
+    "parlay_record":{"wins":0,"losses":1},
+    "total_stake":45.0,
+    "total_return":30.75,
+    "pnl":-14.25,
+    "roi_on_stake":-0.31666666666666665,
+    "closing_bankroll_mxn":508.8012159211471
+  },
+  "fractional_kelly_v2_2_shadow":{
+    "FK15":{
+      "total_stake":29.036517624859737,"total_return":23.514140168215352,"pnl":-5.522377456644385,"roi_on_stake":-0.19018731956742563,"shadow_closing_bankroll":517.5288384645028
+    },
+    "FK20":{
+      "total_stake":37.04869016647966,"total_return":31.352186890953806,"pnl":-5.696503275525853,"roi_on_stake":-0.15375721111673327,"shadow_closing_bankroll":517.3547126456212
+    },
+    "FK25":{
+      "total_stake":45.06086270809956,"total_return":39.19023361369226,"pnl":-5.870629094407306,"roi_on_stake":-0.13028221701916232,"shadow_closing_bankroll":517.1805868267398
+    },
+    "interpretation":"All three fractional-Kelly shadow portfolios lost less MXN than canonical V2.1 on J4 because they put less on the losing Atlas position, more on the winning Toluca position, and slightly less/equivalent on the losing San Luis position. This is diagnostic only and cannot promote V2.2 because J4 is outcome-exposed and n=1 shadow jornada."
+  },
+  "selected_single_calibration":{
+    "n":3,
+    "raw_brier":0.12977784818764088,
+    "shadow_brier":0.1764519688207746,
+    "raw_log_loss":0.4435689813994981,
+    "shadow_log_loss":0.5442635753456985,
+    "winner":"RAW_ON_J4"
+  },
+  "cumulative_selected_single_calibration_j1_to_j4":{
+    "n":15,
+    "raw_brier":0.24140921342255398,
+    "shadow_brier":0.2387732249569566,
+    "raw_log_loss":0.6771100686780186,
+    "shadow_log_loss":0.6704636731272985,
+    "winner":"CAL_SHRINK_GLOBAL_V0_1_CUMULATIVE_BY_SMALL_MARGIN"
+  },
+  "diagnostic_lessons":[
+    "High nominal win probability did not equal positive value: Tigres ML and América ML were rejected at their frozen prices despite model probabilities above 70%.",
+    "Toluca was both the highest-Kelly canonical single and the only winning selected single.",
+    "The fractional-Kelly sizing variants materially reduced the J4 peso loss, but J4 cannot validate or promote them because of researcher outcome exposure and the one-jornada sample.",
+    "The secondary parlay again amplified a losing leg; its fixed small stake limited damage.",
+    "The MXN100 ceiling was not a spending target: canonical deployed only MXN45."
+  ],
+  "result_sources":[
+    "TUDN complete Jornada 4 result list",
+    "EL PAIS Jornada 4 results",
+    "Atletico de San Luis official match report for San Luis 1-2 Cruz Azul"
+  ]
+}
