@@ -34,6 +34,15 @@
   "shadow_sizing_formula": "stake = bankroll_open * full_kelly_fraction * fractional_kelly_multiplier",
   "full_kelly_formula_decimal_odds": "f_star = (p_model * decimal_odds - 1) / (decimal_odds - 1)",
   "admission_rule": "Shadow variants inherit the canonical candidate set and Kelly>=0.05 gate; they change sizing only unless a future preregistered test explicitly changes admission.",
+  "shadow_portfolio_rules": {
+    "opening_bankroll_basis": "same opening bankroll as canonical track for each jornada",
+    "stake_precision": "retain unrounded decimal MXN internally for research; display may round to 2 decimals",
+    "jornada_risk_ceiling_mxn": 100,
+    "secondary_parlay": "same canonical qualifying 2-leg parlay, fixed 5 MXN, so staking comparison changes singles only",
+    "ceiling_method": "reserve any canonical 5 MXN parlay stake first; if calculated shadow single stakes exceed remaining risk capacity, scale all shadow single stakes pro-rata to fit the remaining capacity",
+    "no_recycling_returns": true,
+    "no_forced_spend": true
+  },
   "tail_uncertainty_discount": {
     "status": "NOT_ACTIVE_HYPOTHESIS_ONLY",
     "reason": "Insufficient evidence that calibration error is concentrated in probability tails. Must be demonstrated before use."
@@ -62,6 +71,7 @@
   "notes": [
     "Probability, nominal odds and favorite/underdog labels never determine stake in isolation.",
     "No bucket is required to receive capital in any jornada.",
-    "The objective is to test whether dynamic fractional Kelly reduces drawdown/volatility without unacceptable loss of bankroll growth."
+    "The objective is to test whether dynamic fractional Kelly reduces drawdown/volatility without unacceptable loss of bankroll growth.",
+    "The parlay is held constant across canonical and shadow portfolios so that the shadow comparison isolates the effect of single-bet sizing."
   ]
 }
