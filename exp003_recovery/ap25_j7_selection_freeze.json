@@ -1,0 +1,43 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J7",
+  "freeze_status":"FROZEN_SELECTION_BEFORE_SETTLEMENT_ARTIFACT",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED_BEFORE_SELECTION_FREEZE",
+  "promotion_eligibility":false,
+  "canonical_policy":"V2.1_WINDOWED_100",
+  "shadow_policy":"V2.2_FRACTIONAL_KELLY_SHADOW",
+  "model_output_sha":"ac6d212f6e35bb2674432e1cce36e205e3b41077",
+  "price_snapshot_commit":"bbb0fdc43cb07509d3a4843dd0bfc8459d7ef02c",
+  "selector_output_sha":"779f2b32c9ace024121ca30a1db9faf566cbbe55",
+  "canonical_opening_bankroll_mxn":510.3012159211471,
+  "shadow_opening_bankrolls_mxn":{"FK15":511.20159944558327,"FK20":513.9092776017159,"FK25":516.6124019445112},
+  "canonical_primary_singles":[
+    {"fixture_id":"AP25J7-03","date":"2025-08-29","home":"Puebla FC","away":"CF Monterrey","selection":"CF Monterrey ML","market":"1X2_AWAY","decimal":1.86,"p_raw":0.6303745334294835,"break_even":0.5376344086021505,"model_ev":0.17249663217883926,"kelly_score":0.20057747927772004,"stake_mxn_simulated":20.0},
+    {"fixture_id":"AP25J7-01","date":"2025-08-29","home":"FC Juárez","away":"Mazatlán FC","selection":"Mazatlán FC ML","market":"1X2_AWAY","decimal":5.50,"p_raw":0.25771720821877714,"break_even":0.18181818181818182,"model_ev":0.4174446452032743,"kelly_score":0.09276547671183873,"stake_mxn_simulated":15.0},
+    {"fixture_id":"AP25J7-02","date":"2025-08-29","home":"Atlético San Luis","away":"Deportivo Toluca","selection":"Atlético San Luis ML","market":"1X2_HOME","decimal":5.00,"p_raw":0.2624963839029459,"break_even":0.2,"model_ev":0.3124819195147295,"kelly_score":0.07812047987868237,"stake_mxn_simulated":10.0},
+    {"fixture_id":"AP25J7-07","date":"2025-08-30","home":"CF América","away":"CF Pachuca","selection":"CF América ML","market":"1X2_HOME","decimal":1.83,"p_raw":0.6266774719479131,"break_even":0.5464480874316939,"model_ev":0.14681977366468102,"kelly_score":0.17689129357190483,"stake_mxn_simulated":20.0}
+  ],
+  "canonical_secondary_parlays":[
+    {"execution_date":"2025-08-29","stake_mxn_simulated":5.0,"legs":["AP25J7-03|1X2_AWAY","AP25J7-01|1X2_AWAY"],"decimal":10.23,"p_joint_independence":0.1624583648876607,"model_ev":0.6619490728007689}
+  ],
+  "canonical_total_stake_mxn_simulated":70.0,
+  "canonical_held_cash_from_budget":30.0,
+  "fractional_kelly_shadows":{
+    "FK15":{"fraction_of_full_kelly":0.15,"single_stakes":[{"fixture_id":"AP25J7-03","stake_mxn_simulated":15.380329232930071},{"fixture_id":"AP25J7-01","stake_mxn_simulated":7.113279010263594},{"fixture_id":"AP25J7-02","stake_mxn_simulated":5.99029713951584},{"fixture_id":"AP25J7-07","stake_mxn_simulated":13.564066830293397}],"same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":47.0479722130029,"risk_ceiling_scale_factor":1.0},
+    "FK20":{"fraction_of_full_kelly":0.20,"single_stakes":[{"fixture_id":"AP25J7-03","stake_mxn_simulated":20.61572549575725},{"fixture_id":"AP25J7-01","stake_mxn_simulated":9.534607824671967},{"fixture_id":"AP25J7-02","stake_mxn_simulated":8.029367876070607},{"fixture_id":"AP25J7-07","stake_mxn_simulated":18.181215378714132}],"same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":61.36091657521396,"risk_ceiling_scale_factor":1.0},
+    "FK25":{"fraction_of_full_kelly":0.25,"single_stakes":[{"fixture_id":"AP25J7-03","stake_mxn_simulated":25.905203336409595},{"fixture_id":"AP25J7-01","stake_mxn_simulated":11.980948935407657},{"fixture_id":"AP25J7-02","stake_mxn_simulated":10.08950218779599},{"fixture_id":"AP25J7-07","stake_mxn_simulated":22.84605901381336}],"same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":75.8217134734266,"risk_ceiling_scale_factor":1.0}
+  },
+  "notable_rejections":[
+    {"fixture_id":"AP25J7-01","selection":"Draw","decimal":3.90,"p_raw":0.29298351885954027,"model_ev":0.1426357235522071,"kelly_score":0.04918473225938176,"reason":"POSITIVE_EV_BUT_KELLY_JUST_BELOW_0.05_GATE"},
+    {"fixture_id":"AP25J7-06","selection":"Tigres ML","decimal":1.49,"p_raw":0.5483106136522735,"model_ev":-0.18301718565811242,"reason":"HIGHER_NOMINAL_PROBABILITY_BUT_NEGATIVE_EV_AT_PRICE"},
+    {"fixture_id":"AP25J7-04","selection":"León ML","decimal":1.46,"p_raw":0.5501884045717099,"model_ev":-0.1967249293253035,"reason":"FAVORITE_PRICE_TOO_SHORT_FOR_MODEL_PROBABILITY"},
+    {"fixture_id":"AP25J7-08","selection":"Pumas ML","decimal":1.77,"p_raw":0.542032907503517,"model_ev":-0.04060175371877495,"reason":"NEGATIVE_EV"}
+  ],
+  "notes":[
+    "Selection is frozen before creation of the settlement artifact.",
+    "One J7 result had been seen by the human researcher before selection freeze; therefore J7 is permanently NO-PROMOTION even though no J7 result entered model, EV, Kelly, candidate or stake calculations.",
+    "The favorite examples Tigres, León and Pumas illustrate that high nominal probability or short odds do not create value by themselves.",
+    "CORE/VALUE/LONGSHOT remains reporting-only metadata and does not control admission or stake."
+  ]
+}
