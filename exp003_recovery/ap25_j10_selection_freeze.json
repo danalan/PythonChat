@@ -1,0 +1,21 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J10",
+  "promotion_eligibility":false,
+  "integrity_class":"MECHANICAL_REPLAY_EXTERNAL_PACKET_OUTCOME_EXPOSURE_BEFORE_SELECTION_FREEZE",
+  "training_count":1097,
+  "canonical_opening_bankroll_mxn":457.3012159211471,
+  "canonical_primary_singles":[
+    {"fixture_id":"AP25J10-07","selection":"CF Monterrey ML","stake":10.0,"decimal":4.75,"p_raw":0.26833606208997846,"model_ev":0.2745962949273977,"kelly":0.07322567864730604}
+  ],
+  "canonical_secondary_parlays":[],
+  "canonical_total_stake_mxn":10.0,
+  "canonical_held_cash_mxn":90.0,
+  "fractional_kelly_shadows":{
+    "FK15":{"opening_bankroll":484.17507281219184,"stake":5.318107243617234},
+    "FK20":{"opening_bankroll":482.3624371369899,"stake":7.064263362664917},
+    "FK25":{"opening_bankroll":480.28051643649303,"stake":8.792216689285206}
+  },
+  "source_output":"exp003_recovery/ap25_j10_selection_output.txt"
+}
