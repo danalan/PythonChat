@@ -1,0 +1,16 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J6",
+  "issue":"NUMERICAL_OPTIMIZER_MICRO_DRIFT_BETWEEN_REPEATED_IDENTICAL_MODEL_RUNS",
+  "run_1_artifact":"GitHub Actions run 34882700598 artifact ap25-j6-model-output",
+  "run_2_repo_output":"GitHub Actions run 34882747771 / exp003_recovery/ap25_j6_model_output.txt",
+  "maximum_absolute_raw_probability_difference":6.875823982399609e-7,
+  "largest_observed_cell":{"fixture_id":"AP25J6-03","market":"1X2_AWAY","run_1":0.5122419019996659,"run_2":0.5122412144172677},
+  "selection_impact":"NONE",
+  "stake_impact":"NONE",
+  "gate_crossing_impact":"NONE",
+  "governance":"The selection freeze remains authoritative because it was created from the first completed model artifact before settlement. Do not retroactively rewrite frozen selection values to match a later optimizer rerun. Future engineering should enforce stronger optimizer determinism or tolerance-based reproducibility checks.",
+  "promotion_eligibility":false,
+  "reason_no_promotion":"J6 was already researcher-outcome-exposed before selection freeze."
+}
