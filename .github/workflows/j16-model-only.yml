@@ -1,0 +1,32 @@
+name: EXP003 J16 Model-Only Replay
+on:
+  push:
+    paths:
+      - 'exp003_recovery/j16_model_only_replay.py'
+      - 'exp003_recovery/parlay_replay_dc.py'
+      - '.github/workflows/j16-model-only.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  j16-model-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy scipy
+      - name: Run J16 model-only pre-context replay
+        working-directory: exp003_recovery
+        shell: bash
+        run: |
+          set -o pipefail
+          python j16_model_only_replay.py | tee j16_model_only_output.txt
+      - name: Upload J16 model-only output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: j16-model-only-output
+          path: exp003_recovery/j16_model_only_output.txt
