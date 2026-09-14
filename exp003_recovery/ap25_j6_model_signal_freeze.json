@@ -1,0 +1,30 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J6",
+  "freeze_status":"CLEAN_MODEL_SIGNAL_FROZEN_BEFORE_EXTERNAL_J6_RESEARCH",
+  "promotion_eligibility":true,
+  "model":"V0.1R_DC_ENSEMBLE",
+  "calibration_shadow":"CAL_SHRINK_GLOBAL_V0_1",
+  "model_cutoff":"2025-08-22T00:00:00-06:00",
+  "training_count":1060,
+  "source_workflow_run_id":34882700598,
+  "source_artifact_id":10362444984,
+  "source_artifact_digest":"sha256:dad9846bec28ea26bd12b55e9c47f2e5c7b013f442f39aa6568a97d2348dd15e",
+  "one_x_two":[
+    {"fixture_id":"AP25J6-01","home":"FC Juárez","away":"Santos Laguna","p_home_raw":0.48120987313692826,"p_draw_raw":0.2629263137468564,"p_away_raw":0.2558638131162151},
+    {"fixture_id":"AP25J6-02","home":"Gallos Blancos","away":"Atlético San Luis","p_home_raw":0.32332890589212776,"p_draw_raw":0.28050146334530257,"p_away_raw":0.3961696307625698},
+    {"fixture_id":"AP25J6-03","home":"Mazatlán FC","away":"UANL Tigres","p_home_raw":0.20881142295641816,"p_draw_raw":0.27894667504391596,"p_away_raw":0.5122419019996659},
+    {"fixture_id":"AP25J6-04","home":"Club Tijuana","away":"Deportivo Guadalajara","p_home_raw":0.37413821996359514,"p_draw_raw":0.2825334623039983,"p_away_raw":0.34332831773240663},
+    {"fixture_id":"AP25J6-05","home":"Club León","away":"CF Pachuca","p_home_raw":0.37456754900984957,"p_draw_raw":0.269919293539483,"p_away_raw":0.35551315745066747},
+    {"fixture_id":"AP25J6-06","home":"CF Monterrey","away":"Club Necaxa","p_home_raw":0.633601491505007,"p_draw_raw":0.20350049284584168,"p_away_raw":0.16289801564915132},
+    {"fixture_id":"AP25J6-07","home":"Cruz Azul","away":"Deportivo Toluca","p_home_raw":0.4090170832757252,"p_draw_raw":0.2503698547184058,"p_away_raw":0.3406130620058687},
+    {"fixture_id":"AP25J6-08","home":"Pumas UNAM","away":"Puebla FC","p_home_raw":0.640532177763136,"p_draw_raw":0.21621091202125292,"p_away_raw":0.14325691021561102},
+    {"fixture_id":"AP25J6-09","home":"Atlas Guadalajara","away":"CF América","p_home_raw":0.15451984145253317,"p_draw_raw":0.2260941700871077,"p_away_raw":0.6193859884603592}
+  ],
+  "notes":[
+    "The workflow model step completed successfully before any J6 external web research. Its later git-push step failed due to a concurrent main-branch update; the uploaded model artifact is intact and digest-identified above.",
+    "Only 1X2 probabilities are duplicated in this freeze for compact auditability; the full artifact also contains DC, BTTS, totals and team-goal probabilities.",
+    "No J6 outcome had been retrieved or viewed by the researcher at the moment of this freeze."
+  ]
+}
