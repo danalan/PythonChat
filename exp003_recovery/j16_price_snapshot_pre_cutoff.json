@@ -1,0 +1,23 @@
+{
+  "jornada":"Clausura 2025 J16",
+  "status":"FROZEN_PRICE_INPUT_PRE_SETTLEMENT",
+  "global_cutoff":"2025-04-15T18:59:00-06:00",
+  "purpose":"Inputs for MARKET_PROXY_V1 only. Single-source comparable pre-kickoff 1X2 prices; not p_model inputs.",
+  "source":"OddsChecker Progol Media Semana 739",
+  "source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-media-semana-quiniela-esta-semana-739",
+  "source_timestamp":"2025-04-14T12:05:00",
+  "timestamp_timezone":"SITE_LOCAL_TIME",
+  "temporal_confidence":"HIGH_ALL_NINE_BEFORE_FIRST_KICKOFF",
+  "fixtures":{
+    "J16-01":{"fixture":"Pachuca vs Tigres","decimal_1x2":[2.36,3.50,2.90]},
+    "J16-02":{"fixture":"Guadalajara vs Puebla","decimal_1x2":[1.60,3.80,5.70]},
+    "J16-03":{"fixture":"Juarez vs Necaxa","decimal_1x2":[2.80,3.40,2.52]},
+    "J16-04":{"fixture":"Cruz Azul vs Leon","decimal_1x2":[1.53,4.33,6.50]},
+    "J16-05":{"fixture":"Monterrey vs America","decimal_1x2":[2.58,3.40,2.60]},
+    "J16-06":{"fixture":"Queretaro vs Atlas","decimal_1x2":[2.78,3.25,2.50]},
+    "J16-07":{"fixture":"Atletico San Luis vs Toluca","decimal_1x2":[4.60,4.00,1.73]},
+    "J16-08":{"fixture":"Mazatlan vs Tijuana","decimal_1x2":[2.12,3.60,3.20]},
+    "J16-09":{"fixture":"Pumas vs Santos Laguna","decimal_1x2":[1.52,4.50,6.30]}
+  },
+  "integrity_note":"All nine prices come from one publication dated before the first J16 kickoff, improving cross-fixture comparability. Researcher outcome exposure exists from schedule search; deterministic selector only."
+}
