@@ -1,0 +1,39 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J1",
+  "status":"FROZEN_PRE_SETTLEMENT",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "policy":"V2.1_WINDOWED_100",
+  "opening_bankroll_mxn_simulated":443.4282159211471,
+  "weekly_risk_budget_mxn":100.0,
+  "total_stake_mxn_simulated":100.0,
+  "window_stakes":{"FRIDAY":35.0,"SATURDAY":35.0,"SUNDAY":30.0},
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "selection_authority":"ap25_j1_windowed_selector_v2_1.py CI run 34875268940; human context cannot change J1 selections because outcome exposure occurred during schedule verification",
+  "training_count":1016,
+  "calibration_shadow":{"candidate":"CAL_SHRINK_GLOBAL_V0_1","production_use":false},
+  "primary_singles":[
+    {"id":"J1-S1","window":"FRIDAY","fixture":"FC Juárez vs CF América","selection":"América ML","market":"1X2_AWAY","stake":20.0,"odds":1.95,"p_raw":0.6036926834855193,"p_cal_shadow":0.5582839291723626,"break_even":0.5128205128205129,"model_ev_raw":0.17720073279676263,"context_shadow":"SUPPORT","context_note":"Pre-match article: América retained most of the Clausura runner-up squad; Juárez had finished ninth and exited the play-in. Context logged only; no J1 selection effect."},
+    {"id":"J1-S2","window":"FRIDAY","fixture":"Puebla FC vs Atlas Guadalajara","selection":"Over 2.5 goals","market":"TOTAL_O2.5","stake":10.0,"odds":2.10,"p_raw":0.5113321427994594,"p_cal_shadow":0.5063696085981517,"break_even":0.47619047619047616,"model_ev_raw":0.07379749987886464,"context_shadow":"CONTRADICT_LOW","context_note":"Contemporaneous preview expected an open match, but preregistered Puebla LOW_ATTACK warning from Clausura argues against assuming Puebla contribution. Diagnostic only."},
+    {"id":"J1-S3","window":"SATURDAY","fixture":"Deportivo Toluca vs Club Necaxa","selection":"Toluca ML","market":"1X2_HOME","stake":20.0,"odds":1.62,"p_raw":0.7010717290445998,"p_cal_shadow":0.6130190676937831,"break_even":0.6172839506172839,"model_ev_raw":0.13573620105225181,"context_shadow":"NEUTRAL","context_note":"Toluca entered as reigning champion at home, but Necaxa had finished fifth with a strong Clausura. Competing context signals; diagnostic only."},
+    {"id":"J1-S4","window":"SATURDAY","fixture":"Santos Laguna vs Pumas UNAM","selection":"Santos ML","market":"1X2_HOME","stake":10.0,"odds":4.33,"p_raw":0.2876604160351917,"p_cal_shadow":0.3806474588535253,"break_even":0.23094688221709006,"model_ev_raw":0.24556960143238005,"context_shadow":"CONTRADICT_HIGH","context_note":"Pregame context strongly contradicted the mechanical pick: Santos had finished last with seven points and 14 losses in 17; Pumas had reached the play-in and reinforced. This is a key shadow test."},
+    {"id":"J1-S5","window":"SUNDAY","fixture":"CF Pachuca vs CF Monterrey","selection":"Monterrey or Draw (X2)","market":"DC_X2","stake":15.0,"odds":1.67,"p_raw":0.6464534636043421,"p_cal_shadow":0.5823190509960589,"break_even":0.5988023952095809,"model_ev_raw":0.07957728421925125,"context_shadow":"SUPPORT","context_note":"Pregame context supported Monterrey after a stronger Club World Cup showing while Pachuca lost all three group games; both had new coaches. Diagnostic only."},
+    {"id":"J1-S6","window":"SUNDAY","fixture":"Club León vs Atlético San Luis","selection":"Atlético San Luis ML","market":"1X2_AWAY","stake":10.0,"odds":5.30,"p_raw":0.24807682301140788,"p_cal_shadow":0.35839818094272624,"break_even":0.18867924528301888,"model_ev_raw":0.31480716196046177,"context_shadow":"UNKNOWN","context_note":"High-price underdog disagreement from the model, but no sufficiently clean fixture-specific context source was used to strengthen or weaken it. Diagnostic only."}
+  ],
+  "secondary_two_leg_parlays":[
+    {"id":"J1-P2-FRI","window":"FRIDAY","stake":5.0,"legs":["América ML","Puebla-Atlas Over 2.5"],"odds":4.095,"p_joint_raw_independence":0.3086874734390064,"model_ev_raw":0.26407520373273097},
+    {"id":"J1-P2-SAT","window":"SATURDAY","stake":5.0,"legs":["Toluca ML","Santos ML"],"odds":7.0146,"p_joint_raw_independence":0.20167058524748077,"model_ev_raw":0.41463848727697883},
+    {"id":"J1-P2-SUN","window":"SUNDAY","stake":5.0,"legs":["Monterrey X2","Atlético San Luis ML"],"odds":8.851,"p_joint_raw_independence":0.16037012147568597,"model_ev_raw":0.41943594518129634}
+  ],
+  "three_leg_shadow":[
+    {"stake":0.0,"legs":["América ML","Toluca ML","Monterrey X2"],"odds":5.27553,"p_joint_raw_independence":0.27359971048190246,"model_ev_raw":0.4433834806385908,"status":"SHADOW_ONLY_ZERO_STAKE"}
+  ],
+  "governance_notes":[
+    "No returns from Friday/Saturday can expand the original MXN100 weekly risk budget.",
+    "Kelly fraction was used only as a mechanical quality/ranking gate, never as literal stake sizing.",
+    "Exact archived Class B target-market prices are used for every staked selection.",
+    "J1 context labels are diagnostic only due researcher outcome exposure; they cannot promote or veto features."
+  ]
+}
