@@ -32,7 +32,7 @@
     "total_return":73.8,
     "pnl":3.8,
     "roi_on_stake":0.05428571428571428,
-    "log_bankroll_growth":0.007418698664031342,
+    "log_bankroll_growth":0.007418993379284545,
     "closing_bankroll_mxn":514.1012159211471
   },
   "fractional_kelly_v2_2_shadow":{
