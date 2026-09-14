@@ -1,0 +1,69 @@
+{
+  "experiment": "EXP-003",
+  "tournament": "Apertura 2025",
+  "jornada": "J4",
+  "as_of": "2025-08-08T00:00:00-06:00",
+  "integrity_class": "RESEARCHER_OUTCOME_EXPOSED_BEFORE_SELECTION_FREEZE",
+  "promotion_eligibility": false,
+  "integrity_note": "During the first J4 schedule search, post-match search snippets exposed that Pachuca won its J4 match and that Tijuana drew. J4 is therefore permanently NO-PROMOTION. The statistical packet itself contains only information available before J4 and completed J1-J3 league results.",
+  "fixture_list": [
+    {"date":"2025-08-08","home":"UANL Tigres","away":"Puebla FC"},
+    {"date":"2025-08-09","home":"CF América","away":"Gallos Blancos"},
+    {"date":"2025-08-09","home":"Mazatlán FC","away":"Club Tijuana"},
+    {"date":"2025-08-09","home":"Atlas Guadalajara","away":"CF Pachuca"},
+    {"date":"2025-08-10","home":"Pumas UNAM","away":"Club Necaxa"},
+    {"date":"2025-08-10","home":"Santos Laguna","away":"Deportivo Guadalajara"},
+    {"date":"2025-08-11","home":"Club León","away":"CF Monterrey"},
+    {"date":"2025-08-11","home":"FC Juárez","away":"Deportivo Toluca"},
+    {"date":"2025-08-11","home":"Atlético San Luis","away":"Cruz Azul"}
+  ],
+  "league_snapshot_through_j3": {
+    "completed_matches": 26,
+    "goals": 81,
+    "goals_per_match": 3.1153846153846154,
+    "uneven_games_played_note": "Tigres and Guadalajara have played only two Liga MX matches because their J1 fixture was postponed.",
+    "standings": [
+      {"team":"CF Pachuca","P":3,"W":3,"D":0,"L":0,"GF":7,"GA":2,"PTS":9},
+      {"team":"Deportivo Toluca","P":3,"W":2,"D":0,"L":1,"GF":10,"GA":7,"PTS":6},
+      {"team":"UANL Tigres","P":2,"W":2,"D":0,"L":0,"GF":5,"GA":3,"PTS":6},
+      {"team":"CF Monterrey","P":3,"W":2,"D":0,"L":1,"GF":4,"GA":4,"PTS":6},
+      {"team":"Cruz Azul","P":3,"W":1,"D":2,"L":0,"GF":7,"GA":4,"PTS":5},
+      {"team":"CF América","P":3,"W":1,"D":2,"L":0,"GF":5,"GA":3,"PTS":5},
+      {"team":"Club Necaxa","P":3,"W":1,"D":1,"L":1,"GF":5,"GA":5,"PTS":4},
+      {"team":"Mazatlán FC","P":3,"W":1,"D":1,"L":1,"GF":2,"GA":2,"PTS":4},
+      {"team":"Atlas Guadalajara","P":3,"W":1,"D":1,"L":1,"GF":7,"GA":8,"PTS":4},
+      {"team":"Club Tijuana","P":3,"W":1,"D":1,"L":1,"GF":3,"GA":4,"PTS":4},
+      {"team":"Santos Laguna","P":3,"W":1,"D":0,"L":2,"GF":5,"GA":5,"PTS":3},
+      {"team":"Deportivo Guadalajara","P":2,"W":1,"D":0,"L":1,"GF":4,"GA":4,"PTS":3},
+      {"team":"Atlético San Luis","P":3,"W":1,"D":0,"L":2,"GF":4,"GA":5,"PTS":3},
+      {"team":"Puebla FC","P":3,"W":1,"D":0,"L":2,"GF":4,"GA":5,"PTS":3},
+      {"team":"Pumas UNAM","P":3,"W":1,"D":0,"L":2,"GF":4,"GA":6,"PTS":3},
+      {"team":"Club León","P":3,"W":1,"D":0,"L":2,"GF":2,"GA":5,"PTS":3},
+      {"team":"FC Juárez","P":3,"W":0,"D":2,"L":1,"GF":2,"GA":3,"PTS":2},
+      {"team":"Gallos Blancos","P":3,"W":0,"D":0,"L":3,"GF":1,"GA":6,"PTS":0}
+    ]
+  },
+  "pre_j4_context_signals": [
+    "Pachuca is the only 3-0-0 Liga MX team entering J4.",
+    "Tigres, Cruz Azul and América also enter J4 unbeaten in Liga MX, with Tigres on only two league matches.",
+    "Liga MX paused after J3 for the Leagues Cup first phase and resumes J4 from August 8-11, creating heterogeneous rest, travel, minutes and rotation exposure across clubs.",
+    "Leagues Cup performance/minutes may be useful as contextual information but are not inputs to the frozen Dixon-Coles Liga MX model unless separately preregistered.",
+    "Current-tournament home/away splits are extremely small samples and must remain descriptive rather than automatic numeric adjustments."
+  ],
+  "source_policy": {
+    "league_stats": "Computed only from completed Apertura 2025 J1-J3 Liga MX results already frozen before J4.",
+    "fixture_schedule": "Pre-match schedule sources published before J4 kickoff were used for fixture identity and timing.",
+    "context": "Only information demonstrably public before each fixture kickoff may be admitted. Post-match facts are excluded from selection logic even though researcher exposure disqualifies J4 from promotion."
+  },
+  "research_sources": [
+    {"title":"Liga MX: Fechas y horarios de los partidos de la Jornada 4 en la reanudación del Apertura 2025","publisher":"Fox Sports México","published":"2025-08-04"},
+    {"title":"Liga MX: Horarios y cómo ver Jornada 4 del Apertura 2025","publisher":"ESPN México","published":"2025-08-07"},
+    {"title":"Jornada 4 Apertura 2025: fechas, horarios y dónde ver los partidos","publisher":"Sports Illustrated México","published":"2025-08-07"}
+  ],
+  "governance": [
+    "DESCRIPTIVE_ONLY",
+    "NO_POST_J4_OUTCOME_INPUTS",
+    "NO_PROMOTION_DUE_TO_RESEARCHER_EXPOSURE",
+    "MODEL_SIGNAL_STAT_CONTEXT_SIGNAL_AND_PRICE_EV_MUST_REMAIN_SEPARATE"
+  ]
+}
