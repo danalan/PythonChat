@@ -1,0 +1,36 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J10",
+  "source":"USER_SUPPLIED_PERPLEXITY_FIREWALL_PACKET",
+  "received_in_chat":"2026-09-14",
+  "global_cutoff":"2025-09-23T00:00:00-06:00",
+  "fixtures":[
+    {"fixture_id":"AP25J10-01","date":"2025-09-23","kickoff_cdmx":"19:00","home":"Deportivo Guadalajara","away":"Club Necaxa"},
+    {"fixture_id":"AP25J10-02","date":"2025-09-23","kickoff_cdmx":"19:00","home":"Puebla FC","away":"CF Pachuca"},
+    {"fixture_id":"AP25J10-03","date":"2025-09-23","kickoff_cdmx":"21:00","home":"Club León","away":"Mazatlán FC"},
+    {"fixture_id":"AP25J10-04","date":"2025-09-23","kickoff_cdmx":"21:00","home":"FC Juárez","away":"Pumas UNAM"},
+    {"fixture_id":"AP25J10-05","date":"2025-09-24","kickoff_cdmx":"18:00","home":"Cruz Azul","away":"Gallos Blancos"},
+    {"fixture_id":"AP25J10-06","date":"2025-09-24","kickoff_cdmx":"19:00","home":"UANL Tigres","away":"Atlas Guadalajara"},
+    {"fixture_id":"AP25J10-07","date":"2025-09-24","kickoff_cdmx":"20:00","home":"Deportivo Toluca","away":"CF Monterrey"},
+    {"fixture_id":"AP25J10-08","date":"2025-09-24","kickoff_cdmx":"21:00","home":"Atlético San Luis","away":"CF América"},
+    {"fixture_id":"AP25J10-09","date":"2025-09-24","kickoff_cdmx":"21:00","home":"Santos Laguna","away":"Club Tijuana"}
+  ],
+  "post_j9_snapshot":{"completed_j10_inputs":9,"all_teams_pj":9,"leaders":[{"team":"Cruz Azul","pts":23},{"team":"CF Monterrey","pts":22},{"team":"Deportivo Toluca","pts":19},{"team":"CF América","pts":18},{"team":"Club Tijuana","pts":16},{"team":"UANL Tigres","pts":16}]},
+  "context_summary":[
+    "Chivas had multiple confirmed absences including Alvarado, Erick Gutierrez, Ruben Gonzalez, Alan Mozo, Daniel Aguirre, Chicharito, Camberos and Padilla.",
+    "Pumas had Jorge Ruvalcaba suspended and Santiago Lopez recovering from fracture.",
+    "Cruz Azul had Andres Montano unavailable; Queretaro had Ali Avila and Lertora unavailable.",
+    "Atlas carried multiple absences; Toluca had Bruno Mendez suspended and Luan Garcia recovering.",
+    "America had Dagoberto Espinoza, Henry Martin and Jonathan dos Santos unavailable, with Fidalgo reported training normally.",
+    "Context is descriptive and cannot alter p_model absent a preregistered rule."
+  ],
+  "integrity_assessment":"NO_PROMOTION_PACKET_EXPOSED_POST_J10_INFORMATION",
+  "promotion_eligibility":false,
+  "integrity_notes":[
+    "The packet self-reported TEMPORAL INTEGRITY: PASS, but its rejected-source list and some source titles exposed post-J10 outcomes before selection freeze.",
+    "Examples included titles revealing a Toluca win over Monterrey, an America win over San Luis, and a Tigres win over Atlas.",
+    "No exposed J10 outcome may be used in model, price, admission, staking or selection calculations.",
+    "For future jornadas, rejected sources must be summarized generically without result-revealing titles or URLs."
+  ]
+}
