@@ -1,0 +1,20 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J8",
+  "integrity_class":"PRE_MATCH_PRICE_SNAPSHOT_RESEARCHER_FUTURE_TOURNAMENT_EXPOSURE",
+  "promotion_eligibility":false,
+  "policy":"Use contemporaneous Caliente newspaper-ad 1X2 prices where available; otherwise use the first complete 1X2 row on the archived SportyTrader match-odds page, consistent with prior replay practice. Never backsolve missing prices.",
+  "fixtures":[
+    {"fixture_id":"AP25J8-01","home":"Club Necaxa","away":"FC Juárez","source":"SportyTrader archived odds / first complete 1X2 row","source_url":"https://www.sportytrader.com/en/odds/necaxa-juarez-fc-7652683/","prices":{"1X2_HOME":2.01,"1X2_DRAW":3.35,"1X2_AWAY":3.55}},
+    {"fixture_id":"AP25J8-02","home":"CF América","away":"Deportivo Guadalajara","source":"Caliente.mx ad in Excelsior Adrenalina, 2025-09-12","source_url":"https://cdn2.excelsior.com.mx/Periodico/flip-adrenalina/12-09-2025/portada.pdf","american":{"1X2_HOME":-167,"1X2_DRAW":295,"1X2_AWAY":425},"prices":{"1X2_HOME":1.5988023952095808,"1X2_DRAW":3.95,"1X2_AWAY":5.25}},
+    {"fixture_id":"AP25J8-03","home":"Mazatlán FC","away":"Pumas UNAM","source":"Caliente.mx ad in Excelsior Adrenalina, 2025-09-12","source_url":"https://cdn2.excelsior.com.mx/Periodico/flip-adrenalina/12-09-2025/portada.pdf","american":{"1X2_HOME":240,"1X2_DRAW":230,"1X2_AWAY":110},"prices":{"1X2_HOME":3.40,"1X2_DRAW":3.30,"1X2_AWAY":2.10}},
+    {"fixture_id":"AP25J8-04","home":"CF Pachuca","away":"Cruz Azul","source":"Caliente.mx ad in Excelsior Adrenalina, 2025-09-12","source_url":"https://cdn2.excelsior.com.mx/Periodico/flip-adrenalina/12-09-2025/portada.pdf","american":{"1X2_HOME":148,"1X2_DRAW":235,"1X2_AWAY":172},"prices":{"1X2_HOME":2.48,"1X2_DRAW":3.35,"1X2_AWAY":2.72}},
+    {"fixture_id":"AP25J8-05","home":"UANL Tigres","away":"Club León","source":"SportyTrader archived odds / first complete 1X2 row","source_url":"https://www.sportytrader.com/en/odds/tigres-uanl-leon-7652687/","prices":{"1X2_HOME":1.42,"1X2_DRAW":4.60,"1X2_AWAY":6.20}},
+    {"fixture_id":"AP25J8-06","home":"Atlas Guadalajara","away":"Santos Laguna","source":"SportyTrader archived odds / first complete 1X2 row","source_url":"https://www.sportytrader.com/es/apuestas/atlas-santos-laguna-7652686/","prices":{"1X2_HOME":1.68,"1X2_DRAW":4.00,"1X2_AWAY":4.33}},
+    {"fixture_id":"AP25J8-07","home":"Deportivo Toluca","away":"Puebla FC","source":"SportyTrader archived odds / first complete 1X2 row","source_url":"https://www.sportytrader.com/en/odds/deportivo-toluca-puebla-7652688/","prices":{"1X2_HOME":1.32,"1X2_DRAW":5.20,"1X2_AWAY":7.60}},
+    {"fixture_id":"AP25J8-08","home":"Gallos Blancos","away":"CF Monterrey","source":"SportyTrader archived odds / first complete 1X2 row","source_url":"https://www.sportytrader.com/es/apuestas/queretaro-monterrey-7652689/","prices":{"1X2_HOME":5.50,"1X2_DRAW":4.20,"1X2_AWAY":1.53}},
+    {"fixture_id":"AP25J8-09","home":"Atlético San Luis","away":"Club Tijuana","source":"SportyTrader archived odds / first complete 1X2 row","source_url":"https://www.sportytrader.com/es/apuestas/san-luis-tijuana-7652690/","prices":{"1X2_HOME":2.01,"1X2_DRAW":3.70,"1X2_AWAY":3.40}}
+  ],
+  "notes":["The Caliente ad is dated before all three listed fixtures; American prices are converted mechanically to decimal.","SportyTrader pages are archived match-specific odds pages and preserve multiple bookmaker rows; this snapshot freezes one complete row per fixture rather than cherry-picking each outcome from different books.","J8 is already NO-PROMOTION due to researcher exposure to later-tournament information during schedule retrieval."]
+}
