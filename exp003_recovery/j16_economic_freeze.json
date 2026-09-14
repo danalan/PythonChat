@@ -1,0 +1,33 @@
+{
+  "jornada":"Clausura 2025 J16",
+  "status":"FROZEN_PRE_SETTLEMENT",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "bankroll_before_mxn":481.6632934966258,
+  "selector":"ECONOMIC_SELECTOR_V1",
+  "model_cutoff":"2025-04-15T00:00:00",
+  "price_cutoff":"2025-04-15T18:59:00-06:00",
+  "researcher_outcome_exposed":true,
+  "selection_mode":"MECHANICAL_MODEL_PLUS_PRE_CUTOFF_PRICE",
+  "shadow_diagnostic_tags_do_not_affect_selection":[
+    {"ticket":"P3","fixture":"Guadalajara vs Puebla","tag":"PUEBLA_LOW_ATTACK_RISK","reason":"J12-J15 diagnostic found four consecutive Puebla-related scoring/total misses. Prospective shadow tag only; no p_model or selection change."},
+    {"ticket":"P3","fixture":"Monterrey vs America","tag":"CLOSED_GAME_MONITOR","reason":"Track recent defensive/tempo context for O1.5 after J15 closed-game misses; shadow only."}
+  ],
+  "tickets":{
+    "P1":{"stake_mxn":80.0,"proxy_decimal":3.8219822828638,"model_ev_at_proxy":0.33697490743160263,"ev_disciplined_eligible":true,"legs":[
+      {"fixture":"Atletico San Luis vs Toluca","market":"ATLETICO_SAN_LUIS_SCORE_1PLUS","p_model":0.7719584671948214,"proxy_decimal":1.5628822599856937},
+      {"fixture":"Pumas vs Santos Laguna","market":"SANTOS_SCORE_1PLUS","p_model":0.6249266232083226,"proxy_decimal":1.7239153762862935},
+      {"fixture":"Queretaro vs Atlas","market":"QUERETARO_SCORE_1PLUS","p_model":0.7251229069035425,"proxy_decimal":1.4185559332948217}
+    ]},
+    "P2":{"stake_mxn":80.0,"proxy_decimal":2.586562005522001,"model_ev_at_proxy":0.18828676750306927,"ev_disciplined_eligible":true,"legs":[
+      {"fixture":"Juarez vs Necaxa","market":"TOTAL_O1.5","p_model":0.8019139309372515,"proxy_decimal":1.4072240467183166},
+      {"fixture":"Cruz Azul vs Leon","market":"CRUZ_AZUL_TEAM_U2.5","p_model":0.7804687320296749,"proxy_decimal":1.3280982591267343},
+      {"fixture":"Pachuca vs Tigres","market":"TIGRES_SCORE_1PLUS","p_model":0.7340321809084943,"proxy_decimal":1.3839788034648903}
+    ]},
+    "P3":{"stake_mxn":40.0,"proxy_decimal":2.622557602871729,"model_ev_at_proxy":0.0031891366352796435,"ev_disciplined_eligible":true,"legs":[
+      {"fixture":"Mazatlan vs Tijuana","market":"TIJUANA_SCORE_1PLUS","p_model":0.7222592599248849,"proxy_decimal":1.3938081638968742},
+      {"fixture":"Monterrey vs America","market":"TOTAL_O1.5","p_model":0.7393599107263098,"proxy_decimal":1.3510753878699406},
+      {"fixture":"Guadalajara vs Puebla","market":"TOTAL_O1.5","p_model":0.7163227879792797,"proxy_decimal":1.392651493921779}
+    ]}
+  },
+  "integrity_note":"Freeze created after deterministic CI selector output and before settlement. Shadow diagnostic tags are observation-only and do not alter selection or probability."
+}
