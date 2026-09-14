@@ -1,0 +1,113 @@
+{
+  "experiment": "EXP-003",
+  "track": "ECONOMIC_TRACK_V1",
+  "jornada": "Clausura 2025 J12",
+  "status": "SETTLED",
+  "selection_freeze_commit": "5955b2dfba65d9ced7601d447a7b5507e41f9f9d",
+  "integrity_class": "MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility": false,
+  "promotion_note": "J12 may update the mechanical bankroll simulation because selection was deterministic and frozen before settlement. It is not blind evidence for model/context/feature promotion because the human researcher had accidental outcome exposure before the mechanical freeze.",
+  "verified_results": {
+    "J12-01": {"fixture":"Queretaro vs Mazatlan","score":"1-0","source":"ESPN Liga MX results 2025-03-14"},
+    "J12-02": {"fixture":"Necaxa vs Leon","score":"2-1","source":"ESPN Liga MX results 2025-03-14"},
+    "J12-03": {"fixture":"Puebla vs Toluca","score":"0-3","source":"ESPN Liga MX results 2025-03-14"},
+    "J12-04": {"fixture":"Tigres vs Santos","score":"3-0","source":"ESPN Liga MX results 2025-03-15"},
+    "J12-05": {"fixture":"Cruz Azul vs Atletico San Luis","score":"3-0","source":"ESPN Liga MX results 2025-03-15"},
+    "J12-06": {"fixture":"Juarez vs Guadalajara","score":"1-1","source":"ESPN Liga MX results 2025-03-15"},
+    "J12-07": {"fixture":"Atlas vs America","score":"1-3","source":"ESPN Liga MX results 2025-03-15"},
+    "J12-08": {"fixture":"Pumas vs Monterrey","score":"1-3","source":"ESPN Liga MX results 2025-03-16"},
+    "J12-09": {"fixture":"Pachuca vs Tijuana","score":"4-1","source":"ESPN Liga MX results 2025-03-16"}
+  },
+  "tickets": {
+    "P1": {
+      "stake_mxn": 80.0,
+      "proxy_decimal": 4.102641852517127,
+      "p_model_joint": 0.3355719331314431,
+      "model_ev_at_proxy": 0.37673145739513747,
+      "legs": [
+        {"fixture_id":"J12-05","selection":"Atletico San Luis scores >=1","p_model":0.6285725991075737,"result":0,"verdict":"FAIL"},
+        {"fixture_id":"J12-03","selection":"Puebla scores >=1","p_model":0.7034661941163165,"result":0,"verdict":"FAIL"},
+        {"fixture_id":"J12-08","selection":"Pumas-Monterrey Over 1.5","p_model":0.7589041937886087,"result":1,"verdict":"HIT"}
+      ],
+      "ticket_result":"LOSS",
+      "return_mxn":0.0,
+      "net_pnl_mxn":-80.0
+    },
+    "P2": {
+      "stake_mxn": 80.0,
+      "proxy_decimal": 2.986854183746959,
+      "p_model_joint": 0.40939966886416057,
+      "model_ev_at_proxy": 0.22281711377153757,
+      "legs": [
+        {"fixture_id":"J12-09","selection":"Tijuana scores >=1","p_model":0.7155698890439415,"result":1,"verdict":"HIT"},
+        {"fixture_id":"J12-02","selection":"Leon scores >=1","p_model":0.7624091614081004,"result":1,"verdict":"HIT"},
+        {"fixture_id":"J12-07","selection":"Atlas-America Over 1.5","p_model":0.7504250510421634,"result":1,"verdict":"HIT"}
+      ],
+      "ticket_result":"WIN",
+      "return_mxn":238.94833469975674,
+      "net_pnl_mxn":158.94833469975674
+    },
+    "P3": {
+      "stake_mxn": 40.0,
+      "proxy_decimal": 2.6924710039229742,
+      "p_model_joint": 0.3677997780525344,
+      "model_ev_at_proxy": -0.009709762344245587,
+      "legs": [
+        {"fixture_id":"J12-04","selection":"Tigres team Under 2.5","p_model":0.6328893221724802,"result":0,"verdict":"FAIL"},
+        {"fixture_id":"J12-06","selection":"Juarez-Guadalajara Under 3.5","p_model":0.8204625281685622,"result":1,"verdict":"HIT"},
+        {"fixture_id":"J12-01","selection":"Queretaro 1X","p_model":0.708312560807347,"result":1,"verdict":"HIT"}
+      ],
+      "ticket_result":"LOSS",
+      "return_mxn":0.0,
+      "net_pnl_mxn":-40.0
+    }
+  },
+  "selected_leg_metrics": {
+    "hits": 6,
+    "legs": 9,
+    "hit_rate": 0.6666666666666666,
+    "mean_brier": 0.1850663440254427,
+    "mean_log_loss": 0.5466430900729378
+  },
+  "legacy_model_only_comparator": {
+    "legs": [
+      {"selection":"Tigres-Santos DC12","p_model":0.8032484725543465,"result":1,"verdict":"HIT"},
+      {"selection":"Puebla-Toluca DC12","p_model":0.7947614263270495,"result":1,"verdict":"HIT"},
+      {"selection":"Necaxa team Over 0.5","p_model":0.7904993589015382,"result":1,"verdict":"HIT"}
+    ],
+    "joint_p":0.5046475985558759,
+    "ticket_result":"WIN",
+    "legs_hit":"3/3",
+    "mean_brier":0.04157485143205712,
+    "mean_log_loss":0.22796497264718416,
+    "legacy_cumulative_j1_j12":{"legs":"32/36","parlays":"9/12"}
+  },
+  "forced_200_track": {
+    "opening_bankroll_mxn":936.1049945028351,
+    "staked_mxn":200.0,
+    "returned_mxn":238.94833469975674,
+    "jornada_pnl_mxn":38.94833469975674,
+    "closing_bankroll_mxn":975.0533292025918,
+    "roi_on_jornada_stake":0.1947416734987837,
+    "cumulative_pnl_from_1000_mxn":-24.9466707974082
+  },
+  "ev_disciplined_counterfactual": {
+    "opening_bankroll_mxn":1000.0,
+    "eligible_tickets":["P1","P2"],
+    "held_cash_mxn":40.0,
+    "staked_mxn":160.0,
+    "returned_mxn":238.94833469975674,
+    "jornada_pnl_mxn":78.94833469975674,
+    "closing_bankroll_mxn":1078.9483346997567
+  },
+  "learning": [
+    "The economic selector improved the objective from raw probability ranking to price-aware EV ranking. This rule was frozen before J12 settlement and should remain unchanged until enough prospective evidence exists to justify a new selector version.",
+    "The two largest apparent leg-level proxy edges were Atletico San Luis to score >=1 (+23.61%) and Puebla to score >=1 (+6.99%); both failed. This is not enough to reject the signals, but it highlights a structural concern: MARKET_PROXY_V1 derives team-goal prices from 1X2 via an independent-Poisson fit, so extreme model-vs-proxy edges may partly be proxy misspecification rather than true market edge.",
+    "Tijuana to score >=1 carried +14.21% proxy EV and hit. Therefore a single jornada gives mixed evidence on team-to-score disagreement; do not create a direction-specific penalty from J12 alone.",
+    "P1 had +37.67% ticket-level proxy EV and lost; P2 had +22.28% and won. Outcome still cannot validate or invalidate EV in one observation.",
+    "P3 was slightly negative-EV (-0.97%) and lost even though two of its three legs hit. The EV-disciplined counterfactual avoided this 40 MXN ticket and now leads the forced track 1078.95 vs 975.05. This difference is a useful diagnostic but sample size is only two jornadas.",
+    "Legacy MODEL_ONLY went 3/3 again. Preserve the legacy comparator; do not use this streak to claim economic edge because its historical exact prices are not the same experiment.",
+    "From J13, continue logging exact-market audit error = exact archived target-market odds minus proxy odds whenever temporally defensible. Do not promote proxy-EV as a trusted edge measure until the proxy itself is validated across a sufficiently large set of exact-market observations.",
+    "J12 is researcher outcome-exposed. It can advance mechanical bankroll accounting but must be excluded from blind feature/context promotion. J13 must use pregame-only discovery sources before selection to restore clean researcher blindness."
+  ]
+}
