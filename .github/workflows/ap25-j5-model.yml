@@ -24,6 +24,12 @@ jobs:
         run: |
           set -o pipefail
           python ap25_j5_model_only_replay.py | tee ap25_j5_model_output.txt
+      - name: Upload deterministic output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ap25-j5-model-output
+          path: exp003_recovery/ap25_j5_model_output.txt
       - name: Commit deterministic output
         if: success()
         shell: bash
