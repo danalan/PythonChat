@@ -1,0 +1,35 @@
+{
+  "policy": "ECONOMIC_TRACK_V1",
+  "status": "ACTIVE_FROM_J11_FORWARD",
+  "purpose": "Track a simulated 1,000 MXN bankroll using three cross-event three-leg parlays per historical jornada without fabricating unavailable historical prices.",
+  "starting_bankroll_mxn": 1000.0,
+  "weekly_exposure_target_mxn": 200.0,
+  "stake_split_mxn": {"P1": 80.0, "P2": 80.0, "P3": 40.0},
+  "capital_rule": "No external deposits. Weekly stakes come from the existing simulated bankroll. If bankroll is insufficient, stake sizing must be reduced under a separately versioned rule; no capital is added silently.",
+  "clean_track_start": "Clausura 2025 J11",
+  "why_not_j1_j10": "Three 3-leg parlays were not frozen prospectively for every earlier jornada. Creating extra tickets now would be hindsight. J1-J10 retain their original experimental formats and do not enter this clean economic series.",
+  "selection_rule": "Selections must be frozen before target-jornada outcomes are consumed. From J12 onward, MODEL_ONLY candidate pool plus temporally clean statistical/context audit is frozen first. Prices may then be attached mechanically; no post-price or post-result substitution is allowed unless a replacement rule was preregistered before source retrieval.",
+  "odds_cutoff_rule": "Every proxy input must have been publicly available before the ticket's earliest-leg kickoff. For maximum replay integrity the preferred source snapshot is at or before the jornada global context cutoff. Later closing prices cannot be used for a ticket that already had an earlier leg live.",
+  "primary_pricing_method": {
+    "name": "MARKET_PROXY_V1_1X2_POISSON_SOURCE_OVERROUND",
+    "implementation": "economic_proxy_v1.py",
+    "inputs": "Archived pre-cutoff 1X2 decimal odds only. p_model is never used to create price.",
+    "steps": [
+      "Proportionally de-vig the archived 1X2 odds.",
+      "For score-derived non-1X2 markets, fit independent-Poisson home/away lambdas to the de-vigged 1X2 probabilities.",
+      "Derive the target market probability from the fitted score distribution; DOUBLE_CHANCE_12 is derived directly as 1 - p_draw.",
+      "Calculate source 1X2 overround = sum(1/odds) - 1.",
+      "Reapply that same overround proportionally to the derived target market probability and invert to decimal odds."
+    ],
+    "claim_boundary": "proxy_decimal is a standardized historical market proxy, NOT an assertion of the exact Caliente or bookmaker price for that derived market."
+  },
+  "exact_odds_audit": "When a temporally valid exact target-market quote exists, store it separately as CALIENTE_EXACT, BOOK_EXACT or MARKET_CONSENSUS and compare it against the proxy. Never overwrite the standardized proxy series retroactively.",
+  "ticket_price": "Product of the three proxy decimal leg prices for cross-event parlays.",
+  "settlement": "Winning ticket return = stake * ticket_decimal. Losing ticket return = 0. Net weekly bankroll = opening bankroll - all stakes + returns.",
+  "two_economic_views": {
+    "FORCED_200_TRACK": "Primary user-requested experiment: stake 80/80/40 every historical jornada even when calculated EV is <= 0, provided the bankroll permits.",
+    "EV_DISCIPLINED_COUNTERFACTUAL": "Diagnostic comparator: hold cash on tickets whose frozen model probability does not exceed break-even after proxy pricing. This comparator must never replace the forced track."
+  },
+  "learning_rule": "Outcome does not determine whether a decision was good. Track frozen p_model, proxy break-even, EV, Brier/log loss, market-family residuals and context/statistical candidate features. Model or feature changes require repeated out-of-sample evidence and a new prospective version; never retune because one ticket won or lost.",
+  "governance": "Append-only. Preserve raw source odds, timestamp/publication date, source tier, transformations, proxy price, exact-price audit if available, ticket result and bankroll state."
+}
