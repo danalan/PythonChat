@@ -1,0 +1,51 @@
+{
+  "experiment": "EXP-003",
+  "tournament": "Apertura 2025",
+  "jornada": "J6",
+  "status": "FROZEN_AFTER_MODEL_BEFORE_SETTLEMENT",
+  "integrity_class": "MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED_DURING_PRICE_RESEARCH",
+  "promotion_eligibility": false,
+  "notes": [
+    "J6 model/stat signal was cleanly frozen before external research.",
+    "Researcher later saw J6 outcomes for Leon-Pachuca and Queretaro-San Luis before selection freeze; therefore NO-PROMOTION.",
+    "Mazatlan-Tigres had a schedule-date discrepancy across sources; execution window uses actual revised Saturday 2025-08-23 kickoff, while frozen model metadata retained original 2025-08-22 date. Model probabilities are unaffected because fixture date is metadata only after common cutoff.",
+    "Mazatlan-Tigres SI price quote is internally inconsistent with the article's stated implied-probability narrative; all 1X2 sides are below the frozen Kelly gate, so this source cannot create a qualifying bet."
+  ],
+  "markets": [
+    {"fixture_id":"AP25J6-01","execution_date":"2025-08-22","market":"1X2_HOME","decimal":1.6153846153846154,"source":"OddsChecker archived match odds","published_or_preserved":"2025-08-23 00:26 page update; approximately 34 minutes before 01:00 BST kickoff equivalent","url":"https://www.oddschecker.com/football/world/mexico/liga-mx/fc-juarez-v-club-santos-laguna/winner?selectionName=FC-Juarez"},
+    {"fixture_id":"AP25J6-01","execution_date":"2025-08-22","market":"1X2_DRAW","decimal":4.10,"source":"OddsChecker archived match odds","published_or_preserved":"2025-08-23 00:26 page update; approximately 34 minutes before 01:00 BST kickoff equivalent","url":"https://www.oddschecker.com/football/world/mexico/liga-mx/fc-juarez-v-club-santos-laguna/winner?selectionName=FC-Juarez"},
+    {"fixture_id":"AP25J6-01","execution_date":"2025-08-22","market":"1X2_AWAY","decimal":5.50,"source":"OddsChecker archived match odds","published_or_preserved":"2025-08-23 00:26 page update; approximately 34 minutes before 01:00 BST kickoff equivalent","url":"https://www.oddschecker.com/football/world/mexico/liga-mx/fc-juarez-v-club-santos-laguna/winner?selectionName=FC-Juarez"},
+
+    {"fixture_id":"AP25J6-02","execution_date":"2025-08-22","market":"1X2_HOME","decimal":4.00,"source":"OddsChecker US archived moneyline","published_or_preserved":"2025-08-22","url":"https://www.oddschecker.com/us/soccer/mexican-primera-division/queretaro-v-atletico-san-luis/moneyline"},
+    {"fixture_id":"AP25J6-02","execution_date":"2025-08-22","market":"1X2_DRAW","decimal":2.55,"source":"OddsChecker US archived moneyline","published_or_preserved":"2025-08-22","url":"https://www.oddschecker.com/us/soccer/mexican-primera-division/queretaro-v-atletico-san-luis/moneyline"},
+    {"fixture_id":"AP25J6-02","execution_date":"2025-08-22","market":"1X2_AWAY","decimal":2.40,"source":"OddsChecker US archived moneyline","published_or_preserved":"2025-08-22","url":"https://www.oddschecker.com/us/soccer/mexican-primera-division/queretaro-v-atletico-san-luis/moneyline"},
+
+    {"fixture_id":"AP25J6-03","execution_date":"2025-08-23","market":"1X2_HOME","decimal":4.30,"source":"Sports Illustrated pre-match odds article","published_or_preserved":"2025-08-22","url":"https://www.si.com/es-us/futbol/mazatlan-vs-tigres-momios-probabilidades-de-los-equipos-y-cuotas-de-la-jornada-6-en-el-apertura-23-8-2025/"},
+    {"fixture_id":"AP25J6-03","execution_date":"2025-08-23","market":"1X2_DRAW","decimal":3.55,"source":"Sports Illustrated pre-match odds article","published_or_preserved":"2025-08-22","url":"https://www.si.com/es-us/futbol/mazatlan-vs-tigres-momios-probabilidades-de-los-equipos-y-cuotas-de-la-jornada-6-en-el-apertura-23-8-2025/"},
+    {"fixture_id":"AP25J6-03","execution_date":"2025-08-23","market":"1X2_AWAY","decimal":1.20,"source":"Sports Illustrated pre-match odds article","published_or_preserved":"2025-08-22","url":"https://www.si.com/es-us/futbol/mazatlan-vs-tigres-momios-probabilidades-de-los-equipos-y-cuotas-de-la-jornada-6-en-el-apertura-23-8-2025/"},
+
+    {"fixture_id":"AP25J6-04","execution_date":"2025-08-22","market":"1X2_HOME","decimal":2.76,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-21 18:00","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-tijuana-vs-chivas-22-08-25"},
+    {"fixture_id":"AP25J6-04","execution_date":"2025-08-22","market":"1X2_DRAW","decimal":3.50,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-21 18:00","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-tijuana-vs-chivas-22-08-25"},
+    {"fixture_id":"AP25J6-04","execution_date":"2025-08-22","market":"1X2_AWAY","decimal":2.50,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-21 18:00","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-tijuana-vs-chivas-22-08-25"},
+
+    {"fixture_id":"AP25J6-05","execution_date":"2025-08-23","market":"1X2_HOME","decimal":3.00,"source":"Camello Futbol preserved 1X2 market","published_or_preserved":"preserved match page; weaker provenance than contemporaneous article","url":"https://www.camellofutbol.com/es/lofubol/football/club-leon-vs-pachuca/dn1m1ghl4wo4moe"},
+    {"fixture_id":"AP25J6-05","execution_date":"2025-08-23","market":"1X2_DRAW","decimal":3.50,"source":"Camello Futbol preserved 1X2 market","published_or_preserved":"preserved match page; weaker provenance than contemporaneous article","url":"https://www.camellofutbol.com/es/lofubol/football/club-leon-vs-pachuca/dn1m1ghl4wo4moe"},
+    {"fixture_id":"AP25J6-05","execution_date":"2025-08-23","market":"1X2_AWAY","decimal":2.25,"source":"Camello Futbol preserved 1X2 market","published_or_preserved":"preserved match page; weaker provenance than contemporaneous article","url":"https://www.camellofutbol.com/es/lofubol/football/club-leon-vs-pachuca/dn1m1ghl4wo4moe"},
+
+    {"fixture_id":"AP25J6-06","execution_date":"2025-08-23","market":"1X2_HOME","decimal":1.60,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-22 18:03","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-monterrey-vs-necaxa-23-08-25"},
+    {"fixture_id":"AP25J6-06","execution_date":"2025-08-23","market":"1X2_DRAW","decimal":4.40,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-22 18:03","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-monterrey-vs-necaxa-23-08-25"},
+    {"fixture_id":"AP25J6-06","execution_date":"2025-08-23","market":"1X2_AWAY","decimal":5.50,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-22 18:03","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-monterrey-vs-necaxa-23-08-25"},
+
+    {"fixture_id":"AP25J6-07","execution_date":"2025-08-23","market":"1X2_HOME","decimal":1.86,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-22 18:02","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-cruz-azul-vs-toluca-23-08-25"},
+    {"fixture_id":"AP25J6-07","execution_date":"2025-08-23","market":"1X2_DRAW","decimal":4.00,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-22 18:02","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-cruz-azul-vs-toluca-23-08-25"},
+    {"fixture_id":"AP25J6-07","execution_date":"2025-08-23","market":"1X2_AWAY","decimal":4.20,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-22 18:02","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-cruz-azul-vs-toluca-23-08-25"},
+
+    {"fixture_id":"AP25J6-08","execution_date":"2025-08-24","market":"1X2_HOME","decimal":1.60,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-23 18:04","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-pumas-vs-puebla-24-08-25"},
+    {"fixture_id":"AP25J6-08","execution_date":"2025-08-24","market":"1X2_DRAW","decimal":4.33,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-23 18:04","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-pumas-vs-puebla-24-08-25"},
+    {"fixture_id":"AP25J6-08","execution_date":"2025-08-24","market":"1X2_AWAY","decimal":5.70,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-23 18:04","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-pumas-vs-puebla-24-08-25"},
+
+    {"fixture_id":"AP25J6-09","execution_date":"2025-08-24","market":"1X2_HOME","decimal":4.50,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-23 18:03","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-atlas-vs-america-24-08-25"},
+    {"fixture_id":"AP25J6-09","execution_date":"2025-08-24","market":"1X2_DRAW","decimal":3.85,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-23 18:03","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-atlas-vs-america-24-08-25"},
+    {"fixture_id":"AP25J6-09","execution_date":"2025-08-24","market":"1X2_AWAY","decimal":1.80,"source":"OddsChecker pre-match preview","published_or_preserved":"2025-08-23 18:03","url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-atlas-vs-america-24-08-25"}
+  ]
+}
