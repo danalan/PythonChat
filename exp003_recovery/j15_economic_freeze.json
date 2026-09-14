@@ -1,0 +1,29 @@
+{
+  "jornada":"Clausura 2025 J15",
+  "status":"FROZEN_PRE_SETTLEMENT",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "bankroll_before_mxn":681.6632934966258,
+  "selector":"ECONOMIC_SELECTOR_V1",
+  "model_cutoff":"2025-04-10T00:00:00",
+  "price_cutoff":"2025-04-10T20:04:00-06:00",
+  "researcher_outcome_exposed":true,
+  "selection_mode":"MECHANICAL_MODEL_PLUS_PRE_CUTOFF_PRICE",
+  "tickets":{
+    "P1":{"stake_mxn":80.0,"proxy_decimal":3.067126462649071,"model_ev_at_proxy":0.3791131773728247,"ev_disciplined_eligible":true,"legs":[
+      {"fixture":"Pumas UNAM vs Juarez","market":"TOTAL_O1.5","p_model":0.770701337063089,"proxy_decimal":1.550207051668883},
+      {"fixture":"America vs Cruz Azul","market":"AMERICA_SCORE_1PLUS","p_model":0.8158610659691199,"proxy_decimal":1.3534381304170893},
+      {"fixture":"Tigres vs Monterrey","market":"TOTAL_O1.5","p_model":0.7150985611848857,"proxy_decimal":1.4618525418490511}
+    ]},
+    "P2":{"stake_mxn":80.0,"proxy_decimal":2.4853528526724773,"model_ev_at_proxy":0.2361111166636105,"ev_disciplined_eligible":true,"legs":[
+      {"fixture":"Necaxa vs Pachuca","market":"PACHUCA_SCORE_1PLUS","p_model":0.7820131219974427,"proxy_decimal":1.428943548080692},
+      {"fixture":"Tijuana vs Atletico San Luis","market":"SAN_LUIS_SCORE_1PLUS","p_model":0.7956680729641372,"proxy_decimal":1.3675091923257483},
+      {"fixture":"Leon vs Puebla","market":"TOTAL_O1.5","p_model":0.799325161928157,"proxy_decimal":1.2718700166597738}
+    ]},
+    "P3":{"stake_mxn":40.0,"proxy_decimal":2.8047047781112586,"model_ev_at_proxy":-0.031081843801022413,"ev_disciplined_eligible":false,"legs":[
+      {"fixture":"Atlas vs Toluca","market":"DOUBLE_CHANCE_X2_TOLUCA_OR_DRAW","p_model":0.778289558988268,"proxy_decimal":1.3043478260869565},
+      {"fixture":"Santos Laguna vs Queretaro","market":"DOUBLE_CHANCE_1X_SANTOS_OR_DRAW","p_model":0.7351774978669126,"proxy_decimal":1.335689045936396},
+      {"fixture":"Mazatlan vs Guadalajara","market":"TOTAL_O1.5","p_model":0.6037630482197023,"proxy_decimal":1.6098609700816735}
+    ]}
+  },
+  "integrity_note":"Freeze created after deterministic selector output and before settlement artifact. Researcher outcome exposure exists from schedule search; no discretionary changes permitted."
+}
