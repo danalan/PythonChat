@@ -1,0 +1,82 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J6",
+  "as_of":"2025-08-22T00:00:00-06:00",
+  "integrity_class":"CLEAN_PRE_SELECTION_STAT_FREEZE",
+  "promotion_eligibility":true,
+  "fixture_source":{"publisher":"The Sporting News","published":"2025-06-06","type":"PRESEASON_FULL_SCHEDULE_NO_RESULTS"},
+  "fixtures":[
+    {"date":"2025-08-22","home":"FC Juárez","away":"Santos Laguna"},
+    {"date":"2025-08-22","home":"Gallos Blancos","away":"Atlético San Luis"},
+    {"date":"2025-08-22","home":"Mazatlán FC","away":"UANL Tigres"},
+    {"date":"2025-08-22","home":"Club Tijuana","away":"Deportivo Guadalajara"},
+    {"date":"2025-08-23","home":"Club León","away":"CF Pachuca"},
+    {"date":"2025-08-23","home":"CF Monterrey","away":"Club Necaxa"},
+    {"date":"2025-08-23","home":"Cruz Azul","away":"Deportivo Toluca"},
+    {"date":"2025-08-24","home":"Pumas UNAM","away":"Puebla FC"},
+    {"date":"2025-08-24","home":"Atlas Guadalajara","away":"CF América"}
+  ],
+  "league_snapshot_through_j5":{
+    "completed_matches":44,
+    "goals":138,
+    "goals_per_match":3.1363636363636362,
+    "uneven_games_played_note":"Tigres and Guadalajara have played four Liga MX matches because their J1 fixture remains postponed; all other teams have five.",
+    "standings":[
+      {"team":"CF Pachuca","P":5,"W":4,"D":0,"L":1,"GF":10,"GA":4,"PTS":12},
+      {"team":"CF Monterrey","P":5,"W":4,"D":0,"L":1,"GF":10,"GA":7,"PTS":12},
+      {"team":"Cruz Azul","P":5,"W":3,"D":2,"L":0,"GF":12,"GA":7,"PTS":11},
+      {"team":"CF América","P":5,"W":3,"D":2,"L":0,"GF":9,"GA":4,"PTS":11},
+      {"team":"Deportivo Toluca","P":5,"W":3,"D":1,"L":1,"GF":13,"GA":8,"PTS":10},
+      {"team":"UANL Tigres","P":4,"W":3,"D":0,"L":1,"GF":13,"GA":6,"PTS":9},
+      {"team":"Club Tijuana","P":5,"W":2,"D":2,"L":1,"GF":7,"GA":6,"PTS":8},
+      {"team":"Santos Laguna","P":5,"W":2,"D":0,"L":3,"GF":8,"GA":8,"PTS":6},
+      {"team":"Atlético San Luis","P":5,"W":2,"D":0,"L":3,"GF":7,"GA":7,"PTS":6},
+      {"team":"Club León","P":5,"W":2,"D":0,"L":3,"GF":4,"GA":8,"PTS":6},
+      {"team":"Mazatlán FC","P":5,"W":1,"D":2,"L":2,"GF":6,"GA":7,"PTS":5},
+      {"team":"Club Necaxa","P":5,"W":1,"D":2,"L":2,"GF":6,"GA":7,"PTS":5},
+      {"team":"Pumas UNAM","P":5,"W":1,"D":2,"L":2,"GF":6,"GA":8,"PTS":5},
+      {"team":"FC Juárez","P":5,"W":1,"D":2,"L":2,"GF":4,"GA":6,"PTS":5},
+      {"team":"Atlas Guadalajara","P":5,"W":1,"D":2,"L":2,"GF":10,"GA":14,"PTS":5},
+      {"team":"Deportivo Guadalajara","P":4,"W":1,"D":0,"L":3,"GF":5,"GA":7,"PTS":3},
+      {"team":"Puebla FC","P":5,"W":1,"D":0,"L":4,"GF":4,"GA":14,"PTS":3},
+      {"team":"Gallos Blancos","P":5,"W":0,"D":1,"L":4,"GF":4,"GA":10,"PTS":1}
+    ]
+  },
+  "current_tournament_home_away_splits_through_j5":{
+    "CF América":{"home":{"P":2,"W":2,"D":0,"L":0,"GF":4,"GA":1},"away":{"P":3,"W":1,"D":2,"L":0,"GF":5,"GA":3}},
+    "Atlas Guadalajara":{"home":{"P":2,"W":0,"D":1,"L":1,"GF":3,"GA":6},"away":{"P":3,"W":1,"D":1,"L":1,"GF":7,"GA":8}},
+    "Deportivo Guadalajara":{"home":{"P":2,"W":1,"D":0,"L":1,"GF":5,"GA":5},"away":{"P":2,"W":0,"D":0,"L":2,"GF":0,"GA":2}},
+    "Cruz Azul":{"home":{"P":3,"W":2,"D":1,"L":0,"GF":7,"GA":3},"away":{"P":2,"W":1,"D":1,"L":0,"GF":5,"GA":4}},
+    "FC Juárez":{"home":{"P":2,"W":0,"D":1,"L":1,"GF":1,"GA":3},"away":{"P":3,"W":1,"D":1,"L":1,"GF":3,"GA":3}},
+    "Club León":{"home":{"P":3,"W":1,"D":0,"L":2,"GF":2,"GA":4},"away":{"P":2,"W":1,"D":0,"L":1,"GF":2,"GA":4}},
+    "Mazatlán FC":{"home":{"P":2,"W":1,"D":1,"L":0,"GF":4,"GA":3},"away":{"P":3,"W":0,"D":1,"L":2,"GF":2,"GA":4}},
+    "CF Monterrey":{"home":{"P":2,"W":2,"D":0,"L":0,"GF":6,"GA":3},"away":{"P":3,"W":2,"D":0,"L":1,"GF":4,"GA":4}},
+    "Club Necaxa":{"home":{"P":3,"W":1,"D":1,"L":1,"GF":4,"GA":3},"away":{"P":2,"W":0,"D":1,"L":1,"GF":2,"GA":4}},
+    "CF Pachuca":{"home":{"P":3,"W":2,"D":0,"L":1,"GF":4,"GA":2},"away":{"P":2,"W":2,"D":0,"L":0,"GF":6,"GA":2}},
+    "Puebla FC":{"home":{"P":3,"W":1,"D":0,"L":2,"GF":3,"GA":5},"away":{"P":2,"W":0,"D":0,"L":2,"GF":1,"GA":9}},
+    "Pumas UNAM":{"home":{"P":2,"W":0,"D":1,"L":1,"GF":3,"GA":4},"away":{"P":3,"W":1,"D":1,"L":1,"GF":3,"GA":4}},
+    "Gallos Blancos":{"home":{"P":2,"W":0,"D":1,"L":1,"GF":3,"GA":5},"away":{"P":3,"W":0,"D":0,"L":3,"GF":1,"GA":5}},
+    "Atlético San Luis":{"home":{"P":2,"W":0,"D":0,"L":2,"GF":1,"GA":3},"away":{"P":3,"W":2,"D":0,"L":1,"GF":6,"GA":4}},
+    "Santos Laguna":{"home":{"P":3,"W":2,"D":0,"L":1,"GF":6,"GA":4},"away":{"P":2,"W":0,"D":0,"L":2,"GF":2,"GA":4}},
+    "UANL Tigres":{"home":{"P":3,"W":2,"D":0,"L":1,"GF":9,"GA":3},"away":{"P":1,"W":1,"D":0,"L":0,"GF":4,"GA":3}},
+    "Club Tijuana":{"home":{"P":2,"W":1,"D":1,"L":0,"GF":2,"GA":1},"away":{"P":3,"W":1,"D":1,"L":1,"GF":5,"GA":5}},
+    "Deportivo Toluca":{"home":{"P":3,"W":1,"D":1,"L":1,"GF":7,"GA":6},"away":{"P":2,"W":2,"D":0,"L":0,"GF":6,"GA":2}}
+  },
+  "pre_j6_descriptive_signals":[
+    "Pachuca and Monterrey enter J6 tied on 12 points; Pachuca has the better goal difference.",
+    "Cruz Azul and América remain unbeaten in league play at 3-2-0.",
+    "Tigres is 3-0-1 from only four matches after its first league loss against América.",
+    "Toluca has scored a league-high 13 goals among five-match teams; Tigres also has 13 from only four matches.",
+    "Puebla has conceded 14 goals in five matches; Atlas has also conceded 14. These are descriptive signals, not automatic fade rules.",
+    "Current-season home/away splits contain only one to three matches per side and are therefore frozen as context, not automatic numeric adjustments.",
+    "The long-history Dixon-Coles layer remains the quantitative model authority; current-tournament stats are a separate STAT_CONTEXT_SIGNAL."
+  ],
+  "governance":[
+    "CLEAN_FIXTURE_SOURCE_FROZEN_BEFORE_EXTERNAL_J6_SEARCH",
+    "DESCRIPTIVE_CURRENT_SEASON_STATS_ONLY",
+    "NO_J6_OUTCOME_INPUTS",
+    "PROMOTION_ELIGIBLE_UNLESS_LATER_RESEARCHER_OUTCOME_EXPOSURE_OCCURS",
+    "MODEL_SIGNAL_STAT_CONTEXT_SIGNAL_AND_PRICE_EV_REMAIN_SEPARATE"
+  ]
+}
