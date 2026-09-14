@@ -1,0 +1,24 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J7",
+  "status":"FROZEN_PRE_KICKOFF_PRICE_SNAPSHOT_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "price_policy":"Use a coherent archived OddsChecker 1X2 quote when available; otherwise use the complete Bet365 row shown on a pre-match SportyTrader page. Never cherry-pick a different bookmaker for each 1X2 outcome.",
+  "markets":[
+    {"fixture_id":"AP25J7-01","date":"2025-08-29","home":"FC Juárez","away":"Mazatlán FC","source":"SportyTrader pre-match odds / Bet365 row","source_url":"https://www.sportytrader.com/es/apuestas/fc-juarez-monarcas-morelia-7652674/","published_context":"2025-08-29 pre-kickoff page","quotes":{"1X2_HOME":1.57,"1X2_DRAW":3.90,"1X2_AWAY":5.50}},
+    {"fixture_id":"AP25J7-02","date":"2025-08-29","home":"Atlético San Luis","away":"Deportivo Toluca","source":"SportyTrader pre-match odds / Bet365 row","source_url":"https://www.sportytrader.com/es/apuestas/san-luis-deportivo-toluca-7652673/","published_context":"2025-08-29 pre-kickoff page","quotes":{"1X2_HOME":5.00,"1X2_DRAW":4.75,"1X2_AWAY":1.51}},
+    {"fixture_id":"AP25J7-03","date":"2025-08-29","home":"Puebla FC","away":"CF Monterrey","source":"SportyTrader pre-match odds / Bet365 row","source_url":"https://www.sportytrader.com/es/apuestas/puebla-monterrey-7652675/","published_context":"2025-08-29 pre-kickoff page","quotes":{"1X2_HOME":3.75,"1X2_DRAW":3.75,"1X2_AWAY":1.86}},
+    {"fixture_id":"AP25J7-04","date":"2025-08-30","home":"Club León","away":"Gallos Blancos","source":"SportyTrader pre-match odds / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/leon-queretaro-286949/","published_context":"Published 2025-08-30 10:52 before kickoff","quotes":{"1X2_HOME":1.46,"1X2_DRAW":4.20,"1X2_AWAY":6.25}},
+    {"fixture_id":"AP25J7-05","date":"2025-08-30","home":"Deportivo Guadalajara","away":"Cruz Azul","source":"OddsChecker pre-match article","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-guadalajara-vs-cruz-azul-30-08-25","published_context":"2025-08-29 18:02 before kickoff","quotes":{"1X2_HOME":2.60,"1X2_DRAW":3.50,"1X2_AWAY":2.63}},
+    {"fixture_id":"AP25J7-06","date":"2025-08-30","home":"Santos Laguna","away":"UANL Tigres","source":"SportyTrader pre-match odds / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/santos-laguna-tigres-uanl-287081/","published_context":"Published 2025-08-30 17:27 before kickoff","quotes":{"1X2_HOME":5.50,"1X2_DRAW":4.20,"1X2_AWAY":1.49}},
+    {"fixture_id":"AP25J7-07","date":"2025-08-30","home":"CF América","away":"CF Pachuca","source":"OddsChecker pre-match article","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-america-vs-pachuca-30-08-25","published_context":"2025-08-29 18:03 before kickoff","quotes":{"1X2_HOME":1.83,"1X2_DRAW":3.72,"1X2_AWAY":4.25}},
+    {"fixture_id":"AP25J7-08","date":"2025-08-31","home":"Pumas UNAM","away":"Atlas Guadalajara","source":"OddsChecker pre-match article","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/agosto/pronostico-pumas-unam-vs-atlas-31-08-25","published_context":"2025-08-30 18:04 before kickoff","quotes":{"1X2_HOME":1.77,"1X2_DRAW":3.88,"1X2_AWAY":4.75}},
+    {"fixture_id":"AP25J7-09","date":"2025-08-31","home":"Club Tijuana","away":"Club Necaxa","source":"SportyTrader archived odds / Bet365 row","source_url":"https://www.sportytrader.com/en/odds/tijuana-necaxa-7652681/","published_context":"Archived pre-match odds page for 2025-08-31 fixture","quotes":{"1X2_HOME":2.15,"1X2_DRAW":3.80,"1X2_AWAY":2.85}}
+  ],
+  "governance_notes":[
+    "The snapshot uses quoted prices that were available on pre-match pages; it does not optimize by selecting the best bookmaker for each outcome.",
+    "An OddsChecker Puebla-Monterrey table was rejected because its table orientation contradicted its own prose; the coherent Bet365 SportyTrader row is used instead.",
+    "J7 remains NO-PROMOTION because outcome exposure occurred before price freeze. No exposed result is used in EV, Kelly, selection or staking."
+  ]
+}
