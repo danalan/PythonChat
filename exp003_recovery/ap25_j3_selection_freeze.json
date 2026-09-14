@@ -1,0 +1,29 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J3",
+  "status":"FROZEN_SELECTION_BEFORE_SETTLEMENT",
+  "policy":"V2.1_WINDOWED_100",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "opening_bankroll_mxn_simulated":549.8012159211471,
+  "weekly_risk_budget_mxn":100.0,
+  "total_stake_mxn_simulated":50.0,
+  "held_cash_from_weekly_budget":50.0,
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "primary_singles":[
+    {"fixture_id":"AP25J3-03","fixture":"Club Tijuana vs FC Juárez","window":"FRIDAY","market":"1X2_HOME","decimal":2.08,"p_raw":0.5191898382058748,"break_even":0.4807692307692307,"model_ev":0.07991486346821963,"kelly_score":0.07399524395205521,"stake_mxn_simulated":10.0},
+    {"fixture_id":"AP25J3-08","fixture":"CF Monterrey vs Atlas Guadalajara","window":"SATURDAY","market":"1X2_HOME","decimal":1.55,"p_raw":0.6868417665612198,"break_even":0.6451612903225806,"model_ev":0.06460473816989065,"kelly_score":0.11746316030889209,"stake_mxn_simulated":15.0},
+    {"fixture_id":"AP25J3-09","fixture":"Club Necaxa vs CF América","window":"SATURDAY","market":"1X2_AWAY","decimal":1.9803921568627452,"p_raw":0.5396933714385412,"break_even":0.504950495049505,"model_ev":0.06880451990769942,"kelly_score":0.0701806103058534,"stake_mxn_simulated":10.0},
+    {"fixture_id":"AP25J3-05","fixture":"Deportivo Guadalajara vs Atlético San Luis","window":"SATURDAY","market":"1X2_AWAY","decimal":5.7,"p_raw":0.21768766601244963,"break_even":0.17543859649122806,"model_ev":0.240819696270963,"kelly_score":0.05123823324914106,"stake_mxn_simulated":10.0}
+  ],
+  "secondary_two_leg_parlays":[
+    {"window":"SATURDAY","stake_mxn_simulated":5.0,"decimal":3.069607843137255,"p_joint_independence":0.3706839486402282,"model_ev":0.13785435607113183,"legs":[{"fixture_id":"AP25J3-08","market":"1X2_HOME"},{"fixture_id":"AP25J3-09","market":"1X2_AWAY"}]}
+  ],
+  "notes":[
+    "Selector output reproduced by GitHub Actions before this freeze.",
+    "Human/context layer did not alter selections.",
+    "Pachuca-Mazatlan excluded from economic selection because no eligible timestamped pre-kickoff price was verified.",
+    "J3 is permanently NO-PROMOTION because researcher was exposed to outcomes during schedule research."
+  ]
+}
