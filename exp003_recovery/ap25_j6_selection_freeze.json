@@ -1,0 +1,42 @@
+{
+  "experiment": "EXP-003",
+  "tournament": "Apertura 2025",
+  "jornada": "J6",
+  "freeze_status": "FROZEN_SELECTION_BEFORE_SETTLEMENT_ARTIFACT",
+  "integrity_class": "MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED_DURING_PRICE_RESEARCH",
+  "promotion_eligibility": false,
+  "canonical_policy": "V2.1_WINDOWED_100",
+  "shadow_policy": "V2.2_FRACTIONAL_KELLY_SHADOW",
+  "canonical_opening_bankroll_mxn": 503.3012159211471,
+  "shadow_opening_bankrolls_mxn": {"FK15":511.8874827211644,"FK20":511.4998593720455,"FK25":511.11237988169773},
+  "canonical_primary_singles": [
+    {"fixture_id":"AP25J6-01","execution_date":"2025-08-22","selection":"Santos Laguna ML","market":"1X2_AWAY","decimal":5.5,"p_raw":0.2558638131162151,"break_even":0.18181818181818182,"model_ev":0.40725097213918304,"kelly_score":0.09050021603092956,"stake_mxn_simulated":15.0},
+    {"fixture_id":"AP25J6-02","execution_date":"2025-08-22","selection":"Querétaro ML","market":"1X2_HOME","decimal":4.0,"p_raw":0.32332890589212776,"break_even":0.25,"model_ev":0.29331562356851104,"kelly_score":0.09777187452283702,"stake_mxn_simulated":15.0},
+    {"fixture_id":"AP25J6-05","execution_date":"2025-08-23","selection":"León ML","market":"1X2_HOME","decimal":3.0,"p_raw":0.37456754900984957,"break_even":0.3333333333333333,"model_ev":0.1237026470295488,"kelly_score":0.0618513235147744,"stake_mxn_simulated":10.0},
+    {"fixture_id":"AP25J6-07","execution_date":"2025-08-23","selection":"Toluca ML","market":"1X2_AWAY","decimal":4.2,"p_raw":0.3406130620058687,"break_even":0.23809523809523808,"model_ev":0.43057486042464865,"kelly_score":0.1345546438827027,"stake_mxn_simulated":15.0},
+    {"fixture_id":"AP25J6-09","execution_date":"2025-08-24","selection":"América ML","market":"1X2_AWAY","decimal":1.8,"p_raw":0.6193859884603592,"break_even":0.5555555555555556,"model_ev":0.11489477922864655,"kelly_score":0.14361847403580819,"stake_mxn_simulated":15.0}
+  ],
+  "canonical_secondary_parlays": [
+    {"execution_date":"2025-08-22","stake_mxn_simulated":5.0,"legs":["AP25J6-01|1X2_AWAY","AP25J6-02|1X2_HOME"],"decimal":22.0,"p_joint_independence":0.08272816675225367,"model_ev":0.8200196685495806},
+    {"execution_date":"2025-08-23","stake_mxn_simulated":5.0,"legs":["AP25J6-05|1X2_HOME","AP25J6-07|1X2_AWAY"],"decimal":12.6,"p_joint_independence":0.12758259979627815,"model_ev":0.6075407574331049}
+  ],
+  "canonical_total_stake_mxn_simulated": 80.0,
+  "canonical_held_cash_from_budget": 20.0,
+  "fractional_kelly_shadows": {
+    "FK15":{"fraction_of_full_kelly":0.15,"single_stakes":[{"fixture_id":"AP25J6-01","stake_mxn_simulated":6.948889165469114},{"fixture_id":"AP25J6-02","stake_mxn_simulated":7.507229809563688},{"fixture_id":"AP25J6-05","stake_mxn_simulated":4.7491377445425345},{"fixture_id":"AP25J6-07","stake_mxn_simulated":10.33152569183391},{"fixture_id":"AP25J6-09","stake_mxn_simulated":11.027474871966714}],"same_fixed_parlays_total_mxn":10.0,"total_stake_mxn":50.56425728337596,"risk_ceiling_scale_factor":1.0},
+    "FK20":{"fraction_of_full_kelly":0.20,"single_stakes":[{"fixture_id":"AP25J6-01","stake_mxn_simulated":9.258169554592042},{"fixture_id":"AP25J6-02","stake_mxn_simulated":10.002060013794484},{"fixture_id":"AP25J6-05","stake_mxn_simulated":6.327388655956399},{"fixture_id":"AP25J6-07","stake_mxn_simulated":13.764936284771617},{"fixture_id":"AP25J6-09","stake_mxn_simulated":14.69216585450873}],"same_fixed_parlays_total_mxn":10.0,"total_stake_mxn":64.04472036362327,"risk_ceiling_scale_factor":1.0},
+    "FK25":{"fraction_of_full_kelly":0.25,"single_stakes":[{"fixture_id":"AP25J6-01","stake_mxn_simulated":11.563945198844046},{"fixture_id":"AP25J6-02","stake_mxn_simulated":12.49310386821549},{"fixture_id":"AP25J6-05","stake_mxn_simulated":7.90324429011729},{"fixture_id":"AP25J6-07","stake_mxn_simulated":17.193136064755624},{"fixture_id":"AP25J6-09","stake_mxn_simulated":18.351295014854934}],"same_fixed_parlays_total_mxn":10.0,"total_stake_mxn":77.50472443678738,"risk_ceiling_scale_factor":1.0}
+  },
+  "notable_rejections": [
+    {"fixture_id":"AP25J6-08","market":"1X2_HOME","p_raw":0.640532177763136,"decimal":1.60,"model_ev":0.02485148442101765,"kelly_score":0.04141914070169608,"reason":"POSITIVE_EV_BUT_KELLY_BELOW_0.05_GATE"},
+    {"fixture_id":"AP25J6-06","market":"1X2_HOME","p_raw":0.6336013240085964,"decimal":1.60,"model_ev":0.013762118413754266,"kelly_score":0.022936864022923777,"reason":"POSITIVE_EV_BUT_KELLY_BELOW_0.05_GATE"},
+    {"fixture_id":"AP25J6-04","market":"1X2_HOME","p_raw":0.37413821996359514,"decimal":2.76,"model_ev":0.03262148709952267,"kelly_score":0.01853493585200152,"reason":"POSITIVE_EV_BUT_KELLY_BELOW_0.05_GATE"}
+  ],
+  "notes": [
+    "No J6 result is used in the mechanical calculations represented here.",
+    "J6 model/stat signal was frozen cleanly before web research, but J6 is permanently NO-PROMOTION because outcome snippets were seen during later price research before this selection freeze.",
+    "V2.2 shadows inherit the exact same qualifying singles and same fixed MXN5 secondary parlay per qualifying execution window; only single sizing changes.",
+    "CORE/VALUE/LONGSHOT labels have no admission or capital-allocation authority.",
+    "León-Pachuca qualifying price uses a preserved market page with weaker timestamp provenance; this is diagnostic only and cannot support promotion."
+  ]
+}
