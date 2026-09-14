@@ -16,7 +16,7 @@
     {"fixture_id":"AP25J5-09","date":"2025-08-17","home":"CF Monterrey","away":"Mazatlán FC","market":"1X2_HOME","selection":"Monterrey ML","decimal":1.50,"p_raw":0.7078618632051232,"break_even":0.6666666666666666,"model_ev":0.06179279480768485,"kelly_score":0.1235855896153697,"stake_mxn_simulated":15.0}
   ],
   "canonical_secondary_parlays":[
-    {"window":"2025-08-17","stake_mxn_simulated":5.0,"legs":["AP25J5-09|1X2_HOME","AP25J5-08|1X2_HOME"],"decimal":4.65,"p_joint_independence":0.2700444296447779,"model_ev":0.2557065978482172}
+    {"window":"2025-08-17","stake_mxn_simulated":5.0,"legs":["AP25J5-09|1X2_HOME","AP25J5-08|1X2_HOME"],"decimal":4.65,"p_joint_independence":0.2700324352052779,"model_ev":0.2556508237045425}
   ],
   "canonical_total_stake_mxn_simulated":70.0,
   "canonical_held_cash_from_budget":30.0,
@@ -30,6 +30,9 @@
     {"fixture_id":"AP25J5-07","selection":"Cruz Azul ML","p_raw":0.7239679246038219,"decimal":1.2793296089385475,"model_ev":-0.07380639813254075,"reason":"HIGH_PROBABILITY_BUT_NEGATIVE_EV"},
     {"fixture_id":"AP25J5-05","selection":"Pachuca ML","p_raw":0.6226566047726219,"decimal":1.38,"model_ev":-0.14073388541378196,"reason":"HIGH_PROBABILITY_BUT_NEGATIVE_EV"},
     {"fixture_id":"AP25J5-03","selection":"Chivas ML","p_raw":0.5467179451831137,"decimal":1.5714285714285714,"model_ev":-0.1408718004265357,"reason":"FAVORITE_PRICE_TOO_SHORT_FOR_MODEL_PROBABILITY"}
+  ],
+  "corrections":[
+    "The original freeze commit transcribed the August 17 parlay p_joint and EV incorrectly. Correct values are p_joint=0.2700324352052779 and model_ev=0.2556508237045425. Selection, odds, stake and eligibility are unchanged. Correction was made before the settlement artifact was created."
   ],
   "notes":[
     "No J5 result is used in the mechanical calculations represented here.",
