@@ -1,0 +1,38 @@
+{
+  "candidate_id": "CAL_SHRINK_GLOBAL_V0_1",
+  "status": "SHADOW_ONLY_FROZEN_BEFORE_APERTURA_2025",
+  "training_scope": "Clausura 2025 Economic Track selected legs J11-J17 only",
+  "training_n": 63,
+  "raw_mean_selected_probability_approx": 0.740,
+  "realized_selected_hit_rate": 0.6349,
+  "method": "linear shrinkage toward 0.5",
+  "formula": "p_cal = 0.5 + k * (p_raw - 0.5)",
+  "k": 0.5620833333,
+  "derivation": "k=(0.6349-0.5)/(0.7400-0.5); approximate aggregate mean-matching baseline, deliberately simple to reduce overfit risk",
+  "examples": {
+    "raw_0.60": 0.5562083333,
+    "raw_0.70": 0.6124166667,
+    "raw_0.80": 0.668625,
+    "raw_0.90": 0.7248333333
+  },
+  "usage": {
+    "raw_v0_1r_remains_canonical_comparator": true,
+    "calibrated_probability_may_change_primary_stake_or_selection": false,
+    "freeze_both_raw_and_calibrated_each_jornada": true,
+    "apertura_2025_is_out_of_sample_validation": true,
+    "refit_during_apertura_before_checkpoint": false
+  },
+  "evaluation": [
+    "Brier raw vs calibrated",
+    "log loss raw vs calibrated",
+    "mean predicted vs realized calibration gap",
+    "reliability by probability bin when sample permits",
+    "economic decisions at exact target-market prices where available"
+  ],
+  "limitations": [
+    "63 selected legs is a small and selection-biased training sample",
+    "aggregate mean matching is not a full calibration curve",
+    "J12-J16 researcher outcome exposure limits feature-promotion claims but frozen probabilities/outcomes remain usable for this diagnostic calibration baseline",
+    "candidate is intentionally conservative and must not be represented as proven improvement"
+  ]
+}
