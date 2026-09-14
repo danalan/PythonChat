@@ -1,0 +1,43 @@
+{
+  "experiment": "EXP-003",
+  "tournament": "Apertura 2025",
+  "jornada": "J11",
+  "promotion_eligibility": false,
+  "integrity_class": "MECHANICAL_REPLAY_EXTERNAL_PACKET_VISIBLE_J11_OUTCOME_EXPOSURE_BEFORE_SELECTION_FREEZE",
+  "canonical_policy": "V2.1_WINDOWED_100",
+  "shadow_policy": "V2.2_FRACTIONAL_KELLY_SHADOW",
+  "canonical_opening_bankroll_mxn": 447.3012159211471,
+  "accepted_price_rows": [
+    {
+      "fixture_id": "AP25J11-01",
+      "home": "FC Juárez",
+      "away": "Club León",
+      "bookmaker": "Bet365",
+      "prices": {"1X2_HOME": 1.9259259259, "1X2_DRAW": 3.32, "1X2_AWAY": 3.38},
+      "temporal_class": "PRE_KICKOFF_DATE_VERIFIED_TIME_UNAVAILABLE"
+    }
+  ],
+  "canonical_primary_singles": [
+    {
+      "fixture_id": "AP25J11-01",
+      "selection": "Club León ML",
+      "market": "1X2_AWAY",
+      "decimal": 3.38,
+      "p_raw": 0.3327661442758267,
+      "break_even": 0.2958579881656805,
+      "model_ev": 0.12474956765229422,
+      "kelly_score": 0.05241578472785471,
+      "stake_mxn_simulated": 10.0
+    }
+  ],
+  "canonical_secondary_parlays": [],
+  "canonical_total_stake_mxn_simulated": 10.0,
+  "canonical_held_cash_from_budget": 90.0,
+  "notes": [
+    "Only one accepted complete pre-kickoff 1X2 row survived the J11 firewall audit.",
+    "Juarez ML and draw have negative model EV at the accepted Bet365 row.",
+    "Leon ML passes the canonical Kelly >= 0.05 gate by a narrow margin.",
+    "No J11 outcome is used in this freeze.",
+    "J11 remains permanently NO-PROMOTION due visible J11 outcome exposure in the supplied external packet before freeze."
+  ]
+}
