@@ -1,0 +1,120 @@
+{
+  "experiment": "EXP-003 Clausura 2025 J10",
+  "track": "HISTORICAL_OUTCOME_EXPOSED",
+  "freeze_type": "MODEL_PLUS_CONTEXT_PRE_RESULT",
+  "model_cutoff": "2025-02-28T00:00:00",
+  "context_cutoff": "2025-02-28T20:59:00-06:00",
+  "goal_model": {
+    "id": "V0.1R_RECOVERED",
+    "training_rows": 928,
+    "frozen_output_commit": "089fc2582c05894dbae22c60d0869f2d35f9a59c",
+    "output_path": "exp003_recovery/j10_expanded_goal_output.txt"
+  },
+  "corner_model": {
+    "id": "C0.1-CORNERS-NB-ENSEMBLE",
+    "status": "SHADOW_ONLY",
+    "training_rows": 140,
+    "eligible_rows": 248,
+    "coverage": 0.5645161290322581,
+    "detail_failures": 108,
+    "workflow_run_id": 34798097974,
+    "artifact_id": 10330577182,
+    "artifact_zip_sha256": "01fe4c9291baa90c9dc7cdbbe986b7301a254f6cb6e923cc7f9dc632135db32f",
+    "corner_output_sha256": "0ddfeb55cc1693aab5081499fc0d8591235fe0886add17151c04f426efd5a6eb",
+    "warning": "Incomplete source coverage and provider/schema missingness remain hard blockers for promotion."
+  },
+  "context_sources": [
+    {
+      "fixture": "Mazatlan-Cruz Azul",
+      "url": "https://www.tvazteca.com/aztecadeportes/mazatlan-cruz-azul-en-vivo-partido-tv-azteca-transmitira-jornada-10-clausura-2025",
+      "published": "2025-02-28T12:09:00-06:00",
+      "facts": "Mazatlan 11 points after 3-2-4 and a 1-0 midweek win over Monterrey; Cruz Azul 17 points, 5-2-2, two straight wins."
+    },
+    {
+      "fixture": "Mazatlan-Cruz Azul",
+      "url": "https://www.tvazteca.com/aztecadeportes/mazatlan-cruz-azul-alineaciones-jornada-10-clausura-2025",
+      "published": "2025-02-28T20:31:00-06:00",
+      "facts": "Confirmed starting XIs available before the 20:59 context cutoff."
+    },
+    {
+      "fixture": "America-Toluca",
+      "url": "https://www.tudn.com/futbol/liga-mx/turco-mohamed-envia-esta-advertencia-america-rumbo-partido-jornada-10",
+      "published": "2025-02-27T07:01:00-06:00",
+      "facts": "Toluca arrived after a 5-0 J9 win; Mohamed described America as a useful measuring stick and said Toluca arrived well."
+    },
+    {
+      "fixture": "Pumas-Chivas",
+      "url": "https://pumas.mx/noticias/2928/antecedentes-num%C3%A9ricos-vs-guadalajara",
+      "published": "2025-02-28T15:51:00-06:00",
+      "facts": "Pumas home short-tournament H2H vs Guadalajara: 31 matches, 11-15-5, goals 37-24; last five overall meetings split two wins each plus one draw."
+    },
+    {
+      "fixture": "Pumas-Chivas",
+      "url": "https://www.nmas.com.mx/deportes/futbol/pumas-unam-despide-gustavo-lema-de-la-direccion-tecnica-clausura-2025/",
+      "published": "2025-02-26T03:11:00-06:00",
+      "facts": "Pumas dismissed Gustavo Lema after the 4-2 loss at Tijuana; team had three consecutive defeats and 11 points."
+    },
+    {
+      "fixture": "Pumas-Chivas",
+      "url": "https://www.nmas.com.mx/deportes/oscar-garcia-junyent-hospitalizado-dt-chivas-guadalajara-hoy-ultimas-noticias/",
+      "published": "2025-02-27T15:36:00-06:00",
+      "facts": "Oscar Garcia remained hospitalized/under observation and would not be on the bench against Pumas."
+    },
+    {
+      "fixture": "Leon-Tijuana",
+      "url": "https://tv4noticias.com/leon-se-mantiene-en-lo-mas-alto-de-la-liga-mx/",
+      "published": "2025-02-24T10:28:00-06:00",
+      "facts": "Leon led the tournament unbeaten with 23 points after beating Tigres 1-0; Tijuana had 4 points after J8."
+    },
+    {
+      "fixture": "Monterrey-Santos",
+      "url": "https://www.elsiglodetorreon.com.mx/noticia/2025/monterrey-vs-santos-que-dijo-edson-gutierrez-previo-al-duelo-contra-su-ex-equipo.html",
+      "published": "2025-02-28T19:09:00-06:00",
+      "facts": "Santos came from its first positive upswing and acknowledged BBVA as a difficult visit; Sergio Ramos was expected to play."
+    },
+    {
+      "fixture": "Queretaro-Puebla",
+      "url": "https://www.deporpuebla.com/lista-para-jugarse-la-jornada-10-del-f%C3%BAtbol-mexicano",
+      "published": "2025-02-28",
+      "time_precision": "DATE_ONLY",
+      "facts": "Queretaro entered on a three-match losing run; H2H at La Corregidora showed many draws/Puebla wins. Date-only timestamp is insufficient for hard veto use."
+    }
+  ],
+  "legacy_comparator": {
+    "selection_rule": "V0.1R canonical pool ordered by frozen research_score, max two from one family, distinct fixtures; context may only veto on preregistered CONTRADICT_HIGH.",
+    "legs": [
+      {"fixture":"Leon-Tijuana","market":"DC_12","p_model":0.7748636990357551,"context":"NEUTRAL","reason":"Large strength gap favors Leon, but that does not specifically eliminate draw risk."},
+      {"fixture":"America-Toluca","market":"DC_12","p_model":0.7620394020672243,"context":"CONTRADICT_LOW","reason":"Toluca arrived strong after a 5-0 win and the teams were close in the table; an even strong-v-strong matchup can preserve draw risk."},
+      {"fixture":"Queretaro-Puebla","market":"HOME_TG_O0.5","p_model":0.7618954275984235,"context":"CONTRADICT_LOW","reason":"Queretaro entered on a three-match losing run; not enough for a high-confidence veto."}
+    ],
+    "joint_independence_approx": 0.449881474897919
+  },
+  "expanded_shadow_portfolio": {
+    "rules": "Three two-leg tickets; two conservative and one aggressive; different matches inside each ticket; six unique fixtures across the three tickets; no cards; historical odds unavailable; corners may appear only as SHADOW evidence.",
+    "safe_A": {
+      "legs": [
+        {"fixture":"Mazatlan-Cruz Azul","market":"HOME_TG_U2.5","p_model":0.9318196086121031,"context":"SUPPORT","reason":"Mazatlan had modest scoring volume through nine matches while Cruz Azul arrived with two straight wins and recent clean sheets; confirmed XI showed no obvious pre-cutoff reason to override."},
+        {"fixture":"Monterrey-Santos","market":"HOME_TG_O0.5","p_model":0.9126702143034038,"context":"SUPPORT","reason":"Monterrey at BBVA against a Santos side only just emerging from a very poor start; no material attacking absence found before cutoff."}
+      ],
+      "joint_independence_approx": 0.850444001884122
+    },
+    "safe_B": {
+      "legs": [
+        {"fixture":"Pumas-Chivas","market":"TOTAL_U4.5","p_model":0.920874190304611,"context":"SUPPORT_WITH_UNCERTAINTY","reason":"Long-run Pumas home H2H was low-scoring overall, but both benches carried unusual coaching disruption, increasing variance; no high veto."},
+        {"fixture":"Leon-Tijuana","market":"DC_1X","p_model":0.8040767335424668,"context":"SUPPORT","reason":"Leon was the unbeaten league leader on 23 points; Tijuana had been near the bottom despite a fresh 4-2 win over Pumas."}
+      ],
+      "joint_independence_approx": 0.7404535109436956
+    },
+    "risk_C": {
+      "legs": [
+        {"fixture":"America-Toluca","market":"1X2_HOME","p_model":0.533492532795905,"context":"CONTRADICT_LOW","reason":"America was strong, but Toluca arrived in good form and close enough in quality/table position that a home moneyline remained genuinely high variance."},
+        {"fixture":"Queretaro-Puebla","market":"HOME_CORNERS_O3.5","p_model":0.7949079169885223,"context":"UNKNOWN","reason":"C0.1 sees a strong corner line but corner-specific contextual features are not validated; source coverage is only 56.45%, so this leg stays explicitly experimental."}
+      ],
+      "joint_independence_approx": 0.42407743797372377,
+      "epistemic_risk": "HIGH due one moneyline plus one unvalidated corner-model leg."
+    }
+  },
+  "first_half_models": "NOT_ACTIVE_FOR_J10; excluded to avoid retroactive architecture insertion.",
+  "cards": "OUT_OF_SCOPE by user decision 2026-09-13.",
+  "outcome_exposure_warning": "Track H is retrospective and architect outcome-exposed. Freeze preserves process chronology but cannot convert J10 into prospective evidence."
+}
