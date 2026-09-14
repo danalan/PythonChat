@@ -1,0 +1,75 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J6",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED_DURING_PRICE_RESEARCH",
+  "promotion_eligibility":false,
+  "price_snapshot_commit":"bd8db30f7553296e8d30c95769c393ed38a3f20b",
+  "selection_freeze_commit":"5cf3c8aa973e91e70c0be0dc56db9e31e21f39a2",
+  "results":[
+    {"fixture_id":"AP25J6-01","home":"FC Juárez","away":"Santos Laguna","home_goals":2,"away_goals":1},
+    {"fixture_id":"AP25J6-02","home":"Gallos Blancos","away":"Atlético San Luis","home_goals":3,"away_goals":2},
+    {"fixture_id":"AP25J6-03","home":"Mazatlán FC","away":"UANL Tigres","home_goals":2,"away_goals":2},
+    {"fixture_id":"AP25J6-04","home":"Club Tijuana","away":"Deportivo Guadalajara","home_goals":3,"away_goals":3},
+    {"fixture_id":"AP25J6-05","home":"Club León","away":"CF Pachuca","home_goals":1,"away_goals":1},
+    {"fixture_id":"AP25J6-06","home":"CF Monterrey","away":"Club Necaxa","home_goals":3,"away_goals":0},
+    {"fixture_id":"AP25J6-07","home":"Cruz Azul","away":"Deportivo Toluca","home_goals":1,"away_goals":0},
+    {"fixture_id":"AP25J6-08","home":"Pumas UNAM","away":"Puebla FC","home_goals":0,"away_goals":0},
+    {"fixture_id":"AP25J6-09","home":"Atlas Guadalajara","away":"CF América","home_goals":2,"away_goals":4}
+  ],
+  "canonical_v2_1":{
+    "opening_bankroll_mxn":503.3012159211471,
+    "tickets":[
+      {"fixture_id":"AP25J6-01","selection":"Santos Laguna ML","stake":15.0,"decimal":5.50,"result":"LOSS","return":0.0,"pnl":-15.0},
+      {"fixture_id":"AP25J6-02","selection":"Querétaro ML","stake":15.0,"decimal":4.00,"result":"WIN","return":60.0,"pnl":45.0},
+      {"fixture_id":"AP25J6-05","selection":"León ML","stake":10.0,"decimal":3.00,"result":"LOSS","return":0.0,"pnl":-10.0},
+      {"fixture_id":"AP25J6-07","selection":"Toluca ML","stake":15.0,"decimal":4.20,"result":"LOSS","return":0.0,"pnl":-15.0},
+      {"fixture_id":"AP25J6-09","selection":"América ML","stake":15.0,"decimal":1.80,"result":"WIN","return":27.0,"pnl":12.0},
+      {"selection":"Parlay Santos ML + Querétaro ML","stake":5.0,"decimal":22.0,"result":"LOSS","return":0.0,"pnl":-5.0},
+      {"selection":"Parlay León ML + Toluca ML","stake":5.0,"decimal":12.60,"result":"LOSS","return":0.0,"pnl":-5.0}
+    ],
+    "single_record":{"wins":2,"losses":3},
+    "parlay_record":{"wins":0,"losses":2},
+    "total_stake":80.0,
+    "total_return":87.0,
+    "pnl":7.0,
+    "roi_on_stake":0.0875,
+    "log_bankroll_growth":0.013812341147809349,
+    "closing_bankroll_mxn":510.3012159211471
+  },
+  "fractional_kelly_v2_2_shadow":{
+    "FK15":{"opening_bankroll":511.8874827211644,"total_stake":50.56425728337596,"total_return":49.87837400779483,"pnl":-0.6858832755811264,"roi_on_stake":-0.013564587169495015,"log_bankroll_growth":-0.0013408087141023534,"closing_bankroll":511.20159944558327},
+    "FK20":{"opening_bankroll":511.4998593720455,"total_stake":64.04472036362327,"total_return":66.45413859329365,"pnl":2.409418229670379,"roi_on_stake":0.037620872040514106,"log_bankroll_growth":0.004699436697148765,"closing_bankroll":513.9092776017159},
+    "FK25":{"opening_bankroll":511.11237988169773,"total_stake":77.50472443678738,"total_return":83.00474649960084,"pnl":5.500022062813457,"roi_on_stake":0.0709637006360723,"log_bankroll_growth":0.010703399719689088,"closing_bankroll":516.6124019445112}
+  },
+  "selected_single_calibration":{
+    "n":5,
+    "raw_brier":0.18490703860481436,
+    "shadow_brier":0.2062147533976101,
+    "raw_log_loss":0.5578799481240931,
+    "shadow_log_loss":0.6043923291485936,
+    "winner":"RAW_V0_1R_ON_J6"
+  },
+  "cumulative_selected_single_calibration_j1_to_j6":{
+    "n":24,
+    "raw_brier":0.23069849526218658,
+    "shadow_brier":0.23274049585365622,
+    "raw_log_loss":0.6540042565631558,
+    "shadow_log_loss":0.6581688915370906,
+    "winner":"RAW_V0_1R_CUMULATIVE_BY_SMALL_MARGIN"
+  },
+  "diagnostic_lessons":[
+    "J6 canonical finished positive despite only two of five primary singles winning because Querétaro at 4.00 generated MXN45 profit and América at 1.80 added MXN12.",
+    "Both secondary parlays lost, costing the fixed MXN10 total. The parlay layer remains a variance amplifier and diagnostic add-on, not the core engine.",
+    "FK15 slightly lost while FK20 and FK25 won. Fractional Kelly did not dominate canonical on J6 in pesos or ROI, but all shadow bankrolls remain above canonical after J4-J6 because of smaller prior drawdowns.",
+    "The fixed MXN5 parlay per window consumes a larger share of risk in lower-fraction Kelly shadows, creating a portfolio-comparison confound. Log this as a future preregistered shadow-test hypothesis; do not alter the active shadow retrospectively.",
+    "Raw calibration beat shrinkage on J6 and narrowly retook the cumulative J1-J6 lead. No calibration promotion is allowed because J6 was outcome-exposed before selection freeze.",
+    "Pumas ML and Monterrey ML were positive EV but failed the frozen Kelly >=0.05 gate; both outcomes are irrelevant to threshold revision unless evaluated over a preregistered sample.",
+    "J6 cannot promote staking, calibration, price-source, threshold or context changes because researcher outcome exposure occurred during price research."
+  ],
+  "result_source_notes":[
+    "Mediotiempo, EL PAÍS and AS agree on the complete J6 score grid used here.",
+    "A TUDN snippet incorrectly displayed Querétaro 3-0 San Luis; multiple independent detailed sources show 3-2, so 3-2 is canonical.",
+    "One AS prose result page displayed Mazatlán 2-1 Tigres, while its own structured results plus Mediotiempo, EL PAÍS and TUDN show 2-2; 2-2 is canonical."
+  ]
+}
