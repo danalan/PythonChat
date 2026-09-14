@@ -1,0 +1,16 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J8",
+  "status":"FROZEN_SELECTION_BEFORE_SETTLEMENT",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_FUTURE_TOURNAMENT_EXPOSURE_BEFORE_SELECTION_FREEZE",
+  "promotion_eligibility":false,
+  "canonical_policy":"V2.1_WINDOWED_100",
+  "canonical_opening_bankroll_mxn":514.1012159211471,
+  "canonical_primary_singles":[{"fixture_id":"AP25J8-07","date":"2025-09-13","home":"Deportivo Toluca","away":"Puebla FC","market":"1X2_HOME","selection":"Deportivo Toluca ML","decimal":1.32,"p_raw":0.8296306685882855,"break_even":0.7575757575757576,"model_ev":0.09511248253653681,"kelly_score":0.2972265079266775,"stake_mxn_simulated":20.0}],
+  "canonical_secondary_parlays":[],
+  "canonical_total_stake_mxn_simulated":20.0,
+  "canonical_held_cash_from_budget":80.0,
+  "fractional_kelly_shadows":{"FK15":{"opening_bankroll_mxn":517.5832819052672,"stake_mxn_simulated":23.075920716289744},"FK20":{"opening_bankroll_mxn":524.1652345916573,"stake_mxn_simulated":31.1591604508492},"FK25":{"opening_bankroll_mxn":530.782654672085,"stake_mxn_simulated":39.44066872905884}},
+  "notes":["No J8 result was used to select or size this ticket.","Only Toluca ML passed the frozen Kelly >=0.05 gate.","No parlay was created because no betting window contained two approved singles.","J8 remains NO-PROMOTION due to future-tournament researcher exposure during schedule retrieval."]
+}
