@@ -1,0 +1,40 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J5",
+  "freeze_status":"FROZEN_SELECTION_BEFORE_SETTLEMENT_ARTIFACT",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "canonical_policy":"V2.1_WINDOWED_100",
+  "shadow_policy":"V2.2_FRACTIONAL_KELLY_SHADOW",
+  "canonical_opening_bankroll_mxn":508.8012159211471,
+  "shadow_opening_bankrolls_mxn":{"FK15":517.5288384645028,"FK20":517.3547126456212,"FK25":517.1805868267398},
+  "canonical_primary_singles":[
+    {"fixture_id":"AP25J5-01","date":"2025-08-15","home":"Puebla FC","away":"Atlético San Luis","market":"1X2_AWAY","selection":"Atlético San Luis ML","decimal":2.80,"p_raw":0.4385145862638653,"break_even":0.35714285714285715,"model_ev":0.22784084153882267,"kelly_score":0.12657824529934594,"stake_mxn_simulated":15.0},
+    {"fixture_id":"AP25J5-04","date":"2025-08-16","home":"Deportivo Toluca","away":"Pumas UNAM","market":"1X2_HOME","selection":"Toluca ML","decimal":1.73,"p_raw":0.667050117974491,"break_even":0.5780346820809249,"model_ev":0.1539967040958694,"kelly_score":0.21095438917242385,"stake_mxn_simulated":20.0},
+    {"fixture_id":"AP25J5-08","date":"2025-08-17","home":"Gallos Blancos","away":"Atlas Guadalajara","market":"1X2_HOME","selection":"Querétaro ML","decimal":3.10,"p_raw":0.38147617387183397,"break_even":0.3225806451612903,"model_ev":0.18257613900268543,"kelly_score":0.08694101857270735,"stake_mxn_simulated":15.0},
+    {"fixture_id":"AP25J5-09","date":"2025-08-17","home":"CF Monterrey","away":"Mazatlán FC","market":"1X2_HOME","selection":"Monterrey ML","decimal":1.50,"p_raw":0.7078618632051232,"break_even":0.6666666666666666,"model_ev":0.06179279480768485,"kelly_score":0.1235855896153697,"stake_mxn_simulated":15.0}
+  ],
+  "canonical_secondary_parlays":[
+    {"window":"2025-08-17","stake_mxn_simulated":5.0,"legs":["AP25J5-09|1X2_HOME","AP25J5-08|1X2_HOME"],"decimal":4.65,"p_joint_independence":0.2700444296447779,"model_ev":0.2557065978482172}
+  ],
+  "canonical_total_stake_mxn_simulated":70.0,
+  "canonical_held_cash_from_budget":30.0,
+  "fractional_kelly_shadows":{
+    "FK15":{"fraction_of_full_kelly":0.15,"single_stakes":[{"fixture_id":"AP25J5-01","stake_mxn_simulated":9.826183839696812},{"fixture_id":"AP25J5-04","stake_mxn_simulated":16.376246999608977},{"fixture_id":"AP25J5-08","stake_mxn_simulated":6.749172653528099},{"fixture_id":"AP25J5-09","stake_mxn_simulated":9.59386599668895}],"same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":47.54546948952284,"risk_ceiling_scale_factor":1.0},
+    "FK20":{"fraction_of_full_kelly":0.20,"single_stakes":[{"fixture_id":"AP25J5-01","stake_mxn_simulated":13.097170344806017},{"fixture_id":"AP25J5-04","stake_mxn_simulated":21.82764947832638},{"fixture_id":"AP25J5-08","stake_mxn_simulated":8.995869136160126},{"fixture_id":"AP25J5-09","stake_mxn_simulated":12.787517440519853}],"same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":61.708206399812376,"risk_ceiling_scale_factor":1.0},
+    "FK25":{"fraction_of_full_kelly":0.25,"single_stakes":[{"fixture_id":"AP25J5-01","stake_mxn_simulated":16.36595279585369},{"fixture_id":"AP25J5-04","stake_mxn_simulated":27.275378696467655},{"fixture_id":"AP25J5-08","stake_mxn_simulated":11.241051751186818},{"fixture_id":"AP25J5-09","stake_mxn_simulated":15.979016940151386}],"same_fixed_parlay_stake_mxn":5.0,"total_stake_mxn":75.86140018365955,"risk_ceiling_scale_factor":1.0}
+  },
+  "notable_rejections":[
+    {"fixture_id":"AP25J5-05","selection":"Tijuana ML","p_raw":0.17531216175415942,"decimal":7.50,"model_ev":0.31484121315619573,"kelly_score":0.04843710971633781,"reason":"POSITIVE_EV_BUT_KELLY_BELOW_0.05_GATE"},
+    {"fixture_id":"AP25J5-07","selection":"Cruz Azul ML","p_raw":0.7239679246038219,"decimal":1.2793296089385475,"model_ev":-0.07380639813254075,"reason":"HIGH_PROBABILITY_BUT_NEGATIVE_EV"},
+    {"fixture_id":"AP25J5-05","selection":"Pachuca ML","p_raw":0.6226566047726219,"decimal":1.38,"model_ev":-0.14073388541378196,"reason":"HIGH_PROBABILITY_BUT_NEGATIVE_EV"},
+    {"fixture_id":"AP25J5-03","selection":"Chivas ML","p_raw":0.5467179451831137,"decimal":1.5714285714285714,"model_ev":-0.1408718004265357,"reason":"FAVORITE_PRICE_TOO_SHORT_FOR_MODEL_PROBABILITY"}
+  ],
+  "notes":[
+    "No J5 result is used in the mechanical calculations represented here.",
+    "J5 is permanently NO-PROMOTION because the human researcher had already seen J5 outcome information during schedule verification.",
+    "The V2.2 shadow variants inherit the exact same four qualifying singles and only change single stake size using their independently compounded bankrolls.",
+    "CORE/VALUE/LONGSHOT labels have no admission or capital-allocation authority."
+  ]
+}
