@@ -1,0 +1,35 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "target_jornada":"J12",
+  "snapshot_basis":"INTERNAL_CANONICAL_LEDGER_ONLY",
+  "completed_apertura_matches_before_j12":99,
+  "expected_model_training_count":1115,
+  "canonical_opening_bankroll_mxn":437.3012159211471,
+  "shadow_openings_mxn":{"FK15":475.09201602517317,"FK20":470.3155484227055,"FK25":465.30994244189486},
+  "standings_after_j11":[
+    {"pos":1,"team":"Deportivo Toluca","pj":11,"w":8,"d":1,"l":2,"gf":31,"ga":14,"gd":17,"pts":25},
+    {"pos":2,"team":"CF Monterrey","pj":11,"w":8,"d":1,"l":2,"gf":23,"ga":17,"gd":6,"pts":25},
+    {"pos":3,"team":"CF América","pj":11,"w":7,"d":3,"l":1,"gf":23,"ga":11,"gd":12,"pts":24},
+    {"pos":4,"team":"Cruz Azul","pj":11,"w":7,"d":3,"l":1,"gf":21,"ga":14,"gd":7,"pts":24},
+    {"pos":5,"team":"UANL Tigres","pj":11,"w":6,"d":4,"l":1,"gf":21,"ga":9,"gd":12,"pts":22},
+    {"pos":6,"team":"Club Tijuana","pj":11,"w":5,"d":4,"l":2,"gf":21,"ga":11,"gd":10,"pts":19},
+    {"pos":7,"team":"FC Juárez","pj":11,"w":5,"d":3,"l":3,"gf":15,"ga":12,"gd":3,"pts":18},
+    {"pos":8,"team":"CF Pachuca","pj":11,"w":5,"d":2,"l":4,"gf":15,"ga":13,"gd":2,"pts":17},
+    {"pos":9,"team":"Deportivo Guadalajara","pj":11,"w":4,"d":2,"l":5,"gf":16,"ga":17,"gd":-1,"pts":14},
+    {"pos":10,"team":"Pumas UNAM","pj":11,"w":3,"d":4,"l":4,"gf":14,"ga":17,"gd":-3,"pts":13},
+    {"pos":11,"team":"Club León","pj":11,"w":3,"d":3,"l":5,"gf":10,"ga":18,"gd":-8,"pts":12},
+    {"pos":12,"team":"Atlético San Luis","pj":11,"w":3,"d":1,"l":7,"gf":16,"ga":18,"gd":-2,"pts":10},
+    {"pos":13,"team":"Santos Laguna","pj":11,"w":3,"d":1,"l":7,"gf":13,"ga":18,"gd":-5,"pts":10},
+    {"pos":14,"team":"Atlas Guadalajara","pj":11,"w":2,"d":4,"l":5,"gf":18,"ga":26,"gd":-8,"pts":10},
+    {"pos":15,"team":"Club Necaxa","pj":11,"w":2,"d":3,"l":6,"gf":11,"ga":20,"gd":-9,"pts":9},
+    {"pos":16,"team":"Mazatlán FC","pj":11,"w":1,"d":5,"l":5,"gf":13,"ga":20,"gd":-7,"pts":8},
+    {"pos":17,"team":"Gallos Blancos","pj":11,"w":2,"d":2,"l":7,"gf":11,"ga":20,"gd":-9,"pts":8},
+    {"pos":18,"team":"Puebla FC","pj":11,"w":1,"d":2,"l":8,"gf":9,"ga":26,"gd":-17,"pts":5}
+  ],
+  "governance":[
+    "From J12 onward standings, form, home-away splits and rest are computed internally from the canonical match ledger.",
+    "External temporal firewall research is restricted to fixture-time verification, injuries, suspensions, roster/coach news, probable lineups, exogenous context, community/press signals and historical pre-kickoff prices.",
+    "External sources may not overwrite canonical ledger arithmetic."
+  ]
+}
