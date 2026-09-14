@@ -1,0 +1,61 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J5",
+  "as_of":"2025-08-15T00:00:00-06:00",
+  "integrity_class":"RESEARCHER_OUTCOME_EXPOSED_BEFORE_SELECTION_FREEZE",
+  "promotion_eligibility":false,
+  "integrity_note":"A June 6, 2025 pre-season Sporting News calendar was used safely to identify J5. A later targeted search intended only to confirm a date typo returned post-match J5 snippets and exposed outcomes. J5 is therefore permanently NO-PROMOTION. This stat pack itself uses only completed J1-J4 Liga MX information and pre-J5 structural context.",
+  "fixture_source":{"publisher":"The Sporting News","published":"2025-06-06","type":"PRESEASON_FULL_SCHEDULE_NO_RESULTS"},
+  "fixtures":[
+    {"date":"2025-08-15","home":"Puebla FC","away":"Atlético San Luis"},
+    {"date":"2025-08-15","home":"Club Necaxa","away":"Club León"},
+    {"date":"2025-08-16","home":"Deportivo Guadalajara","away":"FC Juárez"},
+    {"date":"2025-08-16","home":"Deportivo Toluca","away":"Pumas UNAM"},
+    {"date":"2025-08-16","home":"CF Pachuca","away":"Club Tijuana"},
+    {"date":"2025-08-16","home":"UANL Tigres","away":"CF América"},
+    {"date":"2025-08-16","home":"Cruz Azul","away":"Santos Laguna"},
+    {"date":"2025-08-17","home":"Gallos Blancos","away":"Atlas Guadalajara"},
+    {"date":"2025-08-17","home":"CF Monterrey","away":"Mazatlán FC"}
+  ],
+  "league_snapshot_through_j4":{
+    "completed_matches":35,
+    "goals":108,
+    "goals_per_match":3.085714285714286,
+    "uneven_games_played_note":"Tigres and Guadalajara have played only three Liga MX matches because their J1 fixture remains postponed.",
+    "standings":[
+      {"team":"CF Pachuca","P":4,"W":4,"D":0,"L":0,"GF":10,"GA":2,"PTS":12},
+      {"team":"UANL Tigres","P":3,"W":3,"D":0,"L":0,"GF":12,"GA":3,"PTS":9},
+      {"team":"Deportivo Toluca","P":4,"W":3,"D":0,"L":1,"GF":12,"GA":7,"PTS":9},
+      {"team":"CF Monterrey","P":4,"W":3,"D":0,"L":1,"GF":7,"GA":5,"PTS":9},
+      {"team":"Cruz Azul","P":4,"W":2,"D":2,"L":0,"GF":9,"GA":5,"PTS":8},
+      {"team":"CF América","P":4,"W":2,"D":2,"L":0,"GF":6,"GA":3,"PTS":8},
+      {"team":"Santos Laguna","P":4,"W":2,"D":0,"L":2,"GF":6,"GA":5,"PTS":6},
+      {"team":"Club Necaxa","P":4,"W":1,"D":2,"L":1,"GF":6,"GA":6,"PTS":5},
+      {"team":"Mazatlán FC","P":4,"W":1,"D":2,"L":1,"GF":4,"GA":4,"PTS":5},
+      {"team":"Club Tijuana","P":4,"W":1,"D":2,"L":1,"GF":5,"GA":6,"PTS":5},
+      {"team":"Pumas UNAM","P":4,"W":1,"D":1,"L":2,"GF":5,"GA":7,"PTS":4},
+      {"team":"Atlas Guadalajara","P":4,"W":1,"D":1,"L":2,"GF":7,"GA":11,"PTS":4},
+      {"team":"Deportivo Guadalajara","P":3,"W":1,"D":0,"L":2,"GF":4,"GA":5,"PTS":3},
+      {"team":"Atlético San Luis","P":4,"W":1,"D":0,"L":3,"GF":5,"GA":7,"PTS":3},
+      {"team":"Club León","P":4,"W":1,"D":0,"L":3,"GF":3,"GA":8,"PTS":3},
+      {"team":"Puebla FC","P":4,"W":1,"D":0,"L":3,"GF":4,"GA":12,"PTS":3},
+      {"team":"FC Juárez","P":4,"W":0,"D":2,"L":2,"GF":2,"GA":5,"PTS":2},
+      {"team":"Gallos Blancos","P":4,"W":0,"D":0,"L":4,"GF":1,"GA":7,"PTS":0}
+    ]
+  },
+  "pre_j5_descriptive_signals":[
+    "Pachuca enters J5 as the only 4-0-0 Liga MX team.",
+    "Tigres is also perfect at 3-0-0 but has one fewer league match because of the postponed J1 match against Guadalajara.",
+    "América and Cruz Azul enter J5 unbeaten in league play at 2-2-0.",
+    "Querétaro enters J5 0-0-4 with one goal scored and seven conceded; this is descriptive and cannot mechanically force an opposing wager.",
+    "Puebla enters after conceding seven at Tigres, but single-match score shocks are not allowed to override the frozen long-history model without a preregistered mechanism.",
+    "Leagues Cup occurred between J3 and J4 and its minutes/travel/rotation remain context-only unless a future architecture explicitly models non-Liga-MX competitions."
+  ],
+  "governance":[
+    "DESCRIPTIVE_ONLY",
+    "NO_J5_OUTCOME_INPUTS",
+    "NO_PROMOTION_DUE_TO_RESEARCHER_EXPOSURE",
+    "MODEL_SIGNAL_STAT_CONTEXT_SIGNAL_AND_PRICE_EV_REMAIN_SEPARATE"
+  ]
+}
