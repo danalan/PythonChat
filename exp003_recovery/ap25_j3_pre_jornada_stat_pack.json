@@ -1,0 +1,50 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J3",
+  "cutoff":"2025-07-25T00:00:00-06:00",
+  "status":"PRE_JORNADA_STAT_CONTEXT_PACK",
+  "promotion_eligibility":false,
+  "integrity_note":"This package formalizes information that was available before J3. Researcher later became outcome-exposed during schedule research, so the package is diagnostic/contextual only and cannot promote a model or context rule.",
+  "league_through_j2":{"completed_matches":17,"goals":50,"goals_per_match":2.9411764705882355},
+  "team_current_tournament_through_j2":[
+    {"team":"Deportivo Toluca","P":2,"W":2,"D":0,"L":0,"GF":7,"GA":3,"PTS":6},
+    {"team":"CF Pachuca","P":2,"W":2,"D":0,"L":0,"GF":6,"GA":2,"PTS":6},
+    {"team":"CF América","P":2,"W":1,"D":1,"L":0,"GF":4,"GA":2,"PTS":4},
+    {"team":"Atlas Guadalajara","P":2,"W":1,"D":1,"L":0,"GF":6,"GA":5,"PTS":4},
+    {"team":"Mazatlán FC","P":2,"W":1,"D":1,"L":0,"GF":2,"GA":1,"PTS":4},
+    {"team":"Santos Laguna","P":2,"W":1,"D":0,"L":1,"GF":5,"GA":4,"PTS":3},
+    {"team":"UANL Tigres","P":1,"W":1,"D":0,"L":0,"GF":1,"GA":0,"PTS":3},
+    {"team":"Club Necaxa","P":2,"W":1,"D":0,"L":1,"GF":4,"GA":4,"PTS":3},
+    {"team":"Atlético San Luis","P":2,"W":1,"D":0,"L":1,"GF":1,"GA":1,"PTS":3},
+    {"team":"Club León","P":2,"W":1,"D":0,"L":1,"GF":1,"GA":1,"PTS":3},
+    {"team":"Club Tijuana","P":2,"W":1,"D":0,"L":1,"GF":2,"GA":3,"PTS":3},
+    {"team":"CF Monterrey","P":2,"W":1,"D":0,"L":1,"GF":1,"GA":3,"PTS":3},
+    {"team":"Cruz Azul","P":2,"W":0,"D":2,"L":0,"GF":3,"GA":3,"PTS":2},
+    {"team":"FC Juárez","P":2,"W":0,"D":1,"L":1,"GF":1,"GA":2,"PTS":1},
+    {"team":"Deportivo Guadalajara","P":1,"W":0,"D":0,"L":1,"GF":0,"GA":1,"PTS":0},
+    {"team":"Puebla FC","P":2,"W":0,"D":0,"L":2,"GF":3,"GA":5,"PTS":0},
+    {"team":"Gallos Blancos","P":2,"W":0,"D":0,"L":2,"GF":1,"GA":4,"PTS":0},
+    {"team":"Pumas UNAM","P":2,"W":0,"D":0,"L":2,"GF":2,"GA":6,"PTS":0}
+  ],
+  "structural_history_layer":{
+    "engine":"V0.1R Dixon-Coles ensemble",
+    "historical_seasons":["2022-23","2023-24","2024-25"],
+    "half_lives_days":[180,365,730,1460],
+    "training_count_for_j3":1033,
+    "note":"Current-tournament form is not treated as the whole prior. The model combines historical scoring strength with temporal decay and adds completed J1/J2 matches before the J3 cutoff."
+  },
+  "pre_match_context_signals":[
+    {"signal":"EARLY_TABLE_LEADERS","detail":"Toluca and Pachuca were the only 2-0-0 teams entering J3; Toluca had 7 GF and Pachuca 6 GF."},
+    {"signal":"UNEVEN_SAMPLE_SIZE","detail":"Tigres and Guadalajara had only one league match played because their J1 meeting was postponed."},
+    {"signal":"PUMAS_KEEPER_CHANGE","detail":"Keylor Navas was registered and eligible for a possible Pumas debut on J3 matchday. Treat as context uncertainty, not as a numerical adjustment without validation."},
+    {"signal":"SCHEDULE_COMPRESSION","detail":"J3 was packed into Friday/Saturday immediately before the Leagues Cup pause, increasing plausible rotation/rest effects. No automatic probability adjustment is authorized."}
+  ],
+  "sources":[
+    "https://www.mediotiempo.com/futbol/liga-mx/jornada-3-liga-mx-horarios-y-canales-transmision-partidos-apertura-2025",
+    "https://www.eluniversal.com.mx/deportes/liga-mx-cuando-y-donde-ver-en-vivo-los-partidos-de-la-jornada-3-del-apertura-2025/",
+    "https://www.novibet.mx/blog/queretaro-vs-pumas-pronosticos-consejos-de-apuestas-y-estadisticas-25-07-2025",
+    "https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-toluca-vs-tigres-26-07-25"
+  ],
+  "governance":"This pack is descriptive. It may explain disagreements between model, market and context, but may not override J3 selections after outcome exposure. Future clean jornadas should freeze this package before any result-bearing search."
+}
