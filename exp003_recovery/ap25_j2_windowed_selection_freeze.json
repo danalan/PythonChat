@@ -1,0 +1,82 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J2",
+  "status":"SELECTION_FROZEN_BEFORE_SETTLEMENT",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "policy":"V2.1_WINDOWED_100",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "model":"V0.1R_DC_ENSEMBLE",
+  "training_count":1024,
+  "opening_bankroll_mxn_simulated":528.2012159211471,
+  "weekly_risk_budget_mxn":100.0,
+  "price_snapshot_commit":"fec2b54e300419d51d68df966756a872ab851c30",
+  "selector_commit":"fd5667a53aadf02d1a14be7b9c798f513d785ef0",
+  "selector_workflow_commit":"992c7bbe325ddecd748e223e01f50250b2548e82",
+  "selector_workflow_run_id":34877097303,
+  "primary_singles":[
+    {
+      "id":"J2-S1",
+      "window":"WEDNESDAY",
+      "fixture_id":"AP25J2-02",
+      "fixture":"Santos Laguna vs Deportivo Toluca",
+      "selection":"Deportivo Toluca ML",
+      "market":"1X2_AWAY",
+      "stake_mxn_simulated":10.0,
+      "odds":1.66,
+      "break_even":0.6024096385542169,
+      "p_raw":0.630690478971485,
+      "p_cal_shadow":0.5734589400508658,
+      "model_ev":0.046946195092665066,
+      "kelly_score":0.0711305986252501,
+      "source":"oddschecker_media_semana_752"
+    },
+    {
+      "id":"J2-S2",
+      "window":"SUNDAY",
+      "fixture_id":"AP25J2-09",
+      "fixture":"Pumas UNAM vs CF Pachuca",
+      "selection":"Pumas-Pachuca Over 2.5",
+      "market":"TOTAL_O2.5",
+      "stake_mxn_simulated":15.0,
+      "odds":2.00,
+      "break_even":0.5,
+      "p_raw":0.546332012989815,
+      "p_cal_shadow":0.5260424522998142,
+      "model_ev":0.09266402597963008,
+      "kelly_score":0.09266402597963008,
+      "source":"oddschecker_pumas_pachuca"
+    }
+  ],
+  "secondary_two_leg_parlays":[],
+  "total_stake_mxn_simulated":25.0,
+  "held_cash_from_weekly_budget":75.0,
+  "closest_rejections":[
+    {
+      "fixture":"Atlético San Luis vs CF Monterrey",
+      "market":"1X2_DRAW",
+      "odds":4.50,
+      "p_raw":0.26069470261883776,
+      "model_ev":0.17312616178476992,
+      "kelly_score":0.04946461765279141,
+      "reason":"Positive EV but below frozen Kelly gate 0.05"
+    },
+    {
+      "fixture":"CF América vs Club Tijuana",
+      "market":"1X2_HOME",
+      "odds":1.35,
+      "p_raw":0.7483722577117901,
+      "model_ev":0.01030254791091667,
+      "kelly_score":0.029435851174047623,
+      "reason":"Positive EV but below frozen Kelly gate 0.05"
+    }
+  ],
+  "notes":[
+    "No wager may be added after this freeze.",
+    "Unused risk budget remains cash; it is not a target to be filled.",
+    "No diagnostic parlay qualifies because no single betting window contains two approved primary singles.",
+    "Calibration shadow cannot alter canonical raw-model selection or stake.",
+    "Researcher outcome exposure makes J2 permanently ineligible for promotion even though the selection itself was regenerated mechanically without result inputs."
+  ]
+}
