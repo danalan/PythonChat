@@ -1,0 +1,30 @@
+{
+  "experiment":"EXP-003",
+  "diagnostic":"J11_J15_SELECTED_LEGS_RESIDUAL_DIAGNOSTIC_V1",
+  "created_at":"2026-09-14",
+  "scope":"Historical SIMULATED economic-track selected legs only; J11-J15. Diagnostic, not blind promotion evidence because J12-J15 researcher outcome exposure exists.",
+  "sample":{"jornadas":5,"tickets":15,"legs":45,"ticket_wins":3,"leg_hits":30},
+  "overall_leg_calibration":{"mean_p_model":0.7401001905794334,"observed_hit_rate":0.6666666666666666,"calibration_gap_observed_minus_predicted":-0.0734335239127668,"mean_brier":0.22687510128553323,"mean_log_loss":0.64942319125},
+  "probability_bands":[
+    {"band":"0.60-0.70","n":12,"hits":7,"mean_p":0.646132,"hit_rate":0.583333,"gap":-0.062799},
+    {"band":"0.70-0.80","n":24,"hits":17,"mean_p":0.759259,"hit_rate":0.708333,"gap":-0.050926},
+    {"band":"0.80+","n":9,"hits":6,"mean_p":0.814300,"hit_rate":0.666667,"gap":-0.147633}
+  ],
+  "market_families":[
+    {"family":"TEAM_SCORE_1PLUS","n":18,"hits":13,"mean_p":0.724256,"hit_rate":0.722222,"gap":-0.002034,"mean_brier":0.187745,"interpretation":"No broad failure. Family is almost exactly calibrated in this selected sample; investigate team-specific/context-specific misses instead of applying a blanket penalty."},
+    {"family":"TOTAL_OVER_1.5","n":12,"hits":8,"mean_p":0.742358,"hit_rate":0.666667,"gap":-0.075691,"mean_brier":0.257909,"interpretation":"Moderate overconfidence. Repeated low-total misses involving Puebla and closed-game fixtures warrant prospective context tags."},
+    {"family":"DOUBLE_CHANCE","n":10,"hits":6,"mean_p":0.763562,"hit_rate":0.600000,"gap":-0.163562,"mean_brier":0.248444,"interpretation":"Largest repeated mainstream-family calibration concern in this sample. Recent J13-J15 subset is 3/6 with mean p about 0.759. Do not retune yet; prospectively log recent-form/opponent-strength/home-strength diagnostics."},
+    {"family":"TEAM_UNDER_2.5","n":2,"hits":0,"mean_p":0.721323,"hit_rate":0.0,"gap":-0.721323,"mean_brier":0.528127,"interpretation":"Too few observations for inference."},
+    {"family":"TOTAL_UNDER_3.5","n":2,"hits":2,"mean_p":0.821276,"hit_rate":1.0,"gap":0.178724,"mean_brier":0.031943,"interpretation":"Too few observations for inference."},
+    {"family":"TOTAL_UNDER_4.5","n":1,"hits":1,"mean_p":0.638790,"hit_rate":1.0,"gap":0.361210,"mean_brier":0.130473,"interpretation":"Too few observations for inference."}
+  ],
+  "specific_residuals":[
+    {"tag":"PUEBLA_LOW_ATTACK_OR_LOW_TOTAL","observations":4,"hits":0,"mean_p":0.7330981813113615,"mean_brier":0.5394256359574408,"examples":["J12 Puebla scores 1+ vs Toluca FAIL","J13 Puebla scores 1+ vs Juarez FAIL","J14 Puebla-Tigres O1.5 FAIL","J15 Leon-Puebla O1.5 FAIL"],"interpretation":"Strong repeated team-specific warning, but post-hoc sample. From J16 log Puebla/low-attack recent GF, xG, SOT and total-goal process prospectively; do not retroactively lower p_model."},
+    {"tag":"DOUBLE_CHANCE_RECENT_MISSES","recent_j13_j15":{"n":6,"hits":3,"mean_p":0.759465,"hit_rate":0.5},"examples":["J13 Guadalajara 1X FAIL vs Cruz Azul","J14 America X2 FAIL vs Pachuca","J15 Santos 1X FAIL vs Queretaro"],"interpretation":"Potential slow reaction to recent team strength/form or overprotection of some sides. Requires prospective context logging, not immediate parameter change."},
+    {"tag":"CLOSED_GAME_SCORING_MISSES","examples":["J14 Puebla-Tigres O1.5 at p≈0.747 ended 0-0","J15 Pumas-Juarez O1.5 at p≈0.771 ended 0-0","J15 America scores 1+ at p≈0.816 vs Cruz Azul ended 0-0","J15 Leon-Puebla O1.5 at p≈0.799 ended 1-0"],"interpretation":"Log recent total xG, shots/SOT, defensive form, tactical/rivalry/high-stakes context before J16. Do not assume all such games are inherently low scoring."}
+  ],
+  "ticket_level":{"tickets":15,"wins":3,"observed_win_rate":0.20,"mean_independence_joint_probability":0.4069254888410517,"expected_wins_sum_of_frozen_joint_p":6.103882332615776,"interpretation":"Ticket outcomes are below frozen independence approximation. Individual-leg overconfidence compounds inside three-leg parlays; dependence may also matter. Sample remains small."},
+  "economic_track":{"forced_initial_bankroll_simulated":1000.0,"forced_closing_bankroll_after_j15_simulated":481.6632934966258,"forced_cumulative_pnl_simulated":-518.3367065033742,"forced_total_staked_simulated":1000.0,"forced_total_returned_simulated":481.6632934966258,"forced_roi_on_total_staked":-0.5183367065033742,"ev_disciplined_closing_bankroll_after_j15_simulated":598.9483346997567},
+  "governance_decision":{"retune_v0_1r":false,"change_economic_selector_v1":false,"increase_stakes":false,"promote_market_proxy_ev":false,"action_for_j16":"Keep model/selector unchanged, but add prospective diagnostic tags and raw context fields: recent L3/L5 GF/xG/SOT for scoring-dependent legs; recent defensive process/total-goal profile for O1.5; recent-form/opponent-strength and home/away strength for double chance; monitor calibration by p band. Treat MARKET_PROXY_V1 EV as experimental disagreement score until exact-market validation improves."},
+  "human_summary":"The model is not failing everywhere. Team-to-score as a family is roughly calibrated. The clearest concerns are overconfidence overall, double-chance legs, and repeated low-scoring/Puebla-specific misses. Three-leg parlays magnify a few bad probabilities. J16 should collect the missing context prospectively before any model change."
+}
