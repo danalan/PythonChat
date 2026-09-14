@@ -87,6 +87,10 @@ def market_probability(market: str, odds_1x2: Iterable[float]) -> tuple[float, f
 
     if market == "DOUBLE_CHANCE_12":
         return float(1.0 - p1x2[1]), None, None, None
+    if market == "DOUBLE_CHANCE_1X":
+        return float(1.0 - p1x2[2]), None, None, None
+    if market == "DOUBLE_CHANCE_X2":
+        return float(1.0 - p1x2[0]), None, None, None
 
     lh, la, err = fit_lambdas_from_1x2(odds_1x2)
     total = lh + la
