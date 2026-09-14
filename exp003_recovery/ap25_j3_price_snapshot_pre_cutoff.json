@@ -1,0 +1,73 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J3",
+  "status":"FROZEN_PRE_SETTLEMENT_PRICE_SNAPSHOT",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "integrity_note":"Researcher was accidentally outcome-exposed to J3 before this snapshot was frozen. Every eligible price below is tied to a source published before the relevant kickoff. J3 is permanently NO-PROMOTION.",
+  "price_policy":"Prefer contemporaneous Caliente newspaper advertisements where available. Fill uncovered fixtures only with dedicated pre-match sources published before kickoff. Do not infer, synthesize, backsolve, or use post-kickoff prices.",
+  "sources":{
+    "caliente_2025_07_24_noroeste":{
+      "published":"2025-07-24",
+      "url":"https://epaper.noroeste.com.mx/epaper/xml_epaper/NOROESTE/24_07_2025/pla_428_Culiac%C3%A1n/pdf_pags/428.pdf?t=1753353373000",
+      "price_class":"A",
+      "note":"Contemporaneous Caliente advertisement listing the three Friday J3 1X2 lines. American odds converted mechanically to decimal."
+    },
+    "caliente_2025_07_26_excelsior":{
+      "published":"2025-07-26",
+      "url":"https://cdn2.excelsior.com.mx/Periodico/flip-adrenalina/26-07-2025/portada.pdf",
+      "price_class":"A",
+      "note":"Contemporaneous Caliente advertisement listing Guadalajara-San Luis, Toluca-Tigres and Necaxa-America. American odds converted mechanically to decimal."
+    },
+    "oddschecker_cruz_azul_leon":{
+      "published":"2025-07-25T18:06:00-06:00",
+      "url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-cruz-azul-vs-leon-26-07-25",
+      "price_class":"B"
+    },
+    "oddschecker_monterrey_atlas":{
+      "published":"2025-07-25T18:08:00-06:00",
+      "url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-monterrey-vs-atlas-26-07-25",
+      "price_class":"B"
+    }
+  },
+  "excluded_fixture_price_coverage":[
+    {
+      "fixture_id":"AP25J3-04",
+      "fixture":"CF Pachuca vs Mazatlán FC",
+      "reason":"No exact timestamped pre-kickoff 1X2 quote meeting the frozen evidence standard was verified. The fixture remains in the statistical/model layer but is excluded from economic selection rather than filling a price retrospectively."
+    }
+  ],
+  "markets":[
+    {"fixture_id":"AP25J3-01","fixture":"Gallos Blancos vs Pumas UNAM","window":"FRIDAY","market":"1X2_HOME","american":230,"decimal":3.30,"source":"caliente_2025_07_24_noroeste"},
+    {"fixture_id":"AP25J3-01","fixture":"Gallos Blancos vs Pumas UNAM","window":"FRIDAY","market":"1X2_DRAW","american":225,"decimal":3.25,"source":"caliente_2025_07_24_noroeste"},
+    {"fixture_id":"AP25J3-01","fixture":"Gallos Blancos vs Pumas UNAM","window":"FRIDAY","market":"1X2_AWAY","american":118,"decimal":2.18,"source":"caliente_2025_07_24_noroeste"},
+
+    {"fixture_id":"AP25J3-02","fixture":"Puebla FC vs Santos Laguna","window":"FRIDAY","market":"1X2_HOME","american":100,"decimal":2.00,"source":"caliente_2025_07_24_noroeste"},
+    {"fixture_id":"AP25J3-02","fixture":"Puebla FC vs Santos Laguna","window":"FRIDAY","market":"1X2_DRAW","american":250,"decimal":3.50,"source":"caliente_2025_07_24_noroeste"},
+    {"fixture_id":"AP25J3-02","fixture":"Puebla FC vs Santos Laguna","window":"FRIDAY","market":"1X2_AWAY","american":250,"decimal":3.50,"source":"caliente_2025_07_24_noroeste"},
+
+    {"fixture_id":"AP25J3-03","fixture":"Club Tijuana vs FC Juárez","window":"FRIDAY","market":"1X2_HOME","american":108,"decimal":2.08,"source":"caliente_2025_07_24_noroeste"},
+    {"fixture_id":"AP25J3-03","fixture":"Club Tijuana vs FC Juárez","window":"FRIDAY","market":"1X2_DRAW","american":240,"decimal":3.40,"source":"caliente_2025_07_24_noroeste"},
+    {"fixture_id":"AP25J3-03","fixture":"Club Tijuana vs FC Juárez","window":"FRIDAY","market":"1X2_AWAY","american":240,"decimal":3.40,"source":"caliente_2025_07_24_noroeste"},
+
+    {"fixture_id":"AP25J3-05","fixture":"Deportivo Guadalajara vs Atlético San Luis","window":"SATURDAY","market":"1X2_HOME","american":-182,"decimal":1.5494505494505495,"source":"caliente_2025_07_26_excelsior"},
+    {"fixture_id":"AP25J3-05","fixture":"Deportivo Guadalajara vs Atlético San Luis","window":"SATURDAY","market":"1X2_DRAW","american":300,"decimal":4.00,"source":"caliente_2025_07_26_excelsior"},
+    {"fixture_id":"AP25J3-05","fixture":"Deportivo Guadalajara vs Atlético San Luis","window":"SATURDAY","market":"1X2_AWAY","american":470,"decimal":5.70,"source":"caliente_2025_07_26_excelsior"},
+
+    {"fixture_id":"AP25J3-06","fixture":"Cruz Azul vs Club León","window":"SATURDAY","market":"1X2_HOME","decimal":1.58,"source":"oddschecker_cruz_azul_leon"},
+    {"fixture_id":"AP25J3-06","fixture":"Cruz Azul vs Club León","window":"SATURDAY","market":"1X2_DRAW","decimal":4.15,"source":"oddschecker_cruz_azul_leon"},
+    {"fixture_id":"AP25J3-06","fixture":"Cruz Azul vs Club León","window":"SATURDAY","market":"1X2_AWAY","decimal":6.00,"source":"oddschecker_cruz_azul_leon"},
+
+    {"fixture_id":"AP25J3-07","fixture":"Deportivo Toluca vs UANL Tigres","window":"SATURDAY","market":"1X2_HOME","american":100,"decimal":2.00,"source":"caliente_2025_07_26_excelsior"},
+    {"fixture_id":"AP25J3-07","fixture":"Deportivo Toluca vs UANL Tigres","window":"SATURDAY","market":"1X2_DRAW","american":235,"decimal":3.35,"source":"caliente_2025_07_26_excelsior"},
+    {"fixture_id":"AP25J3-07","fixture":"Deportivo Toluca vs UANL Tigres","window":"SATURDAY","market":"1X2_AWAY","american":270,"decimal":3.70,"source":"caliente_2025_07_26_excelsior"},
+
+    {"fixture_id":"AP25J3-08","fixture":"CF Monterrey vs Atlas Guadalajara","window":"SATURDAY","market":"1X2_HOME","decimal":1.55,"source":"oddschecker_monterrey_atlas"},
+    {"fixture_id":"AP25J3-08","fixture":"CF Monterrey vs Atlas Guadalajara","window":"SATURDAY","market":"1X2_DRAW","decimal":4.33,"source":"oddschecker_monterrey_atlas"},
+    {"fixture_id":"AP25J3-08","fixture":"CF Monterrey vs Atlas Guadalajara","window":"SATURDAY","market":"1X2_AWAY","decimal":6.00,"source":"oddschecker_monterrey_atlas"},
+
+    {"fixture_id":"AP25J3-09","fixture":"Club Necaxa vs CF América","window":"SATURDAY","market":"1X2_HOME","american":250,"decimal":3.50,"source":"caliente_2025_07_26_excelsior"},
+    {"fixture_id":"AP25J3-09","fixture":"Club Necaxa vs CF América","window":"SATURDAY","market":"1X2_DRAW","american":255,"decimal":3.55,"source":"caliente_2025_07_26_excelsior"},
+    {"fixture_id":"AP25J3-09","fixture":"Club Necaxa vs CF América","window":"SATURDAY","market":"1X2_AWAY","american":-102,"decimal":1.9803921568627452,"source":"caliente_2025_07_26_excelsior"}
+  ]
+}
