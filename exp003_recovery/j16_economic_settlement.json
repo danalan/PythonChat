@@ -1,0 +1,46 @@
+{
+  "experiment":"EXP-003",
+  "track":"ECONOMIC_TRACK_V1",
+  "jornada":"Clausura 2025 J16",
+  "status":"SETTLED",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "selection_freeze_commit":"dc88bb6b42ce3b0702705f95e9eec50e24f4ff74",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "verified_results":{
+    "J16-01":{"fixture":"Pachuca vs Tigres","score":"0-0"},
+    "J16-02":{"fixture":"Guadalajara vs Puebla","score":"1-0"},
+    "J16-03":{"fixture":"Juarez vs Necaxa","score":"2-2"},
+    "J16-04":{"fixture":"Cruz Azul vs Leon","score":"2-1"},
+    "J16-05":{"fixture":"Monterrey vs America","score":"1-0"},
+    "J16-06":{"fixture":"Queretaro vs Atlas","score":"1-2"},
+    "J16-07":{"fixture":"Atletico San Luis vs Toluca","score":"0-1"},
+    "J16-08":{"fixture":"Mazatlan vs Tijuana","score":"0-2"},
+    "J16-09":{"fixture":"Pumas vs Santos Laguna","score":"2-0"}
+  },
+  "tickets":{
+    "P1":{"stake_mxn_simulated":80.0,"proxy_decimal":3.8219822828638,"model_ev_at_proxy":0.33697490743160263,"legs":[
+      {"selection":"Atletico San Luis scores >=1 vs Toluca","p_model":0.7719584671948214,"result":0,"verdict":"FAIL"},
+      {"selection":"Santos scores >=1 vs Pumas","p_model":0.6249266232083226,"result":0,"verdict":"FAIL"},
+      {"selection":"Queretaro scores >=1 vs Atlas","p_model":0.7251229069035425,"result":1,"verdict":"HIT"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-80.0,"learning":"Two team-to-score legs failed, both on weaker sides against stronger opponents. Team-score overall had been calibrated through J15, so this does not justify a blanket penalty; segment by relative team strength, recent attacking process and opponent defense."},
+    "P2":{"stake_mxn_simulated":80.0,"proxy_decimal":2.586562005522001,"model_ev_at_proxy":0.18828676750306927,"legs":[
+      {"selection":"Juarez-Necaxa Over 1.5","p_model":0.8019139309372515,"result":1,"verdict":"HIT"},
+      {"selection":"Cruz Azul team Under 2.5","p_model":0.7804687320296749,"result":1,"verdict":"HIT"},
+      {"selection":"Tigres scores >=1 vs Pachuca","p_model":0.7340321809084943,"result":0,"verdict":"FAIL"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-80.0,"learning":"The ticket was one goal away from winning; Tigres-Pachuca finished 0-0. Another high-confidence scoring miss reinforces the need to log recent attacking/defensive process before interpreting simple historical goal strength as current scoring floor."},
+    "P3":{"stake_mxn_simulated":40.0,"proxy_decimal":2.622557602871729,"model_ev_at_proxy":0.0031891366352796435,"legs":[
+      {"selection":"Tijuana scores >=1 vs Mazatlan","p_model":0.7222592599248849,"result":1,"verdict":"HIT"},
+      {"selection":"Monterrey-America Over 1.5","p_model":0.7393599107263098,"result":0,"verdict":"FAIL"},
+      {"selection":"Guadalajara-Puebla Over 1.5","p_model":0.7163227879792797,"result":0,"verdict":"FAIL"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-40.0,"learning":"Both O1.5 legs failed 1-0. Guadalajara-Puebla is the fifth consecutive Puebla-related scoring/total assumption to fail in the tracked sequence. The Puebla LOW_ATTACK diagnostic remains a strong team-specific warning, but J16 researcher outcome exposure means the shadow tag alignment is descriptive rather than clean prospective proof."}
+  },
+  "selected_leg_metrics":{"hits":4,"legs":9,"hit_rate":0.4444444444444444,"mean_brier":0.3139063577361403,"mean_log_loss":0.8336859941335707},
+  "forced_200_simulated_track":{"opening_bankroll_mxn_simulated":481.6632934966258,"staked_mxn_simulated":200.0,"returned_mxn_simulated":0.0,"jornada_pnl_mxn_simulated":-200.0,"closing_bankroll_mxn_simulated":281.6632934966258,"cumulative_pnl_from_1000_mxn_simulated":-718.3367065033742},
+  "ev_disciplined_counterfactual":{"opening_bankroll_mxn_simulated":598.9483346997567,"eligible_tickets":["P1","P2","P3"],"held_cash_mxn_simulated":0.0,"staked_mxn_simulated":200.0,"returned_mxn_simulated":0.0,"jornada_pnl_mxn_simulated":-200.0,"closing_bankroll_mxn_simulated":398.9483346997567},
+  "learning":[
+    "J16 fell to 4/9 legs and 0/3 parlays, continuing the drawdown. This is a leg-level model/selection problem as well as parlay fragility.",
+    "Five Puebla-related scoring/total selections from J12-J16 have now failed. Treat Puebla/low-attack context as a priority prospective diagnostic, not a retroactive probability adjustment.",
+    "Scoring-floor failures also occurred for Atletico San Luis, Santos and Tigres in J16. Team-score was well calibrated through J15 overall, so segment by relative strength and recent process rather than penalizing the whole market family.",
+    "All three J16 tickets were proxy-EV eligible and all lost. MARKET_PROXY_V1 EV is not validated as edge; continue treating it as a disagreement score until exact-market and calibration evidence improve.",
+    "The historical forced bankroll is now 281.66 simulated from 1,000. No stake increase, no model promotion and no emergency retune.",
+    "Process improvement for J17: derive target fixtures programmatically from canonical historical data while suppressing score fields, so the human researcher can avoid schedule-search outcome leakage."
+  ]
+}
