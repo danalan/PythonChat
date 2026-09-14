@@ -1,0 +1,42 @@
+name: EXP003 Apertura 2025 J10 Selector V2.1 + V2.2
+on:
+  push:
+    paths:
+      - 'exp003_recovery/ap25_j10_windowed_selector_v2_1_v2_2.py'
+      - 'exp003_recovery/ap25_j10_price_snapshot_pre_cutoff.json'
+      - 'exp003_recovery/ap25_j10_model_output.txt'
+      - '.github/workflows/ap25-j10-selector.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  selector:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run mechanical J10 selector
+        working-directory: exp003_recovery
+        shell: bash
+        run: |
+          set -o pipefail
+          python ap25_j10_windowed_selector_v2_1_v2_2.py | tee ap25_j10_selection_output.txt
+      - name: Upload output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ap25-j10-selection-output
+          path: exp003_recovery/ap25_j10_selection_output.txt
+      - name: Commit deterministic output
+        if: success()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exp003_recovery/ap25_j10_selection_output.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "Record Apertura 2025 J10 selection output"
+          git push
