@@ -1,0 +1,42 @@
+name: EXP003 J10 Expanded Replay
+on:
+  push:
+    paths:
+      - 'exp003_recovery/j10_expanded_replay.py'
+      - 'exp003_recovery/j10_corners_shadow.py'
+      - 'exp003_recovery/corner_shadow_v0_1.py'
+      - 'exp003_recovery/parlay_replay_dc.py'
+      - 'exp003_recovery/vn2026_forward.py'
+      - '.github/workflows/j10-expanded.yml'
+  workflow_dispatch:
+
+jobs:
+  j10-expanded:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip numpy scipy requests
+      - name: Run J10 expanded goal-market replay
+        working-directory: exp003_recovery
+        shell: bash
+        run: |
+          set -o pipefail
+          python j10_expanded_replay.py | tee j10_expanded_goal_output.txt
+      - name: Run J10 corner shadow replay
+        working-directory: exp003_recovery
+        shell: bash
+        run: |
+          set -o pipefail
+          python j10_corners_shadow.py | tee j10_corners_output.txt
+      - name: Upload J10 replay outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: j10-expanded-replay-output
+          path: |
+            exp003_recovery/j10_expanded_goal_output.txt
+            exp003_recovery/j10_corners_output.txt
