@@ -1,0 +1,77 @@
+{
+  "experiment": "EXP-003",
+  "tournament": "Apertura 2025",
+  "jornada": "J2",
+  "status": "FROZEN_PRE_SETTLEMENT_PRICE_SNAPSHOT",
+  "money_type": "SIMULATED_PAPER_ONLY",
+  "integrity_note": "Researcher was accidentally outcome-exposed to J2 before this snapshot was frozen. Every price below is nevertheless tied to a source published before the relevant kickoff or explicitly labeled as a historical opening quote. J2 is permanently NO-PROMOTION.",
+  "price_policy": "Preserve the J1 source logic: use a universal OddsChecker Progol slate for 1X2 when available; otherwise use a dedicated archived pre-match source. Include an additional model-supported market only when an exact pre-match price is explicitly quoted. Do not infer, synthesize, or backsolve missing prices.",
+  "source_priority_note": "For America-Tijuana and Santos-Toluca the universal Media Semana 752 slate is used for 1X2. For the weekend, Progol 2290 is used for covered 1X2 fixtures. Dedicated articles fill uncovered fixtures and may supply supported extra markets, but do not replace the universal-slate 1X2 quote.",
+  "sources": {
+    "oddschecker_media_semana_752": {
+      "published": "2025-07-14T00:14:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-media-semana-quiniela-esta-semana-752",
+      "price_class": "B"
+    },
+    "oddschecker_progol_2290": {
+      "published": "2025-07-17T23:26:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2290",
+      "price_class": "B"
+    },
+    "oddschecker_tigres_juarez": {
+      "published": "2025-07-18T18:06:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-tigres-vs-juarez-19-07-25",
+      "price_class": "B"
+    },
+    "oddschecker_pumas_pachuca": {
+      "published": "2025-07-19T18:03:00-06:00",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/2025/julio/pronostico-pumas-unam-vs-pachuca-20-07-25",
+      "price_class": "B",
+      "note": "Used only for the explicitly quoted Over 2.5 price. Weekend universal Progol 2290 remains the authority for this fixture's 1X2 prices."
+    },
+    "sportytrader_necaxa_queretaro_opening": {
+      "published": "2025-07-18T09:42:00-06:00",
+      "url": "https://www.sportytrader.com/es/pronosticos/necaxa-queretaro-277629/",
+      "price_class": "C",
+      "note": "The page was later modified, so only its explicitly labeled historical opening 1X2 prices are frozen: 1.77 / 3.65 / 4.29. No post-kickoff or closing quote is used."
+    }
+  },
+  "markets": [
+    {"fixture_id":"AP25J2-01","fixture":"CF América vs Club Tijuana","window":"WEDNESDAY","market":"1X2_HOME","decimal":1.35,"source":"oddschecker_media_semana_752"},
+    {"fixture_id":"AP25J2-01","fixture":"CF América vs Club Tijuana","window":"WEDNESDAY","market":"1X2_DRAW","decimal":5.50,"source":"oddschecker_media_semana_752"},
+    {"fixture_id":"AP25J2-01","fixture":"CF América vs Club Tijuana","window":"WEDNESDAY","market":"1X2_AWAY","decimal":9.00,"source":"oddschecker_media_semana_752"},
+
+    {"fixture_id":"AP25J2-02","fixture":"Santos Laguna vs Deportivo Toluca","window":"WEDNESDAY","market":"1X2_HOME","decimal":4.80,"source":"oddschecker_media_semana_752"},
+    {"fixture_id":"AP25J2-02","fixture":"Santos Laguna vs Deportivo Toluca","window":"WEDNESDAY","market":"1X2_DRAW","decimal":4.20,"source":"oddschecker_media_semana_752"},
+    {"fixture_id":"AP25J2-02","fixture":"Santos Laguna vs Deportivo Toluca","window":"WEDNESDAY","market":"1X2_AWAY","decimal":1.66,"source":"oddschecker_media_semana_752"},
+
+    {"fixture_id":"AP25J2-03","fixture":"Club Necaxa vs Gallos Blancos","window":"FRIDAY","market":"1X2_HOME","decimal":1.77,"source":"sportytrader_necaxa_queretaro_opening"},
+    {"fixture_id":"AP25J2-03","fixture":"Club Necaxa vs Gallos Blancos","window":"FRIDAY","market":"1X2_DRAW","decimal":3.65,"source":"sportytrader_necaxa_queretaro_opening"},
+    {"fixture_id":"AP25J2-03","fixture":"Club Necaxa vs Gallos Blancos","window":"FRIDAY","market":"1X2_AWAY","decimal":4.29,"source":"sportytrader_necaxa_queretaro_opening"},
+
+    {"fixture_id":"AP25J2-04","fixture":"Atlético San Luis vs CF Monterrey","window":"FRIDAY","market":"1X2_HOME","decimal":3.55,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-04","fixture":"Atlético San Luis vs CF Monterrey","window":"FRIDAY","market":"1X2_DRAW","decimal":4.50,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-04","fixture":"Atlético San Luis vs CF Monterrey","window":"FRIDAY","market":"1X2_AWAY","decimal":2.05,"source":"oddschecker_progol_2290"},
+
+    {"fixture_id":"AP25J2-05","fixture":"Mazatlán FC vs Puebla FC","window":"FRIDAY","market":"1X2_HOME","decimal":2.15,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-05","fixture":"Mazatlán FC vs Puebla FC","window":"FRIDAY","market":"1X2_DRAW","decimal":3.40,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-05","fixture":"Mazatlán FC vs Puebla FC","window":"FRIDAY","market":"1X2_AWAY","decimal":3.50,"source":"oddschecker_progol_2290"},
+
+    {"fixture_id":"AP25J2-06","fixture":"Club León vs Deportivo Guadalajara","window":"SATURDAY","market":"1X2_HOME","decimal":2.70,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-06","fixture":"Club León vs Deportivo Guadalajara","window":"SATURDAY","market":"1X2_DRAW","decimal":3.40,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-06","fixture":"Club León vs Deportivo Guadalajara","window":"SATURDAY","market":"1X2_AWAY","decimal":2.70,"source":"oddschecker_progol_2290"},
+
+    {"fixture_id":"AP25J2-07","fixture":"UANL Tigres vs FC Juárez","window":"SATURDAY","market":"1X2_HOME","decimal":1.60,"source":"oddschecker_tigres_juarez"},
+    {"fixture_id":"AP25J2-07","fixture":"UANL Tigres vs FC Juárez","window":"SATURDAY","market":"1X2_DRAW","decimal":4.00,"source":"oddschecker_tigres_juarez"},
+    {"fixture_id":"AP25J2-07","fixture":"UANL Tigres vs FC Juárez","window":"SATURDAY","market":"1X2_AWAY","decimal":6.00,"source":"oddschecker_tigres_juarez"},
+
+    {"fixture_id":"AP25J2-08","fixture":"Atlas Guadalajara vs Cruz Azul","window":"SATURDAY","market":"1X2_HOME","decimal":4.07,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-08","fixture":"Atlas Guadalajara vs Cruz Azul","window":"SATURDAY","market":"1X2_DRAW","decimal":3.75,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-08","fixture":"Atlas Guadalajara vs Cruz Azul","window":"SATURDAY","market":"1X2_AWAY","decimal":1.90,"source":"oddschecker_progol_2290"},
+
+    {"fixture_id":"AP25J2-09","fixture":"Pumas UNAM vs CF Pachuca","window":"SUNDAY","market":"1X2_HOME","decimal":3.00,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-09","fixture":"Pumas UNAM vs CF Pachuca","window":"SUNDAY","market":"1X2_DRAW","decimal":3.50,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-09","fixture":"Pumas UNAM vs CF Pachuca","window":"SUNDAY","market":"1X2_AWAY","decimal":2.38,"source":"oddschecker_progol_2290"},
+    {"fixture_id":"AP25J2-09","fixture":"Pumas UNAM vs CF Pachuca","window":"SUNDAY","market":"TOTAL_O2.5","decimal":2.00,"source":"oddschecker_pumas_pachuca"}
+  ]
+}
