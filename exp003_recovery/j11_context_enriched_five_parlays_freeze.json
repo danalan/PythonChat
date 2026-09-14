@@ -1,0 +1,71 @@
+{
+  "experiment": "EXP-003",
+  "track": "HISTORICAL_J11_CONTEXT_ENRICHED_RECONSTRUCTION",
+  "status": "FROZEN_PRE_SETTLEMENT_WITH_OUTCOME_EXPOSURE_CAVEAT",
+  "created_at": "2026-09-13 America/Mexico_City",
+  "target_matchday": "Liga MX Clausura 2025 J11",
+  "context_cutoff_max": "2025-03-07T18:59:00-06:00",
+  "model": "V0.1R_RECOVERED",
+  "source_model_only_freeze": "exp003_recovery/j11_model_only_pre_context_freeze.json",
+  "eligibility_note": "These five tickets are reconstructed from the already-frozen J11 model candidate pool plus pre-cutoff statistical/context research. Because the research process had accidental exposure to some J11-result snippets before this reconstruction was created, these tickets MUST NOT be counted as blind predictive evidence, promotion evidence, ROI/CLV evidence, or used to retune the model. The original MODEL_ONLY freeze remains the clean comparator.",
+  "temporal_input_rule": "Selection rationale may use only information dated no later than 2025-03-07 18:59 America/Mexico_City. No J11-generated match data is intentionally used in any rationale or probability.",
+  "joint_probability_rule": "Simple product of leg probabilities; independence approximation only, not a calibrated joint probability and not an EV claim.",
+  "tickets": [
+    {
+      "label": "CE_P1_PRIMARY",
+      "tier": "PRIMARY",
+      "legs": [
+        {"fixture": "Toluca vs Necaxa", "market": "DOUBLE_CHANCE_12", "meaning": "no draw", "p_model": 0.8206736115015422},
+        {"fixture": "Chivas vs America", "market": "TOTAL_UNDER_3.5", "p_model": 0.822089996283824},
+        {"fixture": "Santos vs Leon", "market": "LEON_TEAM_OVER_0.5", "meaning": "Leon scores at least 1", "p_model": 0.7946266598106709}
+      ],
+      "joint_probability_independence_approx": 0.5361088346355701,
+      "rationale": "Best qualitative agreement between model, pre-cutoff team profiles and context while avoiding winner dependence in two of three legs."
+    },
+    {
+      "label": "CE_P2_PRIMARY",
+      "tier": "PRIMARY",
+      "legs": [
+        {"fixture": "Atletico San Luis vs FC Juarez", "market": "TOTAL_OVER_1.5", "p_model": 0.8154226125172503},
+        {"fixture": "Puebla vs Pumas", "market": "PUMAS_TEAM_UNDER_2.5", "p_model": 0.8097566706884642},
+        {"fixture": "Tijuana vs Atlas", "market": "TIJUANA_TEAM_OVER_0.5", "meaning": "Tijuana scores at least 1", "p_model": 0.8149211105473204}
+      ],
+      "joint_probability_independence_approx": 0.5380874382072154,
+      "rationale": "Diversified across minimum-total, team ceiling and team scoring floor; supported by pre-cutoff goal production/concession profiles."
+    },
+    {
+      "label": "CE_P3_AGGRESSIVE",
+      "tier": "PRIMARY_AGGRESSIVE",
+      "legs": [
+        {"fixture": "Tigres vs Queretaro", "market": "DOUBLE_CHANCE_12", "meaning": "no draw", "p_model": 0.786820398363899},
+        {"fixture": "Cruz Azul vs Monterrey", "market": "CRUZ_AZUL_TEAM_OVER_0.5", "meaning": "Cruz Azul scores at least 1", "p_model": 0.7585129665370646},
+        {"fixture": "Santos vs Leon", "market": "TOTAL_OVER_1.5", "p_model": 0.775851}
+      ],
+      "joint_probability_independence_approx": 0.463038331000324,
+      "rationale": "Lower joint probability but three distinct match theses; avoids requiring a specific match winner."
+    },
+    {
+      "label": "CE_P4_HIGH_P_SHADOW",
+      "tier": "SHADOW_OUTSIDE_SUPPORT_ENVELOPE",
+      "legs": [
+        {"fixture": "Tigres vs Queretaro", "market": "QUERETARO_TEAM_UNDER_1.5", "p_model": 0.865577},
+        {"fixture": "Toluca vs Necaxa", "market": "TOLUCA_TEAM_OVER_0.5", "meaning": "Toluca scores at least 1", "p_model": 0.920782},
+        {"fixture": "Santos vs Leon", "market": "SANTOS_TEAM_UNDER_2.5", "p_model": 0.872798}
+      ],
+      "joint_probability_independence_approx": 0.6956267450601368,
+      "rationale": "High nominal probabilities but each leg sits above the legacy V0.1R support ceiling; shadow-only calibration probe."
+    },
+    {
+      "label": "CE_P5_HIGH_P_SHADOW",
+      "tier": "SHADOW_OUTSIDE_SUPPORT_ENVELOPE",
+      "legs": [
+        {"fixture": "Chivas vs America", "market": "CHIVAS_TEAM_UNDER_2.5", "p_model": 0.9293},
+        {"fixture": "Cruz Azul vs Monterrey", "market": "TOTAL_UNDER_4.5", "p_model": 0.870627},
+        {"fixture": "Pachuca vs Mazatlan", "market": "TOTAL_UNDER_4.5", "p_model": 0.854554}
+      ],
+      "joint_probability_independence_approx": 0.6913971419331895,
+      "rationale": "Wide ceiling markets with strong nominal model probabilities, preserved strictly as out-of-envelope shadow observations."
+    }
+  ],
+  "settlement_policy": "After this file is committed, J11 outcomes may be revealed. Settle these tickets descriptively but exclude them from blind-evidence aggregates. Settle the pre-existing MODEL_ONLY freeze separately as the clean comparator."
+}
