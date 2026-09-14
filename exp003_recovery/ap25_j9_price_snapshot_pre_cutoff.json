@@ -1,0 +1,20 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J9",
+  "integrity_class":"PRE_MATCH_PRICE_SNAPSHOT_RESEARCHER_J9_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "policy":"Use the explicit Bet365 1X2 row from SportyTrader match-specific pre-match prediction pages, published before kickoff. Freeze one complete bookmaker row per fixture; never cherry-pick outcome prices across books and never backsolve missing quotes.",
+  "fixtures":[
+    {"fixture_id":"AP25J9-01","home":"Club Necaxa","away":"Puebla FC","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/necaxa-puebla-291045/","published":"2025-09-19T12:57:00-06:00","prices":{"1X2_HOME":1.68,"1X2_DRAW":3.75,"1X2_AWAY":4.75}},
+    {"fixture_id":"AP25J9-02","home":"Cruz Azul","away":"FC Juárez","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/cruz-azul-fc-juarez-291084/","published":"2025-09-19T16:32:00-06:00","prices":{"1X2_HOME":1.42,"1X2_DRAW":4.50,"1X2_AWAY":6.50}},
+    {"fixture_id":"AP25J9-03","home":"Club Tijuana","away":"Club León","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/tijuana-leon-291089/","published":"2025-09-19T14:03:00-06:00","prices":{"1X2_HOME":1.86,"1X2_DRAW":3.90,"1X2_AWAY":3.80}},
+    {"fixture_id":"AP25J9-04","home":"Mazatlán FC","away":"Atlas Guadalajara","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/monarcas-morelia-atlas-290843/","published":"2025-09-19T11:17:00-06:00","prices":{"1X2_HOME":2.20,"1X2_DRAW":3.60,"1X2_AWAY":3.00}},
+    {"fixture_id":"AP25J9-05","home":"CF Pachuca","away":"Gallos Blancos","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/cf-pachuca-queretaro-291451/","published":"2025-09-20T10:19:00-06:00","prices":{"1X2_HOME":1.33,"1X2_DRAW":5.75,"1X2_AWAY":7.50}},
+    {"fixture_id":"AP25J9-06","home":"Deportivo Guadalajara","away":"Deportivo Toluca","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/chivas-deportivo-toluca-291427/","published":"2025-09-20T18:01:00-06:00","prices":{"1X2_HOME":2.82,"1X2_DRAW":3.50,"1X2_AWAY":2.35}},
+    {"fixture_id":"AP25J9-07","home":"Pumas UNAM","away":"UANL Tigres","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/pumas-unam-tigres-uanl-291429/","published":"2025-09-20T12:38:00-06:00","prices":{"1X2_HOME":1.91,"1X2_DRAW":3.50,"1X2_AWAY":3.90}},
+    {"fixture_id":"AP25J9-08","home":"CF Monterrey","away":"CF América","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/monterrey-america-de-mexico-291537/","published":"2025-09-20T19:08:00-06:00","prices":{"1X2_HOME":2.01,"1X2_DRAW":3.50,"1X2_AWAY":3.50}},
+    {"fixture_id":"AP25J9-09","home":"Santos Laguna","away":"Atlético San Luis","source":"SportyTrader pre-match prediction / Bet365 row","source_url":"https://www.sportytrader.com/es/pronosticos/santos-laguna-san-luis-290853/","published":"2025-09-21T09:59:00-06:00","prices":{"1X2_HOME":2.45,"1X2_DRAW":3.60,"1X2_AWAY":2.57}}
+  ],
+  "notes":["All listed prediction pages were published before their respective kickoffs; later page modifications are ignored.","The J9 replay is already NO-PROMOTION because one J9 result was exposed during legitimate pre-J9 backfill verification, but no exposed outcome is used here."]
+}
