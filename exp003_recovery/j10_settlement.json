@@ -1,0 +1,73 @@
+{
+  "experiment": "EXP-003 Clausura 2025 J10",
+  "settlement_type": "POST_FREEZE_HISTORICAL_SETTLEMENT",
+  "pre_result_freeze_commit": "a59049df8519fdcedffefda735fa3bfbdcbacb39",
+  "track": "HISTORICAL_OUTCOME_EXPOSED",
+  "official_results": {
+    "Mazatlan-Cruz Azul": "1-1",
+    "America-Toluca": "3-0",
+    "Juarez-Pachuca": "2-2",
+    "Necaxa-Tigres": "1-2",
+    "Leon-Tijuana": "2-1",
+    "Pumas-Chivas": "0-1",
+    "Queretaro-Puebla": "2-0",
+    "Atlas-Atletico San Luis": "3-1",
+    "Monterrey-Santos": "4-2"
+  },
+  "result_source": "https://www.tudn.com/futbol/liga-mx/donde-ver-jornada-10-clausura-2025-liga-mx-partidos-resultados-tabla-general",
+  "corner_settlement": {
+    "fixture": "Queretaro-Puebla",
+    "market": "HOME_CORNERS_O3.5",
+    "queretaro_corners": 4,
+    "result": "WIN",
+    "primary_source": "https://www.espn.com.mx/futbol/partido/_/juegoId/725130/puebla-queretaro",
+    "crosscheck": "https://www.futbol-directo.es/directo/4414646611804753694-queretaro-vs-puebla",
+    "note": "Selected home-corner count agrees at 4 across checked sources; away count differs across some providers (6 vs 7), which remains a data-quality warning but does not affect this binary leg."
+  },
+  "legacy_comparator": {
+    "legs": [
+      {"fixture":"Leon-Tijuana","market":"DC_12","p_model":0.7748636990357551,"outcome":1,"result":"WIN"},
+      {"fixture":"America-Toluca","market":"DC_12","p_model":0.7620394020672243,"outcome":1,"result":"WIN"},
+      {"fixture":"Queretaro-Puebla","market":"HOME_TG_O0.5","p_model":0.7618954275984235,"outcome":1,"result":"WIN"}
+    ],
+    "j10_legs": "3/3",
+    "j10_parlay": "WIN",
+    "legacy_cumulative_j1_j10": {"legs_correct":26,"legs_total":30,"parlays_won":7,"parlays_total":10},
+    "warning": "Descriptive only; retrospective/outcome-exposed and no historical Caliente odds."
+  },
+  "expanded_shadow_portfolio": {
+    "safe_A": {
+      "legs": [
+        {"fixture":"Mazatlan-Cruz Azul","market":"HOME_TG_U2.5","p_model":0.9318196086121031,"outcome":1,"result":"WIN"},
+        {"fixture":"Monterrey-Santos","market":"HOME_TG_O0.5","p_model":0.9126702143034038,"outcome":1,"result":"WIN"}
+      ],
+      "joint_p":0.850444001884122,
+      "ticket_result":"WIN"
+    },
+    "safe_B": {
+      "legs": [
+        {"fixture":"Pumas-Chivas","market":"TOTAL_U4.5","p_model":0.920874190304611,"outcome":1,"result":"WIN"},
+        {"fixture":"Leon-Tijuana","market":"DC_1X","p_model":0.8040767335424668,"outcome":1,"result":"WIN"}
+      ],
+      "joint_p":0.7404535109436956,
+      "ticket_result":"WIN"
+    },
+    "risk_C": {
+      "legs": [
+        {"fixture":"America-Toluca","market":"1X2_HOME","p_model":0.533492532795905,"outcome":1,"result":"WIN"},
+        {"fixture":"Queretaro-Puebla","market":"HOME_CORNERS_O3.5","p_model":0.7949079169885223,"outcome":1,"result":"WIN","model":"C0.1-CORNERS-NB-ENSEMBLE","status":"SHADOW_ONLY"}
+      ],
+      "joint_p":0.42407743797372377,
+      "ticket_result":"WIN"
+    },
+    "j10_atomic_legs":"6/6",
+    "j10_tickets":"3/3",
+    "j10_mean_atomic_brier":0.05276897613502122,
+    "j10_mean_ticket_brier":0.14047272466826696,
+    "expanded_cumulative_j9_j10":{"atomic_legs_correct":10,"atomic_legs_total":12,"tickets_won":4,"tickets_total":6},
+    "warning":"Two jornadas are far too small for inference; C0.1 remains shadow and this historical track remains outcome-exposed."
+  },
+  "first_half_models":"NOT_USED",
+  "cards":"OUT_OF_SCOPE",
+  "no_roi_claim":"Historical Caliente odds were not available/frozen, therefore no ROI, CLV or economic-edge claim is made."
+}
