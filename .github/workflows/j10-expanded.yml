@@ -52,4 +52,5 @@ jobs:
           git add exp003_recovery/j10_expanded_goal_output.txt exp003_recovery/j10_corners_output.txt
           git diff --cached --quiet && exit 0
           git commit -m "EXP003: persist J10 pre-result model outputs"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
