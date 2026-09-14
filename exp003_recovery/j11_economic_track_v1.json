@@ -1,0 +1,69 @@
+{
+  "experiment": "EXP-003",
+  "track": "ECONOMIC_TRACK_V1",
+  "jornada": "Clausura 2025 J11",
+  "status": "SETTLED_PROXY",
+  "pricing_policy_commit_parent": "21f0958f174c9d4f36210ce6c7617a71ba8852ac",
+  "pricing_implementation_commit_parent": "400f2f9b69deaf37daa377e61061278243e57154",
+  "selection_freeze_source": "j11_model_only_pre_context_freeze.json",
+  "selection_cleanliness": "CLEAN_MODEL_ONLY_PRE_CONTEXT",
+  "global_context_cutoff": "2025-03-07T18:59:00-06:00",
+  "odds_integrity_rule": "Only 1X2 odds publicly available before the earliest J11 kickoff/global cutoff are used in the standardized proxy. Weekend closing prices observed after Friday kickoff are excluded from this primary series.",
+  "pricing_method": "MARKET_PROXY_V1_1X2_POISSON_SOURCE_OVERROUND",
+  "opening_bankroll_mxn": 1000.0,
+  "stakes_mxn": {"P1": 80.0, "P2": 80.0, "P3": 40.0},
+  "source_snapshots": {
+    "friday_caliente": {
+      "publication_date": "2025-03-06",
+      "source": "Caliente advertisement preserved in 24 HORAS / SCJN synthesis",
+      "url": "https://www.scjn.gob.mx/sites/default/files/sintesis-informativa/2025-03/S%C3%ADntesisPDF-06marzo2025-Final.pdf",
+      "fixtures": {
+        "Atletico San Luis vs FC Juarez": {"home_american": -102, "draw_american": 265, "away_american": 240, "decimal_1x2": [1.9803921568627452, 3.65, 3.4]},
+        "Tigres vs Queretaro": {"home_american": -286, "draw_american": 390, "away_american": 700, "decimal_1x2": [1.3496503496503496, 4.9, 8.0]},
+        "Puebla vs Pumas": {"home_american": 205, "draw_american": 220, "away_american": 132, "decimal_1x2": [3.05, 3.2, 2.32]}
+      }
+    },
+    "weekend_pre_cutoff_consensus": {
+      "publication_timestamp_reported": "2025-03-07 01:45",
+      "source": "OddsChecker Progol/Revancha 2271 article",
+      "url": "https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2271",
+      "fixtures": {
+        "Toluca vs Necaxa": [1.60, 4.60, 5.00],
+        "Pachuca vs Mazatlan": [1.50, 4.40, 6.50],
+        "Santos vs Leon": [3.80, 4.00, 1.90],
+        "Tijuana vs Atlas": [1.97, 3.80, 3.70],
+        "Cruz Azul vs Monterrey": [1.85, 3.70, 4.33],
+        "Chivas vs America": [3.00, 3.30, 2.40]
+      }
+    }
+  },
+  "legs": {
+    "P1_Toluca_DC12": {"fixture":"Toluca vs Necaxa","market":"DOUBLE_CHANCE_12","p_model":0.8206736115015422,"market_fair_probability":0.7914494264859229,"source_overround":0.04239130434782612,"proxy_decimal":1.212121212121212,"break_even_proxy":0.8250000000000002,"model_ev_at_proxy":-0.005244107270858112,"result":1},
+    "P1_Tijuana_O05": {"fixture":"Tijuana vs Atlas","market":"HOME_TEAM_OVER_0.5","p_model":0.8149211105473204,"market_fair_probability":0.790331798640001,"source_overround":0.04104237820508194,"proxy_decimal":1.2154081246882262,"break_even_proxy":0.8227688952272865,"model_ev_at_proxy":-0.009538261260834568,"lambda_home":1.5622289912945648,"lambda_away":1.0681146006606155,"fit_error":5.229309204837465e-11,"result":1},
+    "P1_Tigres_DC12": {"fixture":"Tigres vs Queretaro","market":"DOUBLE_CHANCE_12","p_model":0.786820398363899,"market_fair_probability":0.809272046743172,"source_overround":0.07001427514010783,"proxy_decimal":1.1548242333582648,"break_even_proxy":0.8659326424870466,"model_ev_at_proxy":-0.09136073666876576,"result":1},
+    "P2_SanLuisJuarez_O15": {"fixture":"Atletico San Luis vs FC Juarez","market":"TOTAL_OVER_1.5","p_model":0.8154226125172503,"market_fair_probability":0.7380061101086149,"source_overround":0.07304074484805456,"proxy_decimal":1.262768760829967,"break_even_proxy":0.7919106260933636,"model_ev_at_proxy":0.02969020196114247,"lambda_home":1.526346240947818,"lambda_away":1.1018133852584486,"fit_error":1.000240537654667e-11,"result":0},
+    "P2_Pumas_U25": {"fixture":"Puebla vs Pumas","market":"AWAY_TEAM_UNDER_2.5","p_model":0.8097566706884642,"market_fair_probability":0.8833654746597228,"source_overround":0.07140333521763709,"proxy_decimal":1.0565902156798943,"break_even_proxy":0.9464407157665381,"model_ev_at_proxy":-0.14441902466904244,"lambda_home":0.9913794023385832,"lambda_away":1.1820069148750254,"fit_error":2.2244510290607226e-12,"result":0},
+    "P2_ChivasAmerica_U35": {"fixture":"Chivas vs America","market":"TOTAL_UNDER_3.5","p_model":0.822089996283824,"market_fair_probability":0.8133681800610895,"source_overround":0.05303030303030298,"proxy_decimal":1.1675404952508222,"break_even_proxy":0.856501341124935,"model_ev_at_proxy":-0.04017663859803766,"lambda_home":1.0359925749307302,"lambda_away":1.1942757831439563,"fit_error":1.477650460933997e-10,"result":1},
+    "P3_Pachuca_DC12": {"fixture":"Pachuca vs Mazatlan","market":"DOUBLE_CHANCE_12","p_model":0.7630248775544741,"market_fair_probability":0.7830923248053393,"source_overround":0.04778554778554778,"proxy_decimal":1.2187499999999998,"break_even_proxy":0.8205128205128207,"model_ev_at_proxy":-0.0700634304804848,"result":0},
+    "P3_CruzAzul_O05": {"fixture":"Cruz Azul vs Monterrey","market":"HOME_TEAM_OVER_0.5","p_model":0.7585129665370646,"market_fair_probability":0.7806430092054581,"source_overround":0.041757693027900666,"proxy_decimal":1.2296480031411505,"break_even_proxy":0.8132408603482363,"model_ev_at_proxy":-0.06729604534102818,"lambda_home":1.5170547813760955,"lambda_away":0.8926327521195648,"fit_error":2.495694461721417e-10,"result":1},
+    "P3_Leon_O05": {"fixture":"Santos vs Leon","market":"AWAY_TEAM_OVER_0.5","p_model":0.7946266598106709,"market_fair_probability":0.8161906667797638,"source_overround":0.03947368421052633,"proxy_decimal":1.178677183667531,"break_even_proxy":0.8484087194158071,"model_ev_at_proxy":-0.06339168654722116,"lambda_home":1.126550887574434,"lambda_away":1.6938562911319468,"fit_error":1.8930200470974483e-10,"result":1}
+  },
+  "tickets": {
+    "P1": {"p_model_joint_independence":0.5262130906982543,"proxy_decimal":1.7013124312854386,"break_even_proxy":0.5877815159702577,"model_ev_at_proxy":-0.10474712728992797,"stake_mxn":80.0,"ticket_result":"WIN","return_mxn":136.1049945028351,"net_pnl_mxn":56.1049945028351},
+    "P2": {"p_model_joint_independence":0.542821009728224,"proxy_decimal":1.55776652445959,"break_even_proxy":0.6419447229724707,"model_ev_at_proxy":-0.15441160227201922,"stake_mxn":80.0,"ticket_result":"LOSS","return_mxn":0.0,"net_pnl_mxn":-80.0},
+    "P3": {"p_model_joint_independence":0.45990151345558217,"proxy_decimal":1.7664051176421174,"break_even_proxy":0.5661215482294617,"model_ev_at_proxy":-0.18762761302070452,"stake_mxn":40.0,"ticket_result":"LOSS","return_mxn":0.0,"net_pnl_mxn":-40.0}
+  },
+  "forced_200_track": {"total_staked_mxn":200.0,"total_return_mxn":136.1049945028351,"jornada_pnl_mxn":-63.8950054971649,"closing_bankroll_mxn":936.1049945028351,"roi_on_jornada_stake":-0.3194750274858245},
+  "ev_disciplined_counterfactual": {"rule":"Do not stake tickets with proxy EV <= 0","eligible_tickets":[],"total_staked_mxn":0.0,"closing_bankroll_mxn":1000.0,"note":"All three clean J11 tickets had negative proxy EV even though P1 ultimately won. This is a diagnostic comparator only; it does not replace the user-requested forced 200 track."},
+  "exact_price_audit_examples": {
+    "Tigres_vs_Queretaro_DC12_Stanleybet": {"stanley_1x2":[1.30,5.06,8.10],"stanley_exact_dc12":1.11,"same_source_proxy_dc12":1.1202127659574468,"relative_proxy_error_vs_exact":0.00920068915085296,"source":"https://www.stanleybet.info/files/offer/it/offer_68_08-03-2025_it.pdf","interpretation":"One-point sanity check only; not enough to validate proxy pricing across markets or seasons."}
+  },
+  "learning": [
+    "Economic evaluation must compare frozen model probability against price/break-even; raw hit rate alone is insufficient.",
+    "P1 won despite negative ticket-level proxy EV. Do not label the decision economically good because the outcome won.",
+    "P2 and P3 lost and were also negative-EV under the standardized proxy. Do not infer model failure from ticket loss alone; inspect market-family residuals and price disagreement.",
+    "The Pumas team-under leg shows the largest model-vs-market disagreement in J11: p_model 0.8098 vs proxy market fair 0.8834. It failed. Preserve as a candidate signal that team-total calibration may be weak, but do not retune from one observation.",
+    "San Luis-Juarez O1.5 was the only individual leg with clearly positive model EV under the proxy (+2.97%) and it still lost. This is a clean example of variance versus decision quality.",
+    "Market disagreement should become an explicit diagnostic variable from J12 onward. It is not yet a model feature until prospective incremental tests justify promotion."
+  ]
+}
