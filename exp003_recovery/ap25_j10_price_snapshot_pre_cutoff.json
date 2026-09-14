@@ -1,0 +1,26 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J10",
+  "source":"USER_SUPPLIED_PERPLEXITY_FIREWALL_PACKET",
+  "integrity_class":"PRE_MATCH_PRICE_SNAPSHOT_PACKET_OUTCOME_EXPOSURE_NO_PROMOTION",
+  "promotion_eligibility":false,
+  "policy":"Use only complete 1X2 rows explicitly reported as pre-kickoff in the supplied packet. Exclude incomplete rows and temporally ambiguous rows. Never synthesize or backsolve missing prices.",
+  "fixtures":[
+    {"fixture_id":"AP25J10-02","home":"Puebla FC","away":"CF Pachuca","source":"SportyTrader / 1xBet row reported in firewall packet","source_url":"https://www.sportytrader.com/es/pronosticos/puebla-cf-pachuca-292056/","prices":{"1X2_HOME":4.15,"1X2_DRAW":3.95,"1X2_AWAY":1.95}},
+    {"fixture_id":"AP25J10-03","home":"Club León","away":"Mazatlán FC","source":"Caliente.mx row reported by Milenio in firewall packet","source_url":"https://amp.milenio.com/futbol/liga-mx/leon-vs-mazatlan-en-vivo-partido-liga-mx-apertura-2025-jornada-10","prices":{"1X2_HOME":1.7299270072992702,"1X2_DRAW":3.85,"1X2_AWAY":4.55}},
+    {"fixture_id":"AP25J10-07","home":"Deportivo Toluca","away":"CF Monterrey","source":"Caliente.mx row reported by Claro Sports in firewall packet","source_url":"https://www.clarosports.com/futbol/liga-mx/toluca-vs-monterrey-en-vivo-el-partido-de-liga-mx-2025/","prices":{"1X2_HOME":1.6666666666666667,"1X2_DRAW":4.0,"1X2_AWAY":4.75}}
+  ],
+  "excluded_price_rows":[
+    {"fixture_id":"AP25J10-01","reason":"Chivas-Necaxa packet timestamp stated 23-24 Sep for a Sep 23 19:00 kickoff; temporal provenance is ambiguous."},
+    {"fixture_id":"AP25J10-04","reason":"Only a draw quote was reported; no complete same-book 1X2 row."},
+    {"fixture_id":"AP25J10-05","reason":"NO VERIFIED PRICE in packet."},
+    {"fixture_id":"AP25J10-06","reason":"NO VERIFIED PRICE in packet."},
+    {"fixture_id":"AP25J10-08","reason":"NO VERIFIED PRICE in packet."},
+    {"fixture_id":"AP25J10-09","reason":"NO VERIFIED PRICE in packet."}
+  ],
+  "notes":[
+    "J10 is already NO-PROMOTION because the external packet exposed post-J10 outcomes in source titles before selection freeze.",
+    "Outcome exposure is not used in price admission, model probabilities, EV, Kelly or stake calculations."
+  ]
+}
