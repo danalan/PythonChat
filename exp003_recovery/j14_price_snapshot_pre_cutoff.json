@@ -1,0 +1,18 @@
+{
+  "jornada": "Clausura 2025 J14",
+  "status": "FROZEN_PRICE_INPUT_PRE_SETTLEMENT",
+  "global_cutoff": "2025-04-04T18:59:00-06:00",
+  "purpose": "Inputs for MARKET_PROXY_V1 only. Historical/pregame 1X2 observations; not p_model inputs.",
+  "fixtures": {
+    "J14-01": {"fixture":"Queretaro vs Leon","decimal_1x2":[3.80,3.50,1.909],"source":"TotalCorner historical match odds","source_url":"https://www.totalcorner.com/stats/queretaro-vs-leon/171520995","source_timestamp":"PREMATCH_ODDS_ARCHIVE","timestamp_timezone":"ARCHIVE","temporal_confidence":"MEDIUM_HISTORICAL_PREMATCH_NO_EXACT_TIMESTAMP"},
+    "J14-02": {"fixture":"Tijuana vs Necaxa","decimal_1x2":[2.50,3.75,2.62],"source":"OddsChecker Progol/Revancha 2275","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2275/","source_timestamp":"2025-04-04T11:22:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J14-03": {"fixture":"Puebla vs Tigres","decimal_1x2":[4.75,3.80,1.80],"source":"OddsChecker Puebla-Tigres pregame","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/2025/abril/pronostico-puebla-vs-tigres-04-04-25","source_timestamp":"2025-04-03T18:01:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J14-04": {"fixture":"Atlas vs Juarez","decimal_1x2":[2.25,3.30,3.25],"source":"TotalCorner historical match odds","source_url":"https://www.totalcorner.com/stats/atlas-vs-juarez-fc/171521010","source_timestamp":"PREMATCH_ODDS_ARCHIVE","timestamp_timezone":"ARCHIVE","temporal_confidence":"MEDIUM_HISTORICAL_PREMATCH_NO_EXACT_TIMESTAMP"},
+    "J14-05": {"fixture":"Pachuca vs America","decimal_1x2":[2.80,3.50,2.45],"source":"OddsChecker Progol/Revancha 2275","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2275/","source_timestamp":"2025-04-04T11:22:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J14-06": {"fixture":"Atletico San Luis vs Mazatlan","decimal_1x2":[2.12,3.15,3.45],"source":"Betimate pregame preview","source_url":"https://betimate.com/es/news/previews/atletico-san-luis-vs-mazatlan-fc-prediction-odds-betting-tips-04062025-1746561","source_timestamp":"PREMATCH_ARTICLE","timestamp_timezone":"SOURCE_UNSPECIFIED","temporal_confidence":"MEDIUM_PREGAME_PAGE"},
+    "J14-07": {"fixture":"Monterrey vs Guadalajara","decimal_1x2":[1.95,3.60,4.20],"source":"OddsChecker Progol/Revancha 2275","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2275/","source_timestamp":"2025-04-04T11:22:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J14-08": {"fixture":"Cruz Azul vs Pumas","decimal_1x2":[1.63,4.00,5.75],"source":"OddsChecker Progol/Revancha 2275","source_url":"https://www.oddschecker.com/es/pronosticos/futbol/predicciones-progol-revancha-quiniela-esta-semana-2275/","source_timestamp":"2025-04-04T11:22:00","timestamp_timezone":"SITE_LOCAL_TIME","temporal_confidence":"HIGH"},
+    "J14-09": {"fixture":"Toluca vs Santos Laguna","decimal_1x2":[1.125,9.50,21.00],"source":"Dimers pregame odds","source_url":"https://www.dimers.com/news/toluca-vs-santos-laguna-prediction-liga-mx-ac-4-6-25","source_timestamp":"2025-04-04T00:05:00-04:00","timestamp_timezone":"ET","temporal_confidence":"HIGH"}
+  },
+  "integrity_note": "Researcher was exposed to J14 final-score snippets while locating schedule/odds. Selection must be deterministic MODEL_ONLY + this pre-cutoff price snapshot; no discretionary context changes are permitted. Two archive-sourced fixtures lack exact historical timestamp and are marked MEDIUM confidence."
+}
