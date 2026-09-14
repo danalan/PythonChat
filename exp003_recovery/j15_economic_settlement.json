@@ -1,0 +1,46 @@
+{
+  "experiment":"EXP-003",
+  "track":"ECONOMIC_TRACK_V1",
+  "jornada":"Clausura 2025 J15",
+  "status":"SETTLED",
+  "money_type":"SIMULATED_PAPER_ONLY",
+  "selection_freeze_commit":"aa21065d3e6e98f422616b24e1c40136df9b5df3",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_OUTCOME_EXPOSED",
+  "promotion_eligibility":false,
+  "verified_results":{
+    "J15-01":{"fixture":"Tijuana vs Atletico San Luis","score":"2-1"},
+    "J15-02":{"fixture":"Necaxa vs Pachuca","score":"3-5"},
+    "J15-03":{"fixture":"Mazatlan vs Guadalajara","score":"1-1"},
+    "J15-04":{"fixture":"Pumas UNAM vs Juarez","score":"0-0"},
+    "J15-05":{"fixture":"Leon vs Puebla","score":"1-0"},
+    "J15-06":{"fixture":"Atlas vs Toluca","score":"2-3"},
+    "J15-07":{"fixture":"Tigres vs Monterrey","score":"2-1"},
+    "J15-08":{"fixture":"America vs Cruz Azul","score":"0-0"},
+    "J15-09":{"fixture":"Santos Laguna vs Queretaro","score":"1-2"}
+  },
+  "tickets":{
+    "P1":{"stake_mxn_simulated":80.0,"proxy_decimal":3.067126462649071,"model_ev_at_proxy":0.3791131773728247,"legs":[
+      {"selection":"Pumas-Juarez Over 1.5","p_model":0.770701337063089,"result":0,"verdict":"FAIL"},
+      {"selection":"America scores >=1 vs Cruz Azul","p_model":0.8158610659691199,"result":0,"verdict":"FAIL"},
+      {"selection":"Tigres-Monterrey Over 1.5","p_model":0.7150985611848857,"result":1,"verdict":"HIT"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-80.0,"learning":"The ticket failed on two closed-game assumptions: Pumas-Juarez finished 0-0 and America-Cruz Azul finished 0-0. Both had high model probabilities. This strengthens the hypothesis that rivalry/high-stakes or low-tempo matchups can create lower scoring than the historical goal model expects."},
+    "P2":{"stake_mxn_simulated":80.0,"proxy_decimal":2.4853528526724773,"model_ev_at_proxy":0.2361111166636105,"legs":[
+      {"selection":"Pachuca scores >=1 vs Necaxa","p_model":0.7820131219974427,"result":1,"verdict":"HIT"},
+      {"selection":"Atletico San Luis scores >=1 vs Tijuana","p_model":0.7956680729641372,"result":1,"verdict":"HIT"},
+      {"selection":"Leon-Puebla Over 1.5","p_model":0.799325161928157,"result":0,"verdict":"FAIL"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-80.0,"learning":"Two team-to-score legs hit, so that family is not broadly broken. Leon-Puebla stopped at 1-0 despite about 80% model probability for two-plus goals. This is another miss involving Puebla in a low-scoring total and strengthens a team-specific/weak-attack segmentation hypothesis rather than a universal totals penalty."},
+    "P3":{"stake_mxn_simulated":40.0,"proxy_decimal":2.8047047781112586,"model_ev_at_proxy":-0.031081843801022413,"legs":[
+      {"selection":"Toluca or Draw vs Atlas","p_model":0.778289558988268,"result":1,"verdict":"HIT"},
+      {"selection":"Santos or Draw vs Queretaro","p_model":0.7351774978669126,"result":0,"verdict":"FAIL"},
+      {"selection":"Mazatlan-Guadalajara Over 1.5","p_model":0.6037630482197023,"result":1,"verdict":"HIT"}],"ticket_result":"LOSS","return_mxn_simulated":0.0,"net_pnl_mxn_simulated":-40.0,"learning":"Santos 1X was the single failure. This adds another double-chance miss to the residual list. The model may be overprotecting some home sides whose baseline goal history looks acceptable but whose actual current strength is weaker than the opponent's."}
+  },
+  "selected_leg_metrics":{"hits":5,"legs":9,"hit_rate":0.5555555555555556,"mean_brier":0.3128460427347336,"mean_log_loss":0.8516201628594898},
+  "forced_200_simulated_track":{"opening_bankroll_mxn_simulated":681.6632934966258,"staked_mxn_simulated":200.0,"returned_mxn_simulated":0.0,"jornada_pnl_mxn_simulated":-200.0,"closing_bankroll_mxn_simulated":481.6632934966258,"cumulative_pnl_from_1000_mxn_simulated":-518.3367065033742},
+  "ev_disciplined_counterfactual":{"opening_bankroll_mxn_simulated":758.9483346997567,"eligible_tickets":["P1","P2"],"held_cash_mxn_simulated":40.0,"staked_mxn_simulated":160.0,"returned_mxn_simulated":0.0,"jornada_pnl_mxn_simulated":-160.0,"closing_bankroll_mxn_simulated":598.9483346997567},
+  "learning":[
+    "J15 dropped to 5/9 selected legs and 0/3 parlays; this is not only parlay fragility but a materially worse leg-level jornada.",
+    "Pumas-Juarez 0-0 and America-Cruz Azul 0-0 are high-confidence misses for scoring assumptions. Segment rivalry/high-stakes/low-tempo matchups and recent defensive context before considering a model feature.",
+    "Leon-Puebla Over 1.5 failed 1-0 after Puebla-Tigres Over 1.5 failed 0-0 in J14. Puebla is now a repeated low-total residual; investigate team-specific attacking weakness rather than globally lowering totals.",
+    "Santos 1X failed, adding to recent double-chance misses. Review whether the model gives too much protection to weak home sides and whether recent form/opponent strength should be a context diagnostic.",
+    "Positive proxy EV P1 and P2 both lost again. MARKET_PROXY_V1 EV remains unvalidated and may be magnifying model misspecification; no promotion or stake increase.",
+    "No V0.1R parameter change yet. J14-J15 provide enough repeated residuals to justify a structured diagnostic before J16, not an immediate retune."
+  ]
+}
