@@ -1,0 +1,506 @@
+{
+  "architecture": "V2.1_WINDOWED_100",
+  "canonical_hold_mxn": 55.0,
+  "canonical_opening_bankroll": 437.3012159211471,
+  "canonical_primary_singles": [
+    {
+      "away": "Club Tijuana",
+      "date": "2025-10-17",
+      "ev": 0.5086203712894872,
+      "fixture_id": "AP25J13-01",
+      "full_kelly": 0.24810749818999378,
+      "home": "Puebla FC",
+      "odds": 3.05,
+      "outcome": "AWAY",
+      "p_raw": 0.4946296299309795,
+      "stake_mxn": 20.0
+    },
+    {
+      "away": "CF Pachuca",
+      "date": "2025-10-18",
+      "ev": 0.08894753453037851,
+      "fixture_id": "AP25J13-05",
+      "full_kelly": 0.05082716258878772,
+      "home": "FC Juárez",
+      "odds": 2.75,
+      "outcome": "AWAY",
+      "p_raw": 0.3959809216474104,
+      "stake_mxn": 10.0
+    },
+    {
+      "away": "Mazatlán FC",
+      "date": "2025-10-18",
+      "ev": 0.33991939690072615,
+      "fixture_id": "AP25J13-06",
+      "full_kelly": 0.07998103456487674,
+      "home": "Deportivo Guadalajara",
+      "odds": 5.25,
+      "outcome": "DRAW",
+      "p_raw": 0.25522274226680497,
+      "stake_mxn": 10.0
+    }
+  ],
+  "canonical_secondary_parlays": [
+    {
+      "date": "2025-10-18",
+      "ev": 0.45910192372447733,
+      "legs": [
+        "AP25J13-06 DRAW",
+        "AP25J13-05 AWAY"
+      ],
+      "odds": 14.4375,
+      "p_joint_independence": 0.10106333670818891,
+      "stake_mxn": 5.0
+    }
+  ],
+  "canonical_total_risk_mxn": 45.0,
+  "evaluations": [
+    {
+      "away": "Club Tijuana",
+      "date": "2025-10-17",
+      "fixture_id": "AP25J13-01",
+      "home": "Puebla FC",
+      "outcomes": [
+        {
+          "ev": -0.381313629203902,
+          "full_kelly": -0.2933181763106939,
+          "odds": 2.3,
+          "outcome": "HOME",
+          "p_raw": 0.26899407425917304
+        },
+        {
+          "ev": -0.21995822382750374,
+          "full_kelly": -0.09563401035978424,
+          "odds": 3.3,
+          "outcome": "DRAW",
+          "p_raw": 0.23637629580984737
+        },
+        {
+          "ev": 0.5086203712894872,
+          "full_kelly": 0.24810749818999378,
+          "odds": 3.05,
+          "outcome": "AWAY",
+          "p_raw": 0.4946296299309795
+        }
+      ],
+      "risk_adjusted_candidate": {
+        "ev": 0.5086203712894872,
+        "full_kelly": 0.24810749818999378,
+        "odds": 3.05,
+        "outcome": "AWAY",
+        "p_raw": 0.4946296299309795
+      }
+    },
+    {
+      "away": "Atlas Guadalajara",
+      "date": "2025-10-17",
+      "fixture_id": "AP25J13-02",
+      "home": "Atlético San Luis",
+      "outcomes": [
+        {
+          "ev": -0.04758148790692174,
+          "full_kelly": -0.060229731527749034,
+          "odds": 1.79,
+          "outcome": "HOME",
+          "p_raw": 0.5320773810575856
+        },
+        {
+          "ev": -0.14550959633692095,
+          "full_kelly": -0.05196771297747177,
+          "odds": 3.8,
+          "outcome": "DRAW",
+          "p_raw": 0.22486589570081028
+        },
+        {
+          "ev": -0.003467434709424344,
+          "full_kelly": -0.0011185273256207563,
+          "odds": 4.1,
+          "outcome": "AWAY",
+          "p_raw": 0.24305672324160385
+        }
+      ],
+      "risk_adjusted_candidate": null
+    },
+    {
+      "away": "Club Necaxa",
+      "date": "2025-10-17",
+      "fixture_id": "AP25J13-03",
+      "home": "UANL Tigres",
+      "outcomes": [
+        {
+          "ev": -0.08922462626978434,
+          "full_kelly": -0.19827694726618744,
+          "odds": 1.45,
+          "outcome": "HOME",
+          "p_raw": 0.6281209474001488
+        },
+        {
+          "ev": 0.0028406265094116367,
+          "full_kelly": 0.0008116075741176105,
+          "odds": 4.5,
+          "outcome": "DRAW",
+          "p_raw": 0.22285347255764704
+        },
+        {
+          "ev": -0.0685901247362235,
+          "full_kelly": -0.013064785664042572,
+          "odds": 6.25,
+          "outcome": "AWAY",
+          "p_raw": 0.14902558004220423
+        }
+      ],
+      "risk_adjusted_candidate": {
+        "ev": 0.0028406265094116367,
+        "full_kelly": 0.0008116075741176105,
+        "odds": 4.5,
+        "outcome": "DRAW",
+        "p_raw": 0.22285347255764704
+      }
+    },
+    {
+      "away": "Club León",
+      "date": "2025-10-18",
+      "fixture_id": "AP25J13-04",
+      "home": "Santos Laguna",
+      "outcomes": [
+        {
+          "ev": -0.18251114328175688,
+          "full_kelly": -0.13036510234411205,
+          "odds": 2.4,
+          "outcome": "HOME",
+          "p_raw": 0.3406203569659346
+        },
+        {
+          "ev": -0.016835417813962028,
+          "full_kelly": -0.006235339931097047,
+          "odds": 3.7,
+          "outcome": "DRAW",
+          "p_raw": 0.2657201573475778
+        },
+        {
+          "ev": 0.0038316885005436063,
+          "full_kelly": 0.0024720570971249077,
+          "odds": 2.55,
+          "outcome": "AWAY",
+          "p_raw": 0.39365948568648773
+        }
+      ],
+      "risk_adjusted_candidate": {
+        "ev": 0.0038316885005436063,
+        "full_kelly": 0.0024720570971249077,
+        "odds": 2.55,
+        "outcome": "AWAY",
+        "p_raw": 0.39365948568648773
+      }
+    },
+    {
+      "away": "CF Pachuca",
+      "date": "2025-10-18",
+      "fixture_id": "AP25J13-05",
+      "home": "FC Juárez",
+      "outcomes": [
+        {
+          "ev": -0.17447000046023708,
+          "full_kelly": -0.11631333364015806,
+          "odds": 2.5,
+          "outcome": "HOME",
+          "p_raw": 0.33021199981590516
+        },
+        {
+          "ev": -0.11012699475577536,
+          "full_kelly": -0.04894533100256683,
+          "odds": 3.25,
+          "outcome": "DRAW",
+          "p_raw": 0.2738070785366845
+        },
+        {
+          "ev": 0.08894753453037851,
+          "full_kelly": 0.05082716258878772,
+          "odds": 2.75,
+          "outcome": "AWAY",
+          "p_raw": 0.3959809216474104
+        }
+      ],
+      "risk_adjusted_candidate": {
+        "ev": 0.08894753453037851,
+        "full_kelly": 0.05082716258878772,
+        "odds": 2.75,
+        "outcome": "AWAY",
+        "p_raw": 0.3959809216474104
+      }
+    },
+    {
+      "away": "Mazatlán FC",
+      "date": "2025-10-18",
+      "fixture_id": "AP25J13-06",
+      "home": "Deportivo Guadalajara",
+      "outcomes": [
+        {
+          "ev": -0.24336523260484355,
+          "full_kelly": -0.8112174420161451,
+          "odds": 1.3,
+          "outcome": "HOME",
+          "p_raw": 0.5820267441501203
+        },
+        {
+          "ev": 0.33991939690072615,
+          "full_kelly": 0.07998103456487674,
+          "odds": 5.25,
+          "outcome": "DRAW",
+          "p_raw": 0.25522274226680497
+        },
+        {
+          "ev": 0.3020041086645977,
+          "full_kelly": 0.04314344409494253,
+          "odds": 8.0,
+          "outcome": "AWAY",
+          "p_raw": 0.1627505135830747
+        }
+      ],
+      "risk_adjusted_candidate": {
+        "ev": 0.33991939690072615,
+        "full_kelly": 0.07998103456487674,
+        "odds": 5.25,
+        "outcome": "DRAW",
+        "p_raw": 0.25522274226680497
+      }
+    },
+    {
+      "away": "Pumas UNAM",
+      "date": "2025-10-18",
+      "fixture_id": "AP25J13-07",
+      "home": "CF Monterrey",
+      "outcomes": [
+        {
+          "ev": -0.015699727178933198,
+          "full_kelly": -0.025322140611182573,
+          "odds": 1.62,
+          "outcome": "HOME",
+          "p_raw": 0.6075927610006585
+        },
+        {
+          "ev": -0.14962217838512815,
+          "full_kelly": -0.05159385461556143,
+          "odds": 3.9,
+          "outcome": "DRAW",
+          "p_raw": 0.2180455952858646
+        },
+        {
+          "ev": -0.08460137050424676,
+          "full_kelly": -0.01990620482452865,
+          "odds": 5.25,
+          "outcome": "AWAY",
+          "p_raw": 0.17436164371347682
+        }
+      ],
+      "risk_adjusted_candidate": null
+    },
+    {
+      "away": "CF América",
+      "date": "2025-10-18",
+      "fixture_id": "AP25J13-08",
+      "home": "Cruz Azul",
+      "outcomes": [
+        {
+          "ev": -0.09289700152749147,
+          "full_kelly": -0.047639487962816134,
+          "odds": 2.95,
+          "outcome": "HOME",
+          "p_raw": 0.3074925418550876
+        },
+        {
+          "ev": -0.02515819753732962,
+          "full_kelly": -0.010482582307220675,
+          "odds": 3.4,
+          "outcome": "DRAW",
+          "p_raw": 0.28671817719490306
+        },
+        {
+          "ev": -0.086974117862479,
+          "full_kelly": -0.06957929428998319,
+          "odds": 2.25,
+          "outcome": "AWAY",
+          "p_raw": 0.4057892809500093
+        }
+      ],
+      "risk_adjusted_candidate": null
+    },
+    {
+      "away": "Gallos Blancos",
+      "date": "2025-10-18",
+      "fixture_id": "AP25J13-09",
+      "home": "Deportivo Toluca",
+      "outcomes": [
+        {
+          "ev": -0.07397393955605303,
+          "full_kelly": -0.3893365239792266,
+          "odds": 1.19,
+          "outcome": "HOME",
+          "p_raw": 0.7781731600369303
+        },
+        {
+          "ev": -0.07504008501231885,
+          "full_kelly": -0.013643651820421609,
+          "odds": 6.5,
+          "outcome": "DRAW",
+          "p_raw": 0.14230152538272017
+        },
+        {
+          "ev": -0.12522153961615534,
+          "full_kelly": -0.012522153961615535,
+          "odds": 11.0,
+          "outcome": "AWAY",
+          "p_raw": 0.07952531458034952
+        }
+      ],
+      "risk_adjusted_candidate": null
+    }
+  ],
+  "experiment": "EXP-003",
+  "fractional_kelly_v2_2_shadow": {
+    "FK15": {
+      "fraction": 0.15,
+      "opening_bankroll": 475.09201602517317,
+      "parlays": [
+        {
+          "date": "2025-10-18",
+          "ev": 0.45910192372447733,
+          "legs": [
+            "AP25J13-06 DRAW",
+            "AP25J13-05 AWAY"
+          ],
+          "odds": 14.4375,
+          "p_joint_independence": 0.10106333670818891,
+          "stake_mxn": 5.0
+        }
+      ],
+      "risk_mxn": 32.00297324065984,
+      "single_scale_if_cap": 1.0,
+      "single_tickets": [
+        {
+          "fixture_id": "AP25J13-01",
+          "full_kelly": 0.24810749818999378,
+          "odds": 3.05,
+          "outcome": "AWAY",
+          "p_raw": 0.4946296299309795,
+          "stake_mxn": 17.681083725906923
+        },
+        {
+          "fixture_id": "AP25J13-05",
+          "full_kelly": 0.05082716258878772,
+          "odds": 2.75,
+          "outcome": "AWAY",
+          "p_raw": 0.3959809216474104,
+          "stake_mxn": 3.622136871471963
+        },
+        {
+          "fixture_id": "AP25J13-06",
+          "full_kelly": 0.07998103456487674,
+          "odds": 5.25,
+          "outcome": "DRAW",
+          "p_raw": 0.25522274226680497,
+          "stake_mxn": 5.699752643280952
+        }
+      ]
+    },
+    "FK20": {
+      "fraction": 0.2,
+      "opening_bankroll": 470.3155484227055,
+      "parlays": [
+        {
+          "date": "2025-10-18",
+          "ev": 0.45910192372447733,
+          "legs": [
+            "AP25J13-06 DRAW",
+            "AP25J13-05 AWAY"
+          ],
+          "odds": 14.4375,
+          "p_joint_independence": 0.10106333670818891,
+          "stake_mxn": 5.0
+        }
+      ],
+      "risk_mxn": 40.64198861230469,
+      "single_scale_if_cap": 1.0,
+      "single_tickets": [
+        {
+          "fixture_id": "AP25J13-01",
+          "full_kelly": 0.24810749818999378,
+          "odds": 3.05,
+          "outcome": "AWAY",
+          "p_raw": 0.4946296299309795,
+          "stake_mxn": 23.337762815802467
+        },
+        {
+          "fixture_id": "AP25J13-05",
+          "full_kelly": 0.05082716258878772,
+          "odds": 2.75,
+          "outcome": "AWAY",
+          "p_raw": 0.3959809216474104,
+          "stake_mxn": 4.780960969543144
+        },
+        {
+          "fixture_id": "AP25J13-06",
+          "full_kelly": 0.07998103456487674,
+          "odds": 5.25,
+          "outcome": "DRAW",
+          "p_raw": 0.25522274226680497,
+          "stake_mxn": 7.523264826959073
+        }
+      ]
+    },
+    "FK25": {
+      "fraction": 0.25,
+      "opening_bankroll": 465.30994244189486,
+      "parlays": [
+        {
+          "date": "2025-10-18",
+          "ev": 0.45910192372447733,
+          "legs": [
+            "AP25J13-06 DRAW",
+            "AP25J13-05 AWAY"
+          ],
+          "odds": 14.4375,
+          "p_joint_independence": 0.10106333670818891,
+          "stake_mxn": 5.0
+        }
+      ],
+      "risk_mxn": 49.078310097672045,
+      "single_scale_if_cap": 1.0,
+      "single_tickets": [
+        {
+          "fixture_id": "AP25J13-01",
+          "full_kelly": 0.24810749818999378,
+          "odds": 3.05,
+          "outcome": "AWAY",
+          "p_raw": 0.4946296299309795,
+          "stake_mxn": 28.861721425547135
+        },
+        {
+          "fixture_id": "AP25J13-05",
+          "full_kelly": 0.05082716258878772,
+          "odds": 2.75,
+          "outcome": "AWAY",
+          "p_raw": 0.3959809216474104,
+          "stake_mxn": 5.912596024668412
+        },
+        {
+          "fixture_id": "AP25J13-06",
+          "full_kelly": 0.07998103456487674,
+          "odds": 5.25,
+          "outcome": "DRAW",
+          "p_raw": 0.25522274226680497,
+          "stake_mxn": 9.3039926474565
+        }
+      ]
+    }
+  },
+  "integrity_class": "MECHANICAL_REPLAY_RESEARCHER_VISIBLE_J13_OUTCOME_EXPOSURE_DURING_PRICE_RESEARCH",
+  "jornada": "J13",
+  "model_training_count": 1124,
+  "notes": [
+    "Selection is mechanical from the model output frozen before external research and the timestamp-verified Bet365 price snapshot.",
+    "Visible J13 outcome exposure occurred during price research; J13 is permanently NO-PROMOTION.",
+    "No exposed outcome affects selection, odds choice, EV, Kelly, gate, stake or parlay composition."
+  ],
+  "promotion_eligibility": false
+}
