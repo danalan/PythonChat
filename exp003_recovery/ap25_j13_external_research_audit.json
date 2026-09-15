@@ -1,0 +1,67 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J13",
+  "global_cutoff":"2025-10-17T00:00:00-06:00",
+  "research_role":"EXOGENOUS_ONLY",
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_VISIBLE_J13_OUTCOME_EXPOSURE_DURING_PRICE_RESEARCH",
+  "promotion_eligibility":false,
+  "integrity_note":"MODEL_SIGNAL was frozen before external J13 research. During subsequent historical-price research, search results visibly exposed at least one J13 outcome before selection freeze. J13 is therefore permanently NO-PROMOTION. No exposed outcome may be used to choose prices, alter probabilities, EV, Kelly, candidates, gates or stakes.",
+  "fixture_schedule":{
+    "source_primary":"FMF refereeing assignments published 2025-10-14",
+    "source_secondary":"ESPN Jornada 13 schedule published 2025-10-16 16:47",
+    "fixtures":[
+      {"id":"AP25J13-01","date":"2025-10-17","time_cdmx":"19:00","home":"Puebla FC","away":"Club Tijuana","stadium":"Estadio Cuauhtemoc"},
+      {"id":"AP25J13-02","date":"2025-10-17","time_cdmx":"21:00","home":"Atletico San Luis","away":"Atlas Guadalajara","stadium":"Estadio Alfonso Lastras"},
+      {"id":"AP25J13-03","date":"2025-10-17","time_cdmx":"21:00","home":"UANL Tigres","away":"Club Necaxa","stadium":"Estadio Universitario"},
+      {"id":"AP25J13-04","date":"2025-10-18","time_cdmx":"17:00","home":"Santos Laguna","away":"Club Leon","stadium":"Estadio TSM Corona"},
+      {"id":"AP25J13-05","date":"2025-10-18","time_cdmx":"17:00","home":"FC Juarez","away":"CF Pachuca","stadium":"Estadio Olimpico Benito Juarez"},
+      {"id":"AP25J13-09","date":"2025-10-18","time_cdmx":"17:00","home":"Deportivo Toluca","away":"Gallos Blancos","stadium":"Estadio Nemesio Diez"},
+      {"id":"AP25J13-07","date":"2025-10-18","time_cdmx":"19:00","home":"CF Monterrey","away":"Pumas UNAM","stadium":"Estadio BBVA"},
+      {"id":"AP25J13-06","date":"2025-10-18","time_cdmx":"19:07","home":"Deportivo Guadalajara","away":"Mazatlan FC","stadium":"Estadio Akron"},
+      {"id":"AP25J13-08","date":"2025-10-18","time_cdmx":"21:03","home":"Cruz Azul","away":"CF America","stadium":"Estadio Olimpico Universitario"}
+    ],
+    "schedule_revision":"Pre-tournament material had Toluca-Queretaro on Oct.19; FMF and contemporary ESPN schedule establish Oct.18 17:00. Fixture metadata corrected without changing model cutoff or training inputs."
+  },
+  "accepted_exogenous_context":[
+    {"fixture":"Puebla-Tijuana","classification":"FACT/REPORT","item":"Tijuana reincorporated Gilberto Mora after Mexico U20 duty; Puebla was under Hernan Cristante after prior coaching change.","source":"TUDN pre-match Jornada 13 preview"},
+    {"fixture":"San Luis-Atlas","classification":"REPORT","item":"Atlas used the FIFA break to recover four injured players; Telediario specifically named Rober Pier and Aldo Rocha among those increasing physical preparation.","source":"Telediario pre-match preview"},
+    {"fixture":"Chivas-Mazatlan","classification":"FACT","item":"Alan Pulido and Cade Cowell were omitted from the squad by technical decision rather than injury.","source":"TV Azteca 2025-10-17 21:44"},
+    {"fixture":"Monterrey-Pumas","classification":"REPORT","item":"Fidel Ambriz was expected out after a right-knee knock; Ricardo Chavez was a probable absence with posterior-knee discomfort and separate training.","source":"Infobae 2025-10-17 15:47 EST"},
+    {"fixture":"Cruz Azul-America","classification":"REPORT","item":"Gonzalo Piovi unavailable through accumulated yellow cards; Mateo Levy also listed unavailable in pre-match reporting.","source":"SportyTrader/SI pre-match reporting"}
+  ],
+  "availability_by_team":{
+    "Puebla FC":"NO VERIFIED ABSENCE FOUND",
+    "Club Tijuana":"Gilberto Mora RETURNING from U20 duty; availability/minutes uncertain",
+    "Atletico San Luis":"NO VERIFIED ABSENCE FOUND",
+    "Atlas Guadalajara":"Rober Pier and Aldo Rocha reported recovering/returning after injury; two additional recovering players not promoted to named FACT due incomplete verification",
+    "UANL Tigres":"NO VERIFIED ABSENCE FOUND",
+    "Club Necaxa":"NO VERIFIED ABSENCE FOUND",
+    "Santos Laguna":"NO VERIFIED ABSENCE FOUND",
+    "Club Leon":"NO VERIFIED ABSENCE FOUND",
+    "FC Juarez":"NO VERIFIED ABSENCE FOUND",
+    "CF Pachuca":"NO VERIFIED ABSENCE FOUND",
+    "Deportivo Toluca":"NO VERIFIED ABSENCE FOUND",
+    "Gallos Blancos":"NO VERIFIED ABSENCE FOUND",
+    "CF Monterrey":"Fidel Ambriz likely OUT/QUESTIONABLE; Ricardo Chavez probable absence/QUESTIONABLE, both REPORT",
+    "Pumas UNAM":"NO ADDITIONAL VERIFIED ABSENCE FOUND in accepted pre-kickoff research",
+    "Deportivo Guadalajara":"Alan Pulido and Cade Cowell OUT by technical decision, FACT",
+    "Mazatlan FC":"NO VERIFIED ABSENCE FOUND",
+    "Cruz Azul":"Gonzalo Piovi SUSPENDED by card accumulation; Mateo Levy unavailable, REPORT",
+    "CF America":"NO ADDITIONAL VERIFIED ABSENCE PROMOTED due insufficiently clean pre-kickoff verification in this audit"
+  },
+  "probable_lineups":"Not used as a model input. Where search results were mixed with live/post-match pages, lineup details were excluded rather than risk temporal leakage.",
+  "source_urls":[
+    "https://arbitraje.fmf.mx/detalle-noticia/liga-mx-apertura-2025--designaciones-arbitrales-jornada-13_2195",
+    "https://www.espn.com.mx/futbol/mexico/nota/_/id/15822578/liga-mx-jornada-13-horarios-donde-ver-apertura-2025",
+    "https://www.tudn.com/futbol/liga-mx/puebla-vs-tijuana-horario-donde-ver-partido-jornada-13-liga-mx-apertura-2025",
+    "https://www.telediario.mx/futbol/liga-mx/atl-san-luis-vs-atlas-en-vivo-horario-canal-jornada-13-apertura-2025",
+    "https://www.tvazteca.com/aztecadeportes/la-razon-por-la-que-milito-cepillo-a-pulido-y-cowell-del-chivas-vs-mazatlan",
+    "https://www.infobae.com/mexico/deportes/2025/10/17/rayados-encara-a-pumas-con-bajas-sensibles-para-la-jornada-13-del-apertura-2025/"
+  ],
+  "governance":[
+    "Internal ledger remains sole authority for standings/form/splits/rest.",
+    "External context has no authority to rewrite p_model under active V2.1.",
+    "Visible outcome exposure makes J13 diagnostic only and permanently NO-PROMOTION."
+  ]
+}
