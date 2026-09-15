@@ -1,0 +1,40 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J13",
+  "architecture":"V2.1_WINDOWED_100",
+  "model_training_count":1124,
+  "model_cutoff":"2025-10-17T00:00:00-06:00",
+  "model_output":"exp003_recovery/ap25_j13_model_output.txt",
+  "price_snapshot":"exp003_recovery/ap25_j13_price_snapshot_pre_cutoff.json",
+  "promotion_eligibility":false,
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_VISIBLE_J13_OUTCOME_EXPOSURE_DURING_PRICE_RESEARCH",
+  "canonical_opening_bankroll_mxn":437.3012159211471,
+  "canonical_primary_singles":[
+    {"fixture_id":"AP25J13-01","date":"2025-10-17","home":"Puebla FC","away":"Club Tijuana","outcome":"AWAY","selection":"Club Tijuana ML","odds":3.05,"p_raw":0.4946296299309795,"break_even":0.3278688524590164,"ev":0.5086203712894872,"full_kelly":0.24810749818999378,"stake_mxn":20.0},
+    {"fixture_id":"AP25J13-05","date":"2025-10-18","home":"FC Juarez","away":"CF Pachuca","outcome":"AWAY","selection":"CF Pachuca ML","odds":2.75,"p_raw":0.3959809216474104,"break_even":0.36363636363636365,"ev":0.08894753453037851,"full_kelly":0.05082716258878772,"stake_mxn":10.0},
+    {"fixture_id":"AP25J13-06","date":"2025-10-18","home":"Deportivo Guadalajara","away":"Mazatlan FC","outcome":"DRAW","selection":"Draw Chivas-Mazatlan","odds":5.25,"p_raw":0.25522274226680497,"break_even":0.19047619047619047,"ev":0.33991939690072615,"full_kelly":0.07998103456487674,"stake_mxn":10.0}
+  ],
+  "canonical_secondary_parlays":[
+    {"date":"2025-10-18","stake_mxn":5.0,"legs":["CF Pachuca ML @2.75","Draw Chivas-Mazatlan @5.25"],"odds":14.4375,"p_joint_independence":0.10106333670818891,"ev":0.45910192372447733}
+  ],
+  "canonical_total_risk_mxn":45.0,
+  "canonical_hold_mxn":55.0,
+  "below_gate_positive_ev_diagnostics":[
+    {"fixture_id":"AP25J13-03","selection":"DRAW Tigres-Necaxa","odds":4.5,"p_raw":0.22285347255764704,"ev":0.0028406265094116367,"full_kelly":0.0008116075741176105},
+    {"fixture_id":"AP25J13-04","selection":"Club Leon ML","odds":2.55,"p_raw":0.39365948568648773,"ev":0.0038316885005436063,"full_kelly":0.0024720570971249077}
+  ],
+  "no_positive_ev_candidate_fixtures":["AP25J13-02","AP25J13-07","AP25J13-08","AP25J13-09"],
+  "fractional_kelly_v2_2_shadow":{
+    "FK15":{"opening_bankroll":475.09201602517317,"single_tickets":[{"fixture_id":"AP25J13-01","stake_mxn":17.681083725906923},{"fixture_id":"AP25J13-05","stake_mxn":3.622136871471963},{"fixture_id":"AP25J13-06","stake_mxn":5.699752643280952}],"fixed_parlay_stake_mxn":5.0,"total_risk_mxn":32.00297324065984},
+    "FK20":{"opening_bankroll":470.3155484227055,"single_tickets":[{"fixture_id":"AP25J13-01","stake_mxn":23.337762815802467},{"fixture_id":"AP25J13-05","stake_mxn":4.780960969543144},{"fixture_id":"AP25J13-06","stake_mxn":7.523264826959073}],"fixed_parlay_stake_mxn":5.0,"total_risk_mxn":40.64198861230469},
+    "FK25":{"opening_bankroll":465.30994244189486,"single_tickets":[{"fixture_id":"AP25J13-01","stake_mxn":28.861721425547135},{"fixture_id":"AP25J13-05","stake_mxn":5.912596024668412},{"fixture_id":"AP25J13-06","stake_mxn":9.3039926474565}],"fixed_parlay_stake_mxn":5.0,"total_risk_mxn":49.078310097672045}
+  },
+  "freeze_governance":[
+    "This freeze is authoritative before settlement.",
+    "MODEL_SIGNAL was frozen before external J13 research.",
+    "All nine accepted price rows are timestamped pre-kickoff complete Bet365 1X2 rows.",
+    "Outcome exposure during research makes J13 NO-PROMOTION but does not alter this mechanical selection.",
+    "No threshold, stake, price or candidate may be changed after settlement."
+  ]
+}
