@@ -1,0 +1,42 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J12",
+  "promotion_eligibility":false,
+  "integrity_class":"PRICE_SNAPSHOT_AUDITED_AFTER_EXTERNAL_PACKET_VISIBLE_OUTCOME_EXPOSURE",
+  "fixtures":[
+    {
+      "fixture_id":"AP25J12-01",
+      "bookmaker":"MelBet",
+      "prices":{"1X2_HOME":2.68,"1X2_DRAW":3.60,"1X2_AWAY":2.42},
+      "original_quotes":{"1X2_HOME":"+168","1X2_DRAW":"+260","1X2_AWAY":"+142"},
+      "classification":"VERIFIED_PRE_KICKOFF",
+      "publication":"2025-10-03T09:00:00-06:00",
+      "source":"Sporting News pre-match preview citing MelBet historical row",
+      "source_url":"https://www.sportingnews.com/mx/futbol/news/necaxa-pachuca-alineaciones-pronostico-apertura-2025-liga-mx/128ab989025e2254b4d61e65"
+    },
+    {
+      "fixture_id":"AP25J12-07",
+      "bookmaker":"Caliente.mx",
+      "prices":{"1X2_HOME":1.20,"1X2_DRAW":6.50,"1X2_AWAY":12.00},
+      "original_quotes":{"1X2_HOME":"-500","1X2_DRAW":"+550","1X2_AWAY":"+1100"},
+      "classification":"VERIFIED_PRE_KICKOFF",
+      "publication":"2025-10-03T12:39:00-06:00",
+      "source":"SI.com pre-match odds article explicitly citing Caliente.mx",
+      "source_url":"https://www.si.com/es-us/futbol/america-vs-santos-momios-probabilidades-de-los-equipos-y-cuotas-4-10-2025"
+    }
+  ],
+  "excluded_price_rows":[
+    {"fixture_id":"AP25J12-02","reason":"NO VERIFIED PRICE"},
+    {"fixture_id":"AP25J12-03","reason":"AMBIGUOUS TIMESTAMP — same-day row lacked reliable pre-kickoff clock time"},
+    {"fixture_id":"AP25J12-04","reason":"NO VERIFIED PRICE — same-day/next-day sources temporally ambiguous"},
+    {"fixture_id":"AP25J12-05","reason":"NO VERIFIED PRICE — same-day row lacked reliable pre-kickoff clock time"},
+    {"fixture_id":"AP25J12-06","reason":"NO VERIFIED PRICE — source date post-kickoff/ambiguous"},
+    {"fixture_id":"AP25J12-08","reason":"NO VERIFIED PRICE — same-day row lacked reliable pre-kickoff clock time"},
+    {"fixture_id":"AP25J12-09","reason":"BOOKMAKER IDENTITY NOT SUFFICIENTLY ESTABLISHED for the complete SI.com row"}
+  ],
+  "notes":[
+    "Same-day publication date without reliable clock time is rejected under the stricter internal policy.",
+    "No prices are inferred, backsolved, mixed across books, or selected from live/post-kickoff markets."
+  ]
+}
