@@ -33,7 +33,7 @@ FIXTURES=[
 ("AP25J13-06","2025-10-18","Deportivo Guadalajara","Mazatlán FC"),
 ("AP25J13-07","2025-10-18","CF Monterrey","Pumas UNAM"),
 ("AP25J13-08","2025-10-18","Cruz Azul","CF América"),
-("AP25J13-09","2025-10-19","Deportivo Toluca","Gallos Blancos")]
+("AP25J13-09","2025-10-18","Deportivo Toluca","Gallos Blancos")]
 
 def main():
     hist=[m for m in base.load_all() if m.date<datetime(2025,7,11)]
@@ -60,6 +60,7 @@ def main():
          "promotion_eligibility":True,"fixtures":rows,
          "notes":["No J13 result is an input.","Raw V0.1R remains canonical for V2.1 selection.",
                   "Internal canonical ledger is authoritative for endogenous football data.",
+                  "Fixture-date metadata incorporates the contemporary J13 schedule revision that moved Toluca-Queretaro to Oct.18; this does not alter training inputs or cutoff.",
                   "Promotion eligibility remains provisional until external research and selection freeze complete without visible J13 outcome exposure."]}
     print("AP25_J13_MODEL_ONLY "+json.dumps(out,ensure_ascii=False,sort_keys=True),flush=True)
 if __name__=='__main__':main()
