@@ -41,4 +41,5 @@ jobs:
           git add exp003_recovery/ap25_j12_model_output.txt
           git diff --cached --quiet && exit 0
           git commit -m "Record Apertura 2025 J12 model output"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
