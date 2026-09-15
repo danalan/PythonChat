@@ -1,0 +1,50 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J12",
+  "promotion_eligibility":false,
+  "integrity_class":"MECHANICAL_REPLAY_EXTERNAL_PACKET_VISIBLE_J12_OUTCOME_EXPOSURE_BEFORE_SELECTION_FREEZE",
+  "model":"V0.1R_DC_ENSEMBLE",
+  "model_cutoff":"2025-10-03T00:00:00-06:00",
+  "training_count":1115,
+  "model_script_commit":"060f730516bdbcd7e4468d99e92d4a007a9fcd53",
+  "model_workflow_run_id":34916553964,
+  "canonical_policy":"V2.1_WINDOWED_100",
+  "shadow_policy":"V2.2_FRACTIONAL_KELLY_SHADOW",
+  "canonical_opening_bankroll_mxn":437.3012159211471,
+  "shadow_openings_mxn":{"FK15":475.09201602517317,"FK20":470.3155484227055,"FK25":465.30994244189486},
+  "accepted_price_rows":[
+    {
+      "fixture_id":"AP25J12-01","bookmaker":"MelBet",
+      "markets":[
+        {"market":"1X2_HOME","p_raw":0.3719702198986933,"decimal":2.68,"break_even":0.3731343283582089,"model_ev":-0.0031198106715019103,"kelly":0.0},
+        {"market":"1X2_DRAW","p_raw":0.2519661136333923,"decimal":3.60,"break_even":0.2777777777777778,"model_ev":-0.09292199091978781,"kelly":0.0},
+        {"market":"1X2_AWAY","p_raw":0.3760636664679144,"decimal":2.42,"break_even":0.4132231404958678,"model_ev":-0.08992592714764724,"kelly":0.0}
+      ]
+    },
+    {
+      "fixture_id":"AP25J12-07","bookmaker":"Caliente.mx",
+      "markets":[
+        {"market":"1X2_HOME","p_raw":0.8058337500858558,"decimal":1.20,"break_even":0.8333333333333334,"model_ev":-0.03299949989697315,"kelly":0.0},
+        {"market":"1X2_DRAW","p_raw":0.13533908476075468,"decimal":6.50,"break_even":0.15384615384615385,"model_ev":-0.12029594905509455,"kelly":0.0},
+        {"market":"1X2_AWAY","p_raw":0.05882716515338958,"decimal":12.00,"break_even":0.08333333333333333,"model_ev":-0.2940740181593251,"kelly":0.0}
+      ]
+    }
+  ],
+  "canonical_primary_singles":[],
+  "canonical_secondary_parlays":[],
+  "canonical_total_stake_mxn_simulated":0.0,
+  "canonical_held_cash_from_budget":100.0,
+  "fractional_kelly_shadows":{
+    "FK15":{"total_stake_mxn":0.0},
+    "FK20":{"total_stake_mxn":0.0},
+    "FK25":{"total_stake_mxn":0.0}
+  },
+  "selection_conclusion":"NO_BET_JORNADA",
+  "notes":[
+    "All six accepted 1X2 price candidates have negative model EV.",
+    "V2.1 does not force deployment of the MXN100 ceiling.",
+    "No parlay is permitted because there are zero qualifying primary singles.",
+    "No J12 outcome was used in the calculations."
+  ]
+}
