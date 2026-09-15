@@ -1,0 +1,27 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J13",
+  "price_policy":"ONE_COMPLETE_SAME_BOOK_1X2_ROW_PER_FIXTURE_NO_CHERRY_PICKING",
+  "bookmaker":"Bet365",
+  "source_policy":"SportyTrader historical pre-match prediction pages with visible original publication timestamp before kickoff; subsequent modification timestamps do not replace the original pre-kickoff publication provenance.",
+  "promotion_eligibility":false,
+  "integrity_class":"PRICE_RESEARCH_COMPLETED_AFTER_VISIBLE_J13_OUTCOME_EXPOSURE_BUT_PRICES_SELECTED_ONLY_BY_PRE_KICKOFF_PROVENANCE",
+  "rows":[
+    {"fixture_id":"AP25J13-01","match":"Puebla FC vs Club Tijuana","kickoff_cdmx":"2025-10-17 19:00","home":2.30,"draw":3.30,"away":3.05,"source_published":"2025-10-17 16:24 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/puebla-tijuana-297531/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-02","match":"Atletico San Luis vs Atlas Guadalajara","kickoff_cdmx":"2025-10-17 21:00","home":1.79,"draw":3.80,"away":4.10,"source_published":"2025-10-17 18:09 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/san-luis-atlas-297215/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-03","match":"UANL Tigres vs Club Necaxa","kickoff_cdmx":"2025-10-17 21:00","home":1.45,"draw":4.50,"away":6.25,"source_published":"2025-10-17 16:39 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/tigres-uanl-necaxa-297293/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-04","match":"Santos Laguna vs Club Leon","kickoff_cdmx":"2025-10-18 17:00","home":2.40,"draw":3.70,"away":2.55,"source_published":"2025-10-18 09:18 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/santos-laguna-leon-297909/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-05","match":"FC Juarez vs CF Pachuca","kickoff_cdmx":"2025-10-18 17:00","home":2.50,"draw":3.25,"away":2.75,"source_published":"2025-10-18 10:53 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/fc-juarez-cf-pachuca-297267/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-06","match":"Deportivo Guadalajara vs Mazatlan FC","kickoff_cdmx":"2025-10-18 19:07","home":1.30,"draw":5.25,"away":8.00,"source_published":"2025-10-18 16:36 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/chivas-monarcas-morelia-297280/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-07","match":"CF Monterrey vs Pumas UNAM","kickoff_cdmx":"2025-10-18 19:00","home":1.62,"draw":3.90,"away":5.25,"source_published":"2025-10-18 14:32 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/monterrey-pumas-unam-297935/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-08","match":"Cruz Azul vs CF America","kickoff_cdmx":"2025-10-18 21:03","home":2.95,"draw":3.40,"away":2.25,"source_published":"2025-10-18 19:04 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/cruz-azul-america-de-mexico-297973/","classification":"VERIFIED_PRE_KICKOFF"},
+    {"fixture_id":"AP25J13-09","match":"Deportivo Toluca vs Gallos Blancos","kickoff_cdmx":"2025-10-18 17:00","home":1.19,"draw":6.50,"away":11.00,"source_published":"2025-10-18 12:44 displayed by SportyTrader","source_url":"https://www.sportytrader.com/es/pronosticos/deportivo-toluca-queretaro-297977/","classification":"VERIFIED_PRE_KICKOFF"}
+  ],
+  "notes":[
+    "Every accepted row is a complete Bet365 1X2 row shown on the same pre-match page.",
+    "No best-price mixing across bookmakers was used.",
+    "SportyTrader pages may display a later modification timestamp and current-season widgets; only the original publication timestamp and the frozen Bet365 row are used for price provenance.",
+    "No result, current standings widget, later form data or SportyTrader prediction probability is used by the selector."
+  ]
+}
