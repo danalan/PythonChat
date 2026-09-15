@@ -1,0 +1,65 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J13",
+  "promotion_eligibility":false,
+  "integrity_class":"MECHANICAL_REPLAY_RESEARCHER_VISIBLE_J13_OUTCOME_EXPOSURE_DURING_PRICE_RESEARCH",
+  "selection_freeze_commit":"5d60247b05236a7cd338900e280f9f2d1cb8ada2",
+  "results":[
+    {"fixture_id":"AP25J13-01","home":"Puebla FC","away":"Club Tijuana","home_goals":4,"away_goals":3},
+    {"fixture_id":"AP25J13-02","home":"Atletico San Luis","away":"Atlas Guadalajara","home_goals":2,"away_goals":0},
+    {"fixture_id":"AP25J13-03","home":"UANL Tigres","away":"Club Necaxa","home_goals":5,"away_goals":3},
+    {"fixture_id":"AP25J13-04","home":"Santos Laguna","away":"Club Leon","home_goals":2,"away_goals":0},
+    {"fixture_id":"AP25J13-05","home":"FC Juarez","away":"CF Pachuca","home_goals":2,"away_goals":2},
+    {"fixture_id":"AP25J13-09","home":"Deportivo Toluca","away":"Gallos Blancos","home_goals":4,"away_goals":0},
+    {"fixture_id":"AP25J13-07","home":"CF Monterrey","away":"Pumas UNAM","home_goals":1,"away_goals":1},
+    {"fixture_id":"AP25J13-06","home":"Deportivo Guadalajara","away":"Mazatlan FC","home_goals":2,"away_goals":0},
+    {"fixture_id":"AP25J13-08","home":"Cruz Azul","away":"CF America","home_goals":2,"away_goals":1}
+  ],
+  "canonical_v2_1":{
+    "opening_bankroll_mxn":437.3012159211471,
+    "tickets":[
+      {"selection":"Club Tijuana ML","stake":20.0,"odds":3.05,"result":"LOSS","return":0.0,"pnl":-20.0},
+      {"selection":"CF Pachuca ML","stake":10.0,"odds":2.75,"result":"LOSS","return":0.0,"pnl":-10.0},
+      {"selection":"Draw Chivas-Mazatlan","stake":10.0,"odds":5.25,"result":"LOSS","return":0.0,"pnl":-10.0},
+      {"selection":"Parlay Pachuca ML + Draw Chivas-Mazatlan","stake":5.0,"odds":14.4375,"result":"LOSS","return":0.0,"pnl":-5.0}
+    ],
+    "single_record":{"wins":0,"losses":3},
+    "parlay_record":{"wins":0,"losses":1},
+    "total_stake":45.0,
+    "total_return":0.0,
+    "pnl":-45.0,
+    "roi_on_stake":-1.0,
+    "closing_bankroll_mxn":392.3012159211471
+  },
+  "fractional_kelly_v2_2_shadow":{
+    "FK15":{"opening_bankroll":475.09201602517317,"total_stake":32.00297324065984,"total_return":0.0,"pnl":-32.00297324065984,"roi_on_stake":-1.0,"closing_bankroll":443.0890427845133},
+    "FK20":{"opening_bankroll":470.3155484227055,"total_stake":40.64198861230469,"total_return":0.0,"pnl":-40.64198861230469,"roi_on_stake":-1.0,"closing_bankroll":429.6735598104008},
+    "FK25":{"opening_bankroll":465.30994244189486,"total_stake":49.078310097672045,"total_return":0.0,"pnl":-49.078310097672045,"roi_on_stake":-1.0,"closing_bankroll":416.2316323442228}
+  },
+  "selected_single_calibration":{
+    "n":3,
+    "raw_brier":0.15553266976152608,
+    "shadow_brier":0.19109534560921496,
+    "raw_log_loss":0.4937610985084538,
+    "shadow_log_loss":0.5732515092711742,
+    "winner":"RAW_V0_1R"
+  },
+  "cumulative_selected_single_calibration_j1_to_j13":{
+    "n":39,
+    "raw_brier":0.18488723648598165,
+    "shadow_brier":0.20591139837909972,
+    "raw_log_loss":0.5559556521845267,
+    "shadow_log_loss":0.6033547356327202,
+    "winner":"RAW_V0_1R_CUMULATIVE"
+  },
+  "diagnostic_lessons":[
+    "All three approved singles lost and the Saturday parlay also lost; canonical J13 drawdown was the full MXN45 deployed, not the MXN100 ceiling.",
+    "The strongest ex-ante edge was Tijuana ML at +50.86% model EV and 24.81% full Kelly; a large modeled edge can still lose in a single match.",
+    "Pachuca ML barely cleared the 5% Kelly gate and lost via draw; no retrospective gate change is allowed.",
+    "Chivas-Mazatlan draw had +33.99% model EV and 7.998% Kelly and also lost; outcome does not invalidate the ex-ante calculation by itself.",
+    "Raw calibration beat shrink on all three selected-loss observations and retains the cumulative lead, but J13 cannot promote any model change because of visible outcome exposure during research.",
+    "Using timestamped SportyTrader pages allowed complete same-book Bet365 rows for all nine fixtures, a major price-recovery improvement compared with J10-J12."
+  ],
+  "result_sources":["EL PAIS Jornada 13 result grid","TUDN Jornada 13 result grid"]
+}
