@@ -1,0 +1,34 @@
+{
+  "experiment":"EXP-003",
+  "tournament":"Apertura 2025",
+  "jornada":"J12",
+  "promotion_eligibility":false,
+  "integrity_class":"EXTERNAL_PACKET_VISIBLE_J12_OUTCOME_EXPOSURE_BEFORE_SELECTION_FREEZE",
+  "global_cutoff":"2025-10-03T00:00:00-06:00",
+  "fixtures":[
+    {"fixture_id":"AP25J12-01","date":"2025-10-03","kickoff":"19:00","home":"Club Necaxa","away":"CF Pachuca"},
+    {"fixture_id":"AP25J12-02","date":"2025-10-03","kickoff":"21:00","home":"Mazatlán FC","away":"Atlético San Luis"},
+    {"fixture_id":"AP25J12-03","date":"2025-10-03","kickoff":"21:05","home":"Atlas Guadalajara","away":"FC Juárez"},
+    {"fixture_id":"AP25J12-04","date":"2025-10-04","kickoff":"17:00","home":"Gallos Blancos","away":"Puebla FC"},
+    {"fixture_id":"AP25J12-05","date":"2025-10-04","kickoff":"19:00","home":"Club León","away":"Deportivo Toluca"},
+    {"fixture_id":"AP25J12-06","date":"2025-10-04","kickoff":"19:00","home":"UANL Tigres","away":"Cruz Azul"},
+    {"fixture_id":"AP25J12-07","date":"2025-10-04","kickoff":"21:00","home":"CF América","away":"Santos Laguna"},
+    {"fixture_id":"AP25J12-08","date":"2025-10-05","kickoff":"19:00","home":"Pumas UNAM","away":"Deportivo Guadalajara"},
+    {"fixture_id":"AP25J12-09","date":"2025-10-05","kickoff":"21:05","home":"Club Tijuana","away":"CF Monterrey"}
+  ],
+  "accepted_exogenous_context":[
+    "Cruz Azul had four U20 national-team absences reported pre-kickoff: Emmanuel Ochoa, Jaziel Mendoza, Mateo Levy and Amaury Morales.",
+    "Pumas had Guillermo Martinez out, Aaron Ramsey out, and coach Efrain Juarez suspended pre-kickoff.",
+    "Guadalajara had Javier Hernandez and Daniel Aguirre returning; Roberto Alvarado, Alan Mozo and Erick Gutierrez out; Hugo Camberos and Yael Padilla on U20 duty.",
+    "Monterrey/Santos and other match context retained only as descriptive pre-kickoff reporting; no exogenous context is permitted to modify model probabilities under current governance."
+  ],
+  "rejected_packet_content":[
+    "All visible post-J12 result-revealing titles/URLs make this jornada permanently NO-PROMOTION.",
+    "Any post-kickoff injury or lineup source is rejected.",
+    "Same-day price rows without a reliable pre-kickoff timestamp are rejected under the stricter internal audit, even where the external packet labeled them PRE_KICKOFF_DATE_VERIFIED_TIME_UNAVAILABLE."
+  ],
+  "notes":[
+    "Internal ledger remains authoritative for standings/form/splits/rest and is not overwritten by external research.",
+    "Only independently defensible price rows are eligible for the selector."
+  ]
+}
