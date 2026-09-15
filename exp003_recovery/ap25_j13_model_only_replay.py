@@ -62,5 +62,6 @@ def main():
                   "Internal canonical ledger is authoritative for endogenous football data.",
                   "Fixture-date metadata incorporates the contemporary J13 schedule revision that moved Toluca-Queretaro to Oct.18; this does not alter training inputs or cutoff.",
                   "Promotion eligibility remains provisional until external research and selection freeze complete without visible J13 outcome exposure."]}
-    print("AP25_J13_MODEL_ONLY "+json.dumps(out,ensure_ascii=False,sort_keys=True),flush=True)
+    print("AP25_J13_MODEL_ONLY",flush=True)
+    print(json.dumps(out,ensure_ascii=False,sort_keys=True,indent=2),flush=True)
 if __name__=='__main__':main()
