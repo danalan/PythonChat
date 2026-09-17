@@ -1,0 +1,12 @@
+{
+  "request_id": "2026-09-16_1935",
+  "cutoff_local": "2026-09-16T19:35:00",
+  "timezone": "America/Mexico_City",
+  "targets": [["Puebla FC", "Atlante FC"]],
+  "model": "Vn-2026-DC-ENSEMBLE",
+  "governance": "DUAL_TRACK_LAB_V1.1",
+  "model_status": "SHADOW MODEL SIGNAL",
+  "execution_default": "SHADOW",
+  "real_authorized": false,
+  "note": "Frozen before external injuries/press/odds research for the 2026-09-16 daily cycle. Operational state run only; no architecture change and no production promotion."
+}
