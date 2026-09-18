@@ -1,3 +1,9 @@
+# GOVERNANCE CORRECTION — EXCLUDED FROM CANONICAL DAILY TRAINING
+
+Status: AUXILIARY_CORNERS_EXPERIMENT / NOT PART OF LENNON DAILY 20
+Correction timestamp: 2026-09-18
+Reason: Carlos corrected the cadence immediately after this artifact was created. "Entrenamiento de Lennon" is 20 parlays, not 30. The original P21-P30 artifact is preserved below for auditability but MUST NOT be merged into TEST 04 daily W/L, ROI, hit rate, calibration, or the canonical daily training count.
+
 # LENNON TEST 04B — 2026-09-18 — P21-P30 PROSPECTIVE ADDENDUM
 
 Status: FROZEN_MARKET_CONTEXT_SHADOW_ADDENDUM
