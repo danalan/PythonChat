@@ -1,7 +1,7 @@
 # LENNON Daily Prospective Training V2
 
 Effective: 2026-09-16
-Updated: 2026-09-17
+Updated: 2026-09-18
 Status: SHADOW / SIMULATED training protocol
 
 ## Primary training mode
@@ -139,3 +139,90 @@ The LENNON MARKET-UNIVERSE TEST 02 frozen on 2026-09-16 remains unchanged and va
 
 ## Governance
 Preserve all prior canon and records append-only. Fiscal/Claude is an adversarial governance reviewer, not a predictive signal. REAL and SIMULATED records must never be merged. The purpose is not daily hit-rate maximization. The purpose is clean prospective evidence about which leagues, market families, signals and portfolio constructions LENNON can predict reliably.
+
+## 2026-09-18 correction — valid 17-Sep same-day batch (TEST 03V)
+
+This section is append-only and corrects the scope interpretation of the earlier 2026-09-17 TEST 03 entry without deleting it.
+
+Two distinct 17-Sep artifacts must be kept separate:
+- the mixed-date artifact described above remains `INVALIDATED_CALENDAR_ERROR`;
+- a separate same-day SHADOW batch existed and is now registered as `TEST_03V_VALID_SAME_DAY`.
+
+### TEST 03V settlement summary
+- 20 SHADOW parlays x 3 legs.
+- MXN 25 SIM per ticket; MXN 500 total simulated exposure.
+- 30 unique forecast legs.
+- Parlay result: 8/20 won, 12/20 lost.
+- Unique-leg result: 23/30 won, 7/30 lost = 76.7% hit rate.
+- Winning tickets: P03, P07, P08, P10, P14, P15, P17, P19.
+- Losing unique legs:
+  1. Hoffenheim ML.
+  2. OFI–Hoffenheim BTTS Yes.
+  3. Besiktas–Marseille Under 3.5.
+  4. Juventus–NEC Under 3.5.
+  5. Lillestrøm ML.
+  6. Manchester City Over 4.5 corners.
+  7. Málaga/Draw double chance.
+- The proposed-odds settlement implies MXN 751.25 return, +MXN 251.25 diagnostic P&L and +50.25% diagnostic ROI on MXN 500. These are `DIAGNOSTIC_COUNTERFACTUAL`, NOT official ROI/P&L, because final bookmaker odds were not frozen.
+
+The predictive learning unit remains the unique leg. The 8/20 parlay result measures construction and dependency; it must not be treated as 20 independent forecasting observations.
+
+## V2.1 prospective safeguards — effective 2026-09-18
+
+No numerical model weight, probability parameter, decay constant or calibration transform is retuned from TEST 03V alone. The session creates prospective safeguards and hypotheses only.
+
+### 1. BLOWOUT_TAIL_GATE
+For totals and BTTS candidates, explicitly audit one-sided and blowout score paths before selection, especially 3-0, 4-0, 4-1 and 5-0 type outcomes.
+
+A totals/BTTS leg must record:
+- whether a strong favorite can win comfortably without the market condition surviving;
+- whether an under is vulnerable to one team's scoring ceiling rather than only the combined mean;
+- whether BTTS depends too heavily on the weaker side scoring;
+- a comparison with ML/DNB/AH/team-total alternatives when the matchup is asymmetric.
+
+If the tail audit materially contradicts the leg, downgrade or reject it. This is a selection gate, not a retrospective probability adjustment.
+
+### 2. CORNER_SPECIFIC_GATE
+Never infer a corner over from expected dominance, possession, shots, goals, or win probability alone.
+
+A corner leg requires corner-specific evidence or a legitimate corner-model output, plus a score-state sensitivity check. Early leads can reduce attacking pressure and corner accumulation; therefore game-state risk must be recorded explicitly.
+
+Until the separate corner model clears its promotion criteria, unsupported corner opinions remain `EXPERIMENTAL` or `MARKET/CONTEXT`, not `MODEL_SIGNAL`.
+
+### 3. PORTFOLIO_CONTAMINATION_GATE
+Beginning with the next daily SHADOW freeze:
+- max reuse of any unique leg: 2 tickets;
+- `EXPERIMENTAL` or `LOW_EVIDENCE` leg: max 1 ticket;
+- never repeat the same pair of legs across two parlays;
+- max one tail-sensitive/experimental leg per parlay;
+- do not place two legs from the same fixture in one parlay unless the test is explicitly designed as a correlation experiment;
+- track fixture-level exposure separately from leg-level exposure.
+
+This gate is intended to stop one forecast error from mechanically destroying a large share of the portfolio.
+
+### 4. FREEZE_QUALITY_GATE
+Official SHADOW ROI/P&L requires final frozen odds before kickoff. If only proposed odds exist, settlement may be reported only as `DIAGNOSTIC_COUNTERFACTUAL`.
+
+Where mathematically legitimate, freeze:
+- p_model and model version;
+- contemporaneous odds;
+- no-vig p_market;
+- edge versus market;
+- signal provenance;
+- cutoff timestamp;
+- closing odds/CLV when later obtainable.
+
+Missing p_model must remain missing. Market-implied probability is never relabeled as model probability.
+
+### 5. New diagnostic subflags
+In addition to the existing postmortem taxonomy, record:
+- `TAIL_BLOWOUT`: the selected market failed through an asymmetric/high-score tail;
+- `SCORE_STATE`: game-state evolution invalidated the pre-match mechanism, especially for corners;
+- `PORTFOLIO_AMPLIFICATION`: one unique-leg miss damaged multiple tickets.
+
+### 6. Hypotheses opened from TEST 03V
+- `H17-01`: Under/BTTS selections in asymmetric fixtures are under-audited for blowout and one-sided tails.
+- `H17-02`: Expected team dominance is an unreliable proxy for team-corner overs without corner-specific and score-state evidence.
+- `H17-03`: Portfolio construction is amplifying a small number of unique-leg errors into too many ticket losses.
+
+These hypotheses are NOT promoted rules about predictive probabilities. They must be evaluated prospectively and by market family. Minimum evidence target before quantitative promotion: 50 unique prospective legs in the affected family, with calibration/market comparison where probabilities and odds are available.
