@@ -226,3 +226,30 @@ In addition to the existing postmortem taxonomy, record:
 - `H17-03`: Portfolio construction is amplifying a small number of unique-leg errors into too many ticket losses.
 
 These hypotheses are NOT promoted rules about predictive probabilities. They must be evaluated prospectively and by market family. Minimum evidence target before quantitative promotion: 50 unique prospective legs in the affected family, with calibration/market comparison where probabilities and odds are available.
+
+
+## 2026-09-18 operating terminology + 30-parlay cadence override
+
+Effective from this instruction forward:
+
+### Canonical user terminology
+- "Entrenamiento de Lennon", "Lennon modo entrenamiento", or equivalent means the DAILY SHADOW training portfolio.
+- The DAILY SHADOW training portfolio is now exactly 30 parlays, normally 3 legs each.
+- Default accounting remains MXN 25 SIM per SHADOW ticket unless a future explicit instruction changes it. At 30 tickets this equals MXN 750 simulated daily exposure.
+- "Apuesta con Lennon" means a REAL-money wager that Carlos confirms he actually placed. REAL wagers remain in a separate ledger and never merge with SHADOW results.
+
+### Corner-market expansion
+Corners remain a distinct model family and must not be inferred from possession, favoritism, shots or goals alone.
+Beginning with the next clean daily freeze:
+- scan corners as an active training family on every supported slate;
+- target roughly 25%-35% of SHADOW leg slots as CORNERS when same-day market availability and evidence quality support it;
+- do not force a corner quota when the market/data are poor;
+- every corner leg requires corner-specific evidence plus score-state sensitivity;
+- corner legs may be tagged ACTIVE_TRAINING once source quality, line semantics and corner-specific evidence are adequate for prospective learning;
+- ACTIVE_TRAINING does NOT mean REAL_ELIGIBLE;
+- REAL execution still requires the full Real-money execution gate, including legitimate model support, contemporaneous odds, no-vig market comparison where calculable, estimated edge, context audit, Fiscal review and immutable pre-kickoff freeze.
+
+C0.1-CORNERS-NB-ENSEMBLE remains unpromoted for REAL use until source-of-record, missingness, mapping and prospective calibration requirements are satisfied.
+
+### 2026-09-18 transition
+TEST 04 P01-P20 remains immutable at its original morning cutoff. To honor the new 30-ticket cadence without rewriting history, a separate prospective addendum TEST 04B P21-P30 was frozen later on 18-Sep using only fixtures that had not kicked off at that second cutoff. The two sub-freezes must always retain their distinct timestamps.
