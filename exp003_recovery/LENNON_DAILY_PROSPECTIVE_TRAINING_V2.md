@@ -253,3 +253,48 @@ C0.1-CORNERS-NB-ENSEMBLE remains unpromoted for REAL use until source-of-record,
 
 ### 2026-09-18 transition
 TEST 04 P01-P20 remains immutable at its original morning cutoff. To honor the new 30-ticket cadence without rewriting history, a separate prospective addendum TEST 04B P21-P30 was frozen later on 18-Sep using only fixtures that had not kicked off at that second cutoff. The two sub-freezes must always retain their distinct timestamps.
+
+
+## 2026-09-18 correction — cadence restored to 20 SHADOW parlays
+
+This section supersedes the immediately prior "30-parlay cadence override" for all future operation.
+
+### Canonical cadence
+- "Entrenamiento de Lennon", "Lennon modo entrenamiento", or equivalent = exactly 20 DAILY SHADOW parlays.
+- Default structure remains 3 legs per parlay unless a future explicit test says otherwise.
+- Default accounting returns to MXN25 SIM per ticket = MXN500 simulated daily exposure.
+- "Apuesta con Lennon" continues to mean a REAL-money wager Carlos confirms he actually placed. REAL and SHADOW remain strictly separate.
+
+### Training competition universe
+Daily SHADOW training must deliberately explore beyond Liga MX:
+- core known leagues: Liga MX, Argentina Primera, Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Champions League, Europa League and other major UEFA competitions when scheduled;
+- exploratory European tiers: second divisions and comparable lower professional tiers such as Championship, Segunda División, 2. Bundesliga, Serie B, Ligue 2 and other data-supported leagues;
+- the purpose of lower-tier inclusion is hypothesis discovery by league/market family, not an assumption that they "have more goals";
+- segment all learning by competition, market family and odds band so high-scoring or low-scoring hypotheses can be tested prospectively rather than assumed.
+
+### REAL-money league scope
+For now, REAL "Apuesta con Lennon" candidates are restricted to competitions Carlos knows and can independently read:
+- Liga MX;
+- Argentina Primera;
+- LaLiga;
+- Premier League;
+- UEFA Champions League;
+- UEFA Europa League;
+- other major UEFA competitions explicitly familiar to Carlos.
+Unknown/lower-tier competitions remain SHADOW-only unless Carlos later expands the REAL scope.
+
+### Explanation standard for REAL candidates
+Every REAL candidate must explain separately:
+1. model evidence and model version, when a legitimate model output exists;
+2. statistical evidence;
+3. contextual evidence: injuries, suspensions, lineups, rest, tactical/manager changes and relevant current form;
+4. market evidence: contemporaneous odds, no-vig p_market where possible and plausible alternatives;
+5. explicit contradictory evidence and failure paths;
+6. why the selected market beats the alternatives.
+If p_model does not exist, state that explicitly. Never replace it with market probability or narrative confidence.
+
+### Corners
+Corners remain ACTIVE_TRAINING and should receive meaningful representation in SHADOW portfolios when data quality supports them. The target of roughly 25%-35% of leg slots remains an experiment, not a forced quota. Promotion to REAL still requires the full REAL execution gate and sufficient prospective validation.
+
+### TEST 04B disposition
+The later P21-P30 addendum created under the mistaken 30-ticket instruction is retained for audit history but is EXCLUDED from the canonical "training of Lennon" count and from the daily 20-parlay performance headline. It may be analyzed only as a separate AUXILIARY_CORNERS_EXPERIMENT and must never be merged with TEST 04 P01-P20.
