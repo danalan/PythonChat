@@ -298,3 +298,28 @@ Corners remain ACTIVE_TRAINING and should receive meaningful representation in S
 
 ### TEST 04B disposition
 The later P21-P30 addendum created under the mistaken 30-ticket instruction is retained for audit history but is EXCLUDED from the canonical "training of Lennon" count and from the daily 20-parlay performance headline. It may be analyzed only as a separate AUXILIARY_CORNERS_EXPERIMENT and must never be merged with TEST 04 P01-P20.
+
+
+## 2026-09-18 external-consult standard — Squawka + context separation
+
+Effective immediately for all user-facing LENNON prediction reports.
+
+### Mandatory prediction report blocks
+When a current prediction is presented, report the evidence in separate blocks:
+1. **LENNON** — actual executed model name/version, p_model only when the model was genuinely run, fair odds, bookmaker price and price-gate result.
+2. **SQUAWKA** — current Squawka prediction/probability or model signal when available, with source timestamp/URL when practical. This is EXTERNAL_SIGNAL:SQUAWKA, never LENNON p_model.
+3. **CONTEXT** — injuries, suspensions, expected/confirmed lineups, rest, travel, tactical/manager changes, current form and other pre-cutoff evidence, tagged SUPPORT / NEUTRAL / CONTRADICT_LOW / CONTRADICT_HIGH / UNKNOWN.
+4. **MARKET** — contemporaneous bookmaker odds, raw implied probability and no-vig estimate when feasible.
+5. **SYNTHESIS** — explain agreement or disagreement among model, Squawka, context and market. Do not average probabilities merely because multiple sources exist.
+
+### Squawka role
+- Squawka is an external benchmark/consult, not a training target and not a predictive feature inside Vn-2026 unless a future validated architecture change explicitly adds it.
+- Agreement with LENNON is corroboration, not proof.
+- Disagreement opens a diagnostic question: identify whether the difference comes from current context, market price, model scope, sample/data differences or methodological assumptions.
+- Squawka output never overwrites LENNON probability and never receives automatic numeric weight.
+- Post-match learning is still based on frozen pre-match evidence and actual outcomes, not on whether LENNON agreed with Squawka.
+
+### Current context usage in LENNON
+The LENNON system **does use context**, but the current Vn-2026-DC-ENSEMBLE core probability model does **not** numerically ingest narrative context such as injuries, lineup news, motivation, travel or tactical changes. Context is a separate decision layer applied after p_model is frozen. It may SUPPORT, downgrade, quarantine or veto a candidate, but it must not add/subtract arbitrary percentage points from p_model.
+
+This separation remains mandatory until a context feature is formally specified, prospectively validated and promoted through governance.
