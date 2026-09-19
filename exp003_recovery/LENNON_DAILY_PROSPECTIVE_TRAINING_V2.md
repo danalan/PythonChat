@@ -323,3 +323,27 @@ When a current prediction is presented, report the evidence in separate blocks:
 The LENNON system **does use context**, but the current Vn-2026-DC-ENSEMBLE core probability model does **not** numerically ingest narrative context such as injuries, lineup news, motivation, travel or tactical changes. Context is a separate decision layer applied after p_model is frozen. It may SUPPORT, downgrade, quarantine or veto a candidate, but it must not add/subtract arbitrary percentage points from p_model.
 
 This separation remains mandatory until a context feature is formally specified, prospectively validated and promoted through governance.
+
+
+## 2026-09-18 prospective portfolio lesson — damage concentration gate
+
+Effective for the next LENNON training cycle. This is a portfolio-governance update, NOT a probability/model retune.
+
+### Evidence from TEST 04 partial settlement
+- At the 19:00 CDMX checkpoint, 21 unique legs were resolved: 15W-6L (71.43%).
+- Yet 10 of 11 settled parlays had already lost.
+- The main mechanism was PORTFOLIO_AMPLIFICATION: a small number of losing forecasts, especially clustered around the same fixture/thesis, contaminated many tickets.
+
+### New mandatory PORTFOLIO_DAMAGE_GATE
+Before freezing any 20-parlay SHADOW portfolio:
+1. Build a fixture-exposure map and a failure-thesis map for every candidate leg.
+2. Tag each leg with its principal plausible failure mode(s), e.g. FAVORITE_COLLAPSE, EARLY_GOAL, BLOWOUT_HIGH, WEAK_SIDE_NO_SCORE, SCORE_STATE, LOW_ODDS_TAIL, LINEUP_SHOCK, or other explicit mechanisms.
+3. Run an adverse-scenario stress test before freeze: for each fixture, evaluate plausible score-state outcomes and count how many tickets would die.
+4. No single plausible fixture outcome should be able to destroy more than 30% of the 20-ticket portfolio (max 6 tickets) unless the entire slate is explicitly labeled LOW_DIVERSITY and kept SHADOW-only.
+5. No single failure thesis should dominate more than 30% of ticket exposure. If it does, diversify by fixture, market family, or thesis before freeze.
+6. Distinct legs from the same fixture are NOT automatically diversified if they depend on the same underlying match thesis.
+7. Preserve the existing max leg reuse = 2 and no repeated leg-pair rule; the new gate sits above those controls rather than replacing them.
+8. Prefer broader fixture coverage over manufacturing extra markets from a small number of matches. Scan more leagues/fixtures first.
+
+### Learning rule
+TEST 04 creates a portfolio hypothesis, not a predictive parameter change. The hypothesis is: high unique-leg hit rate can still produce poor parlay performance when failure modes are clustered. Future sessions must track whether PORTFOLIO_DAMAGE_GATE reduces ticket-loss amplification while preserving unique-leg calibration.
