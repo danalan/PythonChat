@@ -1,0 +1,17 @@
+{
+  "request_id": "2026-09-18_1837_tomorrow",
+  "cutoff_local": "2026-09-18T18:37:31",
+  "timezone": "America/Mexico_City",
+  "targets": [
+    ["Atlas Guadalajara", "Pumas UNAM"],
+    ["Atlético San Luis", "Club Necaxa"],
+    ["CF Monterrey", "Cruz Azul"],
+    ["CF América", "Deportivo Guadalajara"]
+  ],
+  "model": "Vn-2026-DC-ENSEMBLE",
+  "governance": "DUAL_TRACK_LAB_V1.1",
+  "model_status": "SHADOW MODEL SIGNAL",
+  "execution_default": "SHADOW",
+  "real_authorized": false,
+  "note": "Tomorrow Liga MX candidate pass requested by user. Model run is independent of market prices; prices were externally inspected earlier in the same conversation and must be treated as market/context evidence, not as clean blind model selection."
+}
