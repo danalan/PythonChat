@@ -1,0 +1,15 @@
+{
+  "request_id": "2026-09-18_1831",
+  "cutoff_local": "2026-09-18T18:31:36",
+  "timezone": "America/Mexico_City",
+  "targets": [
+    ["Puebla FC", "Atlante FC"],
+    ["FC Juárez", "UANL Tigres"]
+  ],
+  "model": "Vn-2026-DC-ENSEMBLE",
+  "governance": "DUAL_TRACK_LAB_V1.1",
+  "model_status": "SHADOW MODEL SIGNAL",
+  "execution_default": "SHADOW",
+  "real_authorized": false,
+  "note": "User requested actual LENNON pass for three-leg REAL candidate. This request runs only supported Liga MX fixtures. Tepatitlan-Mineros is outside the current Liga MX Vn model scope and must remain non-model context evidence."
+}
