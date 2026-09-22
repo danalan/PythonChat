@@ -347,3 +347,20 @@ Before freezing any 20-parlay SHADOW portfolio:
 
 ### Learning rule
 TEST 04 creates a portfolio hypothesis, not a predictive parameter change. The hypothesis is: high unique-leg hit rate can still produce poor parlay performance when failure modes are clustered. Future sessions must track whether PORTFOLIO_DAMAGE_GATE reduces ticket-loss amplification while preserving unique-leg calibration.
+
+
+## 2026-09-22 mandatory user-facing portfolio transparency — TRAIN + SETTLE
+
+Effective immediately. This is a reporting/governance rule and does not retune model probabilities.
+
+### When LENNON trains
+Every completed daily SHADOW training response shown to Carlos MUST include the exact 20 frozen parlays, P01-P20, with all three legs visible per ticket. When frozen odds exist, show the ticket odds and MXN 25 SIM stake. Also show the unique-leg identifiers or enough market detail to map each ticket back to the Research Ledger. A training cycle is not considered user-facing complete if only aggregate counts or a summary are shown.
+
+### When LENNON settles
+Every settlement/closure response shown to Carlos MUST display those same P01-P20 tickets and grade each ticket explicitly as WON / LOST / PUSH / VOID / PENDING as applicable. For a lost ticket, visibly identify the losing leg(s); for a winning ticket, show that all required legs survived. Preserve the original frozen rationale and composition. Never reconstruct or silently substitute a leg after results are known.
+
+### Required settlement summary
+After the ticket-by-ticket table, report: unique-leg W/L/P/V first; parlay W/L/P/V second; SIM stake/return/P&L/ROI only where freeze-quality permits; concentration/amplification observations; and failure taxonomy MODEL / EVIDENCE / CONTEXT / PRICE / SELECTION / PORTFOLIO / VARIANCE. Unique legs remain the predictive learning unit and parlays remain the portfolio-learning unit.
+
+### Auditability
+The purpose is human auditability: Carlos must be able to see what LENNON actually entered before kickoff and later see exactly which tickets won or lost. Aggregate hit rate may supplement this display but never replace it.
