@@ -364,3 +364,34 @@ After the ticket-by-ticket table, report: unique-leg W/L/P/V first; parlay W/L/P
 
 ### Auditability
 The purpose is human auditability: Carlos must be able to see what LENNON actually entered before kickoff and later see exactly which tickets won or lost. Aggregate hit rate may supplement this display but never replace it.
+
+## 2026-10-05 superseding operating mode — PREDICTION-FIRST V1
+
+This section supersedes the prior requirement that a completed daily learning cycle must contain exactly 20 parlays. It does not erase historical portfolio tests.
+
+### Primary daily learning
+- Generate prospective UNIQUE market forecasts for every same-day fixture with sufficient data.
+- NO BET never means NO PREDICTION.
+- A day remains a valid predictive training day with zero SHADOW tickets and zero parlays.
+- Freeze genuine p_model only when a Lennon engine actually executes.
+- Store forecast probabilities, model/version, inputs/provenance, cutoff, observed market price when available and later result.
+
+### Execution classification
+Each forecast is classified after prediction as FORECAST_ONLY, SHADOW_EDGE or REAL_CANDIDATE.
+SHADOW requires a prospectively frozen rule.
+REAL still requires Carlos's explicit written authorization per ticket before kickoff.
+
+### Portfolio status
+P01-P20 is now secondary. Build it only when evidence/diversity permits. Portfolio gates continue to apply, but failure to build a 20-ticket portfolio must not suppress valid individual forecasts.
+
+### Validation priority
+Model improvement is judged primarily by Brier/log loss/calibration and incremental information against the no-vig/closing market, then CLV and SHADOW ROI when frozen executable prices exist.
+
+## 2026-10-13 GitHub restoration
+
+GitHub access is restored. For future LENNON daily runs:
+- CP remains the canonical learning record.
+- MASTER remains the canonical betting/decision ledger.
+- GitHub again receives protocol/model artifacts, immutable freezes, settlements, audits and periodic canonical snapshots.
+- Never claim GitHub sync until the written file/commit is read back successfully.
+- Do not reconstruct missing pre-match freezes merely to fill GitHub history.
