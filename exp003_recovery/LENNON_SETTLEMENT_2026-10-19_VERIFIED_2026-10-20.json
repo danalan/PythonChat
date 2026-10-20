@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-20",
+  "prior": "2026-10-19",
+  "source": "CP Prediction Ledger rows 312-332; telefootball Oct19, AFA for RIE-UNI, 365scores for SAR-BAR",
+  "n": 21,
+  "hits": 8,
+  "brier": 0.6489319257,
+  "logloss": 1.071108945,
+  "settlements": [
+    {
+      "id": "LEN20-SET19-TOT-COV",
+      "fixture": "2026-10-19|TOT-COV",
+      "score": "3-1",
+      "brier": 0.618676,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-GET-RAY",
+      "fixture": "2026-10-19|GET-RAY",
+      "score": "1-1",
+      "brier": 0.837924,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-MON-CAG",
+      "fixture": "2026-10-19|MON-CAG",
+      "score": "4-0",
+      "brier": 0.974295,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-PAR-TOR",
+      "fixture": "2026-10-19|PAR-TOR",
+      "score": "0-3",
+      "brier": 0.46011,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-BRA-GIL",
+      "fixture": "2026-10-19|BRA-GIL",
+      "score": "1-2",
+      "brier": 0.611679,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-SAR-BAR",
+      "fixture": "2026-10-19|SAR-BAR",
+      "score": "1-1",
+      "brier": 0.748496,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-NOB-CCO",
+      "fixture": "2026-10-19|NOB-CCO",
+      "score": "2-1",
+      "brier": 0.577852,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-TRA-BES",
+      "fixture": "2026-10-19|TRA-BES",
+      "score": "2-0",
+      "brier": 0.493897,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-DER-STP",
+      "fixture": "2026-10-19|DER-STP",
+      "score": "1-0",
+      "brier": 0.795185,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-WAT-GAL",
+      "fixture": "2026-10-19|WAT-GAL",
+      "score": "3-2",
+      "brier": 0.639194,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-FRA-IAA",
+      "fixture": "2026-10-19|FRA-IAA",
+      "score": "2-4",
+      "brier": 0.67432,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-VOL-FCS",
+      "fixture": "2026-10-19|VOL-FCS",
+      "score": "1-2",
+      "brier": 0.38848,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-WIS-RAD",
+      "fixture": "2026-10-19|WIS-RAD",
+      "score": "1-0",
+      "brier": 0.438669,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-VIB-MID",
+      "fixture": "2026-10-19|VIB-MID",
+      "score": "1-2",
+      "brier": 0.599985,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-CEL-TEN",
+      "fixture": "2026-10-19|CEL-TEN",
+      "score": "1-1",
+      "brier": 0.8542,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-ROD-MON",
+      "fixture": "2026-10-19|ROD-MON",
+      "score": "0-3",
+      "brier": 0.413134,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-JAJ-DEG",
+      "fixture": "2026-10-19|JAJ-DEG",
+      "score": "2-1",
+      "brier": 0.610629,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-JPS-DOR",
+      "fixture": "2026-10-19|JPS-DOR",
+      "score": "0-1",
+      "brier": 0.835053,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-JUT-ROD",
+      "fixture": "2026-10-19|JUT-ROD",
+      "score": "1-2",
+      "brier": 0.408045,
+      "hit": true
+    },
+    {
+      "id": "LEN20-SET19-RIE-UNI",
+      "fixture": "2026-10-19|RIE-UNI",
+      "score": "1-1",
+      "brier": 0.747194,
+      "hit": false
+    },
+    {
+      "id": "LEN20-SET19-VAR-HEL",
+      "fixture": "2026-10-19|VAR-HEL",
+      "score": "0-0",
+      "brier": 0.900554,
+      "hit": false
+    }
+  ]
+}
