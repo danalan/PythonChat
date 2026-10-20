@@ -1,0 +1,1873 @@
+{
+  "run_id": "LENNON-2026-10-20-PREDICTION_FIRST",
+  "status": "SINGLE_DAILY_RUN",
+  "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+  "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+  "model": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+  "limitations": [
+    "UCL-only coverage; not exhaustive worldwide",
+    "unadjusted cross-league goal rates can badly misstate probabilities",
+    "mixed domestic and continental competitions",
+    "source archives not independently verified at point in time",
+    "no timestamped bookmaker quote, so no validated edge/CLV/ROI",
+    "Corners, Shots/SOT and Cards engines not executed",
+    "no real or simulated bets"
+  ],
+  "forecast_count": 9,
+  "forecasts": [
+    {
+      "id": "LEN20-FEN-SLA",
+      "fixture_key": "2026-10-20|FEN-SLA",
+      "competition": "UEFA Champions League",
+      "home": "Fenerbahçe",
+      "away": "Slavia Praha",
+      "kickoffCDMX": "2026-10-20 10:45",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 16,
+        "homeGA": 6,
+        "homeN": 6,
+        "awayGF": 10,
+        "awayGA": 4,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/fenerbahce-vs-sk-slavia-praha-head-to-head-20-10-2026/",
+        "exclusions_note": "last_six_mixed_competitive",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 1.666666667,
+      "lambdaAway": 1.333333333,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.453300657,
+          "draw": 0.239374532,
+          "away": 0.307324812
+        },
+        "double_chance": {
+          "12": 0.760625468,
+          "1X": 0.692675188,
+          "X2": 0.546699343
+        },
+        "dnb": {
+          "home": 0.595957768,
+          "away": 0.404042232,
+          "push": 0.239374532
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.453300657,
+            "halfwin": 0,
+            "push": 0.239374532,
+            "halfloss": 0,
+            "loss": 0.307324812
+          },
+          "1": {
+            "win": 0.692675188,
+            "halfwin": 0,
+            "push": 0.173124304,
+            "halfloss": 0,
+            "loss": 0.134200507
+          },
+          "-1": {
+            "win": 0.236895276,
+            "halfwin": 0,
+            "push": 0.21640538,
+            "halfloss": 0,
+            "loss": 0.546699343
+          },
+          "-0.75": {
+            "win": 0.453300657,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.546699343
+          },
+          "-0.5": {
+            "win": 0.453300657,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.546699343
+          },
+          "-0.25": {
+            "win": 0.453300657,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.239374532,
+            "loss": 0.307324812
+          },
+          "0.25": {
+            "win": 0.453300657,
+            "halfwin": 0.239374532,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.307324812
+          },
+          "0.5": {
+            "win": 0.692675188,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.307324812
+          },
+          "0.75": {
+            "win": 0.692675188,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.307324812
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.950212932,
+            "under": 0.049787068
+          },
+          "1.5": {
+            "over": 0.800851727,
+            "under": 0.199148273
+          },
+          "2.5": {
+            "over": 0.576809919,
+            "under": 0.423190081
+          },
+          "3.5": {
+            "over": 0.352768111,
+            "under": 0.647231889
+          },
+          "4.5": {
+            "over": 0.184736755,
+            "under": 0.815263245
+          }
+        },
+        "btts": {
+          "yes": 0.597314327,
+          "no": 0.402685673
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.811124397,
+              "under": 0.188875603
+            },
+            "1.5": {
+              "over": 0.496331726,
+              "under": 0.503668274
+            },
+            "2.5": {
+              "over": 0.2340045,
+              "under": 0.7659955
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.736402862,
+              "under": 0.263597138
+            },
+            "1.5": {
+              "over": 0.384940011,
+              "under": 0.615059989
+            },
+            "2.5": {
+              "over": 0.150631444,
+              "under": 0.849368556
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.11063793
+          },
+          {
+            "score": "2-1",
+            "p": 0.092198275
+          },
+          {
+            "score": "1-0",
+            "p": 0.082978447
+          },
+          {
+            "score": "1-2",
+            "p": 0.07375862
+          },
+          {
+            "score": "2-0",
+            "p": 0.069148706
+          },
+          {
+            "score": "0-1",
+            "p": 0.066382758
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-SAB-DOR",
+      "fixture_key": "2026-10-20|SAB-DOR",
+      "competition": "UEFA Champions League",
+      "home": "Sabah Baku",
+      "away": "Borussia Dortmund",
+      "kickoffCDMX": "2026-10-20 10:45",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 12,
+        "homeGA": 5,
+        "homeN": 6,
+        "awayGF": 9,
+        "awayGA": 5,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/sabah-baku-vs-borussia-dortmund-head-to-head-20-10-2026/",
+        "exclusions_note": "last_six_mixed_competitive",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 1.416666667,
+      "lambdaAway": 1.166666667,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.427361109,
+          "draw": 0.262435463,
+          "away": 0.310203428
+        },
+        "double_chance": {
+          "12": 0.737564537,
+          "1X": 0.689796572,
+          "X2": 0.572638891
+        },
+        "dnb": {
+          "home": 0.579421987,
+          "away": 0.420578013,
+          "push": 0.262435463
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.427361109,
+            "halfwin": 0,
+            "push": 0.262435463,
+            "halfloss": 0,
+            "loss": 0.310203428
+          },
+          "1": {
+            "win": 0.689796572,
+            "halfwin": 0,
+            "push": 0.183981881,
+            "halfloss": 0,
+            "loss": 0.126221547
+          },
+          "-1": {
+            "win": 0.20395454,
+            "halfwin": 0,
+            "push": 0.223406569,
+            "halfloss": 0,
+            "loss": 0.572638891
+          },
+          "-0.75": {
+            "win": 0.427361109,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.572638891
+          },
+          "-0.5": {
+            "win": 0.427361109,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.572638891
+          },
+          "-0.25": {
+            "win": 0.427361109,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.262435463,
+            "loss": 0.310203428
+          },
+          "0.25": {
+            "win": 0.427361109,
+            "halfwin": 0.262435463,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.310203428
+          },
+          "0.5": {
+            "win": 0.689796572,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.310203428
+          },
+          "0.75": {
+            "win": 0.689796572,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.310203428
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.924478155,
+            "under": 0.075521845
+          },
+          "1.5": {
+            "over": 0.729380057,
+            "under": 0.270619943
+          },
+          "2.5": {
+            "over": 0.477378347,
+            "under": 0.522621653
+          },
+          "3.5": {
+            "over": 0.260376874,
+            "under": 0.739623126
+          },
+          "4.5": {
+            "over": 0.12023009,
+            "under": 0.87976991
+          }
+        },
+        "btts": {
+          "yes": 0.521597546,
+          "no": 0.478402454
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.757478925,
+              "under": 0.242521075
+            },
+            "1.5": {
+              "over": 0.413907403,
+              "under": 0.586092597
+            },
+            "2.5": {
+              "over": 0.170544241,
+              "under": 0.829455759
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.688596776,
+              "under": 0.311403224
+            },
+            "1.5": {
+              "over": 0.325293015,
+              "under": 0.674706985
+            },
+            "2.5": {
+              "over": 0.113365821,
+              "under": 0.886634179
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.124820826
+          },
+          {
+            "score": "1-0",
+            "p": 0.10698928
+          },
+          {
+            "score": "2-1",
+            "p": 0.088414752
+          },
+          {
+            "score": "0-1",
+            "p": 0.088108819
+          },
+          {
+            "score": "2-0",
+            "p": 0.075784073
+          },
+          {
+            "score": "0-0",
+            "p": 0.075521845
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-ROM-SLO",
+      "fixture_key": "2026-10-20|ROM-SLO",
+      "competition": "UEFA Champions League",
+      "home": "AS Roma",
+      "away": "Slovan Bratislava",
+      "kickoffCDMX": "2026-10-20 13:00",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 10,
+        "homeGA": 7,
+        "homeN": 6,
+        "awayGF": 12,
+        "awayGA": 9,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/as-roma-vs-slovan-bratislava-head-to-head-20-10-2026/",
+        "exclusions_note": "last_six_mixed_competitive",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 1.583333333,
+      "lambdaAway": 1.583333333,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.382171165,
+          "draw": 0.23565767,
+          "away": 0.382171165
+        },
+        "double_chance": {
+          "12": 0.76434233,
+          "1X": 0.617828835,
+          "X2": 0.617828835
+        },
+        "dnb": {
+          "home": 0.5,
+          "away": 0.5,
+          "push": 0.23565767
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.382171165,
+            "halfwin": 0,
+            "push": 0.23565767,
+            "halfloss": 0,
+            "loss": 0.382171165
+          },
+          "1": {
+            "win": 0.617828835,
+            "halfwin": 0,
+            "push": 0.193613851,
+            "halfloss": 0,
+            "loss": 0.188557314
+          },
+          "-1": {
+            "win": 0.188557314,
+            "halfwin": 0,
+            "push": 0.193613851,
+            "halfloss": 0,
+            "loss": 0.617828835
+          },
+          "-0.75": {
+            "win": 0.382171165,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.617828835
+          },
+          "-0.5": {
+            "win": 0.382171165,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.617828835
+          },
+          "-0.25": {
+            "win": 0.382171165,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.23565767,
+            "loss": 0.382171165
+          },
+          "0.25": {
+            "win": 0.382171165,
+            "halfwin": 0.23565767,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.382171165
+          },
+          "0.5": {
+            "win": 0.617828835,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.382171165
+          },
+          "0.75": {
+            "win": 0.617828835,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.382171165
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.957856156,
+            "under": 0.042143844
+          },
+          "1.5": {
+            "over": 0.824400652,
+            "under": 0.175599348
+          },
+          "2.5": {
+            "over": 0.613096103,
+            "under": 0.386903897
+          },
+          "3.5": {
+            "over": 0.390052413,
+            "under": 0.609947587
+          },
+          "4.5": {
+            "over": 0.213476158,
+            "under": 0.786523842
+          }
+        },
+        "btts": {
+          "yes": 0.631564528,
+          "no": 0.368435472
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.794710342,
+              "under": 0.205289658
+            },
+            "1.5": {
+              "over": 0.469668385,
+              "under": 0.530331615
+            },
+            "2.5": {
+              "over": 0.212343501,
+              "under": 0.787656499
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.794710342,
+              "under": 0.205289658
+            },
+            "1.5": {
+              "over": 0.469668385,
+              "under": 0.530331615
+            },
+            "2.5": {
+              "over": 0.212343501,
+              "under": 0.787656499
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.105652274
+          },
+          {
+            "score": "1-2",
+            "p": 0.083641384
+          },
+          {
+            "score": "2-1",
+            "p": 0.083641384
+          },
+          {
+            "score": "0-1",
+            "p": 0.066727752
+          },
+          {
+            "score": "1-0",
+            "p": 0.066727752
+          },
+          {
+            "score": "2-2",
+            "p": 0.066216096
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-POR-PSV",
+      "fixture_key": "2026-10-20|POR-PSV",
+      "competition": "UEFA Champions League",
+      "home": "FC Porto",
+      "away": "PSV Eindhoven",
+      "kickoffCDMX": "2026-10-20 13:00",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 11,
+        "homeGA": 8,
+        "homeN": 5,
+        "awayGF": 10,
+        "awayGA": 8,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/fc-porto-vs-psv-eindhoven-head-to-head-20-10-2026/",
+        "exclusions_note": "Porto friendly 3-1 excluded, five competitive; PSV six",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 1.766666667,
+      "lambdaAway": 1.633333333,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.414724538,
+          "draw": 0.225937076,
+          "away": 0.359338386
+        },
+        "double_chance": {
+          "12": 0.774062924,
+          "1X": 0.640661614,
+          "X2": 0.585275462
+        },
+        "dnb": {
+          "home": 0.535776259,
+          "away": 0.464223741,
+          "push": 0.225937076
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.414724538,
+            "halfwin": 0,
+            "push": 0.225937076,
+            "halfloss": 0,
+            "loss": 0.359338386
+          },
+          "1": {
+            "win": 0.640661614,
+            "halfwin": 0,
+            "push": 0.181520085,
+            "halfloss": 0,
+            "loss": 0.177818301
+          },
+          "-1": {
+            "win": 0.218386487,
+            "halfwin": 0,
+            "push": 0.196338051,
+            "halfloss": 0,
+            "loss": 0.585275462
+          },
+          "-0.75": {
+            "win": 0.414724538,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.585275462
+          },
+          "-0.5": {
+            "win": 0.414724538,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.585275462
+          },
+          "-0.25": {
+            "win": 0.414724538,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.225937076,
+            "loss": 0.359338386
+          },
+          "0.25": {
+            "win": 0.414724538,
+            "halfwin": 0.225937076,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.359338386
+          },
+          "0.5": {
+            "win": 0.640661614,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.359338386
+          },
+          "0.75": {
+            "win": 0.640661614,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.359338386
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.96662673,
+            "under": 0.03337327
+          },
+          "1.5": {
+            "over": 0.853157612,
+            "under": 0.146842388
+          },
+          "2.5": {
+            "over": 0.660260112,
+            "under": 0.339739888
+          },
+          "3.5": {
+            "over": 0.441642945,
+            "under": 0.558357055
+          },
+          "4.5": {
+            "over": 0.255818353,
+            "under": 0.744181647
+          }
+        },
+        "btts": {
+          "yes": 0.667193994,
+          "no": 0.332806006
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.829098287,
+              "under": 0.170901713
+            },
+            "1.5": {
+              "over": 0.527171928,
+              "under": 0.472828072
+            },
+            "2.5": {
+              "over": 0.260470311,
+              "under": 0.739529689
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.804722437,
+              "under": 0.195277563
+            },
+            "1.5": {
+              "over": 0.485769085,
+              "under": 0.514230915
+            },
+            "2.5": {
+              "over": 0.225290513,
+              "under": 0.774709487
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.096300425
+          },
+          {
+            "score": "2-1",
+            "p": 0.085065375
+          },
+          {
+            "score": "1-2",
+            "p": 0.078645347
+          },
+          {
+            "score": "2-2",
+            "p": 0.069470056
+          },
+          {
+            "score": "1-0",
+            "p": 0.058959444
+          },
+          {
+            "score": "0-1",
+            "p": 0.054509674
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-LIV-VIL",
+      "fixture_key": "2026-10-20|LIV-VIL",
+      "competition": "UEFA Champions League",
+      "home": "Liverpool",
+      "away": "Villarreal",
+      "kickoffCDMX": "2026-10-20 13:00",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 12,
+        "homeGA": 8,
+        "homeN": 6,
+        "awayGF": 10,
+        "awayGA": 6,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://www.skysports.com/football/liverpool-vs-villarreal/577635",
+        "exclusions_note": "last six scored/conceded reconstructed from pre-match form list",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 1.5,
+      "lambdaAway": 1.5,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.378499823,
+          "draw": 0.243000354,
+          "away": 0.378499823
+        },
+        "double_chance": {
+          "12": 0.756999646,
+          "1X": 0.621500177,
+          "X2": 0.621500177
+        },
+        "dnb": {
+          "home": 0.5,
+          "away": 0.5,
+          "push": 0.243000354
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.378499823,
+            "halfwin": 0,
+            "push": 0.243000354,
+            "halfloss": 0,
+            "loss": 0.378499823
+          },
+          "1": {
+            "win": 0.621500177,
+            "halfwin": 0,
+            "push": 0.196826713,
+            "halfloss": 0,
+            "loss": 0.18167311
+          },
+          "-1": {
+            "win": 0.18167311,
+            "halfwin": 0,
+            "push": 0.196826713,
+            "halfloss": 0,
+            "loss": 0.621500177
+          },
+          "-0.75": {
+            "win": 0.378499823,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.621500177
+          },
+          "-0.5": {
+            "win": 0.378499823,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.621500177
+          },
+          "-0.25": {
+            "win": 0.378499823,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.243000354,
+            "loss": 0.378499823
+          },
+          "0.25": {
+            "win": 0.378499823,
+            "halfwin": 0.243000354,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.378499823
+          },
+          "0.5": {
+            "win": 0.621500177,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.378499823
+          },
+          "0.75": {
+            "win": 0.621500177,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.378499823
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.950212932,
+            "under": 0.049787068
+          },
+          "1.5": {
+            "over": 0.800851727,
+            "under": 0.199148273
+          },
+          "2.5": {
+            "over": 0.576809919,
+            "under": 0.423190081
+          },
+          "3.5": {
+            "over": 0.352768111,
+            "under": 0.647231889
+          },
+          "4.5": {
+            "over": 0.184736755,
+            "under": 0.815263245
+          }
+        },
+        "btts": {
+          "yes": 0.603526748,
+          "no": 0.396473252
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.77686984,
+              "under": 0.22313016
+            },
+            "1.5": {
+              "over": 0.4421746,
+              "under": 0.5578254
+            },
+            "2.5": {
+              "over": 0.191153169,
+              "under": 0.808846831
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.77686984,
+              "under": 0.22313016
+            },
+            "1.5": {
+              "over": 0.4421746,
+              "under": 0.5578254
+            },
+            "2.5": {
+              "over": 0.191153169,
+              "under": 0.808846831
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.112020904
+          },
+          {
+            "score": "1-2",
+            "p": 0.084015678
+          },
+          {
+            "score": "2-1",
+            "p": 0.084015678
+          },
+          {
+            "score": "0-1",
+            "p": 0.074680603
+          },
+          {
+            "score": "1-0",
+            "p": 0.074680603
+          },
+          {
+            "score": "2-2",
+            "p": 0.063011758
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-MCI-AEK",
+      "fixture_key": "2026-10-20|MCI-AEK",
+      "competition": "UEFA Champions League",
+      "home": "Manchester City",
+      "away": "AEK Athens",
+      "kickoffCDMX": "2026-10-20 13:00",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 19,
+        "homeGA": 9,
+        "homeN": 6,
+        "awayGF": 15,
+        "awayGA": 6,
+        "awayN": 5,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/manchester-city-vs-aek-athens-head-to-head-20-10-2026/",
+        "exclusions_note": "AEK friendly 2-0 excluded; five competitive",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 2.183333333,
+      "lambdaAway": 2.25,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.389904148,
+          "draw": 0.195680525,
+          "away": 0.414415327
+        },
+        "double_chance": {
+          "12": 0.804319475,
+          "1X": 0.585584673,
+          "X2": 0.610095852
+        },
+        "dnb": {
+          "home": 0.484762784,
+          "away": 0.515237216,
+          "push": 0.195680525
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.389904148,
+            "halfwin": 0,
+            "push": 0.195680525,
+            "halfloss": 0,
+            "loss": 0.414415327
+          },
+          "1": {
+            "win": 0.585584673,
+            "halfwin": 0,
+            "push": 0.174475042,
+            "halfloss": 0,
+            "loss": 0.239940285
+          },
+          "-1": {
+            "win": 0.220598736,
+            "halfwin": 0,
+            "push": 0.169305411,
+            "halfloss": 0,
+            "loss": 0.610095852
+          },
+          "-0.75": {
+            "win": 0.389904148,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.610095852
+          },
+          "-0.5": {
+            "win": 0.389904148,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.610095852
+          },
+          "-0.25": {
+            "win": 0.389904148,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.195680525,
+            "loss": 0.414415327
+          },
+          "0.25": {
+            "win": 0.389904148,
+            "halfwin": 0.195680525,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.414415327
+          },
+          "0.5": {
+            "win": 0.585584673,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.414415327
+          },
+          "0.75": {
+            "win": 0.585584673,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.414415327
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.988125159,
+            "under": 0.011874841
+          },
+          "1.5": {
+            "over": 0.935480032,
+            "under": 0.064519968
+          },
+          "2.5": {
+            "over": 0.818783332,
+            "under": 0.181216668
+          },
+          "3.5": {
+            "over": 0.646331542,
+            "under": 0.353668458
+          },
+          "4.5": {
+            "over": 0.455197476,
+            "under": 0.544802524
+          }
+        },
+        "btts": {
+          "yes": 0.793810263,
+          "no": 0.206189737
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.887334647,
+              "under": 0.112665353
+            },
+            "1.5": {
+              "over": 0.641348627,
+              "under": 0.358651373
+            },
+            "2.5": {
+              "over": 0.372813888,
+              "under": 0.627186112
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.894600775,
+              "under": 0.105399225
+            },
+            "1.5": {
+              "over": 0.65745252,
+              "under": 0.34254748
+            },
+            "2.5": {
+              "over": 0.390660733,
+              "under": 0.609339267
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "2-2",
+            "p": 0.071642863
+          },
+          {
+            "score": "1-2",
+            "p": 0.06562705
+          },
+          {
+            "score": "2-1",
+            "p": 0.063682545
+          },
+          {
+            "score": "1-1",
+            "p": 0.058335156
+          },
+          {
+            "score": "2-3",
+            "p": 0.053732147
+          },
+          {
+            "score": "3-2",
+            "p": 0.052140084
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-NAP-BOD",
+      "fixture_key": "2026-10-20|NAP-BOD",
+      "competition": "UEFA Champions League",
+      "home": "Napoli",
+      "away": "Bodø/Glimt",
+      "kickoffCDMX": "2026-10-20 13:00",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 6,
+        "homeGA": 6,
+        "homeN": 6,
+        "awayGF": 16,
+        "awayGA": 7,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/napoli-vs-bodo-glimt-head-to-head-20-10-2026/",
+        "exclusions_note": "last six competitive",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 1.083333333,
+      "lambdaAway": 1.833333333,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.222493106,
+          "draw": 0.228315654,
+          "away": 0.549191241
+        },
+        "double_chance": {
+          "12": 0.771684346,
+          "1X": 0.450808759,
+          "X2": 0.777506894
+        },
+        "dnb": {
+          "home": 0.288321393,
+          "away": 0.711678607,
+          "push": 0.228315654
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.222493106,
+            "halfwin": 0,
+            "push": 0.228315654,
+            "halfloss": 0,
+            "loss": 0.549191241
+          },
+          "1": {
+            "win": 0.450808759,
+            "halfwin": 0,
+            "push": 0.236310805,
+            "halfloss": 0,
+            "loss": 0.312880436
+          },
+          "-1": {
+            "win": 0.082854903,
+            "halfwin": 0,
+            "push": 0.139638203,
+            "halfloss": 0,
+            "loss": 0.777506894
+          },
+          "-0.75": {
+            "win": 0.222493106,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.777506894
+          },
+          "-0.5": {
+            "win": 0.222493106,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.777506894
+          },
+          "-0.25": {
+            "win": 0.222493106,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.228315654,
+            "loss": 0.549191241
+          },
+          "0.25": {
+            "win": 0.222493106,
+            "halfwin": 0.228315654,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.549191241
+          },
+          "0.5": {
+            "win": 0.450808759,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.549191241
+          },
+          "0.75": {
+            "win": 0.450808759,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.549191241
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.945886234,
+            "under": 0.054113766
+          },
+          "1.5": {
+            "over": 0.788054416,
+            "under": 0.211945584
+          },
+          "2.5": {
+            "over": 0.557883014,
+            "under": 0.442116986
+          },
+          "3.5": {
+            "over": 0.334105263,
+            "under": 0.665894737
+          },
+          "4.5": {
+            "over": 0.170933986,
+            "under": 0.829066014
+          }
+        },
+        "btts": {
+          "yes": 0.555768595,
+          "no": 0.444231405
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.661534575,
+              "under": 0.338465425
+            },
+            "1.5": {
+              "over": 0.294863698,
+              "under": 0.705136302
+            },
+            "2.5": {
+              "over": 0.096250306,
+              "under": 0.903749694
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.840120254,
+              "under": 0.159879746
+            },
+            "1.5": {
+              "over": 0.547007386,
+              "under": 0.452992614
+            },
+            "2.5": {
+              "over": 0.278320591,
+              "under": 0.721679409
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.107475952
+          },
+          {
+            "score": "0-1",
+            "p": 0.099208571
+          },
+          {
+            "score": "1-2",
+            "p": 0.098519623
+          },
+          {
+            "score": "0-2",
+            "p": 0.09094119
+          },
+          {
+            "score": "1-3",
+            "p": 0.060206436
+          },
+          {
+            "score": "1-0",
+            "p": 0.058623247
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": {
+          "operator": "MarathonBet",
+          "odds": [
+            1.6,
+            4.55,
+            5.05
+          ],
+          "source": "https://en.24score.com/football/match/880288-napoli-bodo_glimt",
+          "status": "NO_TIMESTAMP_NOT_VALID_FOR_EDGE"
+        }
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-PSG-BAR",
+      "fixture_key": "2026-10-20|PSG-BAR",
+      "competition": "UEFA Champions League",
+      "home": "Paris Saint-Germain",
+      "away": "FC Barcelona",
+      "kickoffCDMX": "2026-10-20 13:00",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 19,
+        "homeGA": 6,
+        "homeN": 6,
+        "awayGF": 26,
+        "awayGA": 8,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/paris-saint-germain-vs-fc-barcelona-head-to-head-20-10-2026/",
+        "exclusions_note": "last six competitive",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": null
+      },
+      "lambdaHome": 2.25,
+      "lambdaAway": 2.666666667,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.336222469,
+          "draw": 0.182297597,
+          "away": 0.481479934
+        },
+        "double_chance": {
+          "12": 0.817702403,
+          "1X": 0.518520066,
+          "X2": 0.663777531
+        },
+        "dnb": {
+          "home": 0.411179505,
+          "away": 0.588820495,
+          "push": 0.182297597
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.336222469,
+            "halfwin": 0,
+            "push": 0.182297597,
+            "halfloss": 0,
+            "loss": 0.481479934
+          },
+          "1": {
+            "win": 0.518520066,
+            "halfwin": 0,
+            "push": 0.176825613,
+            "halfloss": 0,
+            "loss": 0.304654321
+          },
+          "-1": {
+            "win": 0.187025858,
+            "halfwin": 0,
+            "push": 0.149196611,
+            "halfloss": 0,
+            "loss": 0.663777531
+          },
+          "-0.75": {
+            "win": 0.336222469,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.663777531
+          },
+          "-0.5": {
+            "win": 0.336222469,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.663777531
+          },
+          "-0.25": {
+            "win": 0.336222469,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.182297597,
+            "loss": 0.481479934
+          },
+          "0.25": {
+            "win": 0.336222469,
+            "halfwin": 0.182297597,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.481479934
+          },
+          "0.5": {
+            "win": 0.518520066,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.481479934
+          },
+          "0.75": {
+            "win": 0.518520066,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.481479934
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.992676498,
+            "under": 0.007323502
+          },
+          "1.5": {
+            "over": 0.956669281,
+            "under": 0.043330719
+          },
+          "2.5": {
+            "over": 0.868151537,
+            "under": 0.131848463
+          },
+          "3.5": {
+            "over": 0.723080792,
+            "under": 0.276919208
+          },
+          "4.5": {
+            "over": 0.544764667,
+            "under": 0.455235333
+          }
+        },
+        "btts": {
+          "yes": 0.832440826,
+          "no": 0.167559174
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.894600775,
+              "under": 0.105399225
+            },
+            "1.5": {
+              "over": 0.65745252,
+              "under": 0.34254748
+            },
+            "2.5": {
+              "over": 0.390660733,
+              "under": 0.609339267
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.930516549,
+              "under": 0.069483451
+            },
+            "1.5": {
+              "over": 0.745227346,
+              "under": 0.254772654
+            },
+            "2.5": {
+              "over": 0.498175075,
+              "under": 0.501824925
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "2-2",
+            "p": 0.065911517
+          },
+          {
+            "score": "1-2",
+            "p": 0.058588015
+          },
+          {
+            "score": "2-3",
+            "p": 0.058588015
+          },
+          {
+            "score": "1-3",
+            "p": 0.052078236
+          },
+          {
+            "score": "2-1",
+            "p": 0.049433638
+          },
+          {
+            "score": "3-2",
+            "p": 0.049433638
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    },
+    {
+      "id": "LEN20-STU-ATM",
+      "fixture_key": "2026-10-20|STU-ATM",
+      "competition": "UEFA Champions League",
+      "home": "VfB Stuttgart",
+      "away": "Atlético de Madrid",
+      "kickoffCDMX": "2026-10-20 13:00",
+      "cutoffCDMX": "2026-10-20T08:44:21-06:00",
+      "freezePreparedCDMX": "2026-10-20T08:47:37-06:00",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "provenance": "LENNON PURE, independently computed from observed team goal counts, NOT external model probabilities",
+      "features": {
+        "homeGF": 6,
+        "homeGA": 4,
+        "homeN": 5,
+        "awayGF": 14,
+        "awayGA": 2,
+        "awayN": 6,
+        "feature_scope": "last_5_or_6_competitive_matches_all_competitions",
+        "source_url": "https://tips.gg/article/vfb-stuttgart-vs-atletico-madrid-head-to-head-20-10-2026/",
+        "exclusions_note": "Stuttgart two friendlies excluded, add 12 Sep Hoffenheim 1-2 from Reuters; Atletico six competitive",
+        "league_strength_adjusted": false,
+        "point_in_time_archive_verified": false,
+        "formula": "lambdaH=(homeGF/homeN+awayGA/awayN)/2;lambdaA=(awayGF/awayN+homeGA/homeN)/2; independent Poisson",
+        "additional_source": "https://www.reuters.com/sports/soccer/"
+      },
+      "lambdaHome": 0.766666667,
+      "lambdaAway": 1.566666667,
+      "p_model": {
+        "one_x_two": {
+          "home": 0.18246343,
+          "draw": 0.253456062,
+          "away": 0.564080508
+        },
+        "double_chance": {
+          "12": 0.746543938,
+          "1X": 0.435919492,
+          "X2": 0.81753657
+        },
+        "dnb": {
+          "home": 0.244410838,
+          "away": 0.755589162,
+          "push": 0.253456062
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.18246343,
+            "halfwin": 0,
+            "push": 0.253456062,
+            "halfloss": 0,
+            "loss": 0.564080508
+          },
+          "1": {
+            "win": 0.435919492,
+            "halfwin": 0,
+            "push": 0.263367763,
+            "halfloss": 0,
+            "loss": 0.300712745
+          },
+          "-1": {
+            "win": 0.053581333,
+            "halfwin": 0,
+            "push": 0.128882097,
+            "halfloss": 0,
+            "loss": 0.81753657
+          },
+          "-0.75": {
+            "win": 0.18246343,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.81753657
+          },
+          "-0.5": {
+            "win": 0.18246343,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.81753657
+          },
+          "-0.25": {
+            "win": 0.18246343,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.253456062,
+            "loss": 0.564080508
+          },
+          "0.25": {
+            "win": 0.18246343,
+            "halfwin": 0.253456062,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.564080508
+          },
+          "0.5": {
+            "win": 0.435919492,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.564080508
+          },
+          "0.75": {
+            "win": 0.435919492,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.564080508
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.903028032,
+            "under": 0.096971968
+          },
+          "1.5": {
+            "over": 0.676760107,
+            "under": 0.323239893
+          },
+          "2.5": {
+            "over": 0.412780861,
+            "under": 0.587219139
+          },
+          "3.5": {
+            "over": 0.20746367,
+            "under": 0.79253633
+          },
+          "4.5": {
+            "over": 0.087695309,
+            "under": 0.912304691
+          }
+        },
+        "btts": {
+          "yes": 0.423673124,
+          "no": 0.576326876
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.53544098,
+              "under": 0.46455902
+            },
+            "1.5": {
+              "over": 0.179279064,
+              "under": 0.820720936
+            },
+            "2.5": {
+              "over": 0.04275033,
+              "under": 0.95724967
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.791260177,
+              "under": 0.208739823
+            },
+            "1.5": {
+              "over": 0.464234453,
+              "under": 0.535765547
+            },
+            "2.5": {
+              "over": 0.208064303,
+              "under": 0.791935697
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "0-1",
+            "p": 0.15192275
+          },
+          {
+            "score": "0-2",
+            "p": 0.119006154
+          },
+          {
+            "score": "1-1",
+            "p": 0.116474108
+          },
+          {
+            "score": "0-0",
+            "p": 0.096971968
+          },
+          {
+            "score": "1-2",
+            "p": 0.091238051
+          },
+          {
+            "score": "1-0",
+            "p": 0.074345175
+          }
+        ]
+      },
+      "market": {
+        "observed_1x2_odds": null,
+        "market_no_vig": null,
+        "closing_price": null,
+        "operator": null,
+        "quote_timestamp": null,
+        "unverified_context_quote": null
+      },
+      "edge_validated": false,
+      "classification": "FORECAST_ONLY",
+      "shadow_ticket": null,
+      "real_ticket": null
+    }
+  ]
+}
