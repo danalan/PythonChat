@@ -1,0 +1,3 @@
+# LENNON 2026-10-22 audit
+Cutoff 2026-10-22T08:25:06-06:00, before fixture research. This is a prospective run, not a reconstructed historical freeze.
+Prior day: 12 verified settlements, 1 (Llaneros vs Deportivo Cali) pending reliable final result. 32 new forecasts appended to CP Prediction Ledger rows 380-411, readback verified. Model LENNON PURE GFGA independent Poisson V0.1; source-visible five-game form, no cross-league adjustment. No verified operator/time-stamped market prices. 0 SHADOW, 0 REAL, no new MASTER tickets. CP is canonical for per-fixture frozen probabilities and provenance. GitHub readback is required before sync success.
