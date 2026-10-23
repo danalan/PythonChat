@@ -1,0 +1,2780 @@
+{
+  "date": "2026-10-23",
+  "cutoff": "2026-10-23T08:51:06-06:00",
+  "part": "A",
+  "original_prospective": true,
+  "forecasts": [
+    {
+      "id": "LEN23-IPS-NFO",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Premier League|IPS-NFO",
+      "competition": "Premier League",
+      "kickoff_cdmx": "2026-10-23T13:00:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1.5,
+      "lambda_away": 1.4000000000000001,
+      "p_model_1x2": {
+        "home": 0.3986111731052298,
+        "draw": 0.24741317544899752,
+        "away": 0.3539756514457726
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.5540368014428195,
+        "under": 0.4459631985571805
+      },
+      "p_model_btts": {
+        "yes": 0.585296095966371,
+        "no": 0.414703904033629
+      },
+      "p_model_dc": {
+        "12": 0.7525868245510023,
+        "1X": 0.6460243485542273,
+        "X2": 0.6013888268947701
+      },
+      "p_model_dnb": {
+        "home": 0.5296547323201459,
+        "away": 0.4703452676798541,
+        "push": 0.24741317544899752
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.44217459962892547,
+          "under": 0.5578254003710745
+        },
+        "away": {
+          "over": 0.40816728654014456,
+          "under": 0.5918327134598554
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Ipswich Town",
+          "away": "Nottingham Forest",
+          "homeGF": 9,
+          "homeGA": 11,
+          "homeN": 5,
+          "awayGF": 3,
+          "awayGA": 6,
+          "awayN": 5,
+          "scope": "last5_league",
+          "source_url": "https://www.easy2bets.com/match/ipswich-town-vs-nottingham-forest-2026-10-23",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.39861117310522753,
+            "halfwin": 0,
+            "push": 0.2474131754489961,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "1": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0.19173873153046214,
+            "halfloss": 0,
+            "loss": 0.16223691991530834
+          },
+          "-1.5": {
+            "win": 0.19317681789401814,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.806823182105976
+          },
+          "-1.25": {
+            "win": 0.19317681789401814,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.20543435521120942,
+            "loss": 0.6013888268947666
+          },
+          "-1": {
+            "win": 0.19317681789401814,
+            "halfwin": 0,
+            "push": 0.20543435521120942,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.75": {
+            "win": 0.19317681789401814,
+            "halfwin": 0.20543435521120942,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.5": {
+            "win": 0.39861117310522753,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.25": {
+            "win": 0.39861117310522753,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.2474131754489961,
+            "loss": 0.35397565144577053
+          },
+          "0.25": {
+            "win": 0.39861117310522753,
+            "halfwin": 0.2474131754489961,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "0.5": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "0.75": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.19173873153046214,
+            "loss": 0.16223691991530834
+          },
+          "1.25": {
+            "win": 0.6460243485542236,
+            "halfwin": 0.19173873153046214,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.16223691991530834
+          },
+          "1.5": {
+            "win": 0.8377630800846858,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.16223691991530834
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9449767799435927,
+            "under": 0.05502322005640722
+          },
+          "1.5": {
+            "over": 0.7854094417800118,
+            "under": 0.21459055821998815
+          },
+          "2.5": {
+            "over": 0.5540368014428195,
+            "under": 0.4459631985571805
+          },
+          "3.5": {
+            "over": 0.3303765824502003,
+            "under": 0.6696234175497997
+          },
+          "4.5": {
+            "over": 0.16822292368055114,
+            "under": 0.8317770763194489
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.7768698398515702,
+              "under": 0.22313016014842982
+            },
+            "1.5": {
+              "over": 0.44217459962892547,
+              "under": 0.5578254003710745
+            },
+            "2.5": {
+              "over": 0.19115316946194194,
+              "under": 0.8088468305380581
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.7534030360583935,
+              "under": 0.24659696394160643
+            },
+            "1.5": {
+              "over": 0.40816728654014456,
+              "under": 0.5918327134598554
+            },
+            "2.5": {
+              "over": 0.16650226187737016,
+              "under": 0.8334977381226298
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.11554876211845518
+          },
+          {
+            "score": "2-1",
+            "p": 0.08666157158884137
+          },
+          {
+            "score": "1-0",
+            "p": 0.08253483008461082
+          },
+          {
+            "score": "1-2",
+            "p": 0.08088413348291862
+          },
+          {
+            "score": "0-1",
+            "p": 0.07703250807897011
+          },
+          {
+            "score": "2-0",
+            "p": 0.061901122563458116
+          },
+          {
+            "score": "2-2",
+            "p": 0.060663100112188964
+          },
+          {
+            "score": "0-0",
+            "p": 0.05502322005640722
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-ALA-MGA",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|La Liga|ALA-MGA",
+      "competition": "La Liga",
+      "kickoff_cdmx": "2026-10-23T13:00:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1.4000000000000001,
+      "lambda_away": 1.2,
+      "p_model_1x2": {
+        "home": 0.41560548465406066,
+        "draw": 0.2623428952382465,
+        "away": 0.3220516201076929
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.48157042406394945,
+        "under": 0.5184295759360505
+      },
+      "p_model_btts": {
+        "yes": 0.5264824023605252,
+        "no": 0.47351759763947476
+      },
+      "p_model_dc": {
+        "12": 0.7376571047617535,
+        "1X": 0.6779483798923072,
+        "X2": 0.5843945153459393
+      },
+      "p_model_dnb": {
+        "home": 0.5634128404257582,
+        "away": 0.4365871595742418,
+        "push": 0.2623428952382465
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.40816728654014456,
+          "under": 0.5918327134598554
+        },
+        "away": {
+          "over": 0.33737273379315535,
+          "under": 0.6626272662068446
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Deportivo Alavés",
+          "away": "Málaga",
+          "homeGF": 3,
+          "homeGA": 7,
+          "homeN": 5,
+          "awayGF": 5,
+          "awayGA": 11,
+          "awayN": 5,
+          "scope": "last5_league",
+          "source_url": "https://www.easy2bets.com/match/deportivo-alaves-vs-malaga-2026-10-23",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.41560548465405983,
+            "halfwin": 0,
+            "push": 0.26234289523824617,
+            "halfloss": 0,
+            "loss": 0.3220516201076928
+          },
+          "1": {
+            "win": 0.6779483798923063,
+            "halfwin": 0,
+            "push": 0.188154751007267,
+            "halfloss": 0,
+            "loss": 0.13389686910042567
+          },
+          "-1.5": {
+            "win": 0.1960916084789152,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.8039083915210836
+          },
+          "-1.25": {
+            "win": 0.1960916084789152,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.21951387617514476,
+            "loss": 0.5843945153459389
+          },
+          "-1": {
+            "win": 0.1960916084789152,
+            "halfwin": 0,
+            "push": 0.21951387617514476,
+            "halfloss": 0,
+            "loss": 0.5843945153459389
+          },
+          "-0.75": {
+            "win": 0.1960916084789152,
+            "halfwin": 0.21951387617514476,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5843945153459389
+          },
+          "-0.5": {
+            "win": 0.41560548465405983,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5843945153459389
+          },
+          "-0.25": {
+            "win": 0.41560548465405983,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.26234289523824617,
+            "loss": 0.3220516201076928
+          },
+          "0.25": {
+            "win": 0.41560548465405983,
+            "halfwin": 0.26234289523824617,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.3220516201076928
+          },
+          "0.5": {
+            "win": 0.6779483798923063,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.3220516201076928
+          },
+          "0.75": {
+            "win": 0.6779483798923063,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.188154751007267,
+            "loss": 0.13389686910042567
+          },
+          "1.25": {
+            "win": 0.6779483798923063,
+            "halfwin": 0.188154751007267,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.13389686910042567
+          },
+          "1.5": {
+            "win": 0.8661031308995732,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.13389686910042567
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9257264217856661,
+            "under": 0.07427357821433388
+          },
+          "1.5": {
+            "over": 0.732615118428398,
+            "under": 0.26738488157160195
+          },
+          "2.5": {
+            "over": 0.48157042406394945,
+            "under": 0.5184295759360505
+          },
+          "3.5": {
+            "over": 0.2639983556147608,
+            "under": 0.7360016443852392
+          },
+          "4.5": {
+            "over": 0.12257651112278822,
+            "under": 0.8774234888772118
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.7534030360583935,
+              "under": 0.24659696394160643
+            },
+            "1.5": {
+              "over": 0.40816728654014456,
+              "under": 0.5918327134598554
+            },
+            "2.5": {
+              "over": 0.16650226187737016,
+              "under": 0.8334977381226298
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.6988057880877978,
+              "under": 0.30119421191220214
+            },
+            "1.5": {
+              "over": 0.33737273379315535,
+              "under": 0.6626272662068446
+            },
+            "2.5": {
+              "over": 0.12051290121636982,
+              "under": 0.8794870987836302
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.12477961140008093
+          },
+          {
+            "score": "1-0",
+            "p": 0.10398300950006743
+          },
+          {
+            "score": "0-1",
+            "p": 0.08912829385720066
+          },
+          {
+            "score": "2-1",
+            "p": 0.08734572798005666
+          },
+          {
+            "score": "1-2",
+            "p": 0.07486776684004856
+          },
+          {
+            "score": "0-0",
+            "p": 0.07427357821433388
+          },
+          {
+            "score": "2-0",
+            "p": 0.07278810665004722
+          },
+          {
+            "score": "0-2",
+            "p": 0.05347697631432039
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-TOR-MNZ",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Serie A|TOR-MNZ",
+      "competition": "Serie A",
+      "kickoff_cdmx": "2026-10-23T12:45:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1.8,
+      "lambda_away": 1.6,
+      "p_model_1x2": {
+        "home": 0.42884637010153304,
+        "draw": 0.22532027432866966,
+        "away": 0.34583335556979733
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.6602601118038806,
+        "under": 0.33973988819611944
+      },
+      "p_model_btts": {
+        "yes": 0.6661778637440842,
+        "no": 0.33382213625591584
+      },
+      "p_model_dc": {
+        "12": 0.7746797256713304,
+        "1X": 0.6541666444302027,
+        "X2": 0.571153629898467
+      },
+      "p_model_dnb": {
+        "home": 0.5535789254454784,
+        "away": 0.4464210745545216,
+        "push": 0.22532027432866966
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.5371631129795577,
+          "under": 0.46283688702044234
+        },
+        "away": {
+          "over": 0.47506905321389603,
+          "under": 0.524930946786104
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Torino",
+          "away": "Monza",
+          "homeGF": 8,
+          "homeGA": 5,
+          "homeN": 5,
+          "awayGF": 11,
+          "awayGA": 10,
+          "awayN": 5,
+          "scope": "last5_competitive_excludes_friendly",
+          "source_url": "https://www.easy2bets.com/match/torino-vs-monza-2026-10-23",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.42884637010148186,
+            "halfwin": 0,
+            "push": 0.22532027432864274,
+            "halfloss": 0,
+            "loss": 0.34583335556975603
+          },
+          "1": {
+            "win": 0.6541666444301243,
+            "halfwin": 0,
+            "push": 0.17746221774376844,
+            "halfloss": 0,
+            "loss": 0.1683711378259876
+          },
+          "-1.5": {
+            "win": 0.2292013751397423,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.7707986248601383
+          },
+          "-1.25": {
+            "win": 0.2292013751397423,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.19964499496173949,
+            "loss": 0.5711536298983988
+          },
+          "-1": {
+            "win": 0.2292013751397423,
+            "halfwin": 0,
+            "push": 0.19964499496173949,
+            "halfloss": 0,
+            "loss": 0.5711536298983988
+          },
+          "-0.75": {
+            "win": 0.2292013751397423,
+            "halfwin": 0.19964499496173949,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5711536298983988
+          },
+          "-0.5": {
+            "win": 0.42884637010148186,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5711536298983988
+          },
+          "-0.25": {
+            "win": 0.42884637010148186,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.22532027432864274,
+            "loss": 0.34583335556975603
+          },
+          "0.25": {
+            "win": 0.42884637010148186,
+            "halfwin": 0.22532027432864274,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.34583335556975603
+          },
+          "0.5": {
+            "win": 0.6541666444301243,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.34583335556975603
+          },
+          "0.75": {
+            "win": 0.6541666444301243,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.17746221774376844,
+            "loss": 0.1683711378259876
+          },
+          "1.25": {
+            "win": 0.6541666444301243,
+            "halfwin": 0.17746221774376844,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.1683711378259876
+          },
+          "1.5": {
+            "win": 0.8316288621738928,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.1683711378259876
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9666267300396739,
+            "under": 0.03337326996032607
+          },
+          "1.5": {
+            "over": 0.8531576121745652,
+            "under": 0.14684238782543474
+          },
+          "2.5": {
+            "over": 0.6602601118038806,
+            "under": 0.33973988819611944
+          },
+          "3.5": {
+            "over": 0.4416429447171045,
+            "under": 0.5583570552828955
+          },
+          "4.5": {
+            "over": 0.25581835269334485,
+            "under": 0.7441816473066551
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.8347011117784134,
+              "under": 0.16529888822158653
+            },
+            "1.5": {
+              "over": 0.5371631129795577,
+              "under": 0.46283688702044234
+            },
+            "2.5": {
+              "over": 0.26937891406058745,
+              "under": 0.7306210859394126
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.7981034820053446,
+              "under": 0.20189651799465538
+            },
+            "1.5": {
+              "over": 0.47506905321389603,
+              "under": 0.524930946786104
+            },
+            "2.5": {
+              "over": 0.21664151018073707,
+              "under": 0.7833584898192629
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.0961150174857391
+          },
+          {
+            "score": "2-1",
+            "p": 0.08650351573716519
+          },
+          {
+            "score": "1-2",
+            "p": 0.07689201398859129
+          },
+          {
+            "score": "2-2",
+            "p": 0.06920281258973215
+          },
+          {
+            "score": "1-0",
+            "p": 0.06007188592858694
+          },
+          {
+            "score": "2-0",
+            "p": 0.054064697335728246
+          },
+          {
+            "score": "0-1",
+            "p": 0.05339723193652172
+          },
+          {
+            "score": "3-1",
+            "p": 0.051902109442299116
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-STU-BMG",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Bundesliga|STU-BMG",
+      "competition": "Bundesliga",
+      "kickoff_cdmx": "2026-10-23T12:30:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 2,
+      "lambda_away": 1.1,
+      "p_model_1x2": {
+        "home": 0.5821282046437662,
+        "draw": 0.21399519941985512,
+        "away": 0.2038765959363787
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.5988368526853677,
+        "under": 0.4011631473146323
+      },
+      "p_model_btts": {
+        "yes": 0.5768428354588656,
+        "no": 0.4231571645411344
+      },
+      "p_model_dc": {
+        "12": 0.786004800580145,
+        "1X": 0.7961234040636214,
+        "X2": 0.4178717953562338
+      },
+      "p_model_dnb": {
+        "home": 0.7406166021048488,
+        "away": 0.2593833978951512,
+        "push": 0.21399519941985512
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.5939941502901619,
+          "under": 0.4060058497098381
+        },
+        "away": {
+          "over": 0.3009707242340329,
+          "under": 0.6990292757659671
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Stuttgart",
+          "away": "Borussia Mönchengladbach",
+          "homeGF": 11,
+          "homeGA": 2,
+          "homeN": 5,
+          "awayGF": 9,
+          "awayGA": 9,
+          "awayN": 5,
+          "scope": "last5_all_competitions_includes_cup",
+          "source_url": "https://sportpremi.com/betting-tips/vfb-stuttgart-vs-borussia-monchengladbach-prediction-2026-10-23",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.5821282046433891,
+            "halfwin": 0,
+            "push": 0.21399519941971662,
+            "halfloss": 0,
+            "loss": 0.2038765959362466
+          },
+          "1": {
+            "win": 0.7961234040631058,
+            "halfwin": 0,
+            "push": 0.1281489761091602,
+            "halfloss": 0,
+            "loss": 0.07572761982708642
+          },
+          "-1.5": {
+            "win": 0.34913006626309795,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6508699337362543
+          },
+          "-1.25": {
+            "win": 0.34913006626309795,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.2329981383802912,
+            "loss": 0.41787179535596325
+          },
+          "-1": {
+            "win": 0.34913006626309795,
+            "halfwin": 0,
+            "push": 0.2329981383802912,
+            "halfloss": 0,
+            "loss": 0.41787179535596325
+          },
+          "-0.75": {
+            "win": 0.34913006626309795,
+            "halfwin": 0.2329981383802912,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.41787179535596325
+          },
+          "-0.5": {
+            "win": 0.5821282046433891,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.41787179535596325
+          },
+          "-0.25": {
+            "win": 0.5821282046433891,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.21399519941971662,
+            "loss": 0.2038765959362466
+          },
+          "0.25": {
+            "win": 0.5821282046433891,
+            "halfwin": 0.21399519941971662,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.2038765959362466
+          },
+          "0.5": {
+            "win": 0.7961234040631058,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.2038765959362466
+          },
+          "0.75": {
+            "win": 0.7961234040631058,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.1281489761091602,
+            "loss": 0.07572761982708642
+          },
+          "1.25": {
+            "win": 0.7961234040631058,
+            "halfwin": 0.1281489761091602,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.07572761982708642
+          },
+          "1.5": {
+            "win": 0.924272380172266,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.07572761982708642
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9549507976064422,
+            "under": 0.04504920239355781
+          },
+          "1.5": {
+            "over": 0.815298270186413,
+            "under": 0.184701729813587
+          },
+          "2.5": {
+            "over": 0.5988368526853677,
+            "under": 0.4011631473146323
+          },
+          "3.5": {
+            "over": 0.37516005460095425,
+            "under": 0.6248399453990457
+          },
+          "4.5": {
+            "over": 0.2018105360855338,
+            "under": 0.7981894639144662
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.8646647167633873,
+              "under": 0.1353352832366127
+            },
+            "1.5": {
+              "over": 0.5939941502901619,
+              "under": 0.4060058497098381
+            },
+            "2.5": {
+              "over": 0.3233235838169365,
+              "under": 0.6766764161830635
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.6671289163019205,
+              "under": 0.33287108369807955
+            },
+            "1.5": {
+              "over": 0.3009707242340329,
+              "under": 0.6990292757659671
+            },
+            "2.5": {
+              "over": 0.09958371859669479,
+              "under": 0.9004162814033052
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.09910824526582719
+          },
+          {
+            "score": "2-1",
+            "p": 0.09910824526582719
+          },
+          {
+            "score": "1-0",
+            "p": 0.09009840478711562
+          },
+          {
+            "score": "2-0",
+            "p": 0.09009840478711562
+          },
+          {
+            "score": "3-1",
+            "p": 0.06607216351055147
+          },
+          {
+            "score": "3-0",
+            "p": 0.06006560319141042
+          },
+          {
+            "score": "1-2",
+            "p": 0.054509534896204956
+          },
+          {
+            "score": "2-2",
+            "p": 0.054509534896204956
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-BRE-NIC",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Ligue 1|BRE-NIC",
+      "competition": "Ligue 1",
+      "kickoff_cdmx": "2026-10-23T12:45:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1.5,
+      "lambda_away": 1.2,
+      "p_model_1x2": {
+        "home": 0.4414651731668313,
+        "draw": 0.25481677758645227,
+        "away": 0.3037180492467164
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.5063755089265378,
+        "under": 0.4936244910734621
+      },
+      "p_model_btts": {
+        "yes": 0.5428811406791177,
+        "no": 0.45711885932088225
+      },
+      "p_model_dc": {
+        "12": 0.7451832224135477,
+        "1X": 0.6962819507532836,
+        "X2": 0.5585348268331687
+      },
+      "p_model_dnb": {
+        "home": 0.5924250035273007,
+        "away": 0.4075749964726993,
+        "push": 0.25481677758645227
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.44217459962892547,
+          "under": 0.5578254003710745
+        },
+        "away": {
+          "over": 0.33737273379315535,
+          "under": 0.6626272662068446
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Brest",
+          "away": "Nice",
+          "homeGF": 9,
+          "homeGA": 6,
+          "homeN": 5,
+          "awayGF": 6,
+          "awayGA": 6,
+          "awayN": 5,
+          "scope": "last5_league",
+          "source_url": "https://www.pitchlabstats.com/match/2026-10-23-brest-nice",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.44146517316682937,
+            "halfwin": 0,
+            "push": 0.25481677758645105,
+            "halfloss": 0,
+            "loss": 0.30371804924671514
+          },
+          "1": {
+            "win": 0.6962819507532805,
+            "halfwin": 0,
+            "push": 0.1785817182263509,
+            "halfloss": 0,
+            "loss": 0.12513633102036412
+          },
+          "-1.5": {
+            "win": 0.21823802538389075,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.7817619746161045
+          },
+          "-1.25": {
+            "win": 0.21823802538389075,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.2232271477829386,
+            "loss": 0.5585348268331659
+          },
+          "-1": {
+            "win": 0.21823802538389075,
+            "halfwin": 0,
+            "push": 0.2232271477829386,
+            "halfloss": 0,
+            "loss": 0.5585348268331659
+          },
+          "-0.75": {
+            "win": 0.21823802538389075,
+            "halfwin": 0.2232271477829386,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5585348268331659
+          },
+          "-0.5": {
+            "win": 0.44146517316682937,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5585348268331659
+          },
+          "-0.25": {
+            "win": 0.44146517316682937,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.25481677758645105,
+            "loss": 0.30371804924671514
+          },
+          "0.25": {
+            "win": 0.44146517316682937,
+            "halfwin": 0.25481677758645105,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.30371804924671514
+          },
+          "0.5": {
+            "win": 0.6962819507532805,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.30371804924671514
+          },
+          "0.75": {
+            "win": 0.6962819507532805,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.1785817182263509,
+            "loss": 0.12513633102036412
+          },
+          "1.25": {
+            "win": 0.6962819507532805,
+            "halfwin": 0.1785817182263509,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.12513633102036412
+          },
+          "1.5": {
+            "win": 0.8748636689796314,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.12513633102036412
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9327944872602503,
+            "under": 0.06720551273974977
+          },
+          "1.5": {
+            "over": 0.7513396028629258,
+            "under": 0.24866039713707416
+          },
+          "2.5": {
+            "over": 0.5063755089265378,
+            "under": 0.4936244910734621
+          },
+          "3.5": {
+            "over": 0.2859078243837889,
+            "under": 0.7140921756162111
+          },
+          "4.5": {
+            "over": 0.1370921373174332,
+            "under": 0.8629078626825668
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.7768698398515702,
+              "under": 0.22313016014842982
+            },
+            "1.5": {
+              "over": 0.44217459962892547,
+              "under": 0.5578254003710745
+            },
+            "2.5": {
+              "over": 0.19115316946194194,
+              "under": 0.8088468305380581
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.6988057880877978,
+              "under": 0.30119421191220214
+            },
+            "1.5": {
+              "over": 0.33737273379315535,
+              "under": 0.6626272662068446
+            },
+            "2.5": {
+              "over": 0.12051290121636982,
+              "under": 0.8794870987836302
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.1209699229315496
+          },
+          {
+            "score": "1-0",
+            "p": 0.10080826910962466
+          },
+          {
+            "score": "2-1",
+            "p": 0.09072744219866219
+          },
+          {
+            "score": "0-1",
+            "p": 0.08064661528769973
+          },
+          {
+            "score": "2-0",
+            "p": 0.07560620183221849
+          },
+          {
+            "score": "1-2",
+            "p": 0.07258195375892976
+          },
+          {
+            "score": "0-0",
+            "p": 0.06720551273974977
+          },
+          {
+            "score": "2-2",
+            "p": 0.05443646531919731
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-ALA-KOC",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Turkish Super Lig|ALA-KOC",
+      "competition": "Turkish Super Lig",
+      "kickoff_cdmx": "2026-10-23T11:00:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1,
+      "lambda_away": 1.1,
+      "p_model_1x2": {
+        "home": 0.3248195276439859,
+        "draw": 0.29905444351945604,
+        "away": 0.3761260288365581
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.350368648117931,
+        "under": 0.649631351882069
+      },
+      "p_model_btts": {
+        "yes": 0.4217059033834601,
+        "no": 0.57829409661654
+      },
+      "p_model_dc": {
+        "12": 0.700945556480544,
+        "1X": 0.623873971163442,
+        "X2": 0.6751804723560142
+      },
+      "p_model_dnb": {
+        "home": 0.4634019356295068,
+        "away": 0.5365980643704932,
+        "push": 0.29905444351945604
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.26424111765711533,
+          "under": 0.7357588823428847
+        },
+        "away": {
+          "over": 0.3009707242340329,
+          "under": 0.6990292757659671
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Alanyaspor",
+          "away": "Kocaelispor",
+          "homeGF": 5,
+          "homeGA": 6,
+          "homeN": 5,
+          "awayGF": 5,
+          "awayGA": 5,
+          "awayN": 5,
+          "scope": "last5_league",
+          "source_url": "https://www.fotmob.com/matches/kocaelispor-vs-alanyaspor/bmdyq",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.3248195276439861,
+            "halfwin": 0,
+            "push": 0.2990544435194559,
+            "halfloss": 0,
+            "loss": 0.37612602883655805
+          },
+          "1": {
+            "win": 0.6238739711634421,
+            "halfwin": 0,
+            "push": 0.22368678390241978,
+            "halfloss": 0,
+            "loss": 0.15243924493413838
+          },
+          "-1.5": {
+            "win": 0.12146790591451355,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.8785320940854866
+          },
+          "-1.25": {
+            "win": 0.12146790591451355,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.20335162172947255,
+            "loss": 0.675180472356014
+          },
+          "-1": {
+            "win": 0.12146790591451355,
+            "halfwin": 0,
+            "push": 0.20335162172947255,
+            "halfloss": 0,
+            "loss": 0.675180472356014
+          },
+          "-0.75": {
+            "win": 0.12146790591451355,
+            "halfwin": 0.20335162172947255,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.675180472356014
+          },
+          "-0.5": {
+            "win": 0.3248195276439861,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.675180472356014
+          },
+          "-0.25": {
+            "win": 0.3248195276439861,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.2990544435194559,
+            "loss": 0.37612602883655805
+          },
+          "0.25": {
+            "win": 0.3248195276439861,
+            "halfwin": 0.2990544435194559,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.37612602883655805
+          },
+          "0.5": {
+            "win": 0.6238739711634421,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.37612602883655805
+          },
+          "0.75": {
+            "win": 0.6238739711634421,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.22368678390241978,
+            "loss": 0.15243924493413838
+          },
+          "1.25": {
+            "win": 0.6238739711634421,
+            "halfwin": 0.22368678390241978,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.15243924493413838
+          },
+          "1.5": {
+            "win": 0.8475607550658619,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.15243924493413838
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.8775435717470181,
+            "under": 0.12245642825298192
+          },
+          "1.5": {
+            "over": 0.620385072415756,
+            "under": 0.3796149275842439
+          },
+          "2.5": {
+            "over": 0.350368648117931,
+            "under": 0.649631351882069
+          },
+          "3.5": {
+            "over": 0.16135715110945337,
+            "under": 0.8386428488905466
+          },
+          "4.5": {
+            "over": 0.06212611518000266,
+            "under": 0.9378738848199973
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.6321205588285577,
+              "under": 0.36787944117144233
+            },
+            "1.5": {
+              "over": 0.26424111765711533,
+              "under": 0.7357588823428847
+            },
+            "2.5": {
+              "over": 0.08030139707139416,
+              "under": 0.9196986029286058
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.6671289163019205,
+              "under": 0.33287108369807955
+            },
+            "1.5": {
+              "over": 0.3009707242340329,
+              "under": 0.6990292757659671
+            },
+            "2.5": {
+              "over": 0.09958371859669479,
+              "under": 0.9004162814033052
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "0-1",
+            "p": 0.1347020710782801
+          },
+          {
+            "score": "1-1",
+            "p": 0.1347020710782801
+          },
+          {
+            "score": "0-0",
+            "p": 0.12245642825298192
+          },
+          {
+            "score": "1-0",
+            "p": 0.12245642825298192
+          },
+          {
+            "score": "0-2",
+            "p": 0.07408613909305407
+          },
+          {
+            "score": "1-2",
+            "p": 0.07408613909305407
+          },
+          {
+            "score": "2-1",
+            "p": 0.06735103553914006
+          },
+          {
+            "score": "2-0",
+            "p": 0.06122821412649096
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-VIT-MAR",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Primeira Liga|VIT-MAR",
+      "competition": "Primeira Liga",
+      "kickoff_cdmx": "2026-10-23T13:45:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1.3,
+      "lambda_away": 1,
+      "p_model_1x2": {
+        "home": 0.43400020428170083,
+        "draw": 0.27959722040541274,
+        "away": 0.28640257531288643
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.40396117406793186,
+        "under": 0.5960388259320681
+      },
+      "p_model_btts": {
+        "yes": 0.4598476095173488,
+        "no": 0.5401523904826512
+      },
+      "p_model_dc": {
+        "12": 0.7204027795945873,
+        "1X": 0.7135974246871135,
+        "X2": 0.5659997957182992
+      },
+      "p_model_dnb": {
+        "home": 0.6024410462796077,
+        "away": 0.3975589537203922,
+        "push": 0.27959722040541274
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.3731768760217711,
+          "under": 0.6268231239782289
+        },
+        "away": {
+          "over": 0.26424111765711533,
+          "under": 0.7357588823428847
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Vitória Guimarães",
+          "away": "Marítimo",
+          "homeGF": 2,
+          "homeGA": 6,
+          "homeN": 5,
+          "awayGF": 4,
+          "awayGA": 11,
+          "awayN": 5,
+          "scope": "last5_league",
+          "source_url": "https://www.skysports.com/football/vitoria-de-guimaraes-vs-maritimo/5899905369420568232",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.43400020428170083,
+            "halfwin": 0,
+            "push": 0.27959722040541257,
+            "halfloss": 0,
+            "loss": 0.2864025753128863
+          },
+          "1": {
+            "win": 0.7135974246871134,
+            "halfwin": 0,
+            "push": 0.18118039475047432,
+            "halfloss": 0,
+            "loss": 0.10522218056241191
+          },
+          "-1.5": {
+            "win": 0.19846569110608406,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.8015343088939155
+          },
+          "-1.25": {
+            "win": 0.19846569110608406,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.23553451317561666,
+            "loss": 0.5659997957182988
+          },
+          "-1": {
+            "win": 0.19846569110608406,
+            "halfwin": 0,
+            "push": 0.23553451317561666,
+            "halfloss": 0,
+            "loss": 0.5659997957182988
+          },
+          "-0.75": {
+            "win": 0.19846569110608406,
+            "halfwin": 0.23553451317561666,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5659997957182988
+          },
+          "-0.5": {
+            "win": 0.43400020428170083,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5659997957182988
+          },
+          "-0.25": {
+            "win": 0.43400020428170083,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.27959722040541257,
+            "loss": 0.2864025753128863
+          },
+          "0.25": {
+            "win": 0.43400020428170083,
+            "halfwin": 0.27959722040541257,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.2864025753128863
+          },
+          "0.5": {
+            "win": 0.7135974246871134,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.2864025753128863
+          },
+          "0.75": {
+            "win": 0.7135974246871134,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.18118039475047432,
+            "loss": 0.10522218056241191
+          },
+          "1.25": {
+            "win": 0.7135974246871134,
+            "halfwin": 0.18118039475047432,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.10522218056241191
+          },
+          "1.5": {
+            "win": 0.8947778194375877,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.10522218056241191
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.8997411562771963,
+            "under": 0.10025884372280373
+          },
+          "1.5": {
+            "over": 0.6691458157147476,
+            "under": 0.3308541842852523
+          },
+          "2.5": {
+            "over": 0.40396117406793186,
+            "under": 0.5960388259320681
+          },
+          "3.5": {
+            "over": 0.200652948805373,
+            "under": 0.799347051194627
+          },
+          "4.5": {
+            "over": 0.08375071927940181,
+            "under": 0.9162492807205982
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.7274682069659875,
+              "under": 0.2725317930340126
+            },
+            "1.5": {
+              "over": 0.3731768760217711,
+              "under": 0.6268231239782289
+            },
+            "2.5": {
+              "over": 0.14288751090803042,
+              "under": 0.8571124890919696
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.6321205588285577,
+              "under": 0.36787944117144233
+            },
+            "1.5": {
+              "over": 0.26424111765711533,
+              "under": 0.7357588823428847
+            },
+            "2.5": {
+              "over": 0.08030139707139416,
+              "under": 0.9196986029286058
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-0",
+            "p": 0.13033649683964485
+          },
+          {
+            "score": "1-1",
+            "p": 0.13033649683964485
+          },
+          {
+            "score": "0-0",
+            "p": 0.10025884372280373
+          },
+          {
+            "score": "0-1",
+            "p": 0.10025884372280373
+          },
+          {
+            "score": "2-0",
+            "p": 0.08471872294576915
+          },
+          {
+            "score": "2-1",
+            "p": 0.08471872294576915
+          },
+          {
+            "score": "1-2",
+            "p": 0.06516824841982242
+          },
+          {
+            "score": "0-2",
+            "p": 0.05012942186140187
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-GAE-TEL",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Eredivisie|GAE-TEL",
+      "competition": "Eredivisie",
+      "kickoff_cdmx": "2026-10-23T12:00:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 2.111111111111111,
+      "lambda_away": 1.7222222222222223,
+      "p_model_1x2": {
+        "home": 0.4719562597822785,
+        "draw": 0.20832288717195205,
+        "away": 0.3197208530457693
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.7364448038750633,
+        "under": 0.26355519612493666
+      },
+      "p_model_btts": {
+        "yes": 0.7218653733774982,
+        "no": 0.27813462662250177
+      },
+      "p_model_dc": {
+        "12": 0.7916771128280478,
+        "1X": 0.6802791469542305,
+        "X2": 0.5280437402177214
+      },
+      "p_model_dnb": {
+        "home": 0.5961474092592436,
+        "away": 0.4038525907407565,
+        "push": 0.20832288717195205
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.6232340770016409,
+          "under": 0.37676592299835915
+        },
+        "away": {
+          "over": 0.513624189859245,
+          "under": 0.48637581014075504
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Go Ahead Eagles",
+          "away": "Telstar",
+          "homeGF": 20,
+          "homeGA": 21,
+          "homeN": 9,
+          "awayGF": 10,
+          "awayGA": 18,
+          "awayN": 9,
+          "scope": "season_league_9_matches",
+          "source_url": "https://www.skysports.com/football/go-ahead-eagles-vs-telstar/table/556771",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.4719562597814864,
+            "halfwin": 0,
+            "push": 0.20832288717160236,
+            "halfloss": 0,
+            "loss": 0.319720853045233
+          },
+          "1": {
+            "win": 0.6802791469530887,
+            "halfwin": 0,
+            "push": 0.1610551116105821,
+            "halfloss": 0,
+            "loss": 0.15866574143465087
+          },
+          "-1.5": {
+            "win": 0.2745338649039987,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.7254661350943228
+          },
+          "-1.25": {
+            "win": 0.2745338649039987,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.1974223948774877,
+            "loss": 0.5280437402168351
+          },
+          "-1": {
+            "win": 0.2745338649039987,
+            "halfwin": 0,
+            "push": 0.1974223948774877,
+            "halfloss": 0,
+            "loss": 0.5280437402168351
+          },
+          "-0.75": {
+            "win": 0.2745338649039987,
+            "halfwin": 0.1974223948774877,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5280437402168351
+          },
+          "-0.5": {
+            "win": 0.4719562597814864,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.5280437402168351
+          },
+          "-0.25": {
+            "win": 0.4719562597814864,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.20832288717160236,
+            "loss": 0.319720853045233
+          },
+          "0.25": {
+            "win": 0.4719562597814864,
+            "halfwin": 0.20832288717160236,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.319720853045233
+          },
+          "0.5": {
+            "win": 0.6802791469530887,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.319720853045233
+          },
+          "0.75": {
+            "win": 0.6802791469530887,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.1610551116105821,
+            "loss": 0.15866574143465087
+          },
+          "1.25": {
+            "win": 0.6802791469530887,
+            "halfwin": 0.1610551116105821,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.15866574143465087
+          },
+          "1.5": {
+            "win": 0.8413342585636707,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.15866574143465087
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9783626292805069,
+            "under": 0.02163737071949309
+          },
+          "1.5": {
+            "over": 0.8954193748557834,
+            "under": 0.1045806251442166
+          },
+          "2.5": {
+            "over": 0.7364448038750633,
+            "under": 0.26355519612493666
+          },
+          "3.5": {
+            "over": 0.5333106298441432,
+            "under": 0.46668937015585676
+          },
+          "4.5": {
+            "over": 0.3386403797311782,
+            "under": 0.6613596202688218
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.8788966676076703,
+              "under": 0.12110333239232973
+            },
+            "1.5": {
+              "over": 0.6232340770016409,
+              "under": 0.37676592299835915
+            },
+            "2.5": {
+              "over": 0.3533680091397209,
+              "under": 0.6466319908602791
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.8213313350503348,
+              "under": 0.17866866494966513
+            },
+            "1.5": {
+              "over": 0.513624189859245,
+              "under": 0.48637581014075504
+            },
+            "2.5": {
+              "over": 0.24865414816691755,
+              "under": 0.7513458518330824
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "2-1",
+            "p": 0.08303971732573634
+          },
+          {
+            "score": "1-1",
+            "p": 0.07866920588753969
+          },
+          {
+            "score": "2-2",
+            "p": 0.0715064232527174
+          },
+          {
+            "score": "1-2",
+            "p": 0.06774292729204806
+          },
+          {
+            "score": "3-1",
+            "p": 0.05843535663662928
+          },
+          {
+            "score": "3-2",
+            "p": 0.05031933488154188
+          },
+          {
+            "score": "2-0",
+            "p": 0.04821661006010497
+          },
+          {
+            "score": "1-0",
+            "p": 0.045678893741152075
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-BOL-MID",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|EFL Championship|BOL-MID",
+      "competition": "EFL Championship",
+      "kickoff_cdmx": "2026-10-23T13:00:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 2,
+      "lambda_away": 2.1,
+      "p_model_1x2": {
+        "home": 0.3789287388080002,
+        "draw": 0.2040186094671836,
+        "away": 0.4170526517248162
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.7761860186992143,
+        "under": 0.22381398130078564
+      },
+      "p_model_btts": {
+        "yes": 0.7587809639121667,
+        "no": 0.24121903608783335
+      },
+      "p_model_dc": {
+        "12": 0.7959813905328164,
+        "1X": 0.5829473482751838,
+        "X2": 0.6210712611919997
+      },
+      "p_model_dnb": {
+        "home": 0.47605225865186596,
+        "away": 0.5239477413481342,
+        "push": 0.2040186094671836
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.5939941502901619,
+          "under": 0.4060058497098381
+        },
+        "away": {
+          "over": 0.620385072415756,
+          "under": 0.3796149275842439
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Bolton",
+          "away": "Middlesbrough",
+          "homeGF": 11,
+          "homeGA": 9,
+          "homeN": 5,
+          "awayGF": 12,
+          "awayGA": 9,
+          "awayN": 5,
+          "scope": "last5_league",
+          "source_url": "https://www.skysports.com/football/bolton-wanderers-vs-middlesbrough/560631",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.3789287388071902,
+            "halfwin": 0,
+            "push": 0.2040186094667478,
+            "halfloss": 0,
+            "loss": 0.4170526517239251
+          },
+          "1": {
+            "win": 0.5829473482739382,
+            "halfwin": 0,
+            "push": 0.1812974299463491,
+            "halfloss": 0,
+            "loss": 0.2357552217775761
+          },
+          "-1.5": {
+            "win": 0.20626451981066737,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.7937354801871959
+          },
+          "-1.25": {
+            "win": 0.20626451981066737,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.17266421899652293,
+            "loss": 0.6210712611906729
+          },
+          "-1": {
+            "win": 0.20626451981066737,
+            "halfwin": 0,
+            "push": 0.17266421899652293,
+            "halfloss": 0,
+            "loss": 0.6210712611906729
+          },
+          "-0.75": {
+            "win": 0.20626451981066737,
+            "halfwin": 0.17266421899652293,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6210712611906729
+          },
+          "-0.5": {
+            "win": 0.3789287388071902,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6210712611906729
+          },
+          "-0.25": {
+            "win": 0.3789287388071902,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.2040186094667478,
+            "loss": 0.4170526517239251
+          },
+          "0.25": {
+            "win": 0.3789287388071902,
+            "halfwin": 0.2040186094667478,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.4170526517239251
+          },
+          "0.5": {
+            "win": 0.5829473482739382,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.4170526517239251
+          },
+          "0.75": {
+            "win": 0.5829473482739382,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.1812974299463491,
+            "loss": 0.2357552217775761
+          },
+          "1.25": {
+            "win": 0.5829473482739382,
+            "halfwin": 0.1812974299463491,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.2357552217775761
+          },
+          "1.5": {
+            "win": 0.7642447782202874,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.2357552217775761
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9834273245982388,
+            "under": 0.016572675401761248
+          },
+          "1.5": {
+            "over": 0.9154793554510177,
+            "under": 0.08452064454898237
+          },
+          "2.5": {
+            "over": 0.7761860186992143,
+            "under": 0.22381398130078564
+          },
+          "3.5": {
+            "over": 0.5858184584717498,
+            "under": 0.4141815415282501
+          },
+          "4.5": {
+            "over": 0.39069170923859864,
+            "under": 0.6093082907614014
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.8646647167633873,
+              "under": 0.1353352832366127
+            },
+            "1.5": {
+              "over": 0.5939941502901619,
+              "under": 0.4060058497098381
+            },
+            "2.5": {
+              "over": 0.3233235838169365,
+              "under": 0.6766764161830635
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.8775435717470181,
+              "under": 0.1224564282529819
+            },
+            "1.5": {
+              "over": 0.620385072415756,
+              "under": 0.3796149275842439
+            },
+            "2.5": {
+              "over": 0.3503686481179309,
+              "under": 0.6496313518820691
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-2",
+            "p": 0.07308549852176711
+          },
+          {
+            "score": "2-2",
+            "p": 0.07308549852176711
+          },
+          {
+            "score": "1-1",
+            "p": 0.06960523668739724
+          },
+          {
+            "score": "2-1",
+            "p": 0.06960523668739724
+          },
+          {
+            "score": "1-3",
+            "p": 0.05115984896523698
+          },
+          {
+            "score": "2-3",
+            "p": 0.05115984896523698
+          },
+          {
+            "score": "3-2",
+            "p": 0.04872366568117808
+          },
+          {
+            "score": "3-1",
+            "p": 0.0464034911249315
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-GRA-VLL",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|La Liga 2|GRA-VLL",
+      "competition": "La Liga 2",
+      "kickoff_cdmx": "2026-10-23T12:30:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1.5,
+      "lambda_away": 1.4,
+      "p_model_1x2": {
+        "home": 0.39861117310522987,
+        "draw": 0.24741317544899755,
+        "away": 0.3539756514457726
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.5540368014428193,
+        "under": 0.4459631985571807
+      },
+      "p_model_btts": {
+        "yes": 0.585296095966371,
+        "no": 0.414703904033629
+      },
+      "p_model_dc": {
+        "12": 0.7525868245510025,
+        "1X": 0.6460243485542274,
+        "X2": 0.6013888268947701
+      },
+      "p_model_dnb": {
+        "home": 0.5296547323201459,
+        "away": 0.470345267679854,
+        "push": 0.24741317544899755
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.44217459962892547,
+          "under": 0.5578254003710745
+        },
+        "away": {
+          "over": 0.40816728654014445,
+          "under": 0.5918327134598556
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Granada",
+          "away": "Real Valladolid",
+          "homeGF": 16,
+          "homeGA": 13,
+          "homeN": 10,
+          "awayGF": 15,
+          "awayGA": 14,
+          "awayN": 10,
+          "scope": "season_league_10_matches",
+          "source_url": "https://www.laliga.com/en-MX/match/temporada-2026-2027-laliga-hypermotion-granada-cf-real-valladolid-cf-11",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.3986111731052276,
+            "halfwin": 0,
+            "push": 0.2474131754489961,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "1": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0.19173873153046214,
+            "halfloss": 0,
+            "loss": 0.1622369199153083
+          },
+          "-1.5": {
+            "win": 0.19317681789401817,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.806823182105976
+          },
+          "-1.25": {
+            "win": 0.19317681789401817,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.20543435521120948,
+            "loss": 0.6013888268947666
+          },
+          "-1": {
+            "win": 0.19317681789401817,
+            "halfwin": 0,
+            "push": 0.20543435521120948,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.75": {
+            "win": 0.19317681789401817,
+            "halfwin": 0.20543435521120948,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.5": {
+            "win": 0.3986111731052276,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.25": {
+            "win": 0.3986111731052276,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.2474131754489961,
+            "loss": 0.35397565144577053
+          },
+          "0.25": {
+            "win": 0.3986111731052276,
+            "halfwin": 0.2474131754489961,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "0.5": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "0.75": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.19173873153046214,
+            "loss": 0.1622369199153083
+          },
+          "1.25": {
+            "win": 0.6460243485542236,
+            "halfwin": 0.19173873153046214,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.1622369199153083
+          },
+          "1.5": {
+            "win": 0.8377630800846858,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.1622369199153083
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9449767799435927,
+            "under": 0.05502322005640723
+          },
+          "1.5": {
+            "over": 0.7854094417800118,
+            "under": 0.2145905582199882
+          },
+          "2.5": {
+            "over": 0.5540368014428193,
+            "under": 0.4459631985571807
+          },
+          "3.5": {
+            "over": 0.3303765824502002,
+            "under": 0.6696234175497998
+          },
+          "4.5": {
+            "over": 0.16822292368055103,
+            "under": 0.831777076319449
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.7768698398515702,
+              "under": 0.22313016014842982
+            },
+            "1.5": {
+              "over": 0.44217459962892547,
+              "under": 0.5578254003710745
+            },
+            "2.5": {
+              "over": 0.19115316946194194,
+              "under": 0.8088468305380581
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.7534030360583935,
+              "under": 0.2465969639416065
+            },
+            "1.5": {
+              "over": 0.40816728654014445,
+              "under": 0.5918327134598556
+            },
+            "2.5": {
+              "over": 0.16650226187737016,
+              "under": 0.8334977381226298
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.11554876211845519
+          },
+          {
+            "score": "2-1",
+            "p": 0.08666157158884139
+          },
+          {
+            "score": "1-0",
+            "p": 0.08253483008461085
+          },
+          {
+            "score": "1-2",
+            "p": 0.08088413348291862
+          },
+          {
+            "score": "0-1",
+            "p": 0.07703250807897012
+          },
+          {
+            "score": "2-0",
+            "p": 0.06190112256345813
+          },
+          {
+            "score": "2-2",
+            "p": 0.060663100112188964
+          },
+          {
+            "score": "0-0",
+            "p": 0.05502322005640723
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    },
+    {
+      "id": "LEN23-EMP-VIC",
+      "date": "2026-10-23",
+      "fixture_key": "2026-10-23|Serie B|EMP-VIC",
+      "competition": "Serie B",
+      "kickoff_cdmx": "2026-10-23T12:30:00-06:00",
+      "cutoff_cdmx": "2026-10-23T08:51:06-06:00",
+      "freeze_utc": "2026-10-23T14:54:19.981Z",
+      "model_version": "LENNON-PURE-GFGA-POISSON-RESEARCH-V0.1",
+      "lambda_home": 1.5,
+      "lambda_away": 1.4,
+      "p_model_1x2": {
+        "home": 0.39861117310522987,
+        "draw": 0.24741317544899755,
+        "away": 0.3539756514457726
+      },
+      "p_model_over_under_2_5": {
+        "over": 0.5540368014428193,
+        "under": 0.4459631985571807
+      },
+      "p_model_btts": {
+        "yes": 0.585296095966371,
+        "no": 0.414703904033629
+      },
+      "p_model_dc": {
+        "12": 0.7525868245510025,
+        "1X": 0.6460243485542274,
+        "X2": 0.6013888268947701
+      },
+      "p_model_dnb": {
+        "home": 0.5296547323201459,
+        "away": 0.470345267679854,
+        "push": 0.24741317544899755
+      },
+      "p_model_team_total_1_5": {
+        "home": {
+          "over": 0.44217459962892547,
+          "under": 0.5578254003710745
+        },
+        "away": {
+          "over": 0.40816728654014445,
+          "under": 0.5918327134598556
+        }
+      },
+      "detail": {
+        "features": {
+          "home": "Empoli",
+          "away": "Vicenza",
+          "homeGF": 5,
+          "homeGA": 8,
+          "homeN": 5,
+          "awayGF": 6,
+          "awayGA": 10,
+          "awayN": 5,
+          "scope": "last5_league",
+          "source_url": "https://www.skysports.com/football/empoli-vs-vicenza/8907935136506579232",
+          "point_in_time_archive_verified": false,
+          "league_strength_adjusted": false,
+          "method": "lambda_home=(homeGF/homeN+awayGA/awayN)/2; lambda_away=(awayGF/awayN+homeGA/homeN)/2; independent Poisson; no odds input"
+        },
+        "market": {
+          "observed_odds": null,
+          "operator": null,
+          "quote_timestamp": null,
+          "no_vig": null,
+          "closing": null
+        },
+        "asian_home": {
+          "0": {
+            "win": 0.3986111731052276,
+            "halfwin": 0,
+            "push": 0.2474131754489961,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "1": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0.19173873153046214,
+            "halfloss": 0,
+            "loss": 0.1622369199153083
+          },
+          "-1.5": {
+            "win": 0.19317681789401817,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.806823182105976
+          },
+          "-1.25": {
+            "win": 0.19317681789401817,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.20543435521120948,
+            "loss": 0.6013888268947666
+          },
+          "-1": {
+            "win": 0.19317681789401817,
+            "halfwin": 0,
+            "push": 0.20543435521120948,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.75": {
+            "win": 0.19317681789401817,
+            "halfwin": 0.20543435521120948,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.5": {
+            "win": 0.3986111731052276,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.6013888268947666
+          },
+          "-0.25": {
+            "win": 0.3986111731052276,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.2474131754489961,
+            "loss": 0.35397565144577053
+          },
+          "0.25": {
+            "win": 0.3986111731052276,
+            "halfwin": 0.2474131754489961,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "0.5": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.35397565144577053
+          },
+          "0.75": {
+            "win": 0.6460243485542236,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0.19173873153046214,
+            "loss": 0.1622369199153083
+          },
+          "1.25": {
+            "win": 0.6460243485542236,
+            "halfwin": 0.19173873153046214,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.1622369199153083
+          },
+          "1.5": {
+            "win": 0.8377630800846858,
+            "halfwin": 0,
+            "push": 0,
+            "halfloss": 0,
+            "loss": 0.1622369199153083
+          }
+        },
+        "over_under": {
+          "0.5": {
+            "over": 0.9449767799435927,
+            "under": 0.05502322005640723
+          },
+          "1.5": {
+            "over": 0.7854094417800118,
+            "under": 0.2145905582199882
+          },
+          "2.5": {
+            "over": 0.5540368014428193,
+            "under": 0.4459631985571807
+          },
+          "3.5": {
+            "over": 0.3303765824502002,
+            "under": 0.6696234175497998
+          },
+          "4.5": {
+            "over": 0.16822292368055103,
+            "under": 0.831777076319449
+          }
+        },
+        "team_totals": {
+          "home": {
+            "0.5": {
+              "over": 0.7768698398515702,
+              "under": 0.22313016014842982
+            },
+            "1.5": {
+              "over": 0.44217459962892547,
+              "under": 0.5578254003710745
+            },
+            "2.5": {
+              "over": 0.19115316946194194,
+              "under": 0.8088468305380581
+            }
+          },
+          "away": {
+            "0.5": {
+              "over": 0.7534030360583935,
+              "under": 0.2465969639416065
+            },
+            "1.5": {
+              "over": 0.40816728654014445,
+              "under": 0.5918327134598556
+            },
+            "2.5": {
+              "over": 0.16650226187737016,
+              "under": 0.8334977381226298
+            }
+          }
+        },
+        "top_scores": [
+          {
+            "score": "1-1",
+            "p": 0.11554876211845519
+          },
+          {
+            "score": "2-1",
+            "p": 0.08666157158884139
+          },
+          {
+            "score": "1-0",
+            "p": 0.08253483008461085
+          },
+          {
+            "score": "1-2",
+            "p": 0.08088413348291862
+          },
+          {
+            "score": "0-1",
+            "p": 0.07703250807897012
+          },
+          {
+            "score": "2-0",
+            "p": 0.06190112256345813
+          },
+          {
+            "score": "2-2",
+            "p": 0.060663100112188964
+          },
+          {
+            "score": "0-0",
+            "p": 0.05502322005640723
+          }
+        ],
+        "model_family": "LENNON PURE",
+        "classification": "FORECAST_ONLY"
+      },
+      "classification": "FORECAST_ONLY",
+      "status": "PENDING"
+    }
+  ]
+}
